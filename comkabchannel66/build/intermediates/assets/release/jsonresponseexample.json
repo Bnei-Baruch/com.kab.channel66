@@ -1,0 +1,506 @@
+{
+  "locale": [
+    {
+      "heb": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova",
+              "description": "Sviva Tova broadcast Hebrew",
+              "urls": [
+                {
+                  "url_quality": "300k",
+                  "url_value": "http://streams.kab.tv/heb-special-yE2ngWB4.asx"
+                },
+                {
+                  "url_quality": "100k",
+                  "url_value": "http://streams.kab.tv/heb-special-yE2ngWB4_medium.asx"
+                }
+              ]
+            }
+          },
+          {
+            "66": {
+              "state": "active",
+              "title": "66 broadcast Hebrew",
+              "description": "66 broadcast Hebrew",
+              "urls": [
+                {
+                  "url_quality": "360K",
+                  "url_value": "http://streams.kab.tv/heb.asx"
+                },
+                {
+                  "url_quality": "100k",
+                  "url_value": "http://streams.kab.tv/heb_medium.asx"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "eng": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova English",
+              "description": "Sviva Tova English",
+              "urls": [
+                {
+                  "url_quality": "100k",
+                  "url_value": "http://streams.kab.tv/eng-special-yE2ngWB4_medium.asx"
+                },
+                {
+                  "url_quality": "300k",
+                  "url_value": "http://streams.kab.tv/eng-special-yE2ngWB4.asx"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rus": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova Russian",
+              "description": "Sviva Tova Russian",
+              "urls": [
+                {
+                  "url_quality": "100k",
+                  "url_value": "http://streams.kab.tv/rus-special-yE2ngWB4_medium.asx"
+                },
+                {
+                  "url_quality": "300k",
+                  "url_value": "http://streams.kab.tv/rus-special-yE2ngWB4.asx"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "spa": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova Spanish",
+              "description": "Sviva Tova Spanish",
+              "urls": [
+                {
+                  "url_quality": "100k",
+                  "url_value": "http://streams.kab.tv/spa-special-yE2ngWB4_medium.asx"
+                },
+                {
+                  "url_quality": "300k",
+                  "url_value": "http://streams.kab.tv/spa-special-yE2ngWB4.asx"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fre": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova French",
+              "description": "Sviva Tova French",
+              "urls": [
+                {
+                  "url_quality": "300k",
+                  "url_value": "http://streams.kab.tv/fre-special-yE2ngWB4.asx"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ger": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova German",
+              "description": "Sviva Tova German",
+              "urls": [
+                {
+                  "url_quality": "300k",
+                  "url_value": "http://streams.kab.tv/ger-special-yE2ngWB4.asx"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ita": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova Italian",
+              "description": "Sviva Tova Italian",
+              "urls": [
+                {
+                  "url_quality": "300k",
+                  "url_value": "http://streams.kab.tv/ita-special-yE2ngWB4.asx"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "trk": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova Turkish",
+              "description": "Sviva Tova Portugese",
+              "urls": [
+                {
+                  "url_quality": "300k",
+                  "url_value": "http://streams.kab.tv/trk-special-yE2ngWB4.asx"
+                },
+                {
+                  "url_quality": "100k",
+                  "url_value": "http://streams.kab.tv/trk-special-yE2ngWB4_medium.asx"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "localeHLS": [
+    {
+      "heb": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova",
+              "description": "Sviva Tova broadcast Hebrew",
+              "urls": [
+                {
+                  "type":"Video",
+                  "url_quality": "300k",
+    	  "url_quality_name": "Video Medium Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-heb-low.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Video",
+ 		  "url_quality": "100k",
+		  "url_quality_name": "Video Low Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-heb-mobile.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Audio",
+                  "url_quality": "128k",
+		  "url_quality_name": "Audio",
+                  "url_value": "http://icecast.kab.tv/live1-heb-574bcfd5.mp3"
+                },
+		{
+                  "type":"Audio",
+                  "url_quality": "128k",
+		  "url_quality_name": "Maamar",
+                  "url_value": "http://icecast.kab.tv/maamar-heb.mp3"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "eng": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova English",
+              "description": "Sviva Tova English",
+              "urls": [
+                {
+                  "type":"Video",
+ 		  "url_quality": "300k",
+		  "url_quality_name": "Video Medium Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-eng-low.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Video",
+                   "url_quality": "100k",
+		  "url_quality_name": "Video Low Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-eng-mobile.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Audio",
+                   "url_quality": "128k",
+		  "url_quality_name": "Audio",
+                  "url_value": "http://icecast.kab.tv/live1-eng-574bcfd5.mp3"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rus": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova Russian",
+              "description": "Sviva Tova Russian",
+              "urls": [
+                {
+                  "type":"Video",
+ 		  "url_quality": "300k",
+		  "url_quality_name": "Video Medium Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-rus-low.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Video",
+                   "url_quality": "100k",
+		  "url_quality_name": "Video Low Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-rus-mobile.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Audio",
+                  "url_quality": "128k",
+		  "url_quality_name": "Audio",
+                  "url_value": "http://icecast.kab.tv/live1-rus-574bcfd5.mp3"
+                },
+		{
+                  "type":"Audio",
+                  "url_quality": "128k",
+		  "url_quality_name": "Статья дня",
+                  "url_value": "http://icecast.kab.tv/maamar-rus.mp3"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "spa": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova Spanish",
+              "description": "Sviva Tova Spanish",
+              "urls": [
+                {
+                  "type":"Video",
+                   "url_quality": "300k",
+		  "url_quality_name": "Video Medium Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-spa-low.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Video",
+                   "url_quality": "100k",
+		  "url_quality_name": "Video Low Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-spa-mobile.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Audio",
+                  "url_quality": "128k",
+		  "url_quality_name": "Audio",
+                  "url_value": "http://icecast.kab.tv/live1-spa-574bcfd5.mp3"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fre": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova French",
+              "description": "Sviva Tova French",
+              "urls": [
+                {
+                  "type":"Video",
+                   "url_quality": "300k",
+		  "url_quality_name": "Video Medium Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-fre-low.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Video",
+                   "url_quality": "100k",
+		  "url_quality_name": "Video Low Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-fre-mobile.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Audio",
+                  "url_quality": "128k",
+		  "url_quality_name": "Audio",
+                  "url_value": "http://icecast.kab.tv/live1-fre-574bcfd5.mp3"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ger": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova German",
+              "description": "Sviva Tova German",
+              "urls": [
+                {
+                  "type":"Video",
+                  "url_quality": "300k",
+		  "url_quality_name": "Video Medium Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-ger-low.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Video",
+                   "url_quality": "100k",
+		  "url_quality_name": "Video Low Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-ger-mobile.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Audio",
+                  "url_quality": "128k",
+		  "url_quality_name": "Audio",
+                  "url_value": "http://icecast.kab.tv/live1-ger-574bcfd5.mp3"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ita": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova Italian",
+              "description": "Sviva Tova Italian",
+              "urls": [
+                {
+                  "type":"Video",
+                   "url_quality": "300k",
+		  "url_quality_name": "Video Medium Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-ita-low.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Video",
+                   "url_quality": "100k",
+		  "url_quality_name": "Video Low Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-ita-mobile.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Audio",
+                  "url_quality": "128k",
+		  "url_quality_name": "Audio",
+                  "url_value": "http://icecast.kab.tv/live1-ita-574bcfd5.mp3"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "trk": {
+        "pages": [
+          {
+            "regular": {
+              "state": "active",
+              "title": "Sviva Tova Turkish",
+              "description": "Sviva Tova Portugese",
+              "urls": [
+                {
+                  "type":"Video",
+                  "url_quality": "300k",
+		  "url_quality_name": "Video Medium Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-por-low.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Video",
+                  "url_quality": "100k",
+		  "url_quality_name": "Video Low Quality",
+                  "url_value": "http://edge1.il.kab.tv/rtplive/live1-cn4qdiwU-por-mobile.stream/playlist.m3u8"
+                },
+                {
+                  "type":"Audio",
+                  "url_quality": "128k",
+		  "url_quality_name": "Audio",
+                  "url_value": "http://icecast.kab.tv/live1-trk-574bcfd5.mp3"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "time_stamp": "23-8-2012 03:00",
+  "updateandlock": "false",
+  "version": "1.29",
+  "server_url": "http://player.kbb1.com/api/",
+  "HLSSupport": "yes",
+  "TranslationWIFISupport": {
+    "ssid": [
+      "BB1",
+      "Bezeq_69acd7",
+      "test"
+    ],
+    "urls": [
+      {
+        "heb": "rtsp://bmd3.bbdomain.org:20101/heb"
+      },
+      {
+        "rus": "rtsp://bmd3.bbdomain.org:20303/rus"
+      },
+      {
+        "eng": "rtsp://bmd3.bbdomain.org:20202/eng"
+      },
+      {
+        "ita": "rtsp://bmd3.bbdomain.org:20606/ita"
+      },
+      {
+        "spa": "rtsp://bmd3.bbdomain.org:20404/spa"
+      },
+      {
+        "fra": "rtsp://bmd3.bbdomain.org:20505/fra"
+      },
+      {
+        "ger": "rtsp://bmd3.bbdomain.org:20707/ger"
+      }
+    ]
+  }
+}

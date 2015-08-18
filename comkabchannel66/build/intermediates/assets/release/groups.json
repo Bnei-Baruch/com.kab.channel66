@@ -1,0 +1,758 @@
+[
+	{
+		"Event Label": "arvut",
+		"Total Events": "28",
+		"Unique Events": "28",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "petach tikva",
+		"Total Events": "10",
+		"Unique Events": "10",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "petah tikva",
+		"Total Events": "10",
+		"Unique Events": "10",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "pt",
+		"Total Events": "9",
+		"Unique Events": "9",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "פתח תקווה",
+		"Total Events": "6",
+		"Unique Events": "6",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "hadera",
+		"Total Events": "5",
+		"Unique Events": "5",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "tel aviv",
+		"Total Events": "5",
+		"Unique Events": "5",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "פתח תקוה",
+		"Total Events": "5",
+		"Unique Events": "5",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Haifa",
+		"Total Events": "4",
+		"Unique Events": "4",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "jerusalem",
+		"Total Events": "4",
+		"Unique Events": "4",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "eilat",
+		"Total Events": "3",
+		"Unique Events": "3",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "israel",
+		"Total Events": "3",
+		"Unique Events": "3",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Miami",
+		"Total Events": "3",
+		"Unique Events": "3",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Petah Tikva",
+		"Total Events": "3",
+		"Unique Events": "3",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "arava",
+		"Total Events": "2",
+		"Unique Events": "2",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "ashdod",
+		"Total Events": "2",
+		"Unique Events": "2",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "bbvs",
+		"Total Events": "2",
+		"Unique Events": "2",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "beer sheva",
+		"Total Events": "2",
+		"Unique Events": "2",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "haifa",
+		"Total Events": "2",
+		"Unique Events": "2",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "natanya",
+		"Total Events": "2",
+		"Unique Events": "2",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "rehovot",
+		"Total Events": "2",
+		"Unique Events": "2",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "חיפה",
+		"Total Events": "2",
+		"Unique Events": "2",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "ערבה",
+		"Total Events": "2",
+		"Unique Events": "2",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "ערבות פתח תקווה",
+		"Total Events": "2",
+		"Unique Events": "2",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "1",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "123",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "almaty",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Arvut",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "ashkelon",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "barranquilla",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "bb italy",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "BB Netherlands",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "bb scandinavia",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "BBVS",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Berlin",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "croatia",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "fds84fes90",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Florida",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "galil golan",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "ghuhcd",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "gruppo 1",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "habsor",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Habsor",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Hadera",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "holon",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Holon",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "hulon",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "ilan117020",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Jerusalem",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "kaliningrad",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "kavana",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "kfar saba",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Kfar Saba",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "kfar sava",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "kishinev",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "kli hispano3",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "krasnoyarsk",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Krasnoyarsk",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "malchut",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "melitopol",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "miami",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "modiin",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "mok1234@maol.ru",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "moldova",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "moscow",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "NC",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "netanya",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "new york",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "no group",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "North Carolina",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "o-sida@mail.ru",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "peach tokva",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "petach tiqva",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Philadelphia",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "pithat nitsana",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "port",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "PT",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "ramla",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Rehovot",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "saint-petersburg (russia)",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "San Francisco",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "security",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "spain",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "svivatova",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "sweden",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "telaviv",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "virtual",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "virtualit",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "Washington DC",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "world",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "xNT1fSUB",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "zichron",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "ПТ",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "хайфа",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "אלי",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "באר שבע",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "בני ברוך",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "זיכרון",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "חולון",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "ירושלים",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "סביבה טובה",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "ערבות פתח תקוה",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "פתח תיקוה",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "פתח תיקווה",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "צעירה",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "קבוצת אילת",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "רחובות",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	},
+	{
+		"Event Label": "רעננה",
+		"Total Events": "1",
+		"Unique Events": "1",
+		"Event Value": "0",
+		"Avg. Value": "0.00"
+	}
+]

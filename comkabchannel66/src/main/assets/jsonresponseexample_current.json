@@ -1,0 +1,403 @@
+{
+    "locale": [
+        {
+            "heb": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova",
+                            "description": "Sviva Tova broadcast Hebrew",
+                            "urls": [
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://streams.kab.tv/heb-special-yE2ngWB4.asx"
+                                },
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://streams.kab.tv/heb-special-yE2ngWB4_medium.asx"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "66": {
+                            "state": "active",
+                            "title": "66 broadcast Hebrew",
+                            "description": "66 broadcast Hebrew",
+                            "urls": [
+                                {
+                                    "url_quality": "360K",
+                                    "url_value": "http://streams.kab.tv/heb.asx"
+                                },
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://streams.kab.tv/heb_medium.asx"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "eng": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova English",
+                            "description": "Sviva Tova English",
+                            "urls": [
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://streams.kab.tv/eng-special-yE2ngWB4_medium.asx"
+                                },
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://streams.kab.tv/eng-special-yE2ngWB4.asx"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "rus": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova Russian",
+                            "description": "Sviva Tova Russian",
+                            "urls": [
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://streams.kab.tv/rus-special-yE2ngWB4_medium.asx"
+                                },
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://streams.kab.tv/rus-special-yE2ngWB4.asx"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "spa": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova Spanish",
+                            "description": "Sviva Tova Spanish",
+                            "urls": [
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://streams.kab.tv/spa-special-yE2ngWB4_medium.asx"
+                                },
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://streams.kab.tv/spa-special-yE2ngWB4.asx"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fre": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova French",
+                            "description": "Sviva Tova French",
+                            "urls": [
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://streams.kab.tv/fre-special-yE2ngWB4.asx"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "ger": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova German",
+                            "description": "Sviva Tova German",
+                            "urls": [
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://streams.kab.tv/ger-special-yE2ngWB4.asx"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "ita": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova Italian",
+                            "description": "Sviva Tova Italian",
+                            "urls": [
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://streams.kab.tv/ita-special-yE2ngWB4.asx"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "trk": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova Turkish",
+                            "description": "Sviva Tova Portugese",
+                            "urls": [
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://streams.kab.tv/trk-special-yE2ngWB4.asx"
+                                },
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://streams.kab.tv/trk-special-yE2ngWB4_medium.asx"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "localeHLS": [
+        {
+            "heb": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova",
+                            "description": "Sviva Tova broadcast Hebrew",
+                            "urls": [
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-heb-low.stream/playlist.m3u8"
+                                },
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-heb-mobile.stream/playlist.m3u8"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "66": {
+                            "state": "active",
+                            "title": "66 broadcast Hebrew",
+                            "description": "66 broadcast Hebrew",
+                            "urls": [
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/tv66-heb-low.stream/playlist.m3u8"
+                                },
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "eng": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova English",
+                            "description": "Sviva Tova English",
+                            "urls": [
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-eng-mobile.stream/playlist.m3u8"
+                                },
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-eng-low.stream/playlist.m3u8"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "rus": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova Russian",
+                            "description": "Sviva Tova Russian",
+                            "urls": [
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-rus-mobile.stream/playlist.m3u8"
+                                },
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-rus-low.stream/playlist.m3u8"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "spa": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova Spanish",
+                            "description": "Sviva Tova Spanish",
+                            "urls": [
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-spa-mobile.stream/playlist.m3u8"
+                                },
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-spa-low.stream/playlist.m3u8"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fre": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova French",
+                            "description": "Sviva Tova French",
+                            "urls": [
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-fre-mobile.stream/playlist.m3u8"
+                                },
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-fre-low.stream/playlist.m3u8"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "ger": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova German",
+                            "description": "Sviva Tova German",
+                            "urls": [
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-ger-mobile.stream/playlist.m3u8"
+                                },
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-ger-low.stream/playlist.m3u8"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "ita": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova Italian",
+                            "description": "Sviva Tova Italian",
+                            "urls": [
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-ita-mobile.stream/playlist.m3u8"
+                                },
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-ita-low.stream/playlist.m3u8"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "trk": {
+                "pages": [
+                    {
+                        "regular": {
+                            "state": "active",
+                            "title": "Sviva Tova Turkish",
+                            "description": "Sviva Tova Portugese",
+                            "urls": [
+                                {
+                                    "url_quality": "100k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-por-mobile.stream/playlist.m3u8"
+                                },
+                                {
+                                    "url_quality": "300k",
+                                    "url_value": "http://edge1.il.kab.tv/rtplive/live1-por-low.stream/playlist.m3u8"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "time_stamp": "23-8-2012 03:00",
+    "updateandlock": "false",
+    "version": "0.9",
+    "server_url": "http://player.kbb1.com/api/",
+    "HLSSupport": "yes",
+    "TranslationWIFISupport": {"ssid":[ "BB1","Bezeq_69acd7","test"], "urls":[{"heb":"rtsp://bmd3.bbdomain.org:20101/heb"},{"rus":"rtsp://bmd3.bbdomain.org:20303/rus"},{"eng":"rtsp://bmd3.bbdomain.org:20202/eng"},{"ita":"rtsp://bmd3.bbdomain.org:20606/ita"},{"spa":"rtsp://bmd3.bbdomain.org:20404/spa"},{"fra":"rtsp://bmd3.bbdomain.org:20505/fra"},{"ger":"rtsp://bmd3.bbdomain.org:20707/ger"}]}
+    
+}

@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/webloginview"
+        tools:context=".WebLogin" />
+
+</RelativeLayout>
+<!-- From: file:/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/layout/activity_web_login.xml -->
