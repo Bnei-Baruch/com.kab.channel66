@@ -4,12 +4,16 @@ import java.util.ArrayList;
 import java.util.TreeSet;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowId;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+import android.content.Context;
 
 class CustomAdapter extends BaseAdapter {
 
@@ -23,10 +27,12 @@ class CustomAdapter extends BaseAdapter {
 	private TreeSet<Integer> toggle = new TreeSet<Integer>();
 
 	private LayoutInflater mInflater;
+	private Context mContext;
 
 	public CustomAdapter(Context context) {
 		mInflater = (LayoutInflater) context
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		mContext = context;
 	}
 
 	public void addItem(final String item, boolean btoggle) {
@@ -82,7 +88,9 @@ class CustomAdapter extends BaseAdapter {
 				convertView = mInflater.inflate(R.layout.list_item, null);
 				holder.textView = (TextView) convertView.findViewById(R.id.text);
 				holder.toggleButton = (ToggleButton)convertView.findViewById(R.id.buffering);
-				holder.toggleButton.setVisibility(View.VISIBLE);
+				SharedPreferences userInfoPreferences = PreferenceManager.getDefaultSharedPreferences(mContext);
+				Boolean isNative =  userInfoPreferences.getBoolean("isNative", false);
+				holder.toggleButton.setVisibility(isNative?View.VISIBLE:View.GONE);
 				break;
 			case TYPE_ITEM:
 				convertView = mInflater.inflate(R.layout.list_item, null);
@@ -94,6 +102,7 @@ class CustomAdapter extends BaseAdapter {
 				holder.textView = (TextView) convertView.findViewById(R.id.textSeparator);
 				break;
 			}
+
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();

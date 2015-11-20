@@ -6,8 +6,6 @@ package com.kab.channel66;
 import io.vov.vitamio.LibsChecker;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 import org.json.JSONException;
@@ -15,15 +13,8 @@ import org.json.JSONObject;
 
 import com.apphance.android.Log;
 import com.google.analytics.tracking.android.EasyTracker;
+import com.kab.channel66.utils.AudioPlayerFactory;
 import com.kab.channel66.utils.CommonUtils;
-import com.parse.FindCallback;
-import com.parse.Parse;
-import com.parse.ParseException;
-import com.parse.ParseInstallation;
-import com.parse.ParseObject;
-import com.parse.ParsePush;
-import com.parse.ParseQuery;
-import com.parse.PushService;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -103,10 +94,10 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 	    public void onReceive(Context context, Intent intent) {
 	      Bundle bundle = intent.getExtras();
 	      if (bundle != null) {
-	        int status = bundle.getInt(BackgroundPlayer.STATUS);
+	        int status = bundle.getInt(BaseBackgroundPlayer.STATUS);
 	       if(playDialog!=null && playDialog.isShowing())
 	       {
-	    	   if(status == BackgroundPlayer.status.buffer.ordinal())
+	    	   if(status == BaseBackgroundPlayer.status.buffer.ordinal())
 	    	   {
 	    		   ProgressBar bar =  (ProgressBar) playDialog.findViewById(R.id.mediacontroller_progress);
 	    		   bar.setVisibility(View.VISIBLE);
@@ -316,7 +307,8 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 					}
 					else //play audio
 					{
-						svc=new Intent(this, BackgroundPlayer.class);
+						//svc=new Intent(this, NativeBackgroundPlayer.class);
+						svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 						svc.putExtra("audioUrl", chosenStream.url_value);
 
 						startService(svc);
@@ -340,7 +332,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 								else
 								{
 									but.setImageResource(R.drawable.mediacontroller_pause01);
-									svc=new Intent(StreamListActivity.this, BackgroundPlayer.class);
+									svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 									SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
 									String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
 									svc.putExtra("audioUrl",audiourl);
@@ -395,7 +387,8 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 		}
 		else if(item.equals("ערוץ 66 - אודיו") || item.equals("רדיו ערוץ 66"))
 		{
-			svc=new Intent(this, BackgroundPlayer.class);
+			svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+
 			if(item.equals("ערוץ 66 - אודיו"))
 				svc.putExtra("audioUrl", "http://icecast.kab.tv/heb.mp3");
 			else
@@ -421,7 +414,9 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 					else
 					{
 						but.setImageResource(R.drawable.mediacontroller_pause01);
-						svc=new Intent(StreamListActivity.this, BackgroundPlayer.class);
+
+
+						svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 						svc.putExtra("audioUrl", "http://icecast.kab.tv/heb.mp3");
 						startService(svc);
 					}
@@ -480,7 +475,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 			//	    	Intent player1 = new Intent(Intent.ACTION_VIEW,uri);
 			//	    	 player1.setDataAndType(uri, "audio/*");
 			//			startActivity(player1);	 
-			svc=new Intent(this, BackgroundPlayer.class);
+			svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 			svc.putExtra("audioUrl", "http://icecast.kab.tv/rus.mp3");
 			startService(svc);
 			playDialog = new Dialog(this);
@@ -502,7 +497,8 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 					else
 					{
 						but.setImageResource(R.drawable.mediacontroller_pause01);
-						svc=new Intent(StreamListActivity.this, BackgroundPlayer.class);
+
+						svc=new Intent(StreamListActivity.this,AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 						svc.putExtra("audioUrl", "http://icecast.kab.tv/rus.mp3");
 						startService(svc);
 					}
@@ -528,8 +524,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 	
 	private void StopAudioIfNeeded() {
 		// TODO Auto-generated method stub
-		 svc = new Intent(this,
-	      	        BackgroundPlayer.class);
+		svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 	      	 
 	    stopService(svc);
 	}
@@ -549,7 +544,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 		if (!LibsChecker.checkVitamioLibs(this))
 			return;
 
-		registerReceiver(receiver, new IntentFilter(BackgroundPlayer.NOTIFICATION));
+		registerReceiver(receiver, new IntentFilter(BaseBackgroundPlayer.NOTIFICATION));
 		
 		EasyTracker.getInstance().setContext(this);
 
@@ -746,18 +741,23 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 	public boolean onCreateOptionsMenu(Menu menu) {
 		SharedPreferences userInfoPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		Boolean activated = userInfoPreferences.getBoolean("activated", false);
+		Boolean isNative =  userInfoPreferences.getBoolean("isNative", false);
 		if(!activated)
 		{
 			MenuInflater inflater = getMenuInflater();
 			inflater.inflate(R.menu.streamoptionmenu, menu);
-			return true;
+
 		}
 		else
 		{
 			MenuInflater inflater = getMenuInflater();
 			inflater.inflate(R.menu.streamoptionmenu_activated, menu);
-			return true;
+
 		}
+
+		MenuItem item = menu.findItem(R.id.playType);
+		item.setChecked(isNative);
+		return true;
 	}
 
 	public void dialogBackpressed()
@@ -870,6 +870,18 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 
 			// myProgressDialog.hide();
 			return true;
+
+			case R.id.playType:
+				item.setChecked(!item.isChecked());
+				SharedPreferences sharedAudio = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+				SharedPreferences.Editor editAudio = sharedAudio.edit();
+				editAudio.putBoolean("isNative", item.isChecked());
+				editAudio.commit();
+				mAdataper.notifyDataSetChanged();
+				setListAdapter(mAdataper);
+
+				return true;
+
 
 		default:
 			return super.onOptionsItemSelected(item);

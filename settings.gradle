@@ -1,2 +1,2 @@
-include ':InitActivity'
+include ':InitActivity', ':OpenPlayer'
 include ':comkabchannel66'

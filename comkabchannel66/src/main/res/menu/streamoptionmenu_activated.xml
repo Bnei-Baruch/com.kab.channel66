@@ -9,5 +9,8 @@
     <item android:id="@+id/PushMessages"
           android:title="@string/IncomingMessages" >
     </item>
+    <item android:id="@+id/playType"
+        android:title="@string/device" android:checkable="true">
+    </item>
     
 </menu>

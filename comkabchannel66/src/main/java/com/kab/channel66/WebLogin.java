@@ -193,7 +193,7 @@ public class WebLogin extends BaseActivity implements WebCallbackInterface {
 									}
 								});
 	 	        	    	urlfinal = url = url.replace("heb", lang);
-	 	        	    	svc=new Intent(WebLogin.this, BackgroundPlayer.class);
+	 	        	    	svc=new Intent(WebLogin.this, NativeBackgroundPlayer.class);
 	        		    	 svc.putExtra("audioUrl", url);
 	        		    	 svc.putExtra("sviva", true);
 	        	            startService(svc);
@@ -216,7 +216,7 @@ public class WebLogin extends BaseActivity implements WebCallbackInterface {
 	        						else
 	        						{
 	        							but.setImageResource(R.drawable.mediacontroller_pause01);
-	        							svc=new Intent(WebLogin.this, BackgroundPlayer.class);
+	        							svc=new Intent(WebLogin.this, NativeBackgroundPlayer.class);
 	        							svc.putExtra("audioUrl", urlfinal);
 	        							startService(svc);
 	        						}
@@ -483,7 +483,7 @@ public class WebLogin extends BaseActivity implements WebCallbackInterface {
           	    				
           	    				
         	        	    		//background audio player
-        	        	    		 svc=new Intent(WebLogin.this, BackgroundPlayer.class);
+        	        	    		 svc=new Intent(WebLogin.this, NativeBackgroundPlayer.class);
         	        		    	 svc.putExtra("audioUrl", urlTrans!=null?urlTrans:url);
         	        		    	 svc.putExtra("sviva", true);
         	        	            startService(svc);
@@ -506,7 +506,7 @@ public class WebLogin extends BaseActivity implements WebCallbackInterface {
         	        						else
         	        						{
         	        							but.setImageResource(R.drawable.mediacontroller_pause01);
-        	        							svc=new Intent(WebLogin.this, BackgroundPlayer.class);
+        	        							svc=new Intent(WebLogin.this, NativeBackgroundPlayer.class);
         	        							svc.putExtra("audioUrl", url);
         	        							startService(svc);
         	        						}

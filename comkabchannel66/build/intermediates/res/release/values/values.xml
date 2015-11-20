@@ -21,6 +21,7 @@
     <string name="autocheck">Auto check for broadcast</string>
     <string name="change_lang">Change language</string>
     <string name="channel66">Channel 66</string>
+    <string name="device">Use device audio player</string>
     <!-- From: file:/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/analytics.xml -->
     <eat-comment/>
     <string name="ga_trackingId">UA-36608494-1</string>

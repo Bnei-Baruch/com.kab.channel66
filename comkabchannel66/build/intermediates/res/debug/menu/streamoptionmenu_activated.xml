@@ -9,5 +9,8 @@
     <item android:id="@+id/PushMessages"
           android:title="@string/IncomingMessages" >
     </item>
+    <item android:id="@+id/playType"
+        android:title="@string/device" android:checkable="true">
+    </item>
     
 </menu><!-- From: file:/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml -->

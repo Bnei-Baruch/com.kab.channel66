@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kab.channel66"
-    android:versionCode="26"
-    android:versionName="1.7" >
+    android:versionCode="27"
+    android:versionName="1.8" >
 
     <uses-sdk
         android:minSdkVersion="7"
         android:targetSdkVersion="16" />
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" >
     </uses-permission>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
@@ -90,7 +91,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.kab.channel66.BackgroundPlayer"
+            android:name="com.kab.channel66.NativeBackgroundPlayer"
             android:label="@string/app_name" >
         </activity>
         <activity
@@ -357,7 +358,10 @@
         </activity>
 
         <service
-            android:name="com.kab.channel66.BackgroundPlayer"
+            android:name="com.kab.channel66.NativeBackgroundPlayer"
+            android:enabled="true" />
+        <service
+            android:name="com.kab.channel66.OpenPlayerBackgroundPlayer"
             android:enabled="true" />
         <service android:name="com.parse.PushService" />
 

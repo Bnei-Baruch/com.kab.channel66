@@ -58,10 +58,10 @@ public final class R {
     }
     public static final class id {
         public static final int Autocheck=0x7f0b0028;
-        public static final int Changelang=0x7f0b002b;
+        public static final int Changelang=0x7f0b002c;
         public static final int ClearMessages=0x7f0b0029;
         public static final int KL_ST_android=0x7f0b001a;
-        public static final int PushMessages=0x7f0b002c;
+        public static final int PushMessages=0x7f0b002d;
         public static final int btn_ask=0x7f0b0019;
         public static final int btn_login=0x7f0b0008;
         public static final int buffering=0x7f0b0002;
@@ -90,9 +90,10 @@ public final class R {
         public static final int operation_full=0x7f0b001e;
         public static final int operation_percent=0x7f0b001f;
         public static final int operation_volume_brightness=0x7f0b001c;
+        public static final int playType=0x7f0b002b;
         public static final int quality=0x7f0b0027;
         public static final int question=0x7f0b0017;
-        public static final int questions=0x7f0b002d;
+        public static final int questions=0x7f0b002e;
         public static final int radio=0x7f0b0023;
         public static final int surface=0x7f0b0011;
         public static final int surface_view=0x7f0b001b;
@@ -139,27 +140,28 @@ public final class R {
         public static final int autocheck=0x7f080007;
         public static final int change_lang=0x7f080008;
         public static final int channel66=0x7f080009;
-        public static final int ga_trackingId=0x7f08000a;
-        public static final int hello_world=0x7f08000b;
-        public static final int language=0x7f08000c;
-        public static final int login=0x7f08000d;
-        public static final int mediacontroller_play_pause=0x7f08000e;
-        public static final int menu_settings=0x7f08000f;
-        public static final int permission_group_tools_description=0x7f080010;
-        public static final int permission_group_tools_label=0x7f080011;
-        public static final int permission_receive_messages_description=0x7f080012;
-        public static final int permission_receive_messages_label=0x7f080013;
-        public static final int permission_write_providers_description=0x7f080014;
-        public static final int permission_write_providers_label=0x7f080015;
-        public static final int quality=0x7f080016;
-        public static final int questions=0x7f080017;
-        public static final int report=0x7f080018;
-        public static final int sviva=0x7f080019;
-        public static final int title_activity_web_login=0x7f08001a;
-        public static final int version_name=0x7f08001b;
-        public static final int vitamio_init_decoders=0x7f08001c;
-        public static final int vitamio_library_app_name=0x7f08001d;
-        public static final int vitamio_theme_app_name=0x7f08001e;
+        public static final int device=0x7f08000a;
+        public static final int ga_trackingId=0x7f08000b;
+        public static final int hello_world=0x7f08000c;
+        public static final int language=0x7f08000d;
+        public static final int login=0x7f08000e;
+        public static final int mediacontroller_play_pause=0x7f08000f;
+        public static final int menu_settings=0x7f080010;
+        public static final int permission_group_tools_description=0x7f080011;
+        public static final int permission_group_tools_label=0x7f080012;
+        public static final int permission_receive_messages_description=0x7f080013;
+        public static final int permission_receive_messages_label=0x7f080014;
+        public static final int permission_write_providers_description=0x7f080015;
+        public static final int permission_write_providers_label=0x7f080016;
+        public static final int quality=0x7f080017;
+        public static final int questions=0x7f080018;
+        public static final int report=0x7f080019;
+        public static final int sviva=0x7f08001a;
+        public static final int title_activity_web_login=0x7f08001b;
+        public static final int version_name=0x7f08001c;
+        public static final int vitamio_init_decoders=0x7f08001d;
+        public static final int vitamio_library_app_name=0x7f08001e;
+        public static final int vitamio_theme_app_name=0x7f08001f;
     }
     public static final class style {
         public static final int MediaController_SeekBar=0x7f090000;

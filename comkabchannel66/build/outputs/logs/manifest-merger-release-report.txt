@@ -13,6 +13,10 @@ ADDED from AndroidManifest.xml:2:1
 		INJECTED from AndroidManifest.xml:0:0
 	xmlns:android
 		ADDED from AndroidManifest.xml:2:11
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from AndroidManifest.xml:7:5
+	android:name
+		ADDED from AndroidManifest.xml:7:22
 uses-permission#android.permission.INTERNET
 ADDED from AndroidManifest.xml:9:5
 	android:name
@@ -137,7 +141,7 @@ ADDED from AndroidManifest.xml:79:9
 		ADDED from AndroidManifest.xml:83:13
 	android:name
 		ADDED from AndroidManifest.xml:80:13
-activity#com.kab.channel66.BackgroundPlayer
+activity#com.kab.channel66.NativeBackgroundPlayer
 ADDED from AndroidManifest.xml:92:10
 	android:label
 		ADDED from AndroidManifest.xml:94:13
@@ -271,78 +275,85 @@ action#android.intent.action.MAIN
 ADDED from AndroidManifest.xml:357:13
 	android:name
 		ADDED from AndroidManifest.xml:357:21
-service#com.kab.channel66.BackgroundPlayer
+service#com.kab.channel66.NativeBackgroundPlayer
 ADDED from AndroidManifest.xml:365:7
 	android:enabled
-		ADDED from AndroidManifest.xml:365:49
+		ADDED from AndroidManifest.xml:365:56
 	android:name
 		ADDED from AndroidManifest.xml:365:16
+service#com.kab.channel66.OpenPlayerBackgroundPlayer
+ADDED from AndroidManifest.xml:366:9
+	android:enabled
+		ADDED from AndroidManifest.xml:366:62
+	android:name
+		ADDED from AndroidManifest.xml:366:18
 service#com.parse.PushService
-ADDED from AndroidManifest.xml:366:7
+ADDED from AndroidManifest.xml:367:7
 	android:name
-		ADDED from AndroidManifest.xml:366:16
+		ADDED from AndroidManifest.xml:367:16
 receiver#com.parse.ParseBroadcastReceiver
-ADDED from AndroidManifest.xml:367:1
+ADDED from AndroidManifest.xml:368:1
 	android:name
-		ADDED from AndroidManifest.xml:367:11
+		ADDED from AndroidManifest.xml:368:11
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT
-ADDED from AndroidManifest.xml:368:3
+ADDED from AndroidManifest.xml:369:3
 action#android.intent.action.BOOT_COMPLETED
-ADDED from AndroidManifest.xml:369:5
-	android:name
-		ADDED from AndroidManifest.xml:369:13
-action#android.intent.action.USER_PRESENT
 ADDED from AndroidManifest.xml:370:5
 	android:name
 		ADDED from AndroidManifest.xml:370:13
+action#android.intent.action.USER_PRESENT
+ADDED from AndroidManifest.xml:371:5
+	android:name
+		ADDED from AndroidManifest.xml:371:13
 receiver#com.kab.channel66.ParsePushHandling
-ADDED from AndroidManifest.xml:373:1
+ADDED from AndroidManifest.xml:374:1
 	android:exported
-		ADDED from AndroidManifest.xml:374:5
+		ADDED from AndroidManifest.xml:375:5
 	android:name
-		ADDED from AndroidManifest.xml:373:11
+		ADDED from AndroidManifest.xml:374:11
 intent-filter#com.parse.push.intent.DELETE+com.parse.push.intent.OPEN+com.parse.push.intent.RECEIVE
-ADDED from AndroidManifest.xml:375:3
+ADDED from AndroidManifest.xml:376:3
 action#com.parse.push.intent.RECEIVE
-ADDED from AndroidManifest.xml:376:5
-	android:name
-		ADDED from AndroidManifest.xml:376:13
-action#com.parse.push.intent.DELETE
 ADDED from AndroidManifest.xml:377:5
 	android:name
 		ADDED from AndroidManifest.xml:377:13
-action#com.parse.push.intent.OPEN
+action#com.parse.push.intent.DELETE
 ADDED from AndroidManifest.xml:378:5
 	android:name
 		ADDED from AndroidManifest.xml:378:13
+action#com.parse.push.intent.OPEN
+ADDED from AndroidManifest.xml:379:5
+	android:name
+		ADDED from AndroidManifest.xml:379:13
 receiver#com.parse.GcmBroadcastReceiver
-ADDED from AndroidManifest.xml:381:1
+ADDED from AndroidManifest.xml:382:1
 	android:permission
-		ADDED from AndroidManifest.xml:382:5
+		ADDED from AndroidManifest.xml:383:5
 	android:name
-		ADDED from AndroidManifest.xml:381:11
+		ADDED from AndroidManifest.xml:382:11
 intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.kab.channel66
-ADDED from AndroidManifest.xml:383:3
+ADDED from AndroidManifest.xml:384:3
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from AndroidManifest.xml:384:5
-	android:name
-		ADDED from AndroidManifest.xml:384:13
-action#com.google.android.c2dm.intent.REGISTRATION
 ADDED from AndroidManifest.xml:385:5
 	android:name
 		ADDED from AndroidManifest.xml:385:13
-category#com.kab.channel66
-ADDED from AndroidManifest.xml:390:5
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from AndroidManifest.xml:386:5
 	android:name
-		ADDED from AndroidManifest.xml:390:15
+		ADDED from AndroidManifest.xml:386:13
+category#com.kab.channel66
+ADDED from AndroidManifest.xml:391:5
+	android:name
+		ADDED from AndroidManifest.xml:391:15
 uses-sdk
-ADDED from AndroidManifest.xml:395:5
+ADDED from AndroidManifest.xml:396:5
 MERGED from com.kab.channel66:InitActivity:unspecified:7:5
+MERGED from com.audionowdigital:OpenPlayer:1.0:5:5
 	android:targetSdkVersion
-		ADDED from AndroidManifest.xml:397:9
+		ADDED from AndroidManifest.xml:398:9
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
 	android:minSdkVersion
-		ADDED from AndroidManifest.xml:396:9
+		ADDED from AndroidManifest.xml:397:9
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0

@@ -3,6 +3,7 @@ package com.kab.channel66;
 import java.util.Random;
 
 import com.google.analytics.tracking.android.EasyTracker;
+import com.kab.channel66.utils.AudioPlayerFactory;
 import com.kab.channel66.utils.CommonUtils;
 
 import android.annotation.SuppressLint;
@@ -88,8 +89,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
 
          
 //    	  remoteViews.setTextViewText(R.id.Button3, "playing");
-           svc = new Intent(context.getApplicationContext(),
-        	        BackgroundPlayer.class);
+           svc = new Intent(context.getApplicationContext(), AudioPlayerFactory.GetAudioPlayer(context.getApplicationContext()).getClass());
            SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(context.getApplicationContext());
 			 
 			 String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
@@ -105,7 +105,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
       {
 //    	  remoteViews.setTextViewText(R.id.Button3, "stopped");
     	  svc = new Intent(context.getApplicationContext(),
-      	        BackgroundPlayer.class);
+                  AudioPlayerFactory.GetAudioPlayer(context.getApplicationContext()).getClass());
       	 
     	  context.stopService(svc);
       }
