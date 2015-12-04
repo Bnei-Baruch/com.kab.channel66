@@ -2,74 +2,74 @@
 <items version="2" >
 
     <item
-        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/Parse-1.7.1/Parse-1.7.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/Parse-1.7.1-daf3aed8cebd56902ace3ac606b6f91bf2ed1c69.jar" />
-    </item>
-    <item
         jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/acra-4.5.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="44a5eb946e0d83eed4a0128d877ca1fd8168b83a">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/acra-4.5.0-151f844e17916ac866fc8bc8abbc0a066cff8f56.jar" />
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/acra-4.5.0_151f844e17916ac866fc8bc8abbc0a066cff8f56.jar" />
     </item>
     <item
         jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="9858413d641ba87ee17b245f7a645c4ab6c6ede1">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/classes-ff127a2120157885430b8a556b9c5d766d3586b2.jar" />
-    </item>
-    <item
-        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.audionowdigital/OpenPlayer/1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e09ad34ac65cc82414fe98d73922f4d35f2e68d5">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/classes-eb31d912630d6b7f303dab3300e400b4a1de01c2.jar" />
-    </item>
-    <item
-        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/apphance.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2cf79e807c39ce058413ce1ca89274e7ee161b66">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/apphance-9986127975d2c96e2fc8e13b706ff7331637a181.jar" />
-    </item>
-    <item
-        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/bugsense3.0.6.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="3d835f96548a85ca730b99c6f75decaa7278e1d1">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/bugsense3.0.6-6bab41cdd1ae0ae538c9d1c2049af135a9190be7.jar" />
-    </item>
-    <item
-        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/android-support-v4.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="27c24d26e4c5d57976e6926367985548678e913c">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/android-support-v4-801a528319471533d1a208e272c9d50d7046e78a.jar" />
-    </item>
-    <item
-        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/myjson-1.5.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="275bd9ba10d865aae2d7d49a0f3ec8c078f24d2a">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/myjson-1.5-41f869900688004dd044e16dbb36dd79b114ec12.jar" />
-    </item>
-    <item
-        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/Parse-1.7.1/bolts-android-1.1.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/bolts-android-1.1.3-d1399577bc3c9e7ec47c40b471bb1d9480974389.jar" />
+        sha1="aba74685d484bf2e4a4e9820a5553075e9158fce">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/com.kab.channel66-InitActivity-unspecified_ff127a2120157885430b8a556b9c5d766d3586b2.jar" />
     </item>
     <item
         jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/libGoogleAnalyticsV2.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="8d04da1c73876c93ccce8ffd39add84f9415b64c">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/libGoogleAnalyticsV2-a2b360e916e02d8bc3fe99919b30c2f66e4426f9.jar" />
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/libGoogleAnalyticsV2_a2b360e916e02d8bc3fe99919b30c2f66e4426f9.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/bugsense3.0.6.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3d835f96548a85ca730b99c6f75decaa7278e1d1">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/bugsense3.0.6_6bab41cdd1ae0ae538c9d1c2049af135a9190be7.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/apphance.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2cf79e807c39ce058413ce1ca89274e7ee161b66">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/apphance_9986127975d2c96e2fc8e13b706ff7331637a181.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/Parse-1.7.1/Parse-1.7.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/Parse-1.7.1_daf3aed8cebd56902ace3ac606b6f91bf2ed1c69.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/myjson-1.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="275bd9ba10d865aae2d7d49a0f3ec8c078f24d2a">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/myjson-1.5_41f869900688004dd044e16dbb36dd79b114ec12.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/Parse-1.7.1/bolts-android-1.1.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/bolts-android-1.1.3_d1399577bc3c9e7ec47c40b471bb1d9480974389.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.audionowdigital/OpenPlayer/1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="092b5f5f063bf3a4d01909defe72808d7b21bf93">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/com.audionowdigital-OpenPlayer-1.0_eb31d912630d6b7f303dab3300e400b4a1de01c2.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="27c24d26e4c5d57976e6926367985548678e913c">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/pre-dexed/debug/android-support-v4_801a528319471533d1a208e272c9d50d7046e78a.jar" />
     </item>
 
 </items>

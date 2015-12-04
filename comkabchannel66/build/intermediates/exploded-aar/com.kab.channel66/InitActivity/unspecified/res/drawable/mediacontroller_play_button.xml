@@ -6,4 +6,4 @@
     <item android:drawable="@drawable/mediacontroller_play02" android:state_focused="false" android:state_pressed="true"/>
     <item android:drawable="@drawable/mediacontroller_play01"/>
 
-</selector><!-- From: file:/Users/igal/Downloads/com.kab.channel66/InitActivity/src/main/res/drawable/mediacontroller_play_button.xml -->
+</selector>

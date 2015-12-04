@@ -94,7 +94,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
 			 
 			 String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
 			 audiourl.replace("heb", shared.getString("lang", "heb"));
-	    	 svc.putExtra("audioUrl", audiourl);
+	    	 svc.putExtra("audiourl", audiourl);
 	    	 svc.addFlags(CommonUtils.FROM_WIDGET);
 	    	 context.stopService(svc);
 	    	 context.startService(svc);

@@ -74,12 +74,7 @@ public class NativeBackgroundPlayer extends BaseBackgroundPlayer implements OnPr
 		}
 	};
 
-	public enum status
-	{
-		stop,
-		play,
-		buffer
-	}
+
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) 
 	{
@@ -94,13 +89,7 @@ public class NativeBackgroundPlayer extends BaseBackgroundPlayer implements OnPr
 		
 	}
 	
-	private void publishStatus( int status) {
-	    Intent intent = new Intent(NOTIFICATION);
-	    intent.putExtra(STATUS, status);
-	    
-	    sendBroadcast(intent);
-	  }
-	
+
 	public void onPrepared(MediaPlayer player) {
         // We now have buffered enough to be able to play
 		if(dialog!=null && dialog.isShowing())

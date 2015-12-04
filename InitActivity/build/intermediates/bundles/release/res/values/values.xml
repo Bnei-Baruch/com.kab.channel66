@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/igal/Downloads/com.kab.channel66/InitActivity/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="VideoView_error_button">OK</string>
     <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
         this device.
@@ -18,8 +16,6 @@
     <string name="permission_write_providers_label">Write Vitamio providers</string>
     <string name="vitamio_init_decoders">Initializing decoders…</string>
     <string name="vitamio_library_app_name">VitamioLibrary</string>
-    <!-- From: file:/Users/igal/Downloads/com.kab.channel66/InitActivity/src/main/res/values/styles.xml -->
-    <eat-comment/>
     <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">
         <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
         <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>

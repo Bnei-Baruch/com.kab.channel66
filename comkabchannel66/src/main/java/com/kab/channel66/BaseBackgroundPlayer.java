@@ -45,6 +45,7 @@ abstract public class BaseBackgroundPlayer extends BaseService implements OnPrep
 	protected  MediaPlayer mediaPlayer;
 	ProgressDialog dialog;
 	Dialog playDialog;
+	Intent myIntent;
 	public static final String STATUS = "Status";
 	public static final String NOTIFICATION = "com.kab.channel66.service.receiver";
 	NotificationManager mNM;
@@ -70,7 +71,7 @@ abstract public class BaseBackgroundPlayer extends BaseService implements OnPrep
 //			{
 //				return START_NOT_STICKY;
 //			}
-
+		myIntent = intent;
 
 
 
@@ -92,7 +93,7 @@ abstract public class BaseBackgroundPlayer extends BaseService implements OnPrep
     	   mNM.cancel(NOTIFICATION_ID);
     	   return START_NOT_STICKY;
        }
-        String url = intent.getStringExtra("audioUrl");
+        String url = intent.getStringExtra("audiourl");
 		if(url==null)
 		{
 			mNM.cancel(NOTIFICATION_ID);
@@ -225,18 +226,23 @@ abstract public class BaseBackgroundPlayer extends BaseService implements OnPrep
 	protected void prepareAsyncPlayer() {
 	}
 
+
 	protected void preparePlayer() {
 	}
 
 	abstract protected void setupPlayer(String url);
 
-	private void publishStatus( int status) {
+	protected void publishStatus( int status) {
+		if(status == BaseBackgroundPlayer.status.play.ordinal() && myIntent.getFlags()  == CommonUtils.FROM_WIDGET && dialog!=null )
+		{
+			dialog.hide();
+		}
 	    Intent intent = new Intent(NOTIFICATION);
 	    intent.putExtra(STATUS, status);
-	    
+
 	    sendBroadcast(intent);
 	  }
-	
+
 	public void onPrepared(MediaPlayer player) {
         // We now have buffered enough to be able to play
 		if(dialog!=null && dialog.isShowing())
@@ -293,7 +299,7 @@ abstract public class BaseBackgroundPlayer extends BaseService implements OnPrep
 //	    Intent intent = new Intent(this,InitActivity.class);
 //	    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 //	    startActivity(intent);
-	    registerReceiver(mConnReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)) ;  
+	    registerReceiver(mConnReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)) ;
 	}
 	
 	 private BroadcastReceiver mConnReceiver = new BroadcastReceiver() {
@@ -476,6 +482,6 @@ abstract public class BaseBackgroundPlayer extends BaseService implements OnPrep
 //		// quick test for a quick player
 //		player = new Player(playbackHandler, Player.DecoderType.MX);
 //	}
-	
-	
+
+
 }

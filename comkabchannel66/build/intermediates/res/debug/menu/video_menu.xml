@@ -1,6 +1,0 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-        <item android:id="@+id/questions"
-          android:title="@string/questions" >
-    </item>
-</menu>
-<!-- From: file:/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/menu/video_menu.xml -->

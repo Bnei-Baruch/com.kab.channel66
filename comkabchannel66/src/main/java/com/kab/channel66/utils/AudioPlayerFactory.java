@@ -26,7 +26,7 @@ public class AudioPlayerFactory {
     static public BaseBackgroundPlayer GetAudioPlayer (Context context)
     {
         SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean isNative = shared.getBoolean("isNative",true);
+        boolean isNative = shared.getBoolean("isNative",false);
 
         if(isNative)
             return new NativeBackgroundPlayer();

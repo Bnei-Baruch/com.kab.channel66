@@ -94,7 +94,7 @@ public class OpenPlayerBackgroundPlayer extends BaseBackgroundPlayer implements 
     	   mNM.cancel(NOTIFICATION_ID);
     	   return START_NOT_STICKY;
        }
-        String url = intent.getStringExtra("audioUrl");
+        String url = intent.getStringExtra("audiourl");
 		if(url==null)
 		{
 			mNM.cancel(NOTIFICATION_ID);
@@ -149,7 +149,7 @@ public class OpenPlayerBackgroundPlayer extends BaseBackgroundPlayer implements 
 					SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 					if(!player.isReadingHeader())
 					//player.setDataSource(SP.getString("audiourl",null),-1);
-						player.setDataSource("http://icecast.kab.tv/live1-heb-574bcfd5.mp3",-1);
+						player.setDataSource(SP.getString("audiourl",null),-1);
 
 				}
 			}).start();
@@ -226,12 +226,7 @@ public class OpenPlayerBackgroundPlayer extends BaseBackgroundPlayer implements 
 		
 	}
 	
-	private void publishStatus( int status) {
-	    Intent intent = new Intent(NOTIFICATION);
-	    intent.putExtra(STATUS, status);
-	    
-	    sendBroadcast(intent);
-	  }
+
 	
 	public void onPrepared(MediaPlayer player) {
         // We now have buffered enough to be able to play
