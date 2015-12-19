@@ -1,5 +1,7 @@
 package com.kab.channel66;
 
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
 import io.vov.vitamio.LibsChecker;
 import android.app.Application;
 
@@ -37,8 +39,9 @@ public class MyApplication extends Application {
 	@Override
     public void onCreate() {
         super.onCreate();
-        if(CommonUtils.checkConnectivity(getApplicationContext()))
-        	ACRA.init(this);
+        Fabric.with(this, new Crashlytics());
+//        if(CommonUtils.checkConnectivity(getApplicationContext()))
+//        	ACRA.init(this);
         LibsChecker.checkVitamioLibs(this);
        
         Parse.enableLocalDatastore(getApplicationContext());

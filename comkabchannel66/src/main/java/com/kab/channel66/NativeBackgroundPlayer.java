@@ -98,7 +98,7 @@ public class NativeBackgroundPlayer extends BaseBackgroundPlayer implements OnPr
 			publishStatus(status.play.ordinal());
 		
 		
-
+		mediaPlayer.start();
 		telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE); //Register our listener with TelephonyManager
     }
 	/*

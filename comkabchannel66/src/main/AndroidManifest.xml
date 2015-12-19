@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kab.channel66"
-    android:versionCode="28"
-    android:versionName="1.8" >
+    android:versionCode="30"
+    android:versionName="1.9" >
 
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
@@ -391,6 +391,9 @@
     <category android:name="com.kab.channel66" />
   </intent-filter>
 </receiver>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7e57fed40952c3cf6bb7a31f3fb649bf967223a7" />
     </application>
 
     <uses-sdk
