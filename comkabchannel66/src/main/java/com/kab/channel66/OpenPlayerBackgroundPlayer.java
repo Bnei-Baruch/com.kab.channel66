@@ -32,6 +32,7 @@ import android.util.Log;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.audionowdigital.android.openplayer.DecodeFeedListener;
 import com.audionowdigital.android.openplayer.Player;
 import com.audionowdigital.android.openplayer.PlayerEvents;
 import com.kab.channel66.utils.CallStateInterface;
@@ -71,7 +72,7 @@ public class OpenPlayerBackgroundPlayer extends BaseBackgroundPlayer implements 
 //			{
 //				return START_NOT_STICKY;
 //			}
-
+	
 		initNewPlayer();
 
 		if(mediaPlayer!=null && mediaPlayer.isPlaying())
@@ -357,7 +358,7 @@ public class OpenPlayerBackgroundPlayer extends BaseBackgroundPlayer implements 
 		// TODO Auto-generated method stub
 		 Log.i("BackgroundAudio", "Pausing");
 
-		if(player.isPlaying()) {
+		if(player!=null && player.isPlaying()) {
 			player.pause();
 		}
 	}
@@ -373,14 +374,14 @@ public class OpenPlayerBackgroundPlayer extends BaseBackgroundPlayer implements 
 		// TODO Auto-generated method stub
 		 Log.i("BackgroundAudio", "resuming");
 
-		if(!player.isPlaying())
+		if(player!=null && !player.isPlaying())
 			player.play();
 	}
 
 	@Override
 	public void Stop() {
 		// TODO Auto-generated method stub
-		if(!player.isStopped())
+		if(player!=null && !player.isStopped())
 			player.stop();
 		
 	}

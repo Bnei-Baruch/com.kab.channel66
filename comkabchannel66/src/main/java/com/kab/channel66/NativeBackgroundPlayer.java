@@ -215,9 +215,8 @@ public class NativeBackgroundPlayer extends BaseBackgroundPlayer implements OnPr
 		if(mediaPlayer!=null && mediaPlayer.isPlaying())
 			mediaPlayer.pause();
 
-		if(player.isPlaying()) {
-			player.pause();
-		}
+
+
 	}
 
 	@Override
