@@ -45,4 +45,7 @@ dependencies {
     compile files('libs/Parse-1.7.1/bolts-android-1.1.3.jar')
 
     compile project(':OpenPlayer')
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
 }
