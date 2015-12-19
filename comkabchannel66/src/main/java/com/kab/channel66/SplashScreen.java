@@ -32,8 +32,9 @@ public class SplashScreen extends Activity {
 	   // BugSenseHandler.initAndStartSession(SplashScreen.this, "031c1eab");
 	    setContentView(R.layout.splash);
 	   
-	    final SplashScreen sPlashScreen = this; 
-	    
+	    final SplashScreen sPlashScreen = this;
+		if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this))
+			return;
 	    // thread for displaying the SplashScreen
 	    splashTread = new Thread() {
 	        @Override

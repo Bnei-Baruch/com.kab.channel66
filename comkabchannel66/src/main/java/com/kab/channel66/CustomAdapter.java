@@ -89,7 +89,7 @@ class CustomAdapter extends BaseAdapter {
 				holder.textView = (TextView) convertView.findViewById(R.id.text);
 				holder.toggleButton = (ToggleButton)convertView.findViewById(R.id.buffering);
 				SharedPreferences userInfoPreferences = PreferenceManager.getDefaultSharedPreferences(mContext);
-				Boolean isNative =  userInfoPreferences.getBoolean("isNative", false);
+				Boolean isNative =  userInfoPreferences.getBoolean("isNative", true);
 				holder.toggleButton.setVisibility(isNative?View.VISIBLE:View.GONE);
 				break;
 			case TYPE_ITEM:

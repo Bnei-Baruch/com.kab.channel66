@@ -747,7 +747,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 	public boolean onCreateOptionsMenu(Menu menu) {
 		SharedPreferences userInfoPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		Boolean activated = userInfoPreferences.getBoolean("activated", false);
-		Boolean isNative =  userInfoPreferences.getBoolean("isNative", false);
+		Boolean isNative =  userInfoPreferences.getBoolean("isNative", true);
 		if(!activated)
 		{
 			MenuInflater inflater = getMenuInflater();
