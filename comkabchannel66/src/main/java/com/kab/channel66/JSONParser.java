@@ -27,7 +27,7 @@ import com.kab.channel66.StreamListActivity;
 
 import com.kab.channel66.utils.CommonUtils;
 //import android.util.Log;
-import com.apphance.android.Log;
+//import com.apphance.android.Log;
 public class JSONParser  extends AsyncTask <String, Void, JSONObject>{
 	static InputStream is = null;
 	static JSONObject jObj = null;
@@ -69,6 +69,10 @@ public class JSONParser  extends AsyncTask <String, Void, JSONObject>{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
 		
 		try {
 			BufferedReader reader = new BufferedReader(new InputStreamReader(
@@ -81,13 +85,13 @@ public class JSONParser  extends AsyncTask <String, Void, JSONObject>{
 			is.close();
 			json = sb.toString();
 		} catch (Exception e) {
-			Log.e("Buffer Error", "Error converting result " + e.toString());
+//			Log.e("Buffer Error", "Error converting result " + e.toString());
 		}
 
 		try {
 			jObj = new JSONObject(json);
 		} catch (JSONException e) {
-			Log.e("JSON Parser", "Error parsing data " + e.toString());
+//			Log.e("JSON Parser", "Error parsing data " + e.toString());
 		}
 
 		return jObj;

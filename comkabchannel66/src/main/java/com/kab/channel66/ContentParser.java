@@ -21,7 +21,7 @@ import android.location.GpsStatus.Listener;
 import android.os.AsyncTask;
 
 //import android.util.Log;
-import com.apphance.android.Log;
+//import com.apphance.android.Log;
 public class ContentParser  extends AsyncTask <String, Void, String>{
 	static InputStream is = null;
 	static JSONObject jObj = null;
@@ -70,7 +70,7 @@ public class ContentParser  extends AsyncTask <String, Void, String>{
 			is.close();
 			content = sb.toString();
 		} catch (Exception e) {
-			Log.e("Buffer Error", "Error converting result " + e.toString());
+//			Log.e("Buffer Error", "Error converting result " + e.toString());
 		}
 
 		

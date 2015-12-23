@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/InitActivity/InitActivity.iml" filepath="$PROJECT_DIR$/InitActivity/InitActivity.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OpenPlayer/OpenPlayer.iml" filepath="$PROJECT_DIR$/OpenPlayer/OpenPlayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.kab.channel66.iml" filepath="$PROJECT_DIR$/com.kab.channel66.iml" />
       <module fileurl="file://$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" filepath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" />
     </modules>

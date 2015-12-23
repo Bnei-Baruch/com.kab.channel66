@@ -5,8 +5,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-
-import com.apphance.android.Log;
+//
+//import com.apphance.android.Log;
 
 import android.os.AsyncTask;
 
@@ -44,7 +44,7 @@ public class ASXExtractor extends AsyncTask<String, Void, String> {
 		
 	}
 	 catch (Exception e) {
-		Log.e("Buffer Error", "Error converting result " + e.toString());
+//		Log.e("Buffer Error", "Error converting result " + e.toString());
 	}
 		return "";
 	}

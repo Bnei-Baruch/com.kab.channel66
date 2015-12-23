@@ -2,11 +2,15 @@ package com.kab.channel66;
 
 import com.crashlytics.android.Crashlytics;
 import io.fabric.sdk.android.Fabric;
-import io.vov.vitamio.LibsChecker;
-import android.app.Application;
+//import io.vov.vitamio.LibsChecker;
 
-import org.acra.*;
-import org.acra.annotation.*;
+import android.app.Activity;
+import android.app.Application;
+import android.content.Context;
+import android.support.multidex.MultiDex;
+//
+//import org.acra.*;
+//import org.acra.annotation.*;
 
 import com.kab.channel66.utils.CommonUtils;
 import com.parse.Parse;
@@ -20,30 +24,31 @@ import com.parse.PushService;
 //mode = ReportingInteractionMode.TOAST,
 //resToastText = R.string.report)
 
-
-@ReportsCrashes(
-        formKey = "",
-        formUri = "https://channel66-acra.cloudant.com/acra-channel66/_design/acra-storage/_update/report",
-        reportType = org.acra.sender.HttpSender.Type.JSON,
-        httpMethod = org.acra.sender.HttpSender.Method.PUT,
-        formUriBasicAuthLogin="terlydrighterimparmenoth",
-        formUriBasicAuthPassword="tKMx7rB0TpFgmVUHtvuXRNPM",
-        // Your usual ACRA configuration
-        mode = ReportingInteractionMode.TOAST,
-        resToastText = R.string.report)
-        
-
+//
+//@ReportsCrashes(
+//        formKey = "",
+//        formUri = "https://channel66-acra.cloudant.com/acra-channel66/_design/acra-storage/_update/report",
+//        reportType = org.acra.sender.HttpSender.Type.JSON,
+//        httpMethod = org.acra.sender.HttpSender.Method.PUT,
+//        formUriBasicAuthLogin="terlydrighterimparmenoth",
+//        formUriBasicAuthPassword="tKMx7rB0TpFgmVUHtvuXRNPM",
+//        // Your usual ACRA configuration
+//        mode = ReportingInteractionMode.TOAST,
+//        resToastText = R.string.report)
+//
+//
 
 public class MyApplication extends Application {
-
+    static Application myapp;
 	@Override
     public void onCreate() {
         super.onCreate();
         Fabric.with(this, new Crashlytics());
 //        if(CommonUtils.checkConnectivity(getApplicationContext()))
 //        	ACRA.init(this);
-        LibsChecker.checkVitamioLibs(this);
-       
+       // LibsChecker.checkVitamioLibs(this);
+
+        myapp = this;
         Parse.enableLocalDatastore(getApplicationContext());
 
         
@@ -60,5 +65,15 @@ public class MyApplication extends Application {
 		
         // The following line triggers the initialization of ACRA
         
+    }
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
+
+    static public Application getMyApp()
+    {
+        return myapp;
     }
 }

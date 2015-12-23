@@ -5,8 +5,8 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-
-import com.apphance.android.Log;
+//
+//import com.apphance.android.Log;
 
 
 import android.app.ProgressDialog;

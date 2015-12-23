@@ -45,7 +45,7 @@ import android.content.res.AssetManager;
 import android.os.Bundle;
 
 //import android.util.Log;
-import com.apphance.android.Log;
+//import com.apphance.android.Log;
 
 
 //{
@@ -252,7 +252,7 @@ public class HLSEvents {
 					pages_c.pages.add(page_c);
 					
 				}
-				Log.e("paser", lang.toString());
+//				Log.e("paser", lang.toString());
 				locale.put(key_lang, pages_c);
 			}
 		} catch (JSONException e) {

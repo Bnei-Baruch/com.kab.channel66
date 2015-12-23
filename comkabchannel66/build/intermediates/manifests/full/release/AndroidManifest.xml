@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kab.channel66"
-    android:versionCode="28"
-    android:versionName="1.8" >
+    android:versionCode="32"
+    android:versionName="2.1" >
 
     <uses-sdk
-        android:minSdkVersion="7"
+        android:minSdkVersion="9"
         android:targetSdkVersion="16" />
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -66,18 +66,6 @@
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.kab.channel66.VideoViewDemo"
-            android:configChanges="screenSize|orientation|keyboard|keyboardHidden|navigation"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-            <intent-filter>
-
-                <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name="com.kab.channel66.VideoView"
             android:configChanges="screenSize|orientation|keyboard|keyboardHidden|navigation"
             android:label="@string/app_name"
@@ -95,189 +83,10 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.kab.channel66.VideoPlayerActivity"
-            android:configChanges="screenSize|orientation|keyboard|keyboardHidden|navigation"
-            android:label="@string/app_name"
-            android:screenOrientation="sensor"
+            android:name="com.kab.channel66.VideoActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Video"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <!--
-                <data
-                    android:mimeType="audio/*"
-                    android:scheme="http" />
-                <data
-                    android:mimeType="audio/*"
-                    android:scheme="rtsp" />
-                <data
-                    android:mimeType="audio/*"
-                    android:scheme="rtmp" />
-                <data
-                    android:mimeType="audio/*"
-                    android:scheme="udp" />
-                <data
-                    android:mimeType="audio/*"
-                    android:scheme="tcp" />
-                <data
-                    android:mimeType="audio/*"
-                    android:scheme="file" />
-                <data
-                    android:mimeType="audio/*"
-                    android:scheme="content" />
-                <data
-                    android:mimeType="audio/*"
-                    android:scheme="mms" />
-                -->
-                <data
-                    android:mimeType="video/*"
-                    android:scheme="http" />
-                <data
-                    android:mimeType="video/*"
-                    android:scheme="rtsp" />
-                <data
-                    android:mimeType="video/*"
-                    android:scheme="rtmp" />
-                <data
-                    android:mimeType="video/*"
-                    android:scheme="udp" />
-                <data
-                    android:mimeType="video/*"
-                    android:scheme="tcp" />
-                <data
-                    android:mimeType="video/*"
-                    android:scheme="file" />
-                <data
-                    android:mimeType="video/*"
-                    android:scheme="content" />
-                <data
-                    android:mimeType="video/*"
-                    android:scheme="mms" />
-                <data android:mimeType="application/octet-stream" />
-                <data android:mimeType="application/x-mpegurl" />
-                <data android:mimeType="application/vnd.apple.mpegurl" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:scheme="content" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:mimeType="application/x-mpegurl"
-                    android:scheme="http" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:scheme="rtsp" />
-                <data android:scheme="rtmp" />
-                <data android:scheme="mms" />
-                <data android:scheme="tcp" />
-                <data android:scheme="udp" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <action android:name="android.intent.action.SEND" />
-                <action android:name="android.intent.action.SENDTO" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:mimeType="video/*" />
-                <data android:mimeType="application/sdp" />
-                <data android:mimeType="application/octet-stream" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:scheme="http" />
-                <data android:mimeType="video/*" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:scheme="file" />
-                <data android:scheme="content" />
-                <data android:scheme="http" />
-                <data android:scheme="https" />
-                <data android:scheme="ftp" />
-                <data android:scheme="rtsp" />
-                <data android:scheme="rtmp" />
-                <data android:scheme="mms" />
-                <data android:scheme="tcp" />
-                <data android:scheme="udp" />
-                <data android:scheme="gopher" />
-                <data android:mimeType="video/*" />
-                <!-- <data android:mimeType="audio/*" /> -->
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:scheme="file" />
-                <data android:scheme="content" />
-                <data android:scheme="http" />
-                <data android:scheme="https" />
-                <data android:scheme="ftp" />
-                <data android:scheme="rtsp" />
-                <data android:scheme="rtmp" />
-                <data android:scheme="mms" />
-                <data android:scheme="tcp" />
-                <data android:scheme="udp" />
-                <data android:scheme="gopher" />
-                <data android:host="*" />
-                <data android:pathPattern=".*\\.avi" />
-                <data android:pathPattern=".*\\.asf" />
-                <data android:pathPattern=".*\\.f4v" />
-                <data android:pathPattern=".*\\.flv" />
-                <data android:pathPattern=".*\\.mkv" />
-                <data android:pathPattern=".*\\.mpeg" />
-                <data android:pathPattern=".*\\.mpg" />
-                <data android:pathPattern=".*\\.mov" />
-                <data android:pathPattern=".*\\.rm" />
-                <data android:pathPattern=".*\\.vob" />
-                <data android:pathPattern=".*\\.wmv" />
-                <data android:pathPattern=".*\\.ts" />
-                <data android:pathPattern=".*\\.tp" />
-                <data android:pathPattern=".*\\.m3u" />
-                <data android:pathPattern=".*\\.m3u8" />
-                <data android:pathPattern=".*\\.m4v" />
-                <data android:pathPattern=".*\\.mp4" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.kab.channel66.PlayerActivity"
-            android:configChanges="screenSize|orientation|keyboard|keyboardHidden|navigation"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-            <intent-filter>
-
-                <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.kab.channel66.LoginLayout"
@@ -289,13 +98,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="com.kab.channel66.WebLogin"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="false"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.kab.channel66.StreamListActivity"
@@ -360,9 +162,6 @@
         <service
             android:name="com.kab.channel66.NativeBackgroundPlayer"
             android:enabled="true" />
-        <service
-            android:name="com.kab.channel66.OpenPlayerBackgroundPlayer"
-            android:enabled="true" />
         <service android:name="com.parse.PushService" />
 
         <receiver android:name="com.parse.ParseBroadcastReceiver" >
@@ -391,6 +190,10 @@
                 <category android:name="com.kab.channel66" />
             </intent-filter>
         </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7e57fed40952c3cf6bb7a31f3fb649bf967223a7" />
     </application>
 
 </manifest>

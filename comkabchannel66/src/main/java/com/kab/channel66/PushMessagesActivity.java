@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
 
-import com.apphance.android.Log;
+//import com.apphance.android.Log;
 import com.parse.FindCallback;
 import com.parse.Parse;
 import com.parse.ParseException;
@@ -99,7 +99,7 @@ public class PushMessagesActivity extends BaseListActivity {
 		    public void done(List<ParseObject> messages,
 		                     ParseException e) {
 		        if (e == null) {
-		            Log.d("score", "Retrieved " + messages.size());
+//		            Log.d("score", "Retrieved " + messages.size());
 //		            messages.get
 //		            pushMessages.addAll(messages.toArray());
 		            
@@ -114,7 +114,7 @@ public class PushMessagesActivity extends BaseListActivity {
                     handler.sendMessage(msg);
 		            
 		        } else {
-		            Log.d("score", "Error: " + e.getMessage());
+//		            Log.d("score", "Error: " + e.getMessage());
 		        }
 		    }
 		});
@@ -130,7 +130,7 @@ public class PushMessagesActivity extends BaseListActivity {
 		    public void done(List<ParseObject> messages,
 		                     ParseException e) {
 		        if (e == null) {
-		            Log.d("score", "Retrieved " + messages.size());
+//		            Log.d("score", "Retrieved " + messages.size());
 		            Iterator<ParseObject> it = messages.iterator();
 		            while(it.hasNext())
 						try {
@@ -141,7 +141,7 @@ public class PushMessagesActivity extends BaseListActivity {
 							e1.printStackTrace();
 						}
 		        } else {
-		            Log.d("score", "Error: " + e.getMessage());
+//		            Log.d("score", "Error: " + e.getMessage());
 		        }
 		        mAdapter.clear();
 				mAdapter.notifyDataSetChanged();

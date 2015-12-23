@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -18,16 +17,12 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.preference.PreferenceManager;
 
-import com.apphance.android.Log;
+//import com.apphance.android.Log;
 import com.google.analytics.tracking.android.EasyTracker;
-import com.kab.channel66.BaseActivity;
 import com.kab.channel66.LanguageSeletedListener;
 import com.kab.channel66.R;
 import com.kab.channel66.StreamListActivity;
-import com.kab.channel66.SvivaTovaLogin;
-import com.kab.channel66.WebLogin;
 
-import android.support.v4.app.DialogFragment;
 import android.widget.EditText;
 
 import android.app.Activity;
@@ -130,7 +125,7 @@ public class CommonUtils {
        	     public void onClick(DialogInterface dialog, int whichButton) {  
        	         String value = input.getText().toString();
        	         setGroup(value,context);
-       	         Log.d( "Login", "Group member : " + value);
+//       	         Log.d( "Login", "Group member : " + value);
        	         EasyTracker.getTracker().trackEvent("Group", "name", value,0L);
        	        
        	      Intent intent = new Intent(context,StreamListActivity.class);

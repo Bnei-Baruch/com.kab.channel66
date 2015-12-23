@@ -3,17 +3,14 @@ package com.kab.channel66;
 //import io.vov.vitamio.VitamioInstaller.VitamioNotCompatibleException;
 //import io.vov.vitamio.VitamioInstaller.VitamioNotFoundException;
 
-import io.vov.vitamio.LibsChecker;
-
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.apphance.android.Log;
+//import com.apphance.android.Log;
 import com.google.analytics.tracking.android.EasyTracker;
-import com.kab.channel66.utils.AudioPlayerFactory;
 import com.kab.channel66.utils.CommonUtils;
 
 import android.annotation.SuppressLint;
@@ -81,49 +78,21 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 
 	ArrayList<String> pushMessages;
 	BroadcastReceiver myReciever;
-
+	final VLCMediaPlayer audioplay;
 	Dialog playDialog;
 	Intent svc;
 	private ArrayList<com.kab.channel66.HLSEvents.Page> pages;
 	private CustomAdapter mAdataper;
 	
 	
-	private BroadcastReceiver receiver = new BroadcastReceiver() {
 
-	    @Override
-	    public void onReceive(Context context, Intent intent) {
-	      Bundle bundle = intent.getExtras();
-	      if (bundle != null) {
-	        int status = bundle.getInt(BaseBackgroundPlayer.STATUS);
-	       if(playDialog!=null && playDialog.isShowing())
-	       {
-	    	   if(status == BaseBackgroundPlayer.status.buffer.ordinal())
-	    	   {
-	    		   ProgressBar bar =  (ProgressBar) playDialog.findViewById(R.id.mediacontroller_progress);
-	    		   bar.setVisibility(View.VISIBLE);
-	    		   playDialog.setTitle("Bufferring audio...");
-	    		   
-	    	   }
-	    	   else
-	    	   {
-	    		   ProgressBar bar =  (ProgressBar) playDialog.findViewById(R.id.mediacontroller_progress);
-	    		   bar.setVisibility(View.GONE);
-	    		   playDialog.setTitle("Playing audio");
-	    		   
-	    	   }
-	       }
-			  else //probably system widget
-		   {
 
-		   }
-	       
-	        }
-	      }
-	    
-	  };
-	  
-	  
-	  public void onToggleClicked(View view)
+	public StreamListActivity() {
+		audioplay = VLCMediaPlayer.get();
+	}
+
+
+	public void onToggleClicked(View view)
 		{
 			 // Is the toggle on?
 		    boolean on = ((ToggleButton) view).isChecked();
@@ -149,20 +118,91 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 
 		CommonUtils.RemoveOldPlugin(this);
 
-		if (!LibsChecker.checkVitamioLibs(this))
-			return;
+//		if (!LibsChecker.checkVitamioLibs(this))
+//			return;
 
 
 
 		try {
 			//  test channel 
-			
+			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+			final String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
 
-				
+			if (audioplay.isPlaying(audiourl)) {
+				//show dialog
+				playDialog = new Dialog(this);
+				playDialog.setTitle("Playing audio");
+				playDialog.setContentView(R.layout.mediacontroller);
+				final ImageButton ask = (ImageButton) playDialog.findViewById(R.id.mediacontroller_ask);
+				final ImageButton but = (ImageButton) playDialog.findViewById(R.id.mediacontroller_play_pause);
+				but.setImageResource(R.drawable.mediacontroller_pause01);
+				but.setOnClickListener(new OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+						String location = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
+						if(audioplay.isPlaying(location))
+						{
+							but.setImageResource(R.drawable.mediacontroller_play01);
+							audioplay.pause();
+
+						}
+						else
+						{
+							but.setImageResource(R.drawable.mediacontroller_pause01);
+//									svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+
+							audioplay.prepare(MyApplication.getMyApp(), audiourl, new TomahawkMediaPlayerCallback() {
+								@Override
+								public void onPrepared(String query) {
+									if (audioplay.isPrepared(query))
+										audioplay.start();
+
+								}
+
+								@Override
+								public void onCompletion(String query) {
+
+								}
+
+								@Override
+								public void onError(String message) {
+
+								}
+							});
+						}
+					}
+				});
+				ask.setImageResource(R.drawable.system_help);
+				ask.setOnClickListener(new OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						Questions question = new Questions(StreamListActivity.this);
+						question.show();
+					}
+				});
+
+				playDialog.setOnCancelListener(new DialogInterface.OnCancelListener()
+				{
+					@Override
+					public
+					void onCancel(DialogInterface dialog)
+					{
+						dialogBackpressed();
+					}
+				});
+				playDialog.show();
+			}
+			else
+				audioplay.pause();
 				
 			
 		} catch (Throwable t) {
-			Log.e("Failure during static initialization", t);
+//			Log.e("Failure during static initialization", t);
 
 		}
 
@@ -195,76 +235,15 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 		}
 		return ret;
 	}
-	private void playStreamInList(int index)
-	{
-		String item = (String) getListAdapter().getItem(index);
-		Intent player = new Intent(StreamListActivity.this, VideoPlayerActivity.class);
 
-
-		if(pages!=null)
-		{
-			for(int i=0;i<pages.size();i++)
-				if(pages.get(i).description.equalsIgnoreCase(item))
-				{
-					String url1;
-
-					//set the quality
-					Boolean high = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("quality", false);
-					if(pages.get(i).urls.urlslist.size()>1)
-					{
-						if(!high)
-						{
-							url1 = pages.get(i).urls.urlslist.get(1).url_value;
-						}
-						else
-						{
-							url1 = pages.get(i).urls.urlslist.get(0).url_value;
-						}
-					}
-					else
-						url1 = pages.get(i).urls.urlslist.get(0).url_value;
-
-					//playvideo
-					String mms_url = null;
-					//replace key
-					String key = PreferenceManager.getDefaultSharedPreferences(this).getString("key", null);
-
-
-
-
-
-
-
-					if(url1.contains("asx")){
-						if(key!=null)
-						{
-							int j = url1.indexOf("special-")+ "special-".length();
-							String replace = url1.substring(j, j+8);
-							url1 = url1.replace(replace, key);
-						}
-						mms_url = ExtractMMSfromAsx(url1.trim());
-						player.putExtra("path", mms_url);
-					}
-					else
-					{
-						player.putExtra("path", url1);
-					}
-
-
-					EasyTracker.getTracker().trackEvent("Stream list", "on item clicked",url1,0L);
-
-					startActivity(player);
-
-				}
-		}
-	}
 
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		String item = (String) getListAdapter().getItem(position);
 		Toast.makeText(this, item + " selected", Toast.LENGTH_LONG).show();
 		// Intent player = new Intent(StreamListActivity.this, VideoViewDemo.class);
-		Intent player = new Intent(StreamListActivity.this, VideoPlayerActivity.class);
+		//Intent player = new Intent(StreamListActivity.this, VideoPlayerActivity.class);
+		Intent player = new Intent(StreamListActivity.this, VideoActivity.class);
 
 		if(pages!=null)
 		{
@@ -300,7 +279,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 						}
 						else
 						{
-							player.putExtra("path", url1);
+							player.putExtra(VideoActivity.LOCATION, url1);
 						}
 
 
@@ -312,10 +291,28 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 					else //play audio
 					{
 						//svc=new Intent(this, NativeBackgroundPlayer.class);
-						svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
-						svc.putExtra("audiourl", chosenStream.url_value);
+						//svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+						//svc.putExtra("audiourl", chosenStream.url_value);
+						final String location = chosenStream.url_value;
+						audioplay.prepare(MyApplication.getMyApp(), chosenStream.url_value, new TomahawkMediaPlayerCallback() {
+							@Override
+							public void onPrepared(String query) {
+								if (audioplay.isPrepared(query))
+									audioplay.start();
 
-						startService(svc);
+							}
+
+							@Override
+							public void onCompletion(String query) {
+
+							}
+
+							@Override
+							public void onError(String message) {
+
+							}
+						});
+						//startService(svc);
 						playDialog = new Dialog(this);
 						playDialog.setTitle("Playing audio");
 						playDialog.setContentView(R.layout.mediacontroller);
@@ -327,20 +324,38 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 							@Override
 							public void onClick(View v) {
 								// TODO Auto-generated method stub
-								if(svc!=null)
+								if(audioplay.isPlaying(location))
 								{
 									but.setImageResource(R.drawable.mediacontroller_play01);
-									stopService(svc);
-									svc= null;
+									audioplay.pause();
+
 								}
 								else
 								{
 									but.setImageResource(R.drawable.mediacontroller_pause01);
-									svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+//									svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 									SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
 									String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
-									svc.putExtra("audiourl",audiourl);
-									startService(svc);
+
+//									startService(svc);
+									audioplay.prepare(MyApplication.getMyApp(), audiourl, new TomahawkMediaPlayerCallback() {
+										@Override
+										public void onPrepared(String query) {
+											if (audioplay.isPrepared(query))
+												audioplay.start();
+
+										}
+
+										@Override
+										public void onCompletion(String query) {
+
+										}
+
+										@Override
+										public void onError(String message) {
+
+										}
+									});
 								}
 							}
 						});
@@ -378,26 +393,53 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 			if(shared.getBoolean("quality", false))
 			{
 				//player.putExtra("path", ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
-				player.putExtra("path", "http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
+				//player.putExtra("path", "http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
+				player.putExtra(VideoActivity.LOCATION, "http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
 
 				startActivity(player);
 			}
 			else
 			{
-				player.putExtra("path", "http://edge1.il.kab.tv/rtplive/tv66-heb-low.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
+				//player.putExtra("path", "http://edge1.il.kab.tv/rtplive/tv66-heb-low.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
+				player.putExtra(VideoActivity.LOCATION, "http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
+
 				startActivity(player);
 			}
 
 		}
 		else if(item.equals("ערוץ 66 - אודיו") || item.equals("רדיו ערוץ 66"))
 		{
-			svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 
+
+
+
+
+//			svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+//
+			final String url;
 			if(item.equals("ערוץ 66 - אודיו"))
-				svc.putExtra("audiourl", "http://icecast.kab.tv/heb.mp3");
+				url =  "http://icecast.kab.tv/heb.mp3";
 			else
-				svc.putExtra("audiourl", "http://icecast.kab.tv/radiozohar2014.mp3");
-			startService(svc);
+				url =  "http://icecast.kab.tv/radiozohar2014.mp3";
+//			startService(svc);
+			audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
+				@Override
+				public void onPrepared(String query) {
+					if (audioplay.isPrepared(query))
+						audioplay.start();
+
+				}
+
+				@Override
+				public void onCompletion(String query) {
+
+				}
+
+				@Override
+				public void onError(String message) {
+
+				}
+			});
 			playDialog = new Dialog(this);
 			playDialog.setTitle("Playing audio");
 			playDialog.setContentView(R.layout.mediacontroller);
@@ -409,22 +451,49 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
-					if(svc!=null )
+					if(audioplay.isPlaying(url) )
 					{
 						but.setImageResource(R.drawable.mediacontroller_play01);
-						stopService(svc);
-						svc= null;
+						audioplay.pause();
+						//svc= null;
 					}
 					else
 					{
 						but.setImageResource(R.drawable.mediacontroller_pause01);
 
 
-						svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+//						svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+//						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+//						String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
+//						svc.putExtra("audiourl",audiourl);
+//						startService(svc);
+
+
+
+						//svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
 						String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
-						svc.putExtra("audiourl",audiourl);
-						startService(svc);
+						//svc.putExtra("audiourl",audiourl);
+						//startService(svc);
+
+						audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
+							@Override
+							public void onPrepared(String query) {
+								if (audioplay.isPrepared(query))
+									audioplay.start();
+
+							}
+
+							@Override
+							public void onCompletion(String query) {
+
+							}
+
+							@Override
+							public void onError(String message) {
+
+							}
+						});
 					}
 				}
 			});
@@ -466,12 +535,12 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 
 			if(shared.getBoolean("quality", false))
 			{
-				player.putExtra("path",  "http://edge1.il.kab.tv/rtplive/tv66-rus-mobile.stream/playlist.m3u8");
+				player.putExtra(VideoActivity.LOCATION,  "http://edge1.il.kab.tv/rtplive/tv66-rus-mobile.stream/playlist.m3u8");
 				startActivity(player);
 			}
 			else
 			{
-				player.putExtra("path", "http://edge1.il.kab.tv/rtplive/tv66-rus-low.stream/playlist.m3u8");
+				player.putExtra(VideoActivity.LOCATION, "http://edge1.il.kab.tv/rtplive/tv66-rus-low.stream/playlist.m3u8");
 				startActivity(player);
 			}
 		}
@@ -481,9 +550,28 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 			//	    	Intent player1 = new Intent(Intent.ACTION_VIEW,uri);
 			//	    	 player1.setDataAndType(uri, "audio/*");
 			//			startActivity(player1);	 
-			svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
-			svc.putExtra("audiourl", "http://icecast.kab.tv/rus.mp3");
-			startService(svc);
+			//svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+			//svc.putExtra("audiourl", "http://icecast.kab.tv/rus.mp3");
+			//startService(svc);
+			String url = ("http://icecast.kab.tv/rus.mp3");
+			audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
+				@Override
+				public void onPrepared(String query) {
+					if (audioplay.isPrepared(query))
+						audioplay.start();
+
+				}
+
+				@Override
+				public void onCompletion(String query) {
+
+				}
+
+				@Override
+				public void onError(String message) {
+
+				}
+			});
 			playDialog = new Dialog(this);
 			playDialog.setTitle("Playing audio");
 			playDialog.setContentView(R.layout.mediacontroller);
@@ -497,16 +585,36 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 					if(svc!=null)
 					{
 						but.setImageResource(R.drawable.mediacontroller_play01);
-						stopService(svc);
-						svc= null;
+						//stopService(svc);
+						//svc= null;
+						audioplay.pause();
 					}
 					else
 					{
-						but.setImageResource(R.drawable.mediacontroller_pause01);
+//						but.setImageResource(R.drawable.mediacontroller_pause01);
+//
+//						svc=new Intent(StreamListActivity.this,AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+//						svc.putExtra("audiourl", "http://icecast.kab.tv/rus.mp3");
+//						startService(svc);
+						String url = ("http://icecast.kab.tv/rus.mp3");
+						audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
+							@Override
+							public void onPrepared(String query) {
+								if (audioplay.isPrepared(query))
+									audioplay.start();
 
-						svc=new Intent(StreamListActivity.this,AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
-						svc.putExtra("audiourl", "http://icecast.kab.tv/rus.mp3");
-						startService(svc);
+							}
+
+							@Override
+							public void onCompletion(String query) {
+
+							}
+
+							@Override
+							public void onError(String message) {
+
+							}
+						});
 					}
 				}
 			});
@@ -530,16 +638,16 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 	
 	private void StopAudioIfNeeded() {
 		// TODO Auto-generated method stub
-		svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
-	      	 
-	    stopService(svc);
+		//svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+		audioplay.pause();
+	    //stopService(svc);
 	}
 
 
 	@Override
 	public void onPause() {
 		super.onPause();
-		unregisterReceiver(receiver);
+
 		
 		
 	}
@@ -547,11 +655,8 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 	@Override
 	public void onResume() {
 		super.onResume();
-		if (!LibsChecker.checkVitamioLibs(this))
-			return;
 
-		registerReceiver(receiver, new IntentFilter(BaseBackgroundPlayer.NOTIFICATION));
-		
+
 		EasyTracker.getInstance().setContext(this);
 
 
@@ -761,16 +866,15 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 
 		}
 
-		MenuItem item = menu.findItem(R.id.playType);
-		item.setChecked(isNative);
+//		MenuItem item = menu.findItem(R.id.playType);
+//		item.setChecked(isNative);
 		return true;
 	}
 
 	public void dialogBackpressed()
 	{
 		playDialog.hide();
-		if(svc!=null)
-			stopService(svc);
+		audioplay.pause();
 	}
 	@Override
 	public void onBackPressed()
@@ -806,7 +910,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 						Intent intent = new Intent(getApplicationContext(), SvivaTovaLogin.class);
 						startActivity(intent);
 					}
-					Log.d( "Login", "Pin Value : " + value);
+//					Log.d( "Login", "Pin Value : " + value);
 
 					return;                  
 				}  
@@ -848,45 +952,45 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 			Intent intent = new Intent(StreamListActivity.this,PushMessagesActivity.class);
 			startActivity(intent);
 			return true;
-		case R.id.Autocheck:
-			PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
-			wl = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "My Tag");
-			wl.acquire();
-			myProgressDialog = new ProgressDialog(StreamListActivity.this);
-			myProgressDialog.setTitle("Waiting for broadcast...");
-			//	              myProgressDialog.show(WebLogin.this,"Waiting for broadcast...",null,true,true,new OnCancelListener() {
-			//	  	            public void onCancel(DialogInterface pd) {
-			//	  	            	autocheckdone();
-			//	 	            }
-			//	 	        });
-			//	              
-			myProgressDialog = ProgressDialog
-					.show(this, "Waiting for broadcast...",
-							null, true, true,
-							new OnCancelListener() {
-						public void onCancel(DialogInterface pd) {
-							autocheckdone();
-						}
-					});      
+//		case R.id.Autocheck:
+//			PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+//			wl = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "My Tag");
+//			wl.acquire();
+//			myProgressDialog = new ProgressDialog(StreamListActivity.this);
+//			myProgressDialog.setTitle("Waiting for broadcast...");
+//			//	              myProgressDialog.show(WebLogin.this,"Waiting for broadcast...",null,true,true,new OnCancelListener() {
+//			//	  	            public void onCancel(DialogInterface pd) {
+//			//	  	            	autocheckdone();
+//			//	 	            }
+//			//	 	        });
+//			//
+//			myProgressDialog = ProgressDialog
+//					.show(this, "Waiting for broadcast...",
+//							null, true, true,
+//							new OnCancelListener() {
+//						public void onCancel(DialogInterface pd) {
+//							autocheckdone();
+//						}
+//					});
+//
+//			myChecker = new StreamAvailabilityChecker();
+//			myChecker.setAuto(true);
+//			myChecker.setActivity(StreamListActivity.this);
+//			myChecker.execute("http://icecast.kab.tv/live1-heb-574bcfd5.mp3");
+//
+//			// myProgressDialog.hide();
+//			return true;
 
-			myChecker = new StreamAvailabilityChecker();
-			myChecker.setAuto(true);
-			myChecker.setActivity(StreamListActivity.this);
-			myChecker.execute("http://icecast.kab.tv/live1-heb-574bcfd5.mp3");
-
-			// myProgressDialog.hide();
-			return true;
-
-			case R.id.playType:
-				item.setChecked(!item.isChecked());
-				SharedPreferences sharedAudio = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-				SharedPreferences.Editor editAudio = sharedAudio.edit();
-				editAudio.putBoolean("isNative", item.isChecked());
-				editAudio.commit();
-				mAdataper.notifyDataSetChanged();
-				setListAdapter(mAdataper);
-
-				return true;
+//			case R.id.playType:
+//				item.setChecked(!item.isChecked());
+//				SharedPreferences sharedAudio = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+//				SharedPreferences.Editor editAudio = sharedAudio.edit();
+//				editAudio.putBoolean("isNative", item.isChecked());
+//				editAudio.commit();
+//				mAdataper.notifyDataSetChanged();
+//				setListAdapter(mAdataper);
+//
+//				return true;
 
 
 		default:

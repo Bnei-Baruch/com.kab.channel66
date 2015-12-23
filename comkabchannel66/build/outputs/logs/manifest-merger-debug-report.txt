@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-405:12
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-209:12
 	xmlns:android
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:11-69
 	package
@@ -21,6 +21,15 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:7:22-68
 uses-permission#android.permission.INTERNET
 ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:9:5-10:23
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.5/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:25:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.8/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:25:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:25:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:25:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.1.4] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.4/AndroidManifest.xml:9:5-67
 	android:name
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:9:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -78,8 +87,16 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 	android:name
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:39:22-65
 application
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:42:5-394:19
-MERGED from [com.kab.channel66:InitActivity:unspecified] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/AndroidManifest.xml:11:5-18:19
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:42:5-198:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.5/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:27:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.8/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:27:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:27:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:27:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.1.4] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.4/AndroidManifest.xml:11:5-20
 	android:label
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:44:9-41
 	android:icon
@@ -104,7 +121,6 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:54:17-58
 activity#io.vov.vitamio.activity.InitActivity
 ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:60:11-65:63
-MERGED from [com.kab.channel66:InitActivity:unspecified] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/AndroidManifest.xml:12:9-17:63
 	android:windowSoftInputMode
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:65:13-60
 	android:configChanges
@@ -115,8 +131,10 @@ MERGED from [com.kab.channel66:InitActivity:unspecified] /Users/igal/Downloads/c
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:61:13-64
 	android:launchMode
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:63:13-43
-activity#com.kab.channel66.VideoViewDemo
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:67:9-78:20
+activity#com.kab.channel66.VideoView
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:67:9-79:20
+	android:screenOrientation
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:72:13-49
 	android:label
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:70:13-45
 	android:configChanges
@@ -124,238 +142,177 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 	android:theme
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:71:13-71
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:68:13-42
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:68:13-38
 intent-filter#android.intent.category.LAUNCHER
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:72:13-77:29
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:73:13-78:29
 category#android.intent.category.LAUNCHER
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:76:17-77
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:77:17-77
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:76:27-74
-activity#com.kab.channel66.VideoView
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:79:9-91:20
-	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:84:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:77:27-74
+activity#com.kab.channel66.NativeBackgroundPlayer
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:80:10-83:20
 	android:label
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:82:13-45
-	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:81:13-94
-	android:theme
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:83:13-71
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:80:13-38
-activity#com.kab.channel66.NativeBackgroundPlayer
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:92:10-95:20
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:81:13-51
+activity#com.kab.channel66.VideoActivity
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:84:9-89:20
+	android:label
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:87:13-34
+	android:configChanges
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:86:13-59
+	android:theme
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:88:13-71
+	android:name
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:85:13-42
+activity#com.kab.channel66.LoginLayout
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:91:9-101:20
 	android:label
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:94:13-45
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:93:13-51
-activity#com.kab.channel66.VideoPlayerActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:96:9-267:20
-	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:101:13-49
-	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:99:13-45
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:98:13-94
-	android:theme
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:100:13-71
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:93:13-83
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:97:13-48
-intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT+android.intent.category.LAUNCHER
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:102:13-161:29
-action#android.intent.action.VIEW
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:103:17-69
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:103:25-66
-category#android.intent.category.DEFAULT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:106:17-76
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:106:27-73
-category#android.intent.category.BROWSABLE
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:107:17-78
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:107:27-75
-data
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:134:17-136:45
-	android:mimeType
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:135:21-47
-	android:scheme
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:136:21-42
-intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:162:13-168:29
-intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:169:13-178:29
-intent-filter#android.intent.action.SEND+android.intent.action.SENDTO+android.intent.action.VIEW+android.intent.category.DEFAULT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:191:13-201:29
-action#android.intent.action.SEND
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:193:17-69
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:193:25-66
-action#android.intent.action.SENDTO
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:194:17-71
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:194:25-68
-activity#com.kab.channel66.PlayerActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:269:9-280:20
-	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:272:13-45
-	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:271:13-94
-	android:theme
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:273:13-71
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:270:13-43
-activity#com.kab.channel66.LoginLayout
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:281:10-291:20
-	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:284:13-45
-	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:283:13-83
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:282:13-40
-activity#com.kab.channel66.WebLogin
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:293:9-300:20
-	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:297:13-49
-	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:296:13-45
-	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:295:13-74
-	android:exported
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:298:13-37
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:294:13-37
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:92:13-40
 activity#com.kab.channel66.StreamListActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:301:10-308:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:103:9-110:20
 	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:305:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:107:13-49
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:304:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:106:13-45
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:303:13-74
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:105:13-74
 	android:exported
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:306:13-37
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:108:13-37
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:302:13-47
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:104:13-47
 activity#com.kab.channel66.SvivaTovaLogin
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:309:9-316:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:111:9-118:20
 	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:313:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:115:13-49
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:312:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:114:13-45
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:311:13-74
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:113:13-74
 	android:exported
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:314:13-37
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:116:13-37
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:310:13-43
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:112:13-43
 activity#com.kab.channel66.PushMessagesActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:317:10-324:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:119:10-126:20
 	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:321:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:123:13-49
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:320:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:122:13-45
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:319:13-74
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:121:13-74
 	android:exported
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:322:13-37
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:124:13-37
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:318:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:120:13-49
 activity#com.kab.channel66.SplashScreen
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:343:10-363:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:145:10-165:20
 	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:346:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:148:13-49
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:345:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:147:13-45
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:344:13-41
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:146:13-41
 	android:launchMode
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:347:13-43
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:149:13-43
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:356:14-362:33
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:158:14-164:33
 action#android.intent.action.MAIN
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:357:13-358:26
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:159:13-160:26
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:357:21-62
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:159:21-62
 service#com.kab.channel66.NativeBackgroundPlayer
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:365:7-89
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:167:7-89
 	android:enabled
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:365:56-78
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:167:56-78
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:365:16-54
-service#com.kab.channel66.OpenPlayerBackgroundPlayer
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:366:9-95
-	android:enabled
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:366:62-84
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:366:18-60
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:167:16-54
 service#com.parse.PushService
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:367:7-55
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:168:9-57
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:367:16-52
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:168:18-54
 receiver#com.parse.ParseBroadcastReceiver
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:368:1-373:12
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:169:1-174:12
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:368:11-58
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:169:11-58
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:369:3-372:19
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:170:3-173:19
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:370:5-67
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:171:5-67
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:370:13-64
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:171:13-64
 action#android.intent.action.USER_PRESENT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:371:5-65
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:172:5-65
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:371:13-62
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:172:13-62
 receiver#com.kab.channel66.ParsePushHandling
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:374:1-381:12
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:175:1-182:12
 	android:exported
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:375:5-29
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:176:5-29
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:374:11-61
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:175:11-61
 intent-filter#com.parse.push.intent.DELETE+com.parse.push.intent.OPEN+com.parse.push.intent.RECEIVE
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:376:3-380:21
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:177:3-181:21
 action#com.parse.push.intent.RECEIVE
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:377:5-60
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:178:5-60
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:377:13-57
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:178:13-57
 action#com.parse.push.intent.DELETE
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:378:5-59
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:179:5-59
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:378:13-56
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:179:13-56
 action#com.parse.push.intent.OPEN
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:379:5-57
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:180:5-57
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:379:13-54
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:180:13-54
 receiver#com.parse.GcmBroadcastReceiver
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:382:1-393:12
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:183:1-194:12
 	android:permission
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:383:5-65
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:184:5-65
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:382:11-56
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:183:11-56
 intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.kab.channel66
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:384:3-392:19
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:185:3-193:19
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:385:5-69
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:186:5-69
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:385:13-66
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:186:13-66
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:386:5-74
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:187:5-74
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:386:13-71
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:187:13-71
 category#com.kab.channel66
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:391:5-50
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:192:5-50
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:391:15-47
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:192:15-47
+meta-data#io.fabric.ApiKey
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:195:9-197:72
+	android:name
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:196:13-44
+	android:value
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:197:13-69
 uses-sdk
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:396:5-398:41
-MERGED from [com.kab.channel66:InitActivity:unspecified] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/AndroidManifest.xml:7:5-9:41
-MERGED from [com.audionowdigital:OpenPlayer:1.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.audionowdigital/OpenPlayer/1.0/AndroidManifest.xml:5:5-7:41
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:200:5-202:41
+MERGED from [com.android.support:multidex:1.0.1] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
+MERGED from [de.mrmaffen:vlc-android-sdk:3.0.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/de.mrmaffen/vlc-android-sdk/3.0.0/AndroidManifest.xml:8:5-10:41
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.5/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:23:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.8/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:23:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:23:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:23:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.1.4] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.4/AndroidManifest.xml:7:5-43
 	android:targetSdkVersion
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:398:9-38
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:202:9-38
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:397:9-34
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:201:9-34
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml

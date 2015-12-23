@@ -6,9 +6,9 @@
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
-                    "startOffset": 55,
+                    "startOffset": 100,
                     "endColumn": 52,
-                    "endOffset": 103
+                    "endOffset": 148
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/analytics.xml",
@@ -25,9 +25,9 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 108,
+                    "startOffset": 153,
                     "endColumn": 56,
-                    "endOffset": 160
+                    "endOffset": 205
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/analytics.xml",
@@ -44,9 +44,9 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 165,
+                    "startOffset": 210,
                     "endColumn": 39,
-                    "endOffset": 200
+                    "endOffset": 245
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/color.xml",
@@ -63,9 +63,9 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 205,
+                    "startOffset": 250,
                     "endColumn": 41,
-                    "endOffset": 242
+                    "endOffset": 287
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/color.xml",
@@ -82,9 +82,9 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 247,
+                    "startOffset": 292,
                     "endColumn": 56,
-                    "endOffset": 299
+                    "endOffset": 344
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -101,9 +101,9 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 304,
+                    "startOffset": 349,
                     "endColumn": 56,
-                    "endOffset": 356
+                    "endOffset": 401
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -120,9 +120,9 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 361,
+                    "startOffset": 406,
                     "endColumn": 53,
-                    "endOffset": 410
+                    "endOffset": 455
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -139,10 +139,10 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 415,
+                    "startOffset": 460,
                     "endLine": 10,
                     "endColumn": 23,
-                    "endOffset": 551
+                    "endOffset": 596
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -160,9 +160,9 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 556,
+                    "startOffset": 601,
                     "endColumn": 92,
-                    "endOffset": 644
+                    "endOffset": 689
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -179,9 +179,9 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 649,
+                    "startOffset": 694,
                     "endColumn": 67,
-                    "endOffset": 712
+                    "endOffset": 757
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -198,9 +198,9 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 717,
+                    "startOffset": 762,
                     "endColumn": 47,
-                    "endOffset": 760
+                    "endOffset": 805
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -217,9 +217,9 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 765,
+                    "startOffset": 810,
                     "endColumn": 62,
-                    "endOffset": 823
+                    "endOffset": 868
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -236,9 +236,9 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 828,
+                    "startOffset": 873,
                     "endColumn": 55,
-                    "endOffset": 879
+                    "endOffset": 924
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -255,9 +255,9 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 884,
+                    "startOffset": 929,
                     "endColumn": 48,
-                    "endOffset": 928
+                    "endOffset": 973
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -274,9 +274,28 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 933,
+                    "startOffset": 978,
+                    "endColumn": 164,
+                    "endOffset": 1138
+                },
+                "from": {
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/generated/fabric/res/release/values/com_crashlytics_build_id.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 303,
+                        "endColumn": 162,
+                        "endOffset": 465
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1143,
                     "endColumn": 58,
-                    "endOffset": 987
+                    "endOffset": 1197
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -291,11 +310,11 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 992,
+                    "startOffset": 1202,
                     "endColumn": 55,
-                    "endOffset": 1043
+                    "endOffset": 1253
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/analytics.xml",
@@ -310,11 +329,11 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1048,
+                    "startOffset": 1258,
                     "endColumn": 52,
-                    "endOffset": 1096
+                    "endOffset": 1306
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -329,11 +348,11 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1101,
+                    "startOffset": 1311,
                     "endColumn": 52,
-                    "endOffset": 1149
+                    "endOffset": 1359
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -348,11 +367,11 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1154,
+                    "startOffset": 1364,
                     "endColumn": 39,
-                    "endOffset": 1189
+                    "endOffset": 1399
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -367,11 +386,11 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1194,
+                    "startOffset": 1404,
                     "endColumn": 65,
-                    "endOffset": 1255
+                    "endOffset": 1465
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -386,11 +405,11 @@
             },
             {
                 "to": {
-                    "startLine": 23,
+                    "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1260,
+                    "startOffset": 1470,
                     "endColumn": 50,
-                    "endOffset": 1306
+                    "endOffset": 1516
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -405,127 +424,11 @@
             },
             {
                 "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 1311,
-                    "endColumn": 100,
-                    "endOffset": 1407
-                },
-                "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/res/values/values.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 488,
-                        "endColumn": 100,
-                        "endOffset": 584
-                    }
-                }
-            },
-            {
-                "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1412,
-                    "endColumn": 70,
-                    "endOffset": 1478
-                },
-                "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/res/values/values.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 589,
-                        "endColumn": 70,
-                        "endOffset": 655
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 26,
-                    "startColumn": 4,
-                    "startOffset": 1483,
-                    "endColumn": 112,
-                    "endOffset": 1591
-                },
-                "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/res/values/values.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 660,
-                        "endColumn": 112,
-                        "endOffset": 768
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 27,
-                    "startColumn": 4,
-                    "startOffset": 1596,
-                    "endColumn": 86,
-                    "endOffset": 1678
-                },
-                "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/res/values/values.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 773,
-                        "endColumn": 86,
-                        "endOffset": 855
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 28,
-                    "startColumn": 4,
-                    "startOffset": 1683,
-                    "endLine": 29,
-                    "endColumn": 13,
-                    "endOffset": 1807
-                },
-                "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/res/values/values.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 860,
-                        "endLine": 14,
-                        "endColumn": 13,
-                        "endOffset": 984
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 1812,
-                    "endColumn": 84,
-                    "endOffset": 1892
-                },
-                "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/res/values/values.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 989,
-                        "endColumn": 84,
-                        "endOffset": 1069
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 1897,
+                    "startOffset": 1521,
                     "endColumn": 49,
-                    "endOffset": 1942
+                    "endOffset": 1566
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -540,11 +443,11 @@
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1947,
+                    "startOffset": 1571,
                     "endColumn": 50,
-                    "endOffset": 1993
+                    "endOffset": 1617
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -559,11 +462,11 @@
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1998,
+                    "startOffset": 1622,
                     "endColumn": 81,
-                    "endOffset": 2075
+                    "endOffset": 1699
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -578,11 +481,11 @@
             },
             {
                 "to": {
-                    "startLine": 34,
+                    "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 2080,
+                    "startOffset": 1704,
                     "endColumn": 44,
-                    "endOffset": 2120
+                    "endOffset": 1744
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -597,11 +500,11 @@
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 2125,
+                    "startOffset": 1749,
                     "endColumn": 63,
-                    "endOffset": 2184
+                    "endOffset": 1808
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -616,11 +519,11 @@
             },
             {
                 "to": {
-                    "startLine": 36,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 2189,
+                    "startOffset": 1813,
                     "endColumn": 44,
-                    "endOffset": 2229
+                    "endOffset": 1853
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -635,49 +538,11 @@
             },
             {
                 "to": {
-                    "startLine": 37,
+                    "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 2234,
-                    "endColumn": 72,
-                    "endOffset": 2302
-                },
-                "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/res/values/values.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1074,
-                        "endColumn": 72,
-                        "endOffset": 1142
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 38,
-                    "startColumn": 4,
-                    "startOffset": 2307,
-                    "endColumn": 67,
-                    "endOffset": 2370
-                },
-                "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/res/values/values.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1147,
-                        "endColumn": 67,
-                        "endOffset": 1210
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 39,
-                    "startColumn": 4,
-                    "startOffset": 2375,
+                    "startOffset": 1858,
                     "endColumn": 64,
-                    "endOffset": 2435
+                    "endOffset": 1918
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/strings.xml",
@@ -692,12 +557,12 @@
             },
             {
                 "to": {
-                    "startLine": 40,
+                    "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2440,
-                    "endLine": 45,
+                    "startOffset": 1923,
+                    "endLine": 37,
                     "endColumn": 12,
-                    "endOffset": 2764
+                    "endOffset": 2247
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/styles.xml",
@@ -713,12 +578,12 @@
             },
             {
                 "to": {
-                    "startLine": 46,
+                    "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 2769,
-                    "endLine": 50,
+                    "startOffset": 2252,
+                    "endLine": 42,
                     "endColumn": 12,
-                    "endOffset": 2974
+                    "endOffset": 2457
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/styles.xml",
@@ -734,12 +599,12 @@
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 2979,
-                    "endLine": 65,
+                    "startOffset": 2462,
+                    "endLine": 57,
                     "endColumn": 12,
-                    "endOffset": 3779
+                    "endOffset": 3262
                 },
                 "from": {
                     "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/values/styles.xml",

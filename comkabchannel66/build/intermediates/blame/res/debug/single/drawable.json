@@ -48,12 +48,12 @@
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/home_btn_bg.xml"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/mediacontroller_seekbar.xml",
-        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/mediacontroller_seekbar.xml"
-    },
-    {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/myshape.xml",
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/myshape.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/mediacontroller_seekbar.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/mediacontroller_seekbar.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/video_online.png",

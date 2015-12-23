@@ -3,8 +3,6 @@ package com.kab.channel66;
 import java.util.Random;
 
 import com.google.analytics.tracking.android.EasyTracker;
-import com.kab.channel66.utils.AudioPlayerFactory;
-import com.kab.channel66.utils.CommonUtils;
 
 import android.annotation.SuppressLint;
 import android.app.PendingIntent;
@@ -30,14 +28,15 @@ public class MyWidgetProvider extends AppWidgetProvider {
   private static final String ACTION_CLICK_LAST = "ACTION_CLICK_LAST";
   
 
-  Intent svc;  
+  Intent svc;
+    VLCMediaPlayer audioplayer;
 
   @Override
   public void onUpdate(Context context, AppWidgetManager appWidgetManager,
       int[] appWidgetIds) {
 	  EasyTracker.getInstance().setContext(context.getApplicationContext());
 	  EasyTracker.getTracker().trackEvent("Widget", "installing widget","onUpdate",0L);
-		
+	    audioplayer = VLCMediaPlayer.get();
     // Get all ids
     ComponentName thisWidget = new ComponentName(context,
         MyWidgetProvider.class);
@@ -89,25 +88,48 @@ public class MyWidgetProvider extends AppWidgetProvider {
 
          
 //    	  remoteViews.setTextViewText(R.id.Button3, "playing");
-           svc = new Intent(context.getApplicationContext(), AudioPlayerFactory.GetAudioPlayer(context.getApplicationContext()).getClass());
+          // svc = new Intent(context.getApplicationContext(), AudioPlayerFactory.GetAudioPlayer(context.getApplicationContext()).getClass());
            SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(context.getApplicationContext());
 			 
-			 String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
+			 final String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
 			 audiourl.replace("heb", shared.getString("lang", "heb"));
-	    	 svc.putExtra("audiourl", audiourl);
-	    	 svc.addFlags(CommonUtils.FROM_WIDGET);
-	    	 context.stopService(svc);
-	    	 context.startService(svc);
+	    	// svc.putExtra("audiourl", audiourl);
+	    	// svc.addFlags(CommonUtils.FROM_WIDGET);
+	    	 //context.stopService(svc);
+	    	// context.startService(svc);
+          new Thread(new Runnable() {
+              @Override
+              public void run() {
+                  audioplayer.prepare(MyApplication.getMyApp(), audiourl, new TomahawkMediaPlayerCallback() {
+                      @Override
+                      public void onPrepared(String query) {
+                          if(query.equalsIgnoreCase(audiourl))
+                              audioplayer.start();
+                      }
 
-        
+                      @Override
+                      public void onCompletion(String query) {
+
+                      }
+
+                      @Override
+                      public void onError(String message) {
+
+                      }
+                  });
+
+              }
+          }).start();
+
       }
       else if (ACTION_CLICK_PAUSE.equals(intent.getAction())) 
       {
 //    	  remoteViews.setTextViewText(R.id.Button3, "stopped");
-    	  svc = new Intent(context.getApplicationContext(),
-                  AudioPlayerFactory.GetAudioPlayer(context.getApplicationContext()).getClass());
-      	 
-    	  context.stopService(svc);
+//    	  svc = new Intent(context.getApplicationContext(),
+//                  AudioPlayerFactory.GetAudioPlayer(context.getApplicationContext()).getClass());
+//
+//    	  context.stopService(svc);
+          audioplayer.pause();
       }
       else if (ACTION_CLICK_TV.equals(intent.getAction())) 
       {

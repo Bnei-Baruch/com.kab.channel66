@@ -6,11 +6,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import io.vov.vitamio.utils.Log;
+//import io.vov.vitamio.utils.Log;
 import android.content.Context;
 import android.content.Intent;
 import android.sax.StartElementListener;
 import android.text.format.DateFormat;
+import android.util.Log;
 
 import com.kab.channel66.utils.CommonUtils;
 import com.parse.Parse;

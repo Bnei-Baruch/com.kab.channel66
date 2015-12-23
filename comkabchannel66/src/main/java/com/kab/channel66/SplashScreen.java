@@ -17,7 +17,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.MotionEvent;
 
-import com.bugsense.trace.BugSenseHandler; 
+//import com.bugsense.trace.BugSenseHandler;
 
 public class SplashScreen extends Activity {
 	
@@ -33,8 +33,8 @@ public class SplashScreen extends Activity {
 	    setContentView(R.layout.splash);
 	   
 	    final SplashScreen sPlashScreen = this;
-		if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this))
-			return;
+//		if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this))
+//			return;
 	    // thread for displaying the SplashScreen
 	    splashTread = new Thread() {
 	        @Override

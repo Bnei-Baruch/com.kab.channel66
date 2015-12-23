@@ -1,11 +1,12 @@
 package com.kab.channel66.utils;
 
-import io.vov.vitamio.utils.Log;
+//import io.vov.vitamio.utils.Log;
 import android.app.Application;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.widget.Toast;
 
 /**

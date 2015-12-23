@@ -3,7 +3,7 @@
     <item android:id="@+id/login"
           android:title="@string/login" >
     </item>
-    <item android:id="@+id/playType"
-        android:title="@string/device" android:checkable="true">
-    </item>
+    <!--<item android:id="@+id/playType"-->
+        <!--android:title="@string/device" android:checkable="true">-->
+    <!--</item>-->
 </menu>
