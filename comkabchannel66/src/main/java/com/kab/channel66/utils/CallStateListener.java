@@ -28,12 +28,12 @@ public class CallStateListener extends PhoneStateListener {
          case TelephonyManager.CALL_STATE_OFFHOOK:
          // called when someone is ringing to this phone
         	 Log.i("Telephone state", "ringing");
-        	 m_player.Pause();
+        	 m_player.PausePlay();
          
          break;
          case TelephonyManager.CALL_STATE_IDLE:
         	 Log.i("Telephone state", "idle");
-        	 m_player.Resume();       
+        	 m_player.ResumePlay();
          break;
      }
  }

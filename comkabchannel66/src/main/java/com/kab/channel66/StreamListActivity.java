@@ -11,6 +11,8 @@ import org.json.JSONObject;
 
 //import com.apphance.android.Log;
 import com.google.analytics.tracking.android.EasyTracker;
+import com.kab.channel66.utils.CallStateInterface;
+import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
 
 import android.annotation.SuppressLint;
@@ -38,6 +40,8 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
+import android.telephony.PhoneStateListener;
+import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -51,7 +55,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-public class StreamListActivity extends BaseListActivity implements LanguageSeletedListener {
+public class StreamListActivity extends BaseListActivity implements LanguageSeletedListener , CallStateInterface {
 
 	private ServiceConnection connection = new ServiceConnection() {
 		@Override
@@ -67,6 +71,9 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 
 
 	};
+
+	private CallStateListener calllistener;
+	TelephonyManager telephony;
 	private HLSEvents events;
 	private String TranslationInfoString;
 	private int status = 0;
@@ -83,9 +90,45 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 	Intent svc;
 	private ArrayList<com.kab.channel66.HLSEvents.Page> pages;
 	private CustomAdapter mAdataper;
-	
-	
 
+	@Override
+	public void StopPlay() {
+
+		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+		final String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
+
+		if(audioplay!=null && audioplay.isPlaying(audiourl))
+			audioplay.pause();
+	}
+
+	@Override
+	public void PausePlay() {
+
+		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+		final String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
+
+		if(audioplay!=null && audioplay.isPlaying(audiourl))
+			audioplay.pause();
+	}
+
+	@Override
+	public void StartPlay() {
+
+		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+		final String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
+
+		if(audioplay!=null )
+			audioplay.start();
+	}
+
+	@Override
+	public void ResumePlay() {
+		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+		final String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
+
+		if(audioplay!=null )
+			audioplay.start();
+	}
 
 	public StreamListActivity() {
 		audioplay = VLCMediaPlayer.get();
@@ -118,10 +161,9 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 
 		CommonUtils.RemoveOldPlugin(this);
 
-//		if (!LibsChecker.checkVitamioLibs(this))
-//			return;
-
-
+		calllistener = new CallStateListener(this);
+		telephony = (TelephonyManager)this.getSystemService(Context.TELEPHONY_SERVICE); //TelephonyManager object
+		telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE); //Register our listener with TelephonyManager
 
 		try {
 			//  test channel 

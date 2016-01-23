@@ -2,11 +2,14 @@
 package com.kab.channel66;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.telephony.PhoneStateListener;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Surface;
@@ -16,6 +19,8 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.Toast;
 
 import com.kab.channel66.R;
+import com.kab.channel66.utils.CallStateInterface;
+import com.kab.channel66.utils.CallStateListener;
 
 import org.videolan.libvlc.IVLCVout;
 import org.videolan.libvlc.LibVLC;
@@ -26,7 +31,7 @@ import org.videolan.libvlc.util.AndroidUtil;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC.HardwareAccelerationError {
+public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC.HardwareAccelerationError,CallStateInterface {
     public final static String TAG = "LibVLCAndroidSample/VideoActivity";
 
     public final static String LOCATION = "com.compdigitec.libvlcandroidsample.VideoActivity.location";
@@ -43,6 +48,9 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     private int mVideoWidth;
     private int mVideoHeight;
     private final static int VideoSizeChanged = -1;
+
+    private CallStateListener calllistener;
+    private TelephonyManager telephony;
 
     /*************
      * Activity
@@ -61,6 +69,11 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 
         mSurface = (SurfaceView) findViewById(R.id.surface_view);
         holder = mSurface.getHolder();
+
+        calllistener = new CallStateListener(this);
+        telephony = (TelephonyManager)this.getSystemService(Context.TELEPHONY_SERVICE); //TelephonyManager object
+        telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE); //Register our listener with TelephonyManager
+
         //holder.addCallback(this);
     }
 
@@ -75,6 +88,10 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         super.onResume();
         createPlayer(mFilePath);
     }
+
+
+
+
 
     @Override
     protected void onPause() {
@@ -154,6 +171,8 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
             options.add("--aout=opensles");
             options.add("--audio-time-stretch"); // time stretching
             options.add("-vvv"); // verbosity
+            options.add("--http-reconnect");
+            options.add("--network-caching=2000");
             libvlc = new LibVLC(options);
             libvlc.setOnHardwareAccelerationError(this);
             holder.setKeepScreenOn(true);
@@ -170,7 +189,9 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
             vout.attachViews();
 
             Media m = new Media(libvlc,AndroidUtil.LocationToUri(media));
+
             mMediaPlayer.setMedia(m);
+
             mMediaPlayer.play();
         } catch (Exception e) {
             Toast.makeText(this, "Error creating player!", Toast.LENGTH_LONG).show();
@@ -217,6 +238,26 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 
     @Override
     public void onSurfacesDestroyed(IVLCVout vout) {
+
+    }
+
+    @Override
+    public void PausePlay() {
+        mMediaPlayer.pause();
+    }
+
+    @Override
+    public void StartPlay() {
+
+    }
+
+    @Override
+    public void ResumePlay() {
+       
+    }
+
+    @Override
+    public void StopPlay() {
 
     }
 
