@@ -253,7 +253,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 
     @Override
     public void ResumePlay() {
-       
+
     }
 
     @Override
