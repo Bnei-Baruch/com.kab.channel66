@@ -1,21 +1,14 @@
 package com.kab.channel66;
 
-import java.util.Calendar;
-
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-//import io.vov.vitamio.utils.Log;
 import android.content.Context;
 import android.content.Intent;
-import android.sax.StartElementListener;
-import android.text.format.DateFormat;
+import android.net.Uri;
 import android.util.Log;
 
 import com.kab.channel66.utils.CommonUtils;
-import com.parse.Parse;
-import com.parse.ParseInstallation;
 import com.parse.ParseObject;
 import com.parse.ParsePushBroadcastReceiver;
 
@@ -61,10 +54,29 @@ public  class ParsePushHandling extends ParsePushBroadcastReceiver {
 		
 		if(intent.getAction().equalsIgnoreCase("com.parse.push.intent.OPEN"))
 		{
-			Intent intent1 = new Intent(context, PushMessagesActivity.class);
-			intent1.putExtras(intent.getExtras());
-			intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			context.startActivity(intent1);
+			String text = (String) intent.getExtras().get(KEY_PUSH_DATA);
+			String val = "";
+			try {
+				JSONObject pushjson = new JSONObject(text);
+				val = (String) pushjson.get("alert");
+			}
+			catch (Exception ex)
+			{
+
+			}
+			Uri uri = CommonUtils.findURIInText(val);
+			if(uri != null) {
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(uri);
+				context.startActivity(i);
+			}
+			else {
+
+				Intent intent1 = new Intent(context, PushMessagesActivity.class);
+				intent1.putExtras(intent.getExtras());
+				intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				context.startActivity(intent1);
+			}
 		}
 		
 		

@@ -3,6 +3,7 @@ package com.kab.channel66.utils;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Matcher;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -17,12 +18,12 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.preference.PreferenceManager;
 
-//import com.apphance.android.Log;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.kab.channel66.LanguageSeletedListener;
 import com.kab.channel66.R;
 import com.kab.channel66.StreamListActivity;
 
+import android.util.Patterns;
 import android.widget.EditText;
 
 import android.app.Activity;
@@ -205,5 +206,22 @@ public class CommonUtils {
 		    	SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(context);
 				return shared.getString("lang", "eng");
 		    }
+	public static Uri findURIInText(String text)
+	{
+		Matcher matcher = Patterns.WEB_URL.matcher(text);
+		while (matcher.find())
+		{
+			String url = matcher.group();
+			try{
+                Uri uri = Uri.parse(url);
+				return uri;
+			}
+			catch (Exception ex)
+			{
+
+			}
+		}
+		return null;
+	}
 	 
 }
