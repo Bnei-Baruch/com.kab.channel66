@@ -1,15 +1,12 @@
 package com.kab.channel66;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
 
-//import com.apphance.android.Log;
+import com.kab.channel66.utils.CommonUtils;
 import com.parse.FindCallback;
-import com.parse.Parse;
 import com.parse.ParseException;
-import com.parse.ParseInstallation;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
@@ -17,15 +14,15 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.text.format.Time;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ListView;
+import android.widget.AdapterView;
 
 
 public class PushMessagesActivity extends BaseListActivity {
@@ -42,7 +39,22 @@ public class PushMessagesActivity extends BaseListActivity {
 		
 		
 		mAdapter = new MessageAdapter(PushMessagesActivity.this, 0);
-		
+
+        PushMessagesActivity.this.getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                ParseObject obj = mAdapter.getItem(position);
+                String text = obj.getString("text");
+                Uri uri = CommonUtils.findURIInText(text);
+                if(uri != null)
+                {
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(uri);
+                    startActivity(i);
+                }
+            }
+        });
+
 		pushMessages = new ArrayList<String>();
 
 
@@ -102,7 +114,7 @@ public class PushMessagesActivity extends BaseListActivity {
 //		            Log.d("score", "Retrieved " + messages.size());
 //		            messages.get
 //		            pushMessages.addAll(messages.toArray());
-		            
+
 		            mAdapter.addArray(messages);
 //		          //FOR TESTING PURPOSES
 //		   		 ParseObject p1 = new ParseObject("messages");
@@ -112,7 +124,7 @@ public class PushMessagesActivity extends BaseListActivity {
 		            Message msg = handler.obtainMessage();
                     msg.arg1 = 1;
                     handler.sendMessage(msg);
-		            
+
 		        } else {
 //		            Log.d("score", "Error: " + e.getMessage());
 		        }

@@ -55,8 +55,8 @@ public class MyApplication extends Application {
      // channel66 
         Parse.initialize(this, "dmSTSXcOcBxITZBioUAmC7HXps0OCUteMJEklSCD", "b0gN0SoJgOmQ51fkQoNb9B7bNEIF2agc9SYhFG7U");//real
 		
-		// test
-        //channel Parse.initialize(this, "KZGRjYuBEwh6vubjJBRzscvVixyLC8fWg9YqAwVS", "H3JqHHIKrd8xN44weGfAsWmUeCJQdqh8bPR8H4M6");//test
+		//chanel test 2
+        //Parse.initialize(this, "ayoTJHpHAVbwWEprqxzQeYpYCIaxz98HY19DbQiF", "imLHqDJYiH6S3iPtZ3gw1yilsXna8wHM0oSiGktp");//test
 
 		ParseInstallation.getCurrentInstallation().saveInBackground();
 
