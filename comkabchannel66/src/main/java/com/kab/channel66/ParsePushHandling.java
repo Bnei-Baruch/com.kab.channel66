@@ -18,8 +18,8 @@ public  class ParsePushHandling extends ParsePushBroadcastReceiver {
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		
-		if(!CommonUtils.getActivated(context))
-			return;
+//		if(!CommonUtils.getActivated(context))
+//			return;
 		
 		
 		// TODO Auto-generated method stub

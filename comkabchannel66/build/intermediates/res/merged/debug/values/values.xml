@@ -15,7 +15,7 @@
     <string name="autocheck">Auto check for broadcast</string>
     <string name="change_lang">Change language</string>
     <string name="channel66">Channel 66</string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">e8a24527-bf53-42f5-92f4-32ea92d644f4</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">c9a51a68-48c5-48f0-8593-fec9fa2e07df</string>
     <string name="device">Use device audio player</string>
     <string name="ga_trackingId">UA-36608494-1</string>
     <string name="hello_world">Hello world!</string>
