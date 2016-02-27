@@ -97,18 +97,21 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
 		final String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
 
-		if(audioplay!=null && audioplay.isPlaying(audiourl))
+		if(audioplay!=null )
 			audioplay.pause();
 	}
 
 	@Override
-	public void PausePlay() {
+	public void PausePlay(boolean callActive) {
 
 		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
 		final String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
 
-		if(audioplay!=null && audioplay.isPlaying(audiourl))
+		if (audioplay != null && audioplay.isPlaying(audiourl)) {
 			audioplay.pause();
+		}
+		else
+			audioplay.release();
 	}
 
 	@Override
@@ -117,12 +120,12 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
 		final String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
 
-		if(audioplay!=null )
+		if(audioplay!=null && !audiourl.isEmpty())
 			audioplay.start();
 	}
 
 	@Override
-	public void ResumePlay() {
+	public void ResumePlay(boolean callActive) {
 		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
 		final String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
 
@@ -994,45 +997,6 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 			Intent intent = new Intent(StreamListActivity.this,PushMessagesActivity.class);
 			startActivity(intent);
 			return true;
-//		case R.id.Autocheck:
-//			PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
-//			wl = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "My Tag");
-//			wl.acquire();
-//			myProgressDialog = new ProgressDialog(StreamListActivity.this);
-//			myProgressDialog.setTitle("Waiting for broadcast...");
-//			//	              myProgressDialog.show(WebLogin.this,"Waiting for broadcast...",null,true,true,new OnCancelListener() {
-//			//	  	            public void onCancel(DialogInterface pd) {
-//			//	  	            	autocheckdone();
-//			//	 	            }
-//			//	 	        });
-//			//
-//			myProgressDialog = ProgressDialog
-//					.show(this, "Waiting for broadcast...",
-//							null, true, true,
-//							new OnCancelListener() {
-//						public void onCancel(DialogInterface pd) {
-//							autocheckdone();
-//						}
-//					});
-//
-//			myChecker = new StreamAvailabilityChecker();
-//			myChecker.setAuto(true);
-//			myChecker.setActivity(StreamListActivity.this);
-//			myChecker.execute("http://icecast.kab.tv/live1-heb-574bcfd5.mp3");
-//
-//			// myProgressDialog.hide();
-//			return true;
-
-//			case R.id.playType:
-//				item.setChecked(!item.isChecked());
-//				SharedPreferences sharedAudio = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-//				SharedPreferences.Editor editAudio = sharedAudio.edit();
-//				editAudio.putBoolean("isNative", item.isChecked());
-//				editAudio.commit();
-//				mAdataper.notifyDataSetChanged();
-//				setListAdapter(mAdataper);
-//
-//				return true;
 
 
 		default:

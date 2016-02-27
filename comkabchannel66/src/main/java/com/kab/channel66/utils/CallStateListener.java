@@ -15,6 +15,7 @@ import android.widget.Toast;
 public class CallStateListener extends PhoneStateListener {
 	
 	CallStateInterface m_player;
+    boolean callActive = false;
 	
 	public CallStateListener(CallStateInterface player)
 	{
@@ -28,12 +29,14 @@ public class CallStateListener extends PhoneStateListener {
          case TelephonyManager.CALL_STATE_OFFHOOK:
          // called when someone is ringing to this phone
         	 Log.i("Telephone state", "ringing");
-        	 m_player.PausePlay();
+        	 m_player.PausePlay(callActive);
+             callActive = true;
          
          break;
          case TelephonyManager.CALL_STATE_IDLE:
         	 Log.i("Telephone state", "idle");
-        	 m_player.ResumePlay();
+        	 m_player.ResumePlay(callActive);
+             callActive = false;
          break;
      }
  }

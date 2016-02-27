@@ -36,8 +36,8 @@ org/videolan/libvlc/util/HWDecoderUtil$AudioOutputBySOC.class
 com/parse/NotificationCompat$Builder$Style.class
 com/google/analytics/tracking/android/EasyTracker.class
 org/videolan/libvlc/util/HWDecoderUtil$Decoder.class
-org/videolan/libvlc/LibVLC$HardwareAccelerationError.class
 android/support/v4/widget/CursorAdapter.class
+org/videolan/libvlc/LibVLC$HardwareAccelerationError.class
 org/videolan/libvlc/LibVLC$Event.class
 com/parse/PushRouter.class
 com/parse/NotificationCompat$Builder.class
@@ -72,8 +72,8 @@ com/parse/PushConnection.class
 com/kab/channel66/LoginLayout$1.class
 com/google/myjson/annotations/SerializedName.class
 io/fabric/sdk/android/services/settings/AnalyticsSettingsData.class
-android/support/v4/widget/SimpleCursorAdapter.class
 com/kab/channel66/LanguageSeletedListener.class
+android/support/v4/widget/SimpleCursorAdapter.class
 com/parse/entity/mime/content/InputStreamBody.class
 com/parse/PushService$2.class
 org/videolan/libvlc/MediaPlayer$Position.class
@@ -144,8 +144,8 @@ com/google/myjson/reflect/TypeToken.class
 com/kab/channel66/CustomAdapter.class
 com/kab/channel66/StreamListActivity.class
 com/kab/channel66/StreamListActivity$9.class
-com/crashlytics/android/Crashlytics.class
 com/google/myjson/JsonNull.class
+com/crashlytics/android/Crashlytics.class
 com/kab/channel66/StreamListActivity$19.class
 com/parse/entity/mime/content/StringBody.class
 com/parse/ParseClassName.class
@@ -174,8 +174,8 @@ io/fabric/sdk/android/Fabric.class
 de/greenrobot/event/NoSubscriberEvent.class
 org/videolan/libvlc/Media$VideoTrack.class
 com/parse/signpost/OAuthProvider.class
-com/parse/ParseRole.class
 com/parse/EventuallyPin.class
+com/parse/ParseRole.class
 org/videolan/libvlc/MediaPlayer$Equalizer.class
 org/videolan/libvlc/Media$AudioTrack.class
 com/parse/ParseNotificationManager.class
@@ -209,6 +209,6 @@ com/kab/channel66/PushMessagesActivity$4.class
 com/kab/channel66/ContentParser.class
 android/support/multidex/ZipUtil.class
 org/videolan/libvlc/MediaPlayer.class
-android/support/v4/app/FragmentManager.class
 com/parse/PushService$1.class
+android/support/v4/app/FragmentManager.class
 com/kab/channel66/utils/CommonUtils.class

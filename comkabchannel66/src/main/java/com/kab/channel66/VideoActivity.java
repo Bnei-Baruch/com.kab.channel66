@@ -242,7 +242,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     }
 
     @Override
-    public void PausePlay() {
+    public void PausePlay(boolean callActive) {
         mMediaPlayer.pause();
     }
 
@@ -252,7 +252,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     }
 
     @Override
-    public void ResumePlay() {
+    public void ResumePlay(boolean callActive) {
 
     }
 

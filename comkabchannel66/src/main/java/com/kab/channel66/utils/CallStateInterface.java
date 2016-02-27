@@ -2,8 +2,8 @@ package com.kab.channel66.utils;
 
 public interface CallStateInterface {
 
-	 void PausePlay();
+	 void PausePlay(boolean callActive);
 	 void StartPlay();
-	 void ResumePlay();
+	 void ResumePlay(boolean callActive);
 	 void StopPlay();
 }
