@@ -96,14 +96,24 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     @Override
     protected void onPause() {
         super.onPause();
-        releasePlayer();
+        //releasePlayer();
     }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        releasePlayer();
+        telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE);
+    }
+
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         releasePlayer();
         holder = null;
+
     }
 
     /*************
@@ -212,6 +222,8 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 
         mVideoWidth = 0;
         mVideoHeight = 0;
+        mMediaPlayer.release();
+
     }
 
     /*************
@@ -242,24 +254,23 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     }
 
     @Override
-    public void PausePlay(boolean callActive) {
-        mMediaPlayer.pause();
+    public void PausePlay() {
+
+        if(mMediaPlayer.isPlaying())
+        mMediaPlayer.stop();
     }
+
+
 
     @Override
-    public void StartPlay() {
+    public void ResumePlay() {
 
+        //int state = mMediaPlayer.getPlayerState();
+        if(mMediaPlayer!=null && !mMediaPlayer.isPlaying() )//&& mMediaPlayer.getPlayerState()== MediaPlayer.Event.Paused)
+           mMediaPlayer.play();
     }
 
-    @Override
-    public void ResumePlay(boolean callActive) {
 
-    }
-
-    @Override
-    public void StopPlay() {
-
-    }
 
     private static class MyPlayerListener implements MediaPlayer.EventListener {
         private WeakReference<VideoActivity> mOwner;
@@ -275,7 +286,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
             switch(event.type) {
                 case MediaPlayer.Event.EndReached:
                   //  Log.d(TAG, "MediaPlayerEndReached");
-                    player.releasePlayer();
+                  //  player.releasePlayer();
                     break;
                 case MediaPlayer.Event.Playing:
                 case MediaPlayer.Event.Paused:

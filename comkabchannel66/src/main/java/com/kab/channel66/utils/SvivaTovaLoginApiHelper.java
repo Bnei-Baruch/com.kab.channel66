@@ -22,7 +22,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.google.myjson.JsonObject;
-import com.parse.signpost.http.HttpResponse;
+//import com.parse.signpost.http.HttpResponse;
 
 import android.app.Activity;
 import android.database.CursorJoiner.Result;
@@ -37,9 +37,7 @@ import android.webkit.CookieManager;
 
 public class SvivaTovaLoginApiHelper extends AsyncTask< ArrayList<String>, Void, SvivaTovaLoginApiHelper.status> {
 
-	final public String kSuccesfulLoginIndicator= "<a href=\"http://kabbalahgroup.info/internet/he/users/logout\" title=\"יציאה\">יציאה</a>";
-	final public String kSuccesfulLoginIndicator2= "<div id=\"internet\"></div>";
-	final public String  kFailedLoginIndicator =  "אימייל או סיסמא שגויים";
+
 	final public String  kSvivaTovaLoginURL ="http://kabbalahgroup.info/internet/api/v1/tokens.json";
 
 	HttpClient mHttpclient;
@@ -54,56 +52,44 @@ public class SvivaTovaLoginApiHelper extends AsyncTask< ArrayList<String>, Void,
 		fail,
 		not_allowed
 	}
-	
-	public HttpGet getHeaderget(HttpGet get)
-	{
-		get.addHeader("Content-Type","application/x-www-form-urlencoded");
-		get.addHeader("Connection","keep-alive");
-		get.addHeader("Accept-Encoding","gzip,deflate,sdch");
-		get.addHeader("Host","kabbalahgroup.info");
-		get.addHeader("User-Agent", "Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Mobile Safari/535.19");
-		
-		return get;
-	}
+
+
 	public HttpPost getHeaderpost(HttpPost post)
 	{
 		post.addHeader("Content-Type","application/json");
-//		post.addHeader("Connection","keep-alive");
-//		post.addHeader("Accept-Encoding","gzip,deflate,sdch");
-//		post.addHeader("Host","kabbalahgroup.info");
-//		post.addHeader("User-Agent", "Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Mobile Safari/535.19");
-//		post.addHeader("Referer", kSvivaTovaLoginURL);
-		//post.addHeader("Cookie", servercookies);
-		
 		return post;
-		
-		
+
+
 	}
-	
-	
-	public String postLoginDetails() throws Exception 
+
+
+	public String postLoginDetails() throws Exception
 	{
 		mHttpclient = new DefaultHttpClient();
 		 BufferedReader in = null;
 		try{
-			
-		
-//		CookieManager manager = CookieManager.getInstance();
-//		manager.setAcceptCookie(true);
+
+
 		HttpPost request = new HttpPost(kSvivaTovaLoginURL);
 		request = getHeaderpost(request);
-		
+
 		 JSONObject jsonObject = new JSONObject();
-         jsonObject.accumulate("email", mUser);
-         jsonObject.accumulate("password", mPassword);
-        
+			if(mUser==null ||  mUser.isEmpty())
+				jsonObject.accumulate("fb_token", mPassword);
+			else
+			{
+				jsonObject.accumulate("email", mUser);
+				jsonObject.accumulate("password", mPassword);
+			}
+
+
 
          // 4. convert JSONObject to JSON to String
          String json = jsonObject.toString();
 
-         // ** Alternative way to convert Person object to JSON string usin Jackson Lib 
+         // ** Alternative way to convert Person object to JSON string usin Jackson Lib
          // ObjectMapper mapper = new ObjectMapper();
-         // json = mapper.writeValueAsString(person); 
+         // json = mapper.writeValueAsString(person);
 
          // 5. set json to StringEntity
          StringEntity se = new StringEntity(json);
@@ -114,7 +100,7 @@ public class SvivaTovaLoginApiHelper extends AsyncTask< ArrayList<String>, Void,
 //         // 7. Set some headers to inform server about the type of the content   
 //         httpPost.setHeader("Accept", "application/json");
 //         httpPost.setHeader("Content-type", "application/json");
-		    
+
 		   // request.setHeader("Content-Length", Integer.toString(bodyToSend.toString().length()));
 //		    mHttpclient.getConnectionManager().closeExpiredConnections();
 		    org.apache.http.HttpResponse response =  (org.apache.http.HttpResponse) mHttpclient.execute(request);
@@ -133,7 +119,7 @@ public class SvivaTovaLoginApiHelper extends AsyncTask< ArrayList<String>, Void,
 		}
             catch(Exception e)
             {
-            	 Log.e("log_tag", "Error in http connection "+e.toString());	
+            	 Log.e("log_tag", "Error in http connection "+e.toString());
             }
          finally {
             if (in != null) {
@@ -144,16 +130,20 @@ public class SvivaTovaLoginApiHelper extends AsyncTask< ArrayList<String>, Void,
                 }
             }
         }
-		
-		
-		return "";    
+
+
+		return "";
 	}
 
 	@Override
 	protected status doInBackground(ArrayList<String>... params) {
 		// TODO Auto-generated method stub
-		mUser = (String)params[0].get(0);
-		mPassword = (String)params[0].get(1);
+		if(params[0].size()>1) {
+			mUser = (String) params[0].get(0);
+			mPassword = (String) params[0].get(1);
+		}
+		else
+			mPassword = (String) params[0].get(0);
 		try {
 			return process(postLoginDetails());
 		} catch (Exception e) {

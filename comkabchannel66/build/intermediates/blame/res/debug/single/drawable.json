@@ -1,5 +1,17 @@
 [
     {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/com_facebook_button_icon.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/com_facebook_button_icon.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_cancel_background.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/com_facebook_send_button_icon.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/com_facebook_send_button_icon.xml"
+    },
+    {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/video_back.png",
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/video_back.png"
     },
@@ -8,16 +20,40 @@
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/video_num_bg.png"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/scrubber_progress_horizontal_holo_dark.xml",
-        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/res/drawable/scrubber_progress_horizontal_holo_dark.xml"
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/com_facebook_button_like_background.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/com_facebook_button_like_background.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/com_facebook_button_send_background.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/com_facebook_button_send_background.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/com_facebook_button_background.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/com_facebook_button_background.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_round.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/messenger_button_white_bg_round.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_background.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/com_facebook_auth_dialog_background.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/mediacontroller_seekbar_thumb.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/mediacontroller_seekbar_thumb.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/video_num_front.png",
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/video_num_front.png"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/mediacontroller_seekbar_thumb.xml",
-        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/mediacontroller_seekbar_thumb.xml"
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_silver_background.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/com_facebook_button_login_silver_background.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_selector.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/messenger_button_blue_bg_selector.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/mediacontroller_pause_button.xml",
@@ -32,12 +68,20 @@
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/icon.png"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/splash.png",
-        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/splash.png"
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_selector.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/messenger_button_white_bg_selector.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/video_volumn_bg.png",
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/video_volumn_bg.png"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/splash.png",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/splash.png"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_round.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/messenger_button_blue_bg_round.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/video_brightness_bg.png",
@@ -48,20 +92,20 @@
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/home_btn_bg.xml"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/myshape.xml",
-        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/myshape.xml"
-    },
-    {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/mediacontroller_seekbar.xml",
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/mediacontroller_seekbar.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/myshape.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/myshape.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/video_online.png",
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/video_online.png"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/scrubber_control_selector_holo.xml",
-        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.kab.channel66/InitActivity/unspecified/res/drawable/scrubber_control_selector_holo.xml"
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_header_background.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/drawable/com_facebook_auth_dialog_header_background.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/video_file.png",

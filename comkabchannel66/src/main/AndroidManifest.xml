@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kab.channel66"
-    android:versionCode="34"
-    android:versionName="2.3" >
+    android:versionCode="36"
+    android:versionName="2.4.1" >
 
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
@@ -54,7 +54,7 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_info" />
         </receiver>
-        
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
         
          
           <activity
@@ -77,10 +77,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-         <activity
-            android:name=".NativeBackgroundPlayer"
+         <service
+            android:name=".PlayerService"
             android:label="@string/app_name" >
-        </activity>
+        </service>
         <activity
             android:name=".VideoActivity"
             android:configChanges="orientation|screenSize"
@@ -163,7 +163,15 @@
                 </category>
                 </intent-filter>
         </activity>
-        
+
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+
       <service android:name=".NativeBackgroundPlayer"  android:enabled="true"></service>
         <service android:name="com.parse.PushService" />
 <receiver android:name="com.parse.ParseBroadcastReceiver">

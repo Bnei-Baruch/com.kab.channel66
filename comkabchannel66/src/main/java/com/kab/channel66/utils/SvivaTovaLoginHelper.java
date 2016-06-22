@@ -19,7 +19,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.HttpParams;
 
-import com.parse.signpost.http.HttpResponse;
+//import com.parse.signpost.http.HttpResponse;
 
 import android.app.Activity;
 import android.database.CursorJoiner.Result;

@@ -8,7 +8,8 @@
 -dontobfuscate
 -dontusemixedcaseclassnames
 -dontpreverify
--dontwarn
+-dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontwarn **
 -printconfiguration /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/multi-dex/debug/components.flags
 
 
@@ -29,7 +30,7 @@
     <init>();
 }
 
--keep class com.kab.channel66.NativeBackgroundPlayer {
+-keep class com.kab.channel66.PlayerService {
     <init>();
 }
 
@@ -57,6 +58,10 @@
     <init>();
 }
 
+-keep class com.facebook.FacebookActivity {
+    <init>();
+}
+
 -keep class com.kab.channel66.NativeBackgroundPlayer {
     <init>();
 }
@@ -77,11 +82,20 @@
     <init>();
 }
 
+-keep class com.facebook.CustomTabActivity {
+    <init>();
+}
+
 -keep public class * extends android.app.backup.BackupAgent {
     <init>();
 }
 
 -keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
     <fields>;
     <methods>;
 }

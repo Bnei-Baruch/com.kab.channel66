@@ -1,6 +1,7 @@
 package com.kab.channel66;
 
 import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.ndk.CrashlyticsNdk;
 import io.fabric.sdk.android.Fabric;
 //import io.vov.vitamio.LibsChecker;
 
@@ -12,12 +13,13 @@ import android.support.multidex.MultiDex;
 //import org.acra.*;
 //import org.acra.annotation.*;
 
+import com.facebook.appevents.AppEventsLogger;
 import com.kab.channel66.utils.CommonUtils;
 import com.parse.Parse;
 import com.parse.ParseInstallation;
 import com.parse.ParsePush;
 import com.parse.PushService;
-
+import com.facebook.FacebookSdk;
 
 //@ReportsCrashes(formKey = "", // will not be used
 //mailTo = "igal.avraham@gmail.com",
@@ -43,7 +45,7 @@ public class MyApplication extends Application {
 	@Override
     public void onCreate() {
         super.onCreate();
-        Fabric.with(this, new Crashlytics());
+        Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
 //        if(CommonUtils.checkConnectivity(getApplicationContext()))
 //        	ACRA.init(this);
        // LibsChecker.checkVitamioLibs(this);
@@ -56,7 +58,7 @@ public class MyApplication extends Application {
         Parse.initialize(this, "dmSTSXcOcBxITZBioUAmC7HXps0OCUteMJEklSCD", "b0gN0SoJgOmQ51fkQoNb9B7bNEIF2agc9SYhFG7U");//real
 		
 		//chanel test 2
-        //Parse.initialize(this, "ayoTJHpHAVbwWEprqxzQeYpYCIaxz98HY19DbQiF", "imLHqDJYiH6S3iPtZ3gw1yilsXna8wHM0oSiGktp");//test
+//        Parse.initialize(this, "ayoTJHpHAVbwWEprqxzQeYpYCIaxz98HY19DbQiF", "imLHqDJYiH6S3iPtZ3gw1yilsXna8wHM0oSiGktp");//test
 
 		ParseInstallation.getCurrentInstallation().saveInBackground();
 
@@ -64,7 +66,11 @@ public class MyApplication extends Application {
 		Parse.setLogLevel(Parse.LOG_LEVEL_VERBOSE);
 		
         // The following line triggers the initialization of ACRA
-        
+
+
+        //Facebook
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        AppEventsLogger.activateApp(this);
     }
     @Override
     protected void attachBaseContext(Context base) {

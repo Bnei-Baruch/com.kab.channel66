@@ -12,7 +12,7 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-import com.parse.signpost.http.HttpResponse;
+//import com.parse.signpost.http.HttpResponse;
 
 import android.app.Application;
 import android.content.Context;

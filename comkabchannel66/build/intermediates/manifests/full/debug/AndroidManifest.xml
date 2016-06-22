@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kab.channel66"
-    android:versionCode="33"
-    android:versionName="2.2" >
+    android:versionCode="36"
+    android:versionName="2.4.1" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="15"
         android:targetSdkVersion="16" />
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -59,6 +59,10 @@
                 android:resource="@xml/widget_info" />
         </receiver>
 
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
         <activity
             android:name="io.vov.vitamio.activity.InitActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
@@ -78,10 +82,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.kab.channel66.NativeBackgroundPlayer"
+
+        <service
+            android:name="com.kab.channel66.PlayerService"
             android:label="@string/app_name" >
-        </activity>
+        </service>
+
         <activity
             android:name="com.kab.channel66.VideoActivity"
             android:configChanges="orientation|screenSize"
@@ -158,6 +164,11 @@
                 </category>
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <service
             android:name="com.kab.channel66.NativeBackgroundPlayer"
@@ -194,6 +205,11 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="7e57fed40952c3cf6bb7a31f3fb649bf967223a7" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" >
+        </activity>
     </application>
 
 </manifest>

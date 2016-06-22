@@ -3,7 +3,7 @@
     package="com.kab.channel66.test" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="15"
         android:targetSdkVersion="16" />
 
     <instrumentation

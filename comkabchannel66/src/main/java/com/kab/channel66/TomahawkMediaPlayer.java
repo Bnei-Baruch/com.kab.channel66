@@ -29,6 +29,8 @@ public interface TomahawkMediaPlayer {
 
     void seekTo(int msec);
 
+    void stop();
+
     TomahawkMediaPlayer prepare(Application application, String query,
                                 TomahawkMediaPlayerCallback callback);
 
@@ -41,5 +43,7 @@ public interface TomahawkMediaPlayer {
     boolean isPreparing(String query);
 
     boolean isPrepared(String query);
+
+
 
 }
