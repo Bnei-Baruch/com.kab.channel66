@@ -130,6 +130,7 @@ public class CommonUtils {
        	         EasyTracker.getTracker().trackEvent("Group", "name", value,0L);
        	        
        	      Intent intent = new Intent(context,StreamListActivity.class);
+				 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
        	   context.startActivity(intent);
        	   ((Activity)context).finish();
       	         return;                  

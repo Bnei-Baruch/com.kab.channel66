@@ -43,6 +43,7 @@ public class SvivaTovaLoginApiHelper extends AsyncTask< ArrayList<String>, Void,
 	HttpClient mHttpclient;
 	String mUser;
 	String mPassword;
+	String mToken;
 	String mLocalization;
 	status mSuccess = status.fail;
 
@@ -74,8 +75,8 @@ public class SvivaTovaLoginApiHelper extends AsyncTask< ArrayList<String>, Void,
 		request = getHeaderpost(request);
 
 		 JSONObject jsonObject = new JSONObject();
-			if(mUser==null ||  mUser.isEmpty())
-				jsonObject.accumulate("fb_token", mPassword);
+			if(mToken!=null)
+				jsonObject.accumulate("fb_token", mToken);
 			else
 			{
 				jsonObject.accumulate("email", mUser);
@@ -143,7 +144,7 @@ public class SvivaTovaLoginApiHelper extends AsyncTask< ArrayList<String>, Void,
 			mPassword = (String) params[0].get(1);
 		}
 		else
-			mPassword = (String) params[0].get(0);
+			mToken = (String) params[0].get(0);
 		try {
 			return process(postLoginDetails());
 		} catch (Exception e) {

@@ -76,10 +76,8 @@
         android:layout_height="40dip"
         android:textSize="7pt"
         android:layout_alignStart="@id/et_pw"
-
         android:layout_below="@id/login_button"
         android:layout_marginRight="9dip"
-
         android:layout_marginLeft="15dip"
         android:textColor="#AA0000"
         android:text=""/>

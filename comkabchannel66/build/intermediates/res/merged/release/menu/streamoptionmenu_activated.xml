@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <!--<item android:id="@+id/Autocheck"-->
+          <!--android:title="@string/autocheck" >-->
+    <!--</item>-->
+     <item android:id="@+id/Changelang"
+          android:title="@string/change_lang" >
+    </item>
+    <item android:id="@+id/PushMessages"
+          android:title="@string/IncomingMessages" >
+    </item>
+    <!--<item android:id="@+id/playType"-->
+        <!--android:title="@string/device" android:checkable="true">-->
+    <!--</item>-->
+    
+</menu>

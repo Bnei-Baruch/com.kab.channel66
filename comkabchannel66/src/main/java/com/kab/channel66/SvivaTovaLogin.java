@@ -17,6 +17,7 @@ import com.facebook.GraphResponse;
 import com.facebook.Profile;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.google.analytics.tracking.android.EasyTracker;
 import com.kab.channel66.utils.CommonUtils;
 import com.kab.channel66.utils.SvivaTovaLoginApiHelper;
 import com.kab.channel66.utils.SvivaTovaLoginHelper;
@@ -55,7 +56,9 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 	
 	public void onCreate(Bundle icicle) {
 	    super.onCreate(icicle);
-	    
+		EasyTracker.getInstance().setContext(this);
+
+
 	    setContentView(R.layout.login);
 	    mUser = (EditText)findViewById(R.id.et_un);
 	    mPass = (EditText)findViewById(R.id.et_pw);
@@ -79,26 +82,34 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 		callbackManager =  CallbackManager.Factory.create();
 		if(isLoggedIn())
 		{
-			progressDialog = new ProgressDialog(SvivaTovaLogin.this);
-			progressDialog.setMessage("Processing data...");
-			progressDialog.show();
+			runOnUiThread(new Runnable() {
+
+				@Override
+				public void run() {
+					progressDialog = new ProgressDialog(SvivaTovaLogin.this);
+					progressDialog.setMessage("Processing data...");
+					progressDialog.show();
+				}
+			});
 			loginwithFBToken();
 		}
 		// Callback registration
 		loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
 			@Override
 			public void onSuccess(LoginResult loginResult) {
-				// App code
-//				Log.d("login","success");
-//				AccessToken tk = AccessToken.getCurrentAccessToken();
-//				Profile.fetchProfileForCurrentAccessToken();
-//				Profile profile = Profile.getCurrentProfile();
-//				Log.d("Profile onSuccess", "" +profile);
+
 
 				System.out.println("onSuccess");
-				progressDialog = new ProgressDialog(SvivaTovaLogin.this);
-				progressDialog.setMessage("Processing data...");
-				progressDialog.show();
+				runOnUiThread(new Runnable() {
+
+					@Override
+					public void run() {
+						progressDialog = new ProgressDialog(SvivaTovaLogin.this);
+						progressDialog.setMessage("Processing data...");
+						progressDialog.show();
+					}
+				});
+
 				loginwithFBResult(loginResult);
 
 			}
@@ -143,16 +154,6 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 				CommonUtils.ShowLanguageSelection(SvivaTovaLogin.this,SvivaTovaLogin.this);
 
 
-
-
-//						CommonUtils.ShowLanguageSelection(SvivaTovaLogin.this,new LanguageSeletedListener() {
-//
-//							@Override
-//							public void onSelectLanguage(String lang) {
-//								// TODO Auto-generated method stub
-//
-//							}
-//						});
 			}
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -174,7 +175,7 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 			@Override
 			public void onCompleted(JSONObject object, GraphResponse response) {
 				Log.i("LoginActivity", response.toString());
-				progressDialog.hide();
+				progressDialog.dismiss();
 				// Get facebook data from login
 				Bundle bFacebookData = getFacebookData(object);
 				String email = null;
@@ -192,25 +193,21 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 				mHelper = (SvivaTovaLoginApiHelper) new SvivaTovaLoginApiHelper().execute(details);
 				try {
 					if ((st = (SvivaTovaLoginApiHelper.status) mHelper.get()) != SvivaTovaLoginApiHelper.status.sucess)
-						if (st == SvivaTovaLoginApiHelper.status.not_allowed)
+						if (st == SvivaTovaLoginApiHelper.status.not_allowed) {
 							mError.setText("Login failed (code 2)");
-						else
+							EasyTracker.getTracker().trackEvent("SvivaTovaLogin", "failed", "EMAIL", 2L);
+						}
+						else {
 							mError.setText("Login failed (code 1)");
+							EasyTracker.getTracker().trackEvent("SvivaTovaLogin", "failed", "EMAIL", 1L);
+						}
 					else {
 						CommonUtils.setActivated(true, SvivaTovaLogin.this);
 						//run language selector
 						//with the language load the streams relevant like in weblogin and pass to stream list
 						CommonUtils.ShowLanguageSelection(SvivaTovaLogin.this, SvivaTovaLogin.this);
+						EasyTracker.getTracker().trackEvent("SvivaTovaLogin","success","EMAIL",0L);
 
-
-//						CommonUtils.ShowLanguageSelection(SvivaTovaLogin.this,new LanguageSeletedListener() {
-//
-//							@Override
-//							public void onSelectLanguage(String lang) {
-//								// TODO Auto-generated method stub
-//
-//							}
-//						});
 					}
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
@@ -260,25 +257,22 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 				mHelper = (SvivaTovaLoginApiHelper) new SvivaTovaLoginApiHelper().execute(details);
 				try {
 					if ((st = (SvivaTovaLoginApiHelper.status) mHelper.get()) != SvivaTovaLoginApiHelper.status.sucess)
-						if (st == SvivaTovaLoginApiHelper.status.not_allowed)
+						if (st == SvivaTovaLoginApiHelper.status.not_allowed) {
 							mError.setText("Login failed (code 2)");
-						else
+							EasyTracker.getTracker().trackEvent("SvivaTovaLogin", "failed", "FB", 2L);
+						}
+						else {
 							mError.setText("Login failed (code 1)");
+							EasyTracker.getTracker().trackEvent("SvivaTovaLogin","failed","FB",1L);
+						}
 					else {
 						CommonUtils.setActivated(true, SvivaTovaLogin.this);
 						//run language selector
 						//with the language load the streams relevant like in weblogin and pass to stream list
 						CommonUtils.ShowLanguageSelection(SvivaTovaLogin.this, SvivaTovaLogin.this);
 
+						EasyTracker.getTracker().trackEvent("SvivaTovaLogin","success","FB",0L);
 
-//						CommonUtils.ShowLanguageSelection(SvivaTovaLogin.this,new LanguageSeletedListener() {
-//
-//							@Override
-//							public void onSelectLanguage(String lang) {
-//								// TODO Auto-generated method stub
-//
-//							}
-//						});
 					}
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
@@ -367,4 +361,20 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 		AccessToken accessToken = AccessToken.getCurrentAccessToken();
 		return accessToken != null;
 	}
+
+	@Override
+	public void onStop() {
+		super.onStop();
+		EasyTracker.getInstance().activityStop(this); // Add this method.
+
+
+	}
+
+	@Override
+	public void onStart() {
+		super.onStart();
+		EasyTracker.getInstance().activityStart(this);
+	}
+
+
 }
