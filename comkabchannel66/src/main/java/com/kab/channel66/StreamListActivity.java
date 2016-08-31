@@ -68,6 +68,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 		public void onServiceConnected(ComponentName className, IBinder iservice) {
 			PlayerService.LocalBinder binder = (PlayerService.LocalBinder) iservice;
 			mService = binder.getService();
+			mService.setBackground();
 			mBound = true;
 		}
 		@Override
