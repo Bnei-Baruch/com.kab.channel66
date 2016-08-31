@@ -77,7 +77,7 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 		});
 
 		loginButton = (LoginButton) findViewById(R.id.login_button);
-		//loginButton.setReadPermissions("email");
+		loginButton.setReadPermissions("email");
 
 		callbackManager =  CallbackManager.Factory.create();
 		if(isLoggedIn())
@@ -175,7 +175,7 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 			@Override
 			public void onCompleted(JSONObject object, GraphResponse response) {
 				Log.i("LoginActivity", response.toString());
-				progressDialog.dismiss();
+
 				// Get facebook data from login
 				Bundle bFacebookData = getFacebookData(object);
 				String email = null;
@@ -190,6 +190,8 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 				ArrayList<String> details = new ArrayList<String>();
 				details.add(accessToken);
 				SvivaTovaLoginApiHelper.status st;
+
+
 				mHelper = (SvivaTovaLoginApiHelper) new SvivaTovaLoginApiHelper().execute(details);
 				try {
 					if ((st = (SvivaTovaLoginApiHelper.status) mHelper.get()) != SvivaTovaLoginApiHelper.status.sucess)
@@ -209,6 +211,7 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 						EasyTracker.getTracker().trackEvent("SvivaTovaLogin","success","EMAIL",0L);
 
 					}
+					progressDialog.dismiss();
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -315,6 +318,7 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 			CommonUtils.inputGroupName(SvivaTovaLogin.this);
 		}
 		//Start streamlist activity
+
 		
 	}
 

@@ -10,7 +10,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 //import com.apphance.android.Log;
+import com.backendless.Backendless;
+import com.backendless.async.callback.AsyncCallback;
+import com.backendless.exceptions.BackendlessFault;
 import com.google.analytics.tracking.android.EasyTracker;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.kab.channel66.utils.CallStateInterface;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
@@ -28,6 +32,7 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.DialogInterface.OnCancelListener;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -42,6 +47,7 @@ import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -122,12 +128,26 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
-
+//		PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+//		String version = pInfo.versionName;
+//		int verCode = pInfo.versionCode;
 		//remove old plugin library
+//		Backendless.initApp( this, "EAD5E9C4-0007-D572-FF17-08523CED4200", "B485FC16-0FC2-A9D2-FF3E-406DF81A7000", version );
 
 		CommonUtils.RemoveOldPlugin(this);
 
 
+//		Backendless.Messaging.registerDevice("727406170147", new AsyncCallback<Void>() {
+//			@Override
+//			public void handleResponse(Void response) {
+//
+//			}
+//
+//			@Override
+//			public void handleFault(BackendlessFault fault) {
+//
+//			}
+//		});
 
 
 //		try {
@@ -219,12 +239,54 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 		channels = getIntent().getStringArrayListExtra("channel");
 		ArrayList<String> description = new ArrayList<String>();
 
-		
-		
+//		String notification_body = getIntent().getExtras().getString("body");
+//		if(notification_body!=null)
+//		{
+//			Uri uri = CommonUtils.findURIInText(notification_body);
+//			if(uri != null)
+//			{
+//				Intent i = new Intent(Intent.ACTION_VIEW);
+//				i.setData(uri);
+//				startActivity(i);
+//			}
+//		}
 
+		if(getIntent()!=null)
+			handleMessageClicked(getIntent());
 	}
 	
-	
+	@Override
+	public void onNewIntent(Intent intent)
+	{
+
+		handleMessageClicked(intent);
+	}
+
+	private void handleMessageClicked(Intent intent)
+	{
+		Bundle extras = intent.getExtras();
+		if(extras!=null) {
+			String notification_body = extras.getString("body");
+			if (notification_body != null) {
+				Uri uri = CommonUtils.findURIInText(notification_body);
+				if (uri != null) {
+					Intent i = new Intent(Intent.ACTION_VIEW);
+					i.setData(uri);
+					startActivity(i);
+				} else {
+					Intent i = new Intent(this, PushMessagesActivity.class);
+
+					startActivity(i);
+				}
+			}
+		}
+		else
+		{
+			String data = intent.getStringExtra("data");
+			if(data!=null)
+				Log.d("fcm",data.toString());
+		}
+	}
 	private String ExtractMMSfromAsx(String url1) {
 		// TODO Auto-generated method stub
 		//Making HTTP request
@@ -685,6 +747,13 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 
 
 
+		if(mBound)
+		{
+			mService.setBackground();
+			if(playDialog!=null && playDialog.isShowing() && !mService.isPlaying())
+				playDialog.dismiss();
+		}
+
 		ContentParser cparser = new ContentParser();
 		JSONParser parser = new JSONParser();
 		parser.myContext = this;
@@ -870,6 +939,10 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 			unbindService(mConnection);
 			mBound = false;
 		}
+		else if(mBound && mService.isPlaying())
+		{
+			mService.setForeground();
+		}
 		EasyTracker.getInstance().activityStop(this); // Add this method.
 
 
@@ -920,6 +993,15 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 		// Handle item selection
 		switch (item.getItemId()) {
 		case R.id.login: {
+
+			String token = FirebaseInstanceId.getInstance().getToken();
+
+			// Log and toast
+			String msg = getString(R.string.msg_token_fmt, token);
+			Log.d("token", msg);
+			Toast.makeText(StreamListActivity.this, msg, Toast.LENGTH_SHORT).show();
+
+
 			Intent intent = new Intent(getApplicationContext(), SvivaTovaLogin.class);
 			startActivity(intent);
 
@@ -979,6 +1061,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 
 		case R.id.Changelang:
 			CommonUtils.ShowLanguageSelection(StreamListActivity.this, this);
+
 			return true;
 		case R.id.PushMessages:
 			Intent intent = new Intent(StreamListActivity.this,PushMessagesActivity.class);

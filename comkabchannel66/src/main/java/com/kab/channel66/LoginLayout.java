@@ -18,6 +18,7 @@ import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
+import com.facebook.login.LoginBehavior;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
@@ -65,6 +66,7 @@ public class LoginLayout extends Activity {
 
         loginButton = (LoginButton) findViewById(R.id.login_button);
         loginButton.setReadPermissions("email");
+        loginButton.setLoginBehavior(LoginBehavior.DEVICE_AUTH);
         callbackManager =  CallbackManager.Factory.create();
 
         // Callback registration

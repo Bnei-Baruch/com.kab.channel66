@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "727406170147",
+    "firebase_url": "https://channel-66.firebaseio.com",
+    "project_id": "channel-66",
+    "storage_bucket": "channel-66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727406170147:android:22bdcb52f8cac71d",
+        "android_client_info": {
+          "package_name": "com.kab.channel66"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727406170147-72ih7mjb59f6nnl5uifhrdctbbrad9um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn81T53cEdbJAZJUigEhmSAJSu3snJw9s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

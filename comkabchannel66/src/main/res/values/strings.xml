@@ -27,4 +27,5 @@
      <string name="ClearMessages">Clear messages</string>
     <string name="report">App crashed, sending email report to developer</string>
     <string name="facebook_app_id">243615172677749</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
 </resources>

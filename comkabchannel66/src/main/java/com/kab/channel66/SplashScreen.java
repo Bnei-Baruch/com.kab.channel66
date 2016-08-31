@@ -4,10 +4,10 @@ package com.kab.channel66;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.kab.channel66.R;
 import com.kab.channel66.utils.CommonUtils;
-import com.parse.Parse;
-import com.parse.ParseAnalytics;
-import com.parse.ParseInstallation;
-import com.parse.PushService;
+//import com.parse.Parse;
+//import com.parse.ParseAnalytics;
+//import com.parse.ParseInstallation;
+//import com.parse.PushService;
 
 
 import android.app.Activity;

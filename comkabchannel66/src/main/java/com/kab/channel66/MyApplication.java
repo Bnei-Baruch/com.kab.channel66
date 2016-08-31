@@ -14,11 +14,15 @@ import android.support.multidex.MultiDex;
 //import org.acra.annotation.*;
 
 import com.facebook.appevents.AppEventsLogger;
+//import com.firebase.client.Firebase;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
+import com.google.firebase.messaging.RemoteMessage;
 import com.kab.channel66.utils.CommonUtils;
-import com.parse.Parse;
-import com.parse.ParseInstallation;
-import com.parse.ParsePush;
-import com.parse.PushService;
+//import com.parse.Parse;
+//import com.parse.ParseInstallation;
+//import com.parse.ParsePush;
+//import com.parse.PushService;
 import com.facebook.FacebookSdk;
 
 //@ReportsCrashes(formKey = "", // will not be used
@@ -51,19 +55,23 @@ public class MyApplication extends Application {
        // LibsChecker.checkVitamioLibs(this);
 
         myapp = this;
-        Parse.enableLocalDatastore(getApplicationContext());
+        String token = FirebaseInstanceId.getInstance().getToken();
+        FirebaseMessaging.getInstance().subscribeToTopic("news");
 
-        
-     // channel66 
-        Parse.initialize(this, "dmSTSXcOcBxITZBioUAmC7HXps0OCUteMJEklSCD", "b0gN0SoJgOmQ51fkQoNb9B7bNEIF2agc9SYhFG7U");//real
-		
-		//chanel test 2
-//        Parse.initialize(this, "ayoTJHpHAVbwWEprqxzQeYpYCIaxz98HY19DbQiF", "imLHqDJYiH6S3iPtZ3gw1yilsXna8wHM0oSiGktp");//test
 
-		ParseInstallation.getCurrentInstallation().saveInBackground();
-
-       
-		Parse.setLogLevel(Parse.LOG_LEVEL_VERBOSE);
+//        Parse.enableLocalDatastore(getApplicationContext());
+//
+//
+//     // channel66
+//        Parse.initialize(this, "dmSTSXcOcBxITZBioUAmC7HXps0OCUteMJEklSCD", "b0gN0SoJgOmQ51fkQoNb9B7bNEIF2agc9SYhFG7U");//real
+//
+//		//chanel test 2
+////        Parse.initialize(this, "ayoTJHpHAVbwWEprqxzQeYpYCIaxz98HY19DbQiF", "imLHqDJYiH6S3iPtZ3gw1yilsXna8wHM0oSiGktp");//test
+//
+//		ParseInstallation.getCurrentInstallation().saveInBackground();
+//
+//
+//		Parse.setLogLevel(Parse.LOG_LEVEL_VERBOSE);
 		
         // The following line triggers the initialization of ACRA
 

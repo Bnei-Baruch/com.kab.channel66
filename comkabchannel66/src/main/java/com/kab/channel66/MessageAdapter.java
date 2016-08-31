@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.kab.channel66.CustomAdapter.ViewHolder;
-import com.parse.ParseObject;
+import com.kab.channel66.db.Message;
+//import com.parse.ParseObject;
 
 import android.content.Context;
 import android.text.format.DateFormat;
@@ -15,7 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-public class MessageAdapter extends ArrayAdapter<ParseObject> {
+public class MessageAdapter extends ArrayAdapter<Object> {
 
 	Context context;
 //	public MessageAdapter()
@@ -44,7 +45,7 @@ public class MessageAdapter extends ArrayAdapter<ParseObject> {
 		// TODO Auto-generated constructor stub
 	}
 
-	private ArrayList<ParseObject> mData = new ArrayList<ParseObject>();
+	private ArrayList<Message> mData = new ArrayList<Message>();
 	
 	private LayoutInflater mInflater;
 //	public MessageAdapter() {
@@ -52,7 +53,7 @@ public class MessageAdapter extends ArrayAdapter<ParseObject> {
 ////				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 //	}
 
-	public void addItem(final ParseObject item) {
+	public void addItem(final Message item) {
 		mData.add(item);
 		notifyDataSetChanged();
 	}
@@ -63,7 +64,7 @@ public class MessageAdapter extends ArrayAdapter<ParseObject> {
 	}
 
 	@Override
-	public ParseObject getItem(int position) {
+	public Message getItem(int position) {
 		return mData.get(position);
 	}
 
@@ -89,8 +90,8 @@ public class MessageAdapter extends ArrayAdapter<ParseObject> {
 		} else {
 			holder = (ViewHolder) convertView.getTag();
 		}
-		holder.textView.setText(mData.get(position).getString("text"));
-		holder.dateView.setText(DateFormat.format("yyyy-MM-dd hh:mm:ss",  mData.get(position).getLong("date")).toString() );
+		holder.textView.setText(mData.get(position).getComment());
+		holder.dateView.setText(DateFormat.format("yyyy-MM-dd hh:mm:ss",  mData.get(position).getDate() ));
 		
 		
 
@@ -102,11 +103,11 @@ public class MessageAdapter extends ArrayAdapter<ParseObject> {
 		public TextView dateView;
 	}
 
-	public void addArray(List<ParseObject> messages) {
+	public void addArray(List<Message> messages) {
 		// TODO Auto-generated method stub
-		mData = new ArrayList<ParseObject>(messages) ;
+		mData = new ArrayList<Message>(messages) ;
 	}
-	public void add(ParseObject obj) {
+	public void add(Message obj) {
 		// TODO Auto-generated method stub
 		mData.add(obj) ;
 	}

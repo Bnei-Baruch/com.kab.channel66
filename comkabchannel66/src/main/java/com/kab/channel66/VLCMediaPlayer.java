@@ -91,7 +91,7 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
     private VLCMediaPlayer() {
         ArrayList<String> options = new ArrayList<>();
         options.add("--http-reconnect");
-        options.add("--network-caching=2000");
+        options.add("--network-caching=4000");
         mLibVLC = new LibVLC(options);
         mMediaPlayer = new MediaPlayer(mLibVLC);
         SharedPreferences pref =

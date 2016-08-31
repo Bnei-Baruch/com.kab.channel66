@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.kab.channel66.db.MessagesDataSource;
 import com.kab.channel66.utils.CommonUtils;
-import com.parse.FindCallback;
-import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
+//import com.parse.FindCallback;
+//import com.parse.ParseException;
+//import com.parse.ParseObject;
+//import com.parse.ParseQuery;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -23,6 +24,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListView;
 
 
 public class PushMessagesActivity extends BaseListActivity {
@@ -39,12 +41,12 @@ public class PushMessagesActivity extends BaseListActivity {
 		
 		
 		mAdapter = new MessageAdapter(PushMessagesActivity.this, 0);
-
+		refreshMessages();
         PushMessagesActivity.this.getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ParseObject obj = mAdapter.getItem(position);
-                String text = obj.getString("text");
+                com.kab.channel66.db.Message obj = mAdapter.getItem(position);
+               String text = obj.getComment();
                 Uri uri = CommonUtils.findURIInText(text);
                 if(uri != null)
                 {
@@ -65,15 +67,13 @@ public class PushMessagesActivity extends BaseListActivity {
 				// TODO Auto-generated method stub
 				if(intent.getAction().contentEquals("newMessage"))
 					refreshMessages();
-					
+
 			}
 		};
-		 IntentFilter filter = new IntentFilter();
-		    filter.addAction("newMessage");
-		registerReceiver(myReciever,filter);
+
 		
 		setListAdapter(mAdapter);
-		refreshMessages();
+		//refreshMessages();
 		
 		 handler = new Handler() {
             public void handleMessage(Message msg) {
@@ -94,74 +94,61 @@ public class PushMessagesActivity extends BaseListActivity {
 		 
 		 
 		}
-	
-//	@Override
-//	protected void onListItemClick(ListView l, View v, int position, long id) {
-//		String item = (String) getListAdapter().getItem(position);
-//		
-//		
-//	}
+
+	@Override
+	public void onStop()
+	{
+		super.onStop();
+		unregisterReceiver(myReciever);
+	}
+
+	@Override
+	public void onResume()
+	{
+		super.onResume();
+		IntentFilter filter = new IntentFilter();
+		filter.addAction("newMessage");
+		registerReceiver(myReciever,filter);
+	}
+
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		String item = (String) getListAdapter().getItem(position);
+
+
+	}
 	
 	private void refreshMessages()
 	{
-		ParseQuery<ParseObject> query = ParseQuery.getQuery("messages");
-		//query.whereEqualTo("playerName", "Joe Bob");
-		query.fromLocalDatastore();
-		query.findInBackground(new FindCallback<ParseObject>() {
-		    public void done(List<ParseObject> messages,
-		                     ParseException e) {
-		        if (e == null) {
-//		            Log.d("score", "Retrieved " + messages.size());
-//		            messages.get
-//		            pushMessages.addAll(messages.toArray());
+		MessagesDataSource datasource;
 
-		            mAdapter.addArray(messages);
-//		          //FOR TESTING PURPOSES
-//		   		 ParseObject p1 = new ParseObject("messages");
-//		   		 p1.put("text", "ein od melvado ein od melvado ein od melvado ein od melvado ein od melvado ein od melvado");
-//		   		 p1.put("date",Calendar.getInstance().getTime().toString());
-//		   		 mAdapter.add(p1);
-		            Message msg = handler.obtainMessage();
-                    msg.arg1 = 1;
-                    handler.sendMessage(msg);
+		datasource = new MessagesDataSource(this);
+		datasource.open();
 
-		        } else {
-//		            Log.d("score", "Error: " + e.getMessage());
-		        }
-		    }
-		});
+		List<com.kab.channel66.db.Message> values = datasource.getAllComments();
+
+					mAdapter.clear();
+		            mAdapter.addArray(values);
+					mAdapter.notifyDataSetChanged();
+
+
+		datasource.close();
 	}
-	
-	
+
+
+
+
 	private void clearMessages()
 	{
-		ParseQuery<ParseObject> query = ParseQuery.getQuery("messages");
-		//query.whereEqualTo("playerName", "Joe Bob");
-		query.fromLocalDatastore();
-		query.findInBackground(new FindCallback<ParseObject>() {
-		    public void done(List<ParseObject> messages,
-		                     ParseException e) {
-		        if (e == null) {
-//		            Log.d("score", "Retrieved " + messages.size());
-		            Iterator<ParseObject> it = messages.iterator();
-		            while(it.hasNext())
-						try {
-							it.next().unpin();
-							
-						} catch (ParseException e1) {
-							// TODO Auto-generated catch block
-							e1.printStackTrace();
-						}
-		        } else {
-//		            Log.d("score", "Error: " + e.getMessage());
-		        }
-		        mAdapter.clear();
-				mAdapter.notifyDataSetChanged();
-				 Message msg = handler.obtainMessage();
-                    msg.arg1 = 1;
-                    handler.sendMessage(msg);
-		    }
-		});
+		MessagesDataSource datasource;
+
+		datasource = new MessagesDataSource(this);
+		datasource.open();
+		datasource.deleteAllMessages();
+		datasource.close();
+		mAdapter.clear();
+		mAdapter.notifyDataSetChanged();
+
 	}
 	
 	@Override
