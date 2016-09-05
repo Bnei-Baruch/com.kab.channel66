@@ -3,6 +3,7 @@ package com.kab.channel66;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Notification;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
@@ -65,9 +66,9 @@ public class PlayerService extends Service implements CallStateInterface{
 
 			Log.i("svc", "Received Start Foreground Intent ");
 			Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
-			notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
-			notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-					| Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//			notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
+//			notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+//					| Intent.FLAG_ACTIVITY_CLEAR_TASK);
 			PendingIntent pendingIntent = PendingIntent.getActivity(PlayerService.this, 0,
 					notificationIntent, 0);
 
@@ -84,15 +85,17 @@ public class PlayerService extends Service implements CallStateInterface{
 					R.drawable.icon);
 
 			notification = new NotificationCompat.Builder(PlayerService.this)
-					.setContentTitle("Channel 66")
-					.setTicker("Channel 66 playing")
 					.setSmallIcon(R.drawable.icon)
+					.setContentTitle("Channel 66 playing")
+					.setContentText("Click to Access App")
+
 					.setContentIntent(pendingIntent)
 					.setOngoing(true)
 					.addAction(android.R.drawable.ic_media_pause,
 							"Pause", ppauseIntent)
 					.addAction(android.R.drawable.ic_media_play, "Play",
-							pplayIntent).build();
+							pplayIntent)
+					.build();
 			// Return this instance of LocalService so clients can call public methods
 			return PlayerService.this;
 		}
@@ -118,90 +121,17 @@ public class PlayerService extends Service implements CallStateInterface{
 		//return startId;
 		if (intent.getAction().equals(Constants.ACTION.STARTFOREGROUND_ACTION)) {
 
-			Log.i("svc", "Received Start Foreground Intent ");
-			Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
-			notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
-			notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-					| Intent.FLAG_ACTIVITY_CLEAR_TASK);
-			PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
-					notificationIntent, 0);
-
-			Intent pauseIntent = new Intent(this, PlayerService.class);
-			pauseIntent.setAction(Constants.ACTION.PAUSE_ACTION);
-			PendingIntent ppauseIntent = PendingIntent.getService(this, 0,
-					pauseIntent, 0);
-
-			Intent playIntent = new Intent(this, PlayerService.class);
-			playIntent.setAction(Constants.ACTION.PLAY_ACTION);
-			PendingIntent pplayIntent = PendingIntent.getService(this, 0,
-					playIntent, 0);
-			Bitmap icon = BitmapFactory.decodeResource(getResources(),
-					R.drawable.icon);
-
-			notification = new NotificationCompat.Builder(this)
-					.setContentTitle("Channel 66")
-					.setContentText("Channel 66 playing")
-					.setTicker("Channel 66 playing")
-//					.setLargeIcon(
-//							Bitmap.createScaledBitmap(icon, 128, 128, false))
-					.setSmallIcon(R.drawable.icon)
-					.setContentIntent(pendingIntent)
-					.setOngoing(true)
-					.addAction(android.R.drawable.ic_media_pause,
-							"Pause", ppauseIntent)
-					.addAction(android.R.drawable.ic_media_play, "Play",
-							pplayIntent).build();
-
 //			Log.i("svc", "Received Start Foreground Intent ");
-//			Intent notificationIntent = new Intent(this, StreamListActivity.class);
-//			notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
-//			notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-//					| Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//			PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
-//					notificationIntent, 0);
-//
-//			Intent previousIntent = new Intent(this, PlayerService.class);
-//			previousIntent.setAction(Constants.ACTION.PREV_ACTION);
-//			PendingIntent ppreviousIntent = PendingIntent.getService(this, 0,
-//					previousIntent, 0);
-//
-//			Intent playIntent = new Intent(this, PlayerService.class);
-//			playIntent.setAction(Constants.ACTION.PLAY_ACTION);
-//			PendingIntent pplayIntent = PendingIntent.getService(this, 0,
-//					playIntent, 0);
-//
-//			Intent nextIntent = new Intent(this, PlayerService.class);
-//			nextIntent.setAction(Constants.ACTION.NEXT_ACTION);
-//			PendingIntent pnextIntent = PendingIntent.getService(this, 0,
-//					nextIntent, 0);
-//
-//			Bitmap icon = BitmapFactory.decodeResource(getResources(),
-//					R.drawable.icon);
-//
-//			Notification notification = new NotificationCompat.Builder(this)
-//					.setContentTitle("Channel 66")
-//					.setTicker("Channel 66 playing")
-//					.setContentText("streaming")
-//					.setSmallIcon(R.drawable.icon)
-//					.setLargeIcon(
-//							Bitmap.createScaledBitmap(icon, 128, 128, false))
-//					.setContentIntent(pendingIntent)
-//					.setOngoing(true)
-//					.addAction(android.R.drawable.ic_media_previous,
-//							"Previous", ppreviousIntent)
-//					.addAction(android.R.drawable.ic_media_play, "Play",
-//							pplayIntent)
-//					.addAction(android.R.drawable.ic_media_next, "Next",
-//							pnextIntent).build();
-			startForeground(Constants.NOTIFICATION_ID.FOREGROUND_SERVICE,
-					notification);
+//should not get here because we are using binder
 		}  else if (intent.getAction().equals(Constants.ACTION.PLAY_ACTION)) {
 			Log.i("svc", "Clicked Play");
 			playAudio(mUrl);
+			createAndSetNotification( "Channel 66 playing","");
 		} else if (intent.getAction().equals(Constants.ACTION.PAUSE_ACTION)) {
 			Log.i("svc", "Clicked Pause");
 
 			stopAudio();
+			createAndSetNotification( "Channel 66 paused","");
 		} else if (intent.getAction().equals(
 				Constants.ACTION.STOPFOREGROUND_ACTION)) {
 			Log.i("svc", "Received Stop Foreground Intent");
@@ -217,7 +147,44 @@ public class PlayerService extends Service implements CallStateInterface{
 		// TODO Auto-generated method stub
 		return mBinder;
 	}
-	
+
+	private void createAndSetNotification(String title, String subtext)
+	{
+		Log.i("svc", "Received Start Foreground Intent ");
+		Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
+		notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
+		notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+				| Intent.FLAG_ACTIVITY_CLEAR_TASK);
+		PendingIntent pendingIntent = PendingIntent.getActivity(PlayerService.this, 0,
+				notificationIntent, 0);
+
+		Intent pauseIntent = new Intent(PlayerService.this, PlayerService.class);
+		pauseIntent.setAction(Constants.ACTION.PAUSE_ACTION);
+		PendingIntent ppauseIntent = PendingIntent.getService(PlayerService.this, 0,
+				pauseIntent, 0);
+
+		Intent playIntent = new Intent(PlayerService.this, PlayerService.class);
+		playIntent.setAction(Constants.ACTION.PLAY_ACTION);
+		PendingIntent pplayIntent = PendingIntent.getService(PlayerService.this, 0,
+				playIntent, 0);
+		Bitmap icon = BitmapFactory.decodeResource(getResources(),
+				R.drawable.icon);
+
+		notification = new NotificationCompat.Builder(PlayerService.this)
+				.setSmallIcon(R.drawable.icon)
+				.setContentTitle(title)
+				.setContentText("Click to Access App")
+
+				.setContentIntent(pendingIntent)
+				.setOngoing(true)
+				.addAction(android.R.drawable.ic_media_pause,
+						"Pause", ppauseIntent)
+				.addAction(android.R.drawable.ic_media_play, "Play",
+						pplayIntent)
+				.build();
+		startForeground(Constants.NOTIFICATION_ID.FOREGROUND_SERVICE,
+				notification);
+	}
 	private boolean checkConnectivity()
 	{
 		Dialog blockApp;
