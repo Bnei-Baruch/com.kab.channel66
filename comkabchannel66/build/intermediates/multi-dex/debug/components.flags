@@ -1,7 +1,7 @@
 -injars /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
 -outjars /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/multi-dex/debug/componentClasses.jar
 
--libraryjars /Users/igal/android-sdks/build-tools/22.0.1/lib/shrinkedAndroid.jar
+-libraryjars /Users/igal/android-sdks/build-tools/23.0.3/lib/shrinkedAndroid.jar
 
 -forceprocessing
 -dontoptimize
@@ -19,14 +19,6 @@
 }
 
 -keep class com.kab.channel66.MyWidgetProvider {
-    <init>();
-}
-
--keep class io.vov.vitamio.activity.InitActivity {
-    <init>();
-}
-
--keep class com.kab.channel66.VideoView {
     <init>();
 }
 
@@ -62,27 +54,47 @@
     <init>();
 }
 
--keep class com.kab.channel66.NativeBackgroundPlayer {
+-keep class com.kab.channel66.MyFirebaseMessagingService {
     <init>();
 }
 
--keep class com.parse.PushService {
-    <init>();
-}
-
--keep class com.parse.ParseBroadcastReceiver {
-    <init>();
-}
-
--keep class com.kab.channel66.ParsePushHandling {
-    <init>();
-}
-
--keep class com.parse.GcmBroadcastReceiver {
+-keep class com.kab.channel66.MyFirebaseInstanceIDService {
     <init>();
 }
 
 -keep class com.facebook.CustomTabActivity {
+    <init>();
+}
+
+-keep class com.facebook.CustomTabMainActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep class com.google.firebase.provider.FirebaseInitProvider {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdService {
+    <init>();
+}
+
+-keep class com.google.firebase.messaging.FirebaseMessagingService {
     <init>();
 }
 

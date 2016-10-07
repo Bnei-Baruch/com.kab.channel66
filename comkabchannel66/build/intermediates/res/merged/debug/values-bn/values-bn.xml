@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="com_facebook_device_auth_instructions">আপনার কম্পিউটার বা স্মার্টফোন থেকে &lt;b>facebook.com/device&lt;/b>&lt;br /> এ যান এবং এই কোডটিকে প্রবেশ করান:</string>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="com_facebook_device_auth_instructions">আপনার কম্পিউটার বা স্মার্টফোন থেকে &lt;b>facebook.com/device&lt;/b> এ যান এবং এই কোডটিকে প্রবেশ করান:</string>
     <string name="com_facebook_image_download_unknown_error">একটি চিত্র ডাউনলোড করার সময়ে অপ্রত্যাশিত ত্রুটি দেখা দিচ্ছে৷</string>
     <string name="com_facebook_internet_permission_error_message">WebView লগ ইন করার জন্য INTERNET-এর অনুমতির প্রয়োজন আছে</string>
     <string name="com_facebook_internet_permission_error_title">AndroidManifest ত্রুটি</string>
@@ -17,5 +17,6 @@
     <string name="com_facebook_send_button_text">পাঠান</string>
     <string name="com_facebook_share_button_text">ভাগ করুন</string>
     <string name="com_facebook_tooltip_default">নতুন! আপনি নিয়ন্ত্রণে আছেন-অ্যাপসের সাথে আপনি কোন তথ্য ভাগ করতে চাইছেন তা চয়ন করুন৷</string>
+    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"Google Play পরিষেবাগুলির সাথে <ns1:g id="APP_NAME">%1$s</ns1:g> এর সমস্যা হচ্ছে৷ যদি সমস্যাটি থেকে যায় তাহলে অনুগ্রহ করে সহায়তার জন্য বিকাশকারীর সাথে যোগাযোগ করুন।"</string>
     <string name="messenger_send_button_text">প্রেরণ করুন</string>
 </resources>

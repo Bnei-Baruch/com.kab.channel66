@@ -1,22 +1,22 @@
 [
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/menu/pushoptionsmenu.xml",
-        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/menu/pushoptionsmenu.xml"
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/menu/video_menu.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/menu/video_menu.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/menu/activity_web_login.xml",
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/menu/activity_web_login.xml"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/menu/streamoptionmenu.xml",
-        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/menu/streamoptionmenu.xml"
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/menu/pushoptionsmenu.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/menu/pushoptionsmenu.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/menu/streamoptionmenu_activated.xml",
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/menu/video_menu.xml",
-        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/menu/video_menu.xml"
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/menu/streamoptionmenu.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/menu/streamoptionmenu.xml"
     }
 ]

@@ -6,18 +6,18 @@
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 174,
-                    "endOffset": 225
+                    "startOffset": 105,
+                    "endColumn": 165,
+                    "endOffset": 266
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
                         "startOffset": 55,
-                        "endColumn": 174,
-                        "endOffset": 225
+                        "endColumn": 165,
+                        "endOffset": 216
                     }
                 }
             },
@@ -25,18 +25,18 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 230,
+                    "startOffset": 271,
                     "endColumn": 121,
-                    "endOffset": 347
+                    "endOffset": 388
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 230,
+                        "startOffset": 221,
                         "endColumn": 121,
-                        "endOffset": 347
+                        "endOffset": 338
                     }
                 }
             },
@@ -44,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 352,
+                    "startOffset": 393,
                     "endColumn": 122,
-                    "endOffset": 470
+                    "endOffset": 511
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 352,
+                        "startOffset": 343,
                         "endColumn": 122,
-                        "endOffset": 470
+                        "endOffset": 461
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 475,
+                    "startOffset": 516,
                     "endColumn": 95,
-                    "endOffset": 566
+                    "endOffset": 607
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 475,
+                        "startOffset": 466,
                         "endColumn": 95,
-                        "endOffset": 566
+                        "endOffset": 557
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 571,
+                    "startOffset": 612,
                     "endColumn": 72,
-                    "endOffset": 639
+                    "endOffset": 680
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 571,
+                        "startOffset": 562,
                         "endColumn": 72,
-                        "endOffset": 639
+                        "endOffset": 630
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 644,
+                    "startOffset": 685,
                     "endColumn": 71,
-                    "endOffset": 711
+                    "endOffset": 752
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 644,
+                        "startOffset": 635,
                         "endColumn": 71,
-                        "endOffset": 711
+                        "endOffset": 702
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 716,
+                    "startOffset": 757,
                     "endColumn": 66,
-                    "endOffset": 778
+                    "endOffset": 819
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 716,
+                        "startOffset": 707,
                         "endColumn": 66,
-                        "endOffset": 778
+                        "endOffset": 769
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 783,
+                    "startOffset": 824,
                     "endColumn": 72,
-                    "endOffset": 851
+                    "endOffset": 892
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 783,
+                        "startOffset": 774,
                         "endColumn": 72,
-                        "endOffset": 851
+                        "endOffset": 842
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 856,
+                    "startOffset": 897,
                     "endColumn": 75,
-                    "endOffset": 927
+                    "endOffset": 968
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 856,
+                        "startOffset": 847,
                         "endColumn": 75,
-                        "endOffset": 927
+                        "endOffset": 918
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 932,
+                    "startOffset": 973,
                     "endColumn": 96,
-                    "endOffset": 1024
+                    "endOffset": 1065
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 932,
+                        "startOffset": 923,
                         "endColumn": 96,
-                        "endOffset": 1024
+                        "endOffset": 1015
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1029,
+                    "startOffset": 1070,
                     "endColumn": 77,
-                    "endOffset": 1102
+                    "endOffset": 1143
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1029,
+                        "startOffset": 1020,
                         "endColumn": 77,
-                        "endOffset": 1102
+                        "endOffset": 1093
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1107,
+                    "startOffset": 1148,
                     "endColumn": 77,
-                    "endOffset": 1180
+                    "endOffset": 1221
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1107,
+                        "startOffset": 1098,
                         "endColumn": 77,
-                        "endOffset": 1180
+                        "endOffset": 1171
                     }
                 }
             },
@@ -234,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1185,
+                    "startOffset": 1226,
                     "endColumn": 94,
-                    "endOffset": 1275
+                    "endOffset": 1316
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1185,
+                        "startOffset": 1176,
                         "endColumn": 94,
-                        "endOffset": 1275
+                        "endOffset": 1266
                     }
                 }
             },
@@ -253,18 +253,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1280,
+                    "startOffset": 1321,
                     "endColumn": 114,
-                    "endOffset": 1390
+                    "endOffset": 1431
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1280,
+                        "startOffset": 1271,
                         "endColumn": 114,
-                        "endOffset": 1390
+                        "endOffset": 1381
                     }
                 }
             },
@@ -272,18 +272,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1395,
+                    "startOffset": 1436,
                     "endColumn": 62,
-                    "endOffset": 1453
+                    "endOffset": 1494
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1395,
+                        "startOffset": 1386,
                         "endColumn": 62,
-                        "endOffset": 1453
+                        "endOffset": 1444
                     }
                 }
             },
@@ -291,18 +291,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1458,
+                    "startOffset": 1499,
                     "endColumn": 68,
-                    "endOffset": 1522
+                    "endOffset": 1563
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1458,
+                        "startOffset": 1449,
                         "endColumn": 68,
-                        "endOffset": 1522
+                        "endOffset": 1513
                     }
                 }
             },
@@ -310,18 +310,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1527,
+                    "startOffset": 1568,
                     "endColumn": 146,
-                    "endOffset": 1669
+                    "endOffset": 1710
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1527,
+                        "startOffset": 1518,
                         "endColumn": 146,
-                        "endOffset": 1669
+                        "endOffset": 1660
                     }
                 }
             },
@@ -329,18 +329,37 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1674,
-                    "endColumn": 59,
-                    "endOffset": 1729
+                    "startOffset": 1715,
+                    "endColumn": 254,
+                    "endOffset": 1965
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/res/values-pa/values-pa.xml",
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/res/values-pa/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 331,
+                        "endColumn": 254,
+                        "endOffset": 581
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1970,
+                    "endColumn": 59,
+                    "endOffset": 2025
+                },
+                "from": {
+                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/res/values-pa/values-pa.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1674,
+                        "startOffset": 1665,
                         "endColumn": 59,
-                        "endOffset": 1729
+                        "endOffset": 1720
                     }
                 }
             }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="com_facebook_device_auth_instructions">ನಿಮ್ಮ ಸ್ಮಾರ್ಟ್‌ ಫೋನ್‌ ಅಥವಾ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ &lt;b>facebook.com/device&lt;/b>&lt;br /> ಗೆ ಭೇಟಿ ನೀಡಿ ಮತ್ತು ಈ ಕೋಡ್‌ ಅನ್ನು ನಮೂದಿಸಿ:</string>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="com_facebook_device_auth_instructions">ನಿಮ್ಮ ಸ್ಮಾರ್ಟ್‌ ಫೋನ್‌ ಅಥವಾ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ &lt;b>facebook.com/device&lt;/b> ಗೆ ಭೇಟಿ ನೀಡಿ ಮತ್ತು ಈ ಕೋಡ್‌ ಅನ್ನು ನಮೂದಿಸಿ:</string>
     <string name="com_facebook_image_download_unknown_error">ಚಿತ್ರವನ್ನು ಡೌನ್‌ಲೋಡ್‌ ಮಾಡುವಾಗ ಅನಿರೀಕ್ಷಿತ ದೋಷ ಕಂಡುಬಂದಿದೆ.</string>
     <string name="com_facebook_internet_permission_error_message">WebView ಲಾಗಿನ್‌ಗೆ ಇಂಟರ್ನೆಟ್ ಅನುಮತಿಯ ಅಗತ್ಯವಿದೆ</string>
     <string name="com_facebook_internet_permission_error_title">AndroidManifest ದೋಷ</string>
@@ -17,5 +17,6 @@
     <string name="com_facebook_send_button_text">ಕಳುಹಿಸಿ</string>
     <string name="com_facebook_share_button_text">ಹಂಚಿಕೊಳ್ಳಿ</string>
     <string name="com_facebook_tooltip_default">ಹೊಸ! ನೀವು ನಿಯಂತ್ರಣದಲ್ಲಿರುವಿರಿ - ನೀವು ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಹಂಚಿಕೊಳ್ಳಲು ಬಯಸುವ ವಿಷಯವನ್ನು ಆರಿಸಿ.</string>
+    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"Google Play ಸೇವೆಗಳಲ್ಲಿ <ns1:g id="APP_NAME">%1$s</ns1:g> ಅಪ್ಲಿಕೇಶನ್ ಸಮಸ್ಯೆಯನ್ನು ಎದುರಿಸುತ್ತಿದೆ. ಸಮಸ್ಯೆ ಮುಂದುವರಿದರೆ, ಸಹಾಯಕ್ಕಾಗಿ ಡೆವಲಪರ್ ಅನ್ನು ಸಂಪರ್ಕಿಸಿ."</string>
     <string name="messenger_send_button_text">ಕಳುಹಿಸು</string>
 </resources>

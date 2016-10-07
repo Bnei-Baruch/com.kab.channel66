@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.kab.channel66";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 37;
-  public static final String VERSION_NAME = "2.5.0";
+  public static final int VERSION_CODE = 40;
+  public static final String VERSION_NAME = "2.6.1";
 }

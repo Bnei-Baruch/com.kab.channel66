@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="com_facebook_device_auth_instructions">Buka &lt;b>facebook.com/device&lt;/b>&lt;br /> dari smartphone Anda atau komputer dan masukkan kode ini:</string>
+    <string name="com_facebook_device_auth_instructions">Buka &lt;b>facebook.com/device&lt;/b> dari smartphone Anda atau komputer dan masukkan kode ini:</string>
     <string name="com_facebook_image_download_unknown_error">Kesalahan yang tidak diharapkan saat mengunduh gambar.</string>
     <string name="com_facebook_internet_permission_error_message">Masuk WebView memerlukan izin INTERNET</string>
     <string name="com_facebook_internet_permission_error_title">Kesalahan AndroidManifest</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="com_facebook_device_auth_instructions">आपला स्‍मार्ट फोन किंवा संगणकावर &lt;b>facebook.com/device&lt;/b>&lt;br /> ला भेट द्या आणि हा कोड प्रविष्‍ट करा:</string>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="com_facebook_device_auth_instructions">आपला स्‍मार्ट फोन किंवा संगणकावर &lt;b>facebook.com/device&lt;/b> ला भेट द्या आणि हा कोड प्रविष्‍ट करा:</string>
     <string name="com_facebook_image_download_unknown_error">प्रतिमा डाउनलोड करताना अनपेक्षित त्रुटी.</string>
     <string name="com_facebook_internet_permission_error_message">वेबदृश्य लॉग इन आवश्यकता इंटरनेट परवानगी</string>
     <string name="com_facebook_internet_permission_error_title">AndroidManifest त्रुटी</string>
@@ -17,5 +17,6 @@
     <string name="com_facebook_send_button_text">पाठवा</string>
     <string name="com_facebook_share_button_text">सामायिक करा</string>
     <string name="com_facebook_tooltip_default">नवीन! आपण नियंत्रणात आहात - आपण कोणती माहिती अनुप्रयोगांसह शेअर करू इच्छिता ते निवडा.</string>
+    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> ला Google Play सेवांसह समस्या येत आहे. समस्या कायम राहिल्यास, कृपया सहाय्यासाठी विकासकाशी संपर्क साधा."</string>
     <string name="messenger_send_button_text">पाठवा</string>
 </resources>

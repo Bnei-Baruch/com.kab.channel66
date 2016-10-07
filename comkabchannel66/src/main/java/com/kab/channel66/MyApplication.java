@@ -86,6 +86,8 @@ public class MyApplication extends Application {
         MultiDex.install(this);
     }
 
+
+
     static public Application getMyApp()
     {
         return myapp;

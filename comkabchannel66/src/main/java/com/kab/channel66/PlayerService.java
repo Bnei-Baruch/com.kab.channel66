@@ -116,29 +116,28 @@ public class PlayerService extends Service implements CallStateInterface{
 		Log.i("svc", "Received Start Foreground Intent ");
 
 
-
-
-		//return startId;
-		if (intent.getAction().equals(Constants.ACTION.STARTFOREGROUND_ACTION)) {
+		if (intent != null) {
+			if (intent.getAction().equals(Constants.ACTION.STARTFOREGROUND_ACTION)) {
 
 //			Log.i("svc", "Received Start Foreground Intent ");
 //should not get here because we are using binder
-		}  else if (intent.getAction().equals(Constants.ACTION.PLAY_ACTION)) {
-			Log.i("svc", "Clicked Play");
-			playAudio(mUrl);
-			createAndSetNotification( "Channel 66 playing","");
-		} else if (intent.getAction().equals(Constants.ACTION.PAUSE_ACTION)) {
-			Log.i("svc", "Clicked Pause");
+			} else if (intent.getAction().equals(Constants.ACTION.PLAY_ACTION)) {
+				Log.i("svc", "Clicked Play");
+				playAudio(mUrl);
+				createAndSetNotification("Channel 66 playing", "");
+			} else if (intent.getAction().equals(Constants.ACTION.PAUSE_ACTION)) {
+				Log.i("svc", "Clicked Pause");
 
-			stopAudio();
-			createAndSetNotification( "Channel 66 paused","");
-		} else if (intent.getAction().equals(
-				Constants.ACTION.STOPFOREGROUND_ACTION)) {
-			Log.i("svc", "Received Stop Foreground Intent");
-			stopForeground(false);
-			//stopSelf();
+				stopAudio();
+				createAndSetNotification("Channel 66 paused", "");
+			} else if (intent.getAction().equals(
+					Constants.ACTION.STOPFOREGROUND_ACTION)) {
+				Log.i("svc", "Received Stop Foreground Intent");
+				stopForeground(false);
+				//stopSelf();
 
 
+			}
 		}
 		return START_STICKY;
 	}

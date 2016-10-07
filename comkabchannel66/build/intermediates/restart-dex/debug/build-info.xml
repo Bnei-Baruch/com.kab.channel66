@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="1473039824634968000"
+    token="5412166237666195951"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="379" />
+    <task
+        name="instant-run-dex"
+        duration="14" />
+    <task
+        name="instant-run-transform"
+        duration="27" />
+    <task
+        name="verifier"
+        duration="2" />
+
+    <artifact
+        location="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
+
+    <build timestamp="1473039386960933000" >
+        <artifact
+            location="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/outputs/apk/comkabchannel66-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="1473039467235093000" >
+        <artifact
+            location="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="1473039531683942000"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/builds/debug/1473039531683942000/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="1473039593888601000"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/builds/debug/1473039593888601000/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="1473039683752137000"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/builds/debug/1473039683752137000/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="1473039824634968000"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>
