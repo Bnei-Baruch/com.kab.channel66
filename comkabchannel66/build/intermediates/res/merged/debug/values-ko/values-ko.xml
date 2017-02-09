@@ -25,9 +25,10 @@
     <string name="com_facebook_internet_permission_error_title">AndroidManifest 오류</string>
     <string name="com_facebook_like_button_liked">좋아요</string>
     <string name="com_facebook_like_button_not_liked">좋아요</string>
-    <string name="com_facebook_loading">읽어들이는 중...</string>
+    <string name="com_facebook_loading">읽어들이는 중…</string>
     <string name="com_facebook_loginview_cancel_action">취소</string>
     <string name="com_facebook_loginview_log_in_button">로그인</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Facebook으로 계속</string>
     <string name="com_facebook_loginview_log_in_button_long">Facebook으로 로그인</string>
     <string name="com_facebook_loginview_log_out_action">로그아웃</string>
     <string name="com_facebook_loginview_log_out_button">로그아웃</string>
@@ -35,8 +36,9 @@
     <string name="com_facebook_loginview_logged_in_using_facebook">Facebook 계정으로 로그인함</string>
     <string name="com_facebook_send_button_text">보내기</string>
     <string name="com_facebook_share_button_text">공유하기</string>
-    <string name="com_facebook_tooltip_default">새로운 기능! 이제 앱과 어떤 정보를 공유할지 자유롭게 선택할 수 있습니다.</string>
+    <string name="com_facebook_tooltip_default">원하는 정보를 선택하여 앱에 공유할 수 있습니다.</string>
     <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g>에서 Google Play 서비스를 사용하는 데 문제가 있습니다. 문제가 계속되는 경우 개발자에게 지원을 요청하세요."</string>
     <string name="messenger_send_button_text">보내기</string>
+    <string msgid="146198913615257606" name="search_menu_title">"검색"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

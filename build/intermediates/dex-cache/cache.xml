@@ -1,2 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/3a8812685dae0827e4d9e082213476109a0fcdbb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c11944eac1bb3e45b99f72397377d9f76ee44ca3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/4c3676b5b10a8bc274e17cd5ca84fbd5dde765d1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cb73560edb89cb7afe1d0d5455595c27866af7c6">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c210b437c6b211da5a3de460dc83b92f4c900090/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/cfa2c1db7d4ea1712fffd1d2713db8b690ccf5ea/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="be909cd878e2e1fb9e8f103e830199d06fd72e92">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0bfa53f0608c12fa357496af66a1359f4f5322d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/eventbus-2.4.0_8ca8b005f9a27e01ab521a45a6af2ae0ddfe0c45/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/341dbf32ab36cbfde7af7b4b5f36620655b3290c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_138b58c3c168c66dd9eec79c0ed78108a670653c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_09dad7a4cd1de8b788953db755b23e04b9f1d8aa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fe10f54c3e0b8a22223bf65f6867ead90fd765e0">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_97dda646c46af86b29842cf92ccfcb83d14f1d76/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.4_83cb2c28260fc105f77a8ac95c91175cf403c217/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a7e7e7ecfdbc8a889b7b54d17da519e1dff7a421">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_746f14636c68689d5657740b5b4c1f9d471ebff3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.gradle/caches/modules-2/files-2.1/com.backendless/backendless/3.0.24/56bf778669071651dcf5937927b0a1e9de69b7f3/backendless-3.0.24.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="56bf778669071651dcf5937927b0a1e9de69b7f3">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/backendless-3.0.24_f11fbc7bc3533bc1ee5533a0cabe53f8e880d410/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c37f9a914f87072f630f2bd9d851541f5be493aa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_c8b8093c6f317daed79e1c9cffd3bff6592e0c56/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/b3f2eb3a0f0db76cc1906bb2a7791fa5c5f5cf98/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43abcb2ec5686c280782c946ea468f9ac7ea15c0">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_42675b1fd489288cae7343e1efc85e0356c86b6e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/53aa8207b4644a7e37ee2c9c4d1b5a5325133bd1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4711b6bd1e41291912e98c23954cb3d11ca36bd5">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ba48211127458970dc9d141523f237c2978b91d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/69a65192cd05ca9bd1e0a133b5b5c7d2125d1741/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6bcf11222c8dd57b4ddf4da06fa15c8fc3f903dd">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c18a0e026f42ce0f69abd3b215a4a6d928d0c573/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/android-sdks/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_fc1f8a04f6a8446c9f4d395ec71d9d570c6569a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/a8695060ae11f5b863860a38ffc13bf8684312be/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0680abfe64b4621183951d72ab236ca22a224039/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/4b08048f1303d5c6b9edcbd90f67db4564150d46/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b6d9b70f93bbeb872d0948bc064ae3f3f2bcbac">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_63753ece198fc6acd86344245e5e75659a9acfdc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/ea80d224db3fb48bcef370395f0fb1128f2f5ee8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b352fa04faeaf225c6e9fed7ecbd4eb7e6a71d95/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/dc57a4cea13fc9792c9a8d5a887abca76833ac6e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9505232840ada5bc281f012c9798a6e49900d4ea">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_52517027a0403b2454dd6257a488ee02666c70d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/libGoogleAnalyticsV2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8d04da1c73876c93ccce8ffd39add84f9415b64c">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/2/libGoogleAnalyticsV2_a2b360e916e02d8bc3fe99919b30c2f66e4426f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/libGoogleAnalyticsV2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8d04da1c73876c93ccce8ffd39add84f9415b64c">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/2/libGoogleAnalyticsV2_a2b360e916e02d8bc3fe99919b30c2f66e4426f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/fe6e43befa56ce6b3b362571d4266e9447993efd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_72ef65eb8389043378007d6ca6247cf8caaf7579/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/0c1e4b00725b66bf6655a0190b339bceebbccc1c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="557bcc987cc2438e5162476bc8c953a37b683fb9">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1ca392cf5904908a7abd300d0e5eac47f51f4949/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.4_83cb2c28260fc105f77a8ac95c91175cf403c217/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/eventbus-2.4.0_8ca8b005f9a27e01ab521a45a6af2ae0ddfe0c45/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b7173b3df4c7029699919414400041f64519e34">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6274ee314403cdd1376bb12cfb0d25b1cbb021a6/classes.dex" />
+    </item>
+
+</items>

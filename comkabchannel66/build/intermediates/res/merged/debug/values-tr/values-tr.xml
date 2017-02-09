@@ -5,7 +5,7 @@
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Yukarı git"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Diğer seçenekler"</string>
-    <string msgid="4076576682505996667" name="abc_action_mode_done">"Tamamlandı"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Bitti"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Tümünü göster"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Bir uygulama seçin"</string>
     <string msgid="121134116657445385" name="abc_capital_off">"KAPAT"</string>
@@ -25,9 +25,10 @@
     <string name="com_facebook_internet_permission_error_title">AndroidManifest Hatası</string>
     <string name="com_facebook_like_button_liked">Beğendin</string>
     <string name="com_facebook_like_button_not_liked">Beğen</string>
-    <string name="com_facebook_loading">Yükleniyor...</string>
+    <string name="com_facebook_loading">Yükleniyor…</string>
     <string name="com_facebook_loginview_cancel_action">İptal</string>
     <string name="com_facebook_loginview_log_in_button">Giriş yap</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Facebook ile Devam Et</string>
     <string name="com_facebook_loginview_log_in_button_long">Facebook ile giriş yap</string>
     <string name="com_facebook_loginview_log_out_action">Çıkış yap</string>
     <string name="com_facebook_loginview_log_out_button">Çıkış yap</string>
@@ -35,8 +36,9 @@
     <string name="com_facebook_loginview_logged_in_using_facebook">Facebook ile giriş yapıldı</string>
     <string name="com_facebook_send_button_text">Gönder</string>
     <string name="com_facebook_share_button_text">Paylaş</string>
-    <string name="com_facebook_tooltip_default">Yeni! Kontrol sende. Uygulamalarla paylaşmak istediğin bilgileri seç.</string>
+    <string name="com_facebook_tooltip_default">Kontrol sende. Uygulamalarla paylaşmak istediğin bilgileri seç.</string>
     <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g>, Google Play hizmetleriyle ilgili sorun yaşıyor. Sorun devam ederse lütfen yardım için geliştiriciyle iletişim kurun."</string>
     <string name="messenger_send_button_text">Gönder</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Ara"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

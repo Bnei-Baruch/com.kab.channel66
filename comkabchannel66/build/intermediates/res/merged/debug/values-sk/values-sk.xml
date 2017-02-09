@@ -25,9 +25,10 @@
     <string name="com_facebook_internet_permission_error_title">Chyba súboru AndroidManifest</string>
     <string name="com_facebook_like_button_liked">Páči sa mi to</string>
     <string name="com_facebook_like_button_not_liked">Páči sa mi to</string>
-    <string name="com_facebook_loading">Načítava sa...</string>
+    <string name="com_facebook_loading">Načítava sa…</string>
     <string name="com_facebook_loginview_cancel_action">Zrušiť</string>
     <string name="com_facebook_loginview_log_in_button">Prihlásiť sa</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Pokračovať s Facebookom</string>
     <string name="com_facebook_loginview_log_in_button_long">Prihlásiť sa cez Facebook</string>
     <string name="com_facebook_loginview_log_out_action">Odhlásiť sa</string>
     <string name="com_facebook_loginview_log_out_button">Odhlásiť sa</string>
@@ -35,7 +36,8 @@
     <string name="com_facebook_loginview_logged_in_using_facebook">Prihlásený cez Facebook</string>
     <string name="com_facebook_send_button_text">Odoslať</string>
     <string name="com_facebook_share_button_text">Zdieľať</string>
-    <string name="com_facebook_tooltip_default">Novinka! Máte to pod kontrolou: vyberte, ktoré informácie chcete zdieľať s aplikáciami.</string>
+    <string name="com_facebook_tooltip_default">Máte to pod kontrolou: vyberte, ktoré informácie chcete zdieľať s aplikáciami.</string>
     <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"Aplikácia <ns1:g id="APP_NAME">%1$s</ns1:g> má problémy so službami Google Play. Ak problém pretrváva, kontaktujte vývojára a požiadajte ho o pomoc."</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Vyhľadávanie"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

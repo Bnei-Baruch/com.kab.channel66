@@ -27,9 +27,10 @@
     <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
     <string name="com_facebook_like_button_liked">Ti piace</string>
     <string name="com_facebook_like_button_not_liked">Mi piace</string>
-    <string name="com_facebook_loading">Caricamento...</string>
+    <string name="com_facebook_loading">Caricamento…</string>
     <string name="com_facebook_loginview_cancel_action">Annulla</string>
     <string name="com_facebook_loginview_log_in_button">Accedi</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Continua con Facebook</string>
     <string name="com_facebook_loginview_log_in_button_long">Accedi con Facebook</string>
     <string name="com_facebook_loginview_log_out_action">Esci</string>
     <string name="com_facebook_loginview_log_out_button">Esci</string>
@@ -37,8 +38,9 @@
     <string name="com_facebook_loginview_logged_in_using_facebook">Accesso effettuato con Facebook</string>
     <string name="com_facebook_send_button_text">Invia</string>
     <string name="com_facebook_share_button_text">Condividi</string>
-    <string name="com_facebook_tooltip_default">Novità! Il controllo è nelle tue mani: scegli quali informazioni condividere con le applicazioni.</string>
+    <string name="com_facebook_tooltip_default">Il controllo è nelle tue mani: scegli quali informazioni condividere con le app.</string>
     <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> sta riscontrando problemi con Google Play Services. Se il problema persiste, contatta lo sviluppatore per ricevere assistenza."</string>
     <string name="messenger_send_button_text">Invia</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Ricerca"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-210:12
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-218:12
 	package
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:4:5-32
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
@@ -23,25 +23,14 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:8:22-68
 uses-permission#android.permission.INTERNET
 ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:10:5-11:23
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.6/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.7/AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:25:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.9/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.7/AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:25:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:25:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.5/AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:25:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:25:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.9/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.7/AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:25:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:25:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:21:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/.android/build-cache/4c3676b5b10a8bc274e17cd5ca84fbd5dde765d1/output/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/.android/build-cache/0c1e4b00725b66bf6655a0190b339bceebbccc1c/output/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/.android/build-cache/69a65192cd05ca9bd1e0a133b5b5c7d2125d1741/output/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/.android/build-cache/53aa8207b4644a7e37ee2c9c4d1b5a5325133bd1/output/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/.android/build-cache/dc57a4cea13fc9792c9a8d5a887abca76833ac6e/output/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/.android/build-cache/a8695060ae11f5b863860a38ffc13bf8684312be/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:21:5-67
 	android:name
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:10:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -62,10 +51,9 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:18:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:20:5-21:23
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:20:5-79
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:20:5-79
+MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/.android/build-cache/a8695060ae11f5b863860a38ffc13bf8684312be/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:20:5-79
 	android:name
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:20:22-76
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
@@ -86,89 +74,39 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:28:18-64
 uses-permission#android.permission.WAKE_LOCK
 ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:35:5-36:23
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:22:5-68
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:22:5-68
+MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/.android/build-cache/a8695060ae11f5b863860a38ffc13bf8684312be/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:22:5-68
 	android:name
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:35:22-65
 application
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:38:5-199:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.6/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.7/AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:27:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.9/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.7/AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:27:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:27:5-20
-MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.5/AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:27:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:27:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.16.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/AndroidManifest.xml:28:5-38:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:customtabs:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/customtabs/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-ndk:1.1.3] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-ndk/1.1.3/AndroidManifest.xml:10:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.9/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.7/AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:27:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:27:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:27:5-20
-MERGED from [com.google.firebase:firebase-core:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.4.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:30:5-59:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.4.0/AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:30:5-59:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:38:5-207:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/.android/build-cache/4c3676b5b10a8bc274e17cd5ca84fbd5dde765d1/output/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/.android/build-cache/0c1e4b00725b66bf6655a0190b339bceebbccc1c/output/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.19.0] /Users/igal/.android/build-cache/a12f3ad98f9ddfa07f33292d922adf4789b91ac0/output/AndroidManifest.xml:28:5-48:19
+MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/igal/.android/build-cache/3a3e6b83c05eb657e2047e51d119b3e70819c039/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/igal/.android/build-cache/9598f52eaf730b9f51e6cb6a5a59f8d8624910e8/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/igal/.android/build-cache/040ef8429e54f0d454c963e809a4683c6e55c3c5/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:cardview-v7:25.0.0] /Users/igal/.android/build-cache/a38cb22a17b17f71d257d5122a1d54357215b444/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:customtabs:25.0.0] /Users/igal/.android/build-cache/2cdb26606abc68055f78ecd1e19619c6d04b5e96/output/AndroidManifest.xml:22:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-ndk:1.1.3] /Users/igal/.android/build-cache/cfa2c1db7d4ea1712fffd1d2713db8b690ccf5ea/output/AndroidManifest.xml:10:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/.android/build-cache/69a65192cd05ca9bd1e0a133b5b5c7d2125d1741/output/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/.android/build-cache/53aa8207b4644a7e37ee2c9c4d1b5a5325133bd1/output/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/.android/build-cache/dc57a4cea13fc9792c9a8d5a887abca76833ac6e/output/AndroidManifest.xml:27:5-20
+MERGED from [com.google.firebase:firebase-core:9.4.0] /Users/igal/.android/build-cache/466df01cfb4dee2324e542cfdd275c0027a9805a/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/.android/build-cache/a8695060ae11f5b863860a38ffc13bf8684312be/output/AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/.android/build-cache/4b08048f1303d5c6b9edcbd90f67db4564150d46/output/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:30:5-59:19
+MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/.android/build-cache/3a8812685dae0827e4d9e082213476109a0fcdbb/output/AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/.android/build-cache/fe6e43befa56ce6b3b362571d4266e9447993efd/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/.android/build-cache/ea80d224db3fb48bcef370395f0fb1128f2f5ee8/output/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:25.0.0] /Users/igal/.android/build-cache/2b55c5027e1ffa8912a0dafadda14b327da7d737/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.0] /Users/igal/.android/build-cache/0a2cd9139cdc79f94988eb1bb306f700133887b0/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.0] /Users/igal/.android/build-cache/cb1a4839cc987c889a9313ec836d0e112feb35f5/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.0] /Users/igal/.android/build-cache/d99ae6ddd43b7a702ddaf10fb4a075fc31f5874b/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.0] /Users/igal/.android/build-cache/0b52f682cc6debd6f7d66bcfd8ca9965416fc8ca/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.0] /Users/igal/.android/build-cache/a12099adf403624757d0d2981fae131f6505dfd3/output/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:40:9-41
 	android:icon
@@ -191,70 +129,74 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:51:17-52
 	android:name
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:50:17-58
+receiver#com.kab.channel66.utils.NetworkChangeReceiver
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:53:9-60:20
+	android:label
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:55:13-50
+	android:name
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:54:13-56
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE+android.net.wifi.WIFI_STATE_CHANGED
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:56:13-59:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:57:17-79
+	android:name
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:57:25-76
+action#android.net.wifi.WIFI_STATE_CHANGED
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:58:17-78
+	android:name
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:58:25-75
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:53:9-107
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:61:9-107
 	android:value
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:53:66-105
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:61:66-105
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:53:20-65
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:61:20-65
 service#com.kab.channel66.PlayerService
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:59:10-62:19
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:67:10-70:19
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:61:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:69:13-45
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:60:13-42
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:68:13-42
 activity#com.kab.channel66.VideoActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:63:9-68:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:71:9-76:20
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:66:13-34
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:74:13-34
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:65:13-59
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:73:13-59
 	android:theme
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:67:13-71
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:75:13-71
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:64:13-42
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:72:13-42
 activity#com.kab.channel66.LoginLayout
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:70:9-80:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:78:9-88:20
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:73:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:81:13-45
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:72:13-83
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:80:13-83
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:71:13-40
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:79:13-40
 intent-filter#android.intent.category.LAUNCHER
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:74:13-79:29
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:82:13-87:29
 category#android.intent.category.LAUNCHER
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:78:17-77
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:86:17-77
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:78:27-74
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:86:27-74
 activity#com.kab.channel66.StreamListActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:82:9-90:20
-	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:87:13-49
-	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:85:13-45
-	android:launchMode
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:86:13-44
-	android:exported
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:88:13-37
-	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:84:13-74
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:83:13-47
-activity#com.kab.channel66.SvivaTovaLogin
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:91:9-98:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:90:9-98:20
 	android:screenOrientation
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:95:13-49
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:94:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:93:13-45
+	android:launchMode
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:94:13-44
 	android:exported
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:96:13-37
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:93:13-74
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:92:13-74
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:92:13-43
-activity#com.kab.channel66.PushMessagesActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:99:10-106:20
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:91:13-47
+activity#com.kab.channel66.SvivaTovaLogin
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:99:9-106:20
 	android:screenOrientation
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:103:13-49
 	android:label
@@ -264,277 +206,216 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 	android:configChanges
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:101:13-74
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:100:13-49
-activity#com.kab.channel66.SplashScreen
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:125:10-145:20
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:100:13-43
+activity#com.kab.channel66.PushMessagesActivity
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:107:10-114:20
 	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:128:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:111:13-49
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:127:13-45
-	android:launchMode
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:129:13-43
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:126:13-41
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:138:14-144:33
-action#android.intent.action.MAIN
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:139:13-140:26
-	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:139:21-62
-activity#com.facebook.FacebookActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:148:9-153:48
-MERGED from [com.facebook.android:facebook-android-sdk:4.16.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/AndroidManifest.xml:29:9-32:66
-	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:153:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:110:13-45
+	android:exported
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:112:13-37
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:149:13-114
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:109:13-74
+	android:name
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:108:13-49
+activity#com.kab.channel66.SplashScreen
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:133:10-153:20
+	android:screenOrientation
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:136:13-49
+	android:label
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:135:13-45
+	android:launchMode
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:137:13-43
+	android:name
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:134:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:146:14-152:33
+action#android.intent.action.MAIN
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:147:13-148:26
+	android:name
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:147:21-62
+activity#com.facebook.FacebookActivity
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:156:9-161:48
+MERGED from [com.facebook.android:facebook-android-sdk:4.19.0] /Users/igal/.android/build-cache/a12f3ad98f9ddfa07f33292d922adf4789b91ac0/output/AndroidManifest.xml:29:9-32:66
+	android:label
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:161:13-45
+	android:configChanges
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:157:13-114
 	android:theme
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:152:13-72
-		REJECTED from [com.facebook.android:facebook-android-sdk:4.16.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/AndroidManifest.xml:32:13-63
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:160:13-72
+		REJECTED from [com.facebook.android:facebook-android-sdk:4.19.0] /Users/igal/.android/build-cache/a12f3ad98f9ddfa07f33292d922adf4789b91ac0/output/AndroidManifest.xml:32:13-63
 	tools:replace
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:151:13-42
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:159:13-42
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:148:19-63
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:156:19-63
 service#com.kab.channel66.MyFirebaseMessagingService
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:154:9-159:19
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:162:9-167:19
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:155:13-55
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:163:13-55
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:156:13-158:29
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:164:13-166:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:157:17-77
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:165:17-77
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:157:25-75
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:165:25-75
 service#com.kab.channel66.MyFirebaseInstanceIDService
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:161:9-166:19
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:169:9-174:19
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:162:13-56
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:170:13-56
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:163:13-165:29
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:171:13-173:29
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:164:17-79
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:172:17-79
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:164:25-77
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:172:25-77
 meta-data#io.fabric.ApiKey
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:196:9-198:72
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:204:9-206:72
 	android:value
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:198:13-69
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:206:13-69
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:197:13-44
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:205:13-44
 uses-sdk
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:201:5-203:41
-MERGED from [com.android.support:multidex:1.0.1] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
-MERGED from [de.mrmaffen:vlc-android-sdk:3.0.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/de.mrmaffen/vlc-android-sdk/3.0.0/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.6/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.7/AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:23:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.9/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.7/AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:23:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:23:5-43
-MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.5/AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:23:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:23:5-43
-MERGED from [com.facebook.android:facebook-android-sdk:4.16.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:customtabs:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/customtabs/23.4.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics-ndk:1.1.3] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-ndk/1.1.3/AndroidManifest.xml:8:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.9/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.7/AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:23:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:23:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/AndroidManifest.xml:23:5-43
-MERGED from [com.google.firebase:firebase-core:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.4.0/AndroidManifest.xml:4:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:209:5-211:41
+MERGED from [com.android.support:multidex:1.0.1] /Users/igal/.android/build-cache/341dbf32ab36cbfde7af7b4b5f36620655b3290c/output/AndroidManifest.xml:18:5-42
+MERGED from [de.mrmaffen:vlc-android-sdk:3.0.0] /Users/igal/.android/build-cache/b3f2eb3a0f0db76cc1906bb2a7791fa5c5f5cf98/output/AndroidManifest.xml:8:5-10:41
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/.android/build-cache/4c3676b5b10a8bc274e17cd5ca84fbd5dde765d1/output/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/.android/build-cache/0c1e4b00725b66bf6655a0190b339bceebbccc1c/output/AndroidManifest.xml:7:5-43
+MERGED from [com.facebook.android:facebook-android-sdk:4.19.0] /Users/igal/.android/build-cache/a12f3ad98f9ddfa07f33292d922adf4789b91ac0/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/igal/.android/build-cache/3a3e6b83c05eb657e2047e51d119b3e70819c039/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/igal/.android/build-cache/9598f52eaf730b9f51e6cb6a5a59f8d8624910e8/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/igal/.android/build-cache/040ef8429e54f0d454c963e809a4683c6e55c3c5/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:cardview-v7:25.0.0] /Users/igal/.android/build-cache/a38cb22a17b17f71d257d5122a1d54357215b444/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:customtabs:25.0.0] /Users/igal/.android/build-cache/2cdb26606abc68055f78ecd1e19619c6d04b5e96/output/AndroidManifest.xml:20:5-44
+MERGED from [com.crashlytics.sdk.android:crashlytics-ndk:1.1.3] /Users/igal/.android/build-cache/cfa2c1db7d4ea1712fffd1d2713db8b690ccf5ea/output/AndroidManifest.xml:8:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/.android/build-cache/69a65192cd05ca9bd1e0a133b5b5c7d2125d1741/output/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/.android/build-cache/53aa8207b4644a7e37ee2c9c4d1b5a5325133bd1/output/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.11] /Users/igal/.android/build-cache/dc57a4cea13fc9792c9a8d5a887abca76833ac6e/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.firebase:firebase-core:9.4.0] /Users/igal/.android/build-cache/466df01cfb4dee2324e542cfdd275c0027a9805a/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/.android/build-cache/a8695060ae11f5b863860a38ffc13bf8684312be/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/.android/build-cache/4b08048f1303d5c6b9edcbd90f67db4564150d46/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/.android/build-cache/3a8812685dae0827e4d9e082213476109a0fcdbb/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/.android/build-cache/fe6e43befa56ce6b3b362571d4266e9447993efd/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/.android/build-cache/ea80d224db3fb48bcef370395f0fb1128f2f5ee8/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:25.0.0] /Users/igal/.android/build-cache/2b55c5027e1ffa8912a0dafadda14b327da7d737/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.0.0] /Users/igal/.android/build-cache/0a2cd9139cdc79f94988eb1bb306f700133887b0/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.0] /Users/igal/.android/build-cache/cb1a4839cc987c889a9313ec836d0e112feb35f5/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.0.0] /Users/igal/.android/build-cache/d99ae6ddd43b7a702ddaf10fb4a075fc31f5874b/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.0.0] /Users/igal/.android/build-cache/0b52f682cc6debd6f7d66bcfd8ca9965416fc8ca/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.0.0] /Users/igal/.android/build-cache/a12099adf403624757d0d2981fae131f6505dfd3/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.0.0] /Users/igal/.android/build-cache/3a3e6b83c05eb657e2047e51d119b3e70819c039/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:203:9-38
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:211:9-38
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:202:9-34
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:210:9-34
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
-activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.16.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/AndroidManifest.xml:33:9-36:20
-	android:exported
-		ADDED from [com.facebook.android:facebook-android-sdk:4.16.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/AndroidManifest.xml:35:13-36
-	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.16.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/AndroidManifest.xml:34:13-58
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.16.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/AndroidManifest.xml:37:9-71
+ADDED from [com.facebook.android:facebook-android-sdk:4.19.0] /Users/igal/.android/build-cache/a12f3ad98f9ddfa07f33292d922adf4789b91ac0/output/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.16.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.0/AndroidManifest.xml:37:19-68
-receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:28:7-34:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:28:7-34:18
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:30:11-33
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:29:11-83
-intent-filter#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:31:9-33:25
-action#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:32:11-77
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:32:19-75
-service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:36:7-39:37
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/AndroidManifest.xml:36:7-39:37
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:38:11-33
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:39:11-35
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/AndroidManifest.xml:37:11-82
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:23:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:22:13-58
-provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:7:9-11:39
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:7:9-11:39
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:7:9-11:39
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:7:9-11:39
-MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:7:9-11:39
+		ADDED from [com.facebook.android:facebook-android-sdk:4.19.0] /Users/igal/.android/build-cache/a12f3ad98f9ddfa07f33292d922adf4789b91ac0/output/AndroidManifest.xml:33:19-68
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-android-sdk:4.19.0] /Users/igal/.android/build-cache/a12f3ad98f9ddfa07f33292d922adf4789b91ac0/output/AndroidManifest.xml:44:9-47:40
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:8:13-72
+		ADDED from [com.facebook.android:facebook-android-sdk:4.19.0] /Users/igal/.android/build-cache/a12f3ad98f9ddfa07f33292d922adf4789b91ac0/output/AndroidManifest.xml:46:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:10:13-37
-	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:11:13-36
+		ADDED from [com.facebook.android:facebook-android-sdk:4.19.0] /Users/igal/.android/build-cache/a12f3ad98f9ddfa07f33292d922adf4789b91ac0/output/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/AndroidManifest.xml:9:13-58
-uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:23:5-82
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:23:5-82
+		ADDED from [com.facebook.android:facebook-android-sdk:4.19.0] /Users/igal/.android/build-cache/a12f3ad98f9ddfa07f33292d922adf4789b91ac0/output/AndroidManifest.xml:45:13-70
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:28:7-34:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/.android/build-cache/a8695060ae11f5b863860a38ffc13bf8684312be/output/AndroidManifest.xml:28:7-34:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:30:11-33
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:23:22-79
-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:25:5-26:47
-	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:26:9-44
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:29:11-83
+intent-filter#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:31:9-33:25
+action#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:32:11-77
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:25:17-71
-uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:28:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:28:22-76
-receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:32:9-41:20
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:32:9-41:20
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:32:19-75
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:36:7-39:37
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/igal/.android/build-cache/a8695060ae11f5b863860a38ffc13bf8684312be/output/AndroidManifest.xml:36:7-39:37
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:38:11-33
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:34:13-36
-	android:permission
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:35:13-73
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:39:11-35
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:33:13-78
-intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:36:13-40:29
-action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:37:17-81
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:37:25-78
-action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:38:17-86
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:38:25-83
-category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:39:17-61
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:39:27-58
-receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:45:9-47:40
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:45:9-47:40
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:47:13-37
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:46:13-86
-service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:51:9-57:19
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:51:9-57:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:53:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:52:13-77
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/igal/.android/build-cache/ec90889bc0efcbaccfd667ee67a44de1e7be52ac/output/AndroidManifest.xml:37:11-82
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.4.0/AndroidManifest.xml:24:9-30:19
+ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/.android/build-cache/4b08048f1303d5c6b9edcbd90f67db4564150d46/output/AndroidManifest.xml:24:9-30:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.4.0/AndroidManifest.xml:26:13-36
+		ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/.android/build-cache/4b08048f1303d5c6b9edcbd90f67db4564150d46/output/AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.4.0/AndroidManifest.xml:25:13-82
-permission#com.kab.channel66.permission.C2D_MESSAGE
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:25:5-26:47
-uses-permission#com.kab.channel66.permission.C2D_MESSAGE
-MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/AndroidManifest.xml:28:5-79
+		ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/.android/build-cache/4b08048f1303d5c6b9edcbd90f67db4564150d46/output/AndroidManifest.xml:25:13-82
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:23:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:23:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:25:5-26:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:26:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:25:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:28:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:28:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:32:9-41:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:34:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:35:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:33:13-78
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:36:13-40:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:37:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:37:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:38:17-86
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:38:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:39:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:39:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:45:9-47:40
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:46:13-86
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:51:9-57:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:53:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-cache/b147144e812dc1e3c606c33da72bd5b584419b12/output/AndroidManifest.xml:52:13-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/.android/build-cache/3a8812685dae0827e4d9e082213476109a0fcdbb/output/AndroidManifest.xml:7:9-11:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/.android/build-cache/3a8812685dae0827e4d9e082213476109a0fcdbb/output/AndroidManifest.xml:8:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/.android/build-cache/3a8812685dae0827e4d9e082213476109a0fcdbb/output/AndroidManifest.xml:10:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/.android/build-cache/3a8812685dae0827e4d9e082213476109a0fcdbb/output/AndroidManifest.xml:11:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/.android/build-cache/3a8812685dae0827e4d9e082213476109a0fcdbb/output/AndroidManifest.xml:9:13-58
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/.android/build-cache/ea80d224db3fb48bcef370395f0fb1128f2f5ee8/output/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/.android/build-cache/ea80d224db3fb48bcef370395f0fb1128f2f5ee8/output/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/.android/build-cache/ea80d224db3fb48bcef370395f0fb1128f2f5ee8/output/AndroidManifest.xml:22:13-58

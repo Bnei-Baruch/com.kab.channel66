@@ -28,6 +28,7 @@
     <string name="com_facebook_loading">Učitavanje u tijeku…</string>
     <string name="com_facebook_loginview_cancel_action">Odustani</string>
     <string name="com_facebook_loginview_log_in_button">Prijavi se</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Nastavite s korištenjem Facebooka</string>
     <string name="com_facebook_loginview_log_in_button_long">Prijava putem Facebooka</string>
     <string name="com_facebook_loginview_log_out_action">Odjavi se</string>
     <string name="com_facebook_loginview_log_out_button">Odjavi se</string>
@@ -35,7 +36,8 @@
     <string name="com_facebook_loginview_logged_in_using_facebook">Prijavljen putem Facebooka</string>
     <string name="com_facebook_send_button_text">Pošalji</string>
     <string name="com_facebook_share_button_text">Dijeli</string>
-    <string name="com_facebook_tooltip_default">Novo! Vi odlučujete – odaberite koje informacije želite podijeliti u aplikacijama.</string>
+    <string name="com_facebook_tooltip_default">Vi odlučujete – odaberite koje podatke želite dijeliti u aplikacijama.</string>
     <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> ima poteškoća s uslugama Google Playa. Ako se problem ponovi, tražite pomoć od razvojnog programera."</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Pretraživanje"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

@@ -6,9 +6,11 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -25,10 +27,13 @@ import com.google.firebase.messaging.RemoteMessage;
 import com.kab.channel66.utils.CallStateInterface;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.Constants;
+import com.kab.channel66.utils.NetworkChangeReceiver;
 
 import org.videolan.libvlc.Media;
 import org.videolan.libvlc.MediaPlayer;
 
+import static android.provider.Settings.Global.WIFI_ON;
+import static android.provider.Settings.Global.WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGED;
 
 
 public class PlayerService extends Service implements CallStateInterface{
@@ -39,6 +44,21 @@ public class PlayerService extends Service implements CallStateInterface{
 	private Notification notification;
 	// Binder given to clients
 	private final IBinder mBinder = new LocalBinder();
+
+	private BroadcastReceiver data_stat = new BroadcastReceiver() {
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			if(intent.getAction().contentEquals(NetworkChangeReceiver.MOBILE_DATA_ON)|| intent.getAction().contentEquals(WIFI_ON))
+			{
+				SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+
+				if(shared.getBoolean("play",false)) {
+					mAudioplay.pause();
+					mAudioplay.start();
+				}
+			}
+		}
+	};
 
 	@Override
 	public void PausePlay() {
@@ -63,7 +83,7 @@ public class PlayerService extends Service implements CallStateInterface{
 			calllistener = new CallStateListener(PlayerService.this);
 			mAudioplay.setCalllistener(calllistener);
 
-
+			registerReceiver(data_stat,new IntentFilter());
 			Log.i("svc", "Received Start Foreground Intent ");
 			Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
 //			notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
@@ -242,6 +262,7 @@ public class PlayerService extends Service implements CallStateInterface{
 					mAudioplay.start();
 					SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 					shared.edit().putString("audiourl", query).commit();
+					shared.edit().putBoolean("play",true).commit();
 					mUrl = query;
 
 					//setForeground();
@@ -272,6 +293,9 @@ public class PlayerService extends Service implements CallStateInterface{
 	public int stopAudio()
 	{
 		mAudioplay.stop();
+		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+
+		shared.edit().putBoolean("play",false).commit();
 		return 0;
 	}
 	public boolean isPlaying()

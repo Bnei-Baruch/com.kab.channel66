@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/values-bs/values-bs.xml",
+        "outputFile": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 335
                 },
                 "from": {
-                    "file": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/res/values-bs/values.xml",
+                    "file": "/Users/igal/.android/build-cache/ea80d224db3fb48bcef370395f0fb1128f2f5ee8/output/res/values-bs/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="1.0.1"><source path="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/exploded-aar/com.android.support/multidex-instrumentation/1.0.1/assets"/></dataSet><dataSet config="main"><source path="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/androidTest/assets"/><source path="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/generated/assets/shaders/androidTest/debug"/></dataSet></merger>

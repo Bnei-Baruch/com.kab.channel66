@@ -25,9 +25,10 @@
     <string name="com_facebook_internet_permission_error_title">Ошибка AndroidManifest</string>
     <string name="com_facebook_like_button_liked">Понравилось</string>
     <string name="com_facebook_like_button_not_liked">Нравится</string>
-    <string name="com_facebook_loading">Загрузка...</string>
+    <string name="com_facebook_loading">Загрузка…</string>
     <string name="com_facebook_loginview_cancel_action">Отменить</string>
     <string name="com_facebook_loginview_log_in_button">Вход</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Продолжить с Facebook</string>
     <string name="com_facebook_loginview_log_in_button_long">Вход через Facebook</string>
     <string name="com_facebook_loginview_log_out_action">Выход</string>
     <string name="com_facebook_loginview_log_out_button">Выход</string>
@@ -35,8 +36,9 @@
     <string name="com_facebook_loginview_logged_in_using_facebook">Выполнен вход с помощью Facebook</string>
     <string name="com_facebook_send_button_text">Отправить</string>
     <string name="com_facebook_share_button_text">Поделиться</string>
-    <string name="com_facebook_tooltip_default">Новинка! У вас все под контролем — выбирайте, какой информацией вы хотите поделиться с приложениями.</string>
+    <string name="com_facebook_tooltip_default">Вы сами выбираете, какой информацией поделиться с приложениями.</string>
     <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"Приложению \"<ns1:g id="APP_NAME">%1$s</ns1:g>\" не удается подключиться к сервисам Google Play. Если проблема не исчезнет, обратитесь к разработчику."</string>
     <string name="messenger_send_button_text">Отпр</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Поиск"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
 </resources>

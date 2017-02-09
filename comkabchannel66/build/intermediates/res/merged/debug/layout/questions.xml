@@ -18,6 +18,7 @@
         android:id="@+id/et_name"
         android:layout_width="150dip"
         android:layout_height="wrap_content"
+        android:textColor="#444444"
         android:background="@android:drawable/editbox_background"
         android:layout_toRightOf="@id/name"
         android:layout_alignTop="@id/name"/>
@@ -36,6 +37,7 @@
     <EditText
         android:id="@+id/et_from"
         android:layout_width="150dip"
+        android:textColor="#444444"
         android:layout_height="wrap_content"
         android:background="@android:drawable/editbox_background"
         android:layout_toRightOf="@id/from"
@@ -58,6 +60,7 @@
     <EditText
         android:id="@+id/et_question"
         android:layout_width="220dip"
+        android:textColor="#444444"
         android:layout_height="200dip"
         android:layout_below="@id/question"
         android:layout_marginLeft="17dip"

@@ -62,7 +62,7 @@ public class MyApplication extends Application {
 //        Parse.enableLocalDatastore(getApplicationContext());
 //
 //
-//     // channel66
+//     // channel66a
 //        Parse.initialize(this, "dmSTSXcOcBxITZBioUAmC7HXps0OCUteMJEklSCD", "b0gN0SoJgOmQ51fkQoNb9B7bNEIF2agc9SYhFG7U");//real
 //
 //		//chanel test 2
