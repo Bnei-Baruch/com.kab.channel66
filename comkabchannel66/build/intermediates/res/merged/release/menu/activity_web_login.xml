@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/channel66"
+          android:title="@string/channel66" >
+    </item>
+    <item android:id="@+id/quality"
+          android:title="@string/quality" >
+    </item>
+      <item android:id="@+id/Autocheck"
+          android:title="@string/autocheck" >
+    </item>
+</menu>

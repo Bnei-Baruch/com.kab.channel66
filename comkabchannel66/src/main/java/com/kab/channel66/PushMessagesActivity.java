@@ -1,16 +1,5 @@
 package com.kab.channel66;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import com.kab.channel66.db.MessagesDataSource;
-import com.kab.channel66.utils.CommonUtils;
-//import com.parse.FindCallback;
-//import com.parse.ParseException;
-//import com.parse.ParseObject;
-//import com.parse.ParseQuery;
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -26,23 +15,37 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.kab.channel66.db.MessagesDataSource;
+import com.kab.channel66.utils.CommonUtils;
 
-public class PushMessagesActivity extends BaseListActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+//import com.parse.FindCallback;
+//import com.parse.ParseException;
+//import com.parse.ParseObject;
+//import com.parse.ParseQuery;
+
+
+public class PushMessagesActivity extends BaseListActivity implements ListView.OnItemClickListener {
 
 	private MessageAdapter mAdapter;
 	ArrayList<String> pushMessages;
 	BroadcastReceiver myReciever;
+	ListView listview;
 	private Handler handler;
 	
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 		
-		
+		setContentView(R.layout.listviewlayout);
+		listview = (ListView)findViewById(R.id.listview);
 		
 		
 		mAdapter = new MessageAdapter(PushMessagesActivity.this, 0);
+
 		refreshMessages();
-        PushMessagesActivity.this.getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        PushMessagesActivity.this.listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 com.kab.channel66.db.Message obj = mAdapter.getItem(position);
@@ -72,7 +75,7 @@ public class PushMessagesActivity extends BaseListActivity {
 		};
 
 		
-		setListAdapter(mAdapter);
+		listview.setAdapter(mAdapter);
 		//refreshMessages();
 		
 		 handler = new Handler() {
@@ -83,7 +86,7 @@ public class PushMessagesActivity extends BaseListActivity {
                 	        @Override
                 	        public void run() {
                 	         mAdapter.notifyDataSetChanged();
-                	         PushMessagesActivity.this.getListView().invalidateViews();
+                	         PushMessagesActivity.this.listview.invalidateViews();
                 	        }
                 	});
                 	 
@@ -111,12 +114,12 @@ public class PushMessagesActivity extends BaseListActivity {
 		registerReceiver(myReciever,filter);
 	}
 
-	@Override
-	protected void onListItemClick(ListView l, View v, int position, long id) {
-		String item = (String) getListAdapter().getItem(position);
-
-
-	}
+//	@Override
+//	protected void onListItemClick(ListView l, View v, int position, long id) {
+//		String item = (String) listview.getAdapter().getItem(position);
+//
+//
+//	}
 	
 	private void refreshMessages()
 	{
@@ -171,6 +174,11 @@ public class PushMessagesActivity extends BaseListActivity {
 		return super.onOptionsItemSelected(item);
 		}
 	}
-	
+
+	@Override
+	public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+		String item = (String) listview.getAdapter().getItem(i);
+
+	}
 }
 

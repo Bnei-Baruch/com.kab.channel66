@@ -1,4 +1,4 @@
-#Wed Feb 01 18:32:13 IST 2017
+#Thu Mar 02 19:32:05 IST 2017
 base.0=/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_746f14636c68689d5657740b5b4c1f9d471ebff3
 renamed.1=classes2.dex
 renamed.0=classes.dex

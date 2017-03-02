@@ -41,7 +41,7 @@ public class Questions extends Dialog {
 		name = (EditText) findViewById(R.id.et_name);
 		ask = (Button) findViewById(R.id.btn_ask);
 		mContext = context;
-		
+
 		ask.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -77,7 +77,7 @@ public class Questions extends Dialog {
 	        Toast.makeText(mContext, "Sent question successfully", 5);
 	       
 	        
-	} 
+	}
 
 }
 

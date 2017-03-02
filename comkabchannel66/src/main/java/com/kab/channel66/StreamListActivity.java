@@ -3,22 +3,6 @@ package com.kab.channel66;
 //import io.vov.vitamio.VitamioInstaller.VitamioNotCompatibleException;
 //import io.vov.vitamio.VitamioInstaller.VitamioNotFoundException;
 
-import java.util.ArrayList;
-import java.util.concurrent.ExecutionException;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-//import com.apphance.android.Log;
-import com.backendless.Backendless;
-import com.backendless.async.callback.AsyncCallback;
-import com.backendless.exceptions.BackendlessFault;
-import com.google.analytics.tracking.android.EasyTracker;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.kab.channel66.utils.CallStateInterface;
-import com.kab.channel66.utils.CallStateListener;
-import com.kab.channel66.utils.CommonUtils;
-
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -28,11 +12,8 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
-import android.content.DialogInterface.OnCancelListener;
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -45,23 +26,37 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
-import android.telephony.PhoneStateListener;
-import android.telephony.TelephonyManager;
+import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-public class StreamListActivity extends BaseListActivity implements LanguageSeletedListener  {
+import com.google.analytics.tracking.android.EasyTracker;
+import com.google.android.gms.appinvite.AppInvite;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.kab.channel66.utils.CallStateListener;
+import com.kab.channel66.utils.CommonUtils;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
+
+//import com.apphance.android.Log;
+
+public class StreamListActivity extends BaseListActivity implements GoogleApiClient.OnConnectionFailedListener  ,LanguageSeletedListener , ListView.OnItemClickListener {
 
 	private ServiceConnection mConnection = new ServiceConnection() {
 		@Override
@@ -100,7 +95,9 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 	Intent svc;
 	private ArrayList<com.kab.channel66.HLSEvents.Page> pages;
 	private CustomAdapter mAdataper;
+	private ListView listview;
 
+	GoogleApiClient mGoogleApiClient;
 
 
 	public StreamListActivity() {
@@ -136,7 +133,14 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 //		Backendless.initApp( this, "EAD5E9C4-0007-D572-FF17-08523CED4200", "B485FC16-0FC2-A9D2-FF3E-406DF81A7000", version );
 
 		CommonUtils.RemoveOldPlugin(this);
+		setContentView(R.layout.listviewlayout);
 
+		 listview = (ListView) findViewById(R.id.listview);
+
+		mGoogleApiClient = new GoogleApiClient.Builder(this)
+				.enableAutoManage(this, this)
+				.addApi(AppInvite.API)
+				.build();
 
 //		Backendless.Messaging.registerDevice("727406170147", new AsyncCallback<Void>() {
 //			@Override
@@ -306,10 +310,16 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 		return ret;
 	}
 
-
 	@Override
-	protected void onListItemClick(ListView l, View v, int position, long id) {
-		String item = (String) getListAdapter().getItem(position);
+	public void onItemClick(AdapterView<?> adapterView, View v, int position, long id)
+//	@Override
+//	public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l)
+	{
+
+
+//	@Override
+//	protected void onListItemClick(ListView l, View v, int position, long id) {
+		String item = (String) listview.getAdapter().getItem(position);
 		Toast.makeText(this, item + " selected", Toast.LENGTH_LONG).show();
 		// Intent player = new Intent(StreamListActivity.this, VideoViewDemo.class);
 		//Intent player = new Intent(StreamListActivity.this, VideoPlayerActivity.class);
@@ -365,6 +375,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 						//svc.putExtra("audiourl", chosenStream.url_value);
 						final String location = chosenStream.url_value;
 						mService.playAudio(location);
+						EasyTracker.getTracker().trackEvent("Stream list audio", "on item clicked",location,0L);
 //						audioplay.prepare(MyApplication.getMyApp(), chosenStream.url_value, new TomahawkMediaPlayerCallback() {
 //							@Override
 //							public void onPrepared(String query) {
@@ -467,7 +478,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 			//"mms://wms1.il.kab.tv/heb"
 			// String url = ExtractMMSfromAsx("http://streams.kab.tv/heb.asx");
 			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-
+			EasyTracker.getTracker().trackEvent("ערוץ 66 - וידאו", "on item clicked","http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8",0L);
 			if(shared.getBoolean("quality", false))
 			{
 				//player.putExtra("path", ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
@@ -500,6 +511,7 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 			else
 				url =  "http://icecast.kab.tv/radiozohar2014.mp3";
 			mService.playAudio(url);
+			EasyTracker.getTracker().trackEvent(item,"on item clicked", url,0L);
 //			startService(svc);
 //			audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
 //				@Override
@@ -906,8 +918,10 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 		for(int i=0;i<description.size();i++)
 			mAdataper.addItem(description.get(i),false);
 
-		setListAdapter(mAdataper);
-
+		listview.setAdapter(mAdataper);
+		listview.setOnItemClickListener(this);
+		//listview.setChoiceMode(ListView.);
+listview.setItemsCanFocus(true);
 
 
 	}
@@ -1122,6 +1136,15 @@ public class StreamListActivity extends BaseListActivity implements LanguageSele
 		prepareStreamData();
 
 	}
+
+
+	@Override
+	public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+	}
+
+
+
 
 
 }

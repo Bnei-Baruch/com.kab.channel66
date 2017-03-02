@@ -1,29 +1,26 @@
 package com.kab.channel66;
 
-import com.crashlytics.android.Crashlytics;
-import com.crashlytics.android.ndk.CrashlyticsNdk;
-import io.fabric.sdk.android.Fabric;
-//import io.vov.vitamio.LibsChecker;
-
-import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
+
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.ndk.CrashlyticsNdk;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+import com.google.firebase.iid.FirebaseInstanceId;
+
+import io.fabric.sdk.android.Fabric;
+
+//import io.vov.vitamio.LibsChecker;
 //
 //import org.acra.*;
 //import org.acra.annotation.*;
-
-import com.facebook.appevents.AppEventsLogger;
 //import com.firebase.client.Firebase;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.messaging.FirebaseMessaging;
-import com.google.firebase.messaging.RemoteMessage;
-import com.kab.channel66.utils.CommonUtils;
 //import com.parse.Parse;
 //import com.parse.ParseInstallation;
 //import com.parse.ParsePush;
 //import com.parse.PushService;
-import com.facebook.FacebookSdk;
 
 //@ReportsCrashes(formKey = "", // will not be used
 //mailTo = "igal.avraham@gmail.com",
@@ -56,7 +53,7 @@ public class MyApplication extends Application {
 
         myapp = this;
         String token = FirebaseInstanceId.getInstance().getToken();
-        FirebaseMessaging.getInstance().subscribeToTopic("news");
+//        FirebaseMessaging.getInstance().subscribeToTopic("news");
 
 
 //        Parse.enableLocalDatastore(getApplicationContext());

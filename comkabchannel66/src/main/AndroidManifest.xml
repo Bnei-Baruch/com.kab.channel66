@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.kab.channel66"
-    android:versionCode="40"
-    android:versionName="2.6.1">
+    android:versionCode="41"
+    android:versionName="2.6.2">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
@@ -94,6 +94,14 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" 
             android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="channel66.com" android:scheme="http"/>
+                <data android:host="channel66.com" android:scheme="https"/>
+            </intent-filter>
 
         </activity>
         <activity

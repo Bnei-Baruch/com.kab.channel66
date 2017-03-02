@@ -1,14 +1,13 @@
 package com.kab.channel66;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.ListActivity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.support.v4.app.FragmentActivity;
 
-public class BaseListActivity extends ListActivity {
+public class BaseListActivity extends FragmentActivity {
 	AlertDialog dlg = null;
 	@Override
 	public void onResume()
@@ -37,4 +36,9 @@ public class BaseListActivity extends ListActivity {
 		    NetworkInfo netInfo = cm.getActiveNetworkInfo();    
 		    return netInfo != null && netInfo.isConnected();
 		}
+
+//	@Override
+//	protected int getSupportLayoutResourceId() {
+//		return R.id.list;
+//	}
 }
