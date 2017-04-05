@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/color/abc_tint_spinner.xml",
-        "source": "/Users/igal/.android/build-cache/95db8f225d5e6e0ec688322d8678ea887f88a61e/output/res/color/abc_tint_spinner.xml"
-    },
-    {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_dark.xml",
         "source": "/Users/igal/.android/build-cache/95db8f225d5e6e0ec688322d8678ea887f88a61e/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/color/abc_tint_spinner.xml",
+        "source": "/Users/igal/.android/build-cache/95db8f225d5e6e0ec688322d8678ea887f88a61e/output/res/color/abc_tint_spinner.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/color/com_facebook_send_button_text_color.xml",

@@ -112,12 +112,12 @@
         "source": "/Users/igal/.android/build-cache/374c6d9e89a57a0ffbd9fb7f61db64e194970755/output/res/drawable-xhdpi-v4/messenger_bubble_small_blue.png"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
-        "source": "/Users/igal/.android/build-cache/95db8f225d5e6e0ec688322d8678ea887f88a61e/output/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/drawable-xhdpi-v4/common_plus_signin_btn_text_light_focused.9.png",
         "source": "/Users/igal/.android/build-cache/8d391aae68042b327c2bf4097e88a35ced8449df/output/res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/Users/igal/.android/build-cache/95db8f225d5e6e0ec688322d8678ea887f88a61e/output/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png",

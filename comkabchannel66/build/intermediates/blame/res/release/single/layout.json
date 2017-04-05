@@ -36,12 +36,12 @@
         "source": "/Users/igal/.android/build-cache/374c6d9e89a57a0ffbd9fb7f61db64e194970755/output/res/layout/com_facebook_smart_device_dialog_fragment.xml"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/layout/widget.xml",
-        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/layout/widget.xml"
-    },
-    {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/layout/abc_screen_simple_overlay_action_mode.xml",
         "source": "/Users/igal/.android/build-cache/95db8f225d5e6e0ec688322d8678ea887f88a61e/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/layout/widget.xml",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/layout/widget.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/layout/notification_template_custom_big.xml",

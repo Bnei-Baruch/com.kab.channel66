@@ -1,16 +1,12 @@
 package com.kab.channel66;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Notification;
-import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -23,17 +19,12 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.google.firebase.messaging.RemoteMessage;
 import com.kab.channel66.utils.CallStateInterface;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.Constants;
 import com.kab.channel66.utils.NetworkChangeReceiver;
 
-import org.videolan.libvlc.Media;
-import org.videolan.libvlc.MediaPlayer;
-
 import static android.provider.Settings.Global.WIFI_ON;
-import static android.provider.Settings.Global.WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGED;
 
 
 public class PlayerService extends Service implements CallStateInterface{
@@ -83,7 +74,7 @@ public class PlayerService extends Service implements CallStateInterface{
 			calllistener = new CallStateListener(PlayerService.this);
 			mAudioplay.setCalllistener(calllistener);
 
-			registerReceiver(data_stat,new IntentFilter());
+			//registerReceiver(data_stat,new IntentFilter());
 			Log.i("svc", "Received Start Foreground Intent ");
 			Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
 //			notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
