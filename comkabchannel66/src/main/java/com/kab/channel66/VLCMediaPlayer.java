@@ -164,8 +164,9 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         Log.d(TAG, "pause()");
         if (getMediaPlayerInstance().isPlaying()) {
             getMediaPlayerInstance().pause();
-            telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE); //Register our listener with TelephonyManager
+
         }
+        telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE); //Register our listener with TelephonyManager
     }
 
     /**
