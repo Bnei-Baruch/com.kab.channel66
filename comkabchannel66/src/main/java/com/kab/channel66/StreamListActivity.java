@@ -47,6 +47,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
+import com.suredigit.inappfeedback.FeedbackDialog;
+import com.suredigit.inappfeedback.FeedbackSettings;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -98,6 +100,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	private ListView listview;
 
 	GoogleApiClient mGoogleApiClient;
+	private FeedbackDialog feedBackDialog;
 
 
 	public StreamListActivity() {
@@ -132,6 +135,10 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		//remove old plugin library
 //		Backendless.initApp( this, "EAD5E9C4-0007-D572-FF17-08523CED4200", "B485FC16-0FC2-A9D2-FF3E-406DF81A7000", version );
 
+		feedBackDialog = new FeedbackDialog(this,"AF-2EF522E45745-F5");
+		FeedbackSettings settings = new FeedbackSettings();
+				settings.setText("Would like to suggest a new feature or report a bug? We would love to hear from you");
+		feedBackDialog.setSettings(settings);
 		CommonUtils.RemoveOldPlugin(this);
 		setContentView(R.layout.listviewlayout);
 
@@ -747,6 +754,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 		super.onPause();
 
+		feedBackDialog.dismiss();
 		
 		
 	}
@@ -1082,7 +1090,8 @@ listview.setItemsCanFocus(true);
 			Intent intent = new Intent(StreamListActivity.this,PushMessagesActivity.class);
 			startActivity(intent);
 			return true;
-
+			case R.id.Feedback:
+				feedBackDialog.show();
 
 		default:
 			return super.onOptionsItemSelected(item);

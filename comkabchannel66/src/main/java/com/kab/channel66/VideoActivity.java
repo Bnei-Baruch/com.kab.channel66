@@ -6,19 +6,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
-import android.util.Log;
 import android.view.Gravity;
-import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Toast;
 
-import com.kab.channel66.R;
 import com.kab.channel66.utils.CallStateInterface;
 import com.kab.channel66.utils.CallStateListener;
 
@@ -31,7 +26,7 @@ import org.videolan.libvlc.util.AndroidUtil;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC.HardwareAccelerationError,CallStateInterface {
+public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC.OnNativeCrashListener,CallStateInterface {
     public final static String TAG = "LibVLCAndroidSample/VideoActivity";
 
     public final static String LOCATION = "com.compdigitec.libvlcandroidsample.VideoActivity.location";
@@ -183,12 +178,14 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
             options.add("-vvv"); // verbosity
             options.add("--http-reconnect");
             options.add("--network-caching=2000");
-            libvlc = new LibVLC(options);
-            libvlc.setOnHardwareAccelerationError(this);
+            libvlc = new LibVLC(this,options);
+            libvlc.setOnNativeCrashListener(this);
+
             holder.setKeepScreenOn(true);
 
             // Create media player
             mMediaPlayer = new MediaPlayer(libvlc);
+
             mMediaPlayer.setEventListener(mPlayerListener);
 
             // Set up video output
@@ -254,10 +251,21 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     }
 
     @Override
+    public void onHardwareAccelerationError(IVLCVout vlcVout) {
+
+    }
+
+    @Override
     public void PausePlay() {
 
-        if(mMediaPlayer.isPlaying())
-        mMediaPlayer.stop();
+        try {
+            if (mMediaPlayer != null && mMediaPlayer.isPlaying())
+                mMediaPlayer.stop();
+        }
+        catch (IllegalStateException e)
+        {//report crash to crashlytics on this crash
+          //  Crashlytics.getInstance().answers.onException(new Crash.FatalException(e.getMessage()));
+        }
     }
 
 
@@ -270,6 +278,10 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
            mMediaPlayer.play();
     }
 
+    @Override
+    public void onNativeCrash() {
+
+    }
 
 
     private static class MyPlayerListener implements MediaPlayer.EventListener {
@@ -297,11 +309,11 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         }
     }
 
-    @Override
-    public void eventHardwareAccelerationError() {
-        // Handle errors with hardware acceleration
-        //Log.e(TAG, "Error with hardware acceleration");
-        this.releasePlayer();
-        Toast.makeText(this, "Error with hardware acceleration", Toast.LENGTH_LONG).show();
-    }
+//    @Override
+//    public void eventHardwareAccelerationError() {
+//        // Handle errors with hardware acceleration
+//        //Log.e(TAG, "Error with hardware acceleration");
+//        this.releasePlayer();
+//        Toast.makeText(this, "Error with hardware acceleration", Toast.LENGTH_LONG).show();
+//    }
 }

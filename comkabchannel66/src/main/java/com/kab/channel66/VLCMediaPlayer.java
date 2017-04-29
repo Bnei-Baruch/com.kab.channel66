@@ -37,6 +37,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import de.greenrobot.event.EventBus;
 
+import static com.kab.channel66.MyApplication.getMyApp;
+
 /**
  * This class wraps a libvlc mediaplayer instance.
  */
@@ -92,10 +94,10 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         ArrayList<String> options = new ArrayList<>();
         options.add("--http-reconnect");
         options.add("--network-caching=4000");
-        mLibVLC = new LibVLC(options);
+        mLibVLC = new LibVLC(getMyApp().getApplicationContext(),options);
         mMediaPlayer = new MediaPlayer(mLibVLC);
         SharedPreferences pref =
-                PreferenceManager.getDefaultSharedPreferences(MyApplication.getMyApp());
+                PreferenceManager.getDefaultSharedPreferences(getMyApp());
         if (pref.getBoolean(EQUALIZER_ENABLED_PREFERENCE_KEY, false)) {
             MediaPlayer.Equalizer equalizer = MediaPlayer.Equalizer.create();
            float preAmp =  pref.getFloat(EQUALIZER_VALUES_PREFERENCE_KEY, 0f);
@@ -108,7 +110,7 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         EventBus.getDefault().register(this);
 
 
-        telephony = (TelephonyManager)MyApplication.getMyApp().getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE); //TelephonyManager object
+        telephony = (TelephonyManager) getMyApp().getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE); //TelephonyManager object
     }
 
     public LibVLC getLibVlcInstance() {
