@@ -549,24 +549,27 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
-//					if(audioplay.isPlaying(url) )
-//					{
-//						but.setImageResource(R.drawable.mediacontroller_play01);
-//						//audioplay.pause();
-//						//svc= null;
-//						mService.stopAudio();
-//					}
-//					else
-//					{
-//						but.setImageResource(R.drawable.mediacontroller_pause01);
-//
-//
-////						svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
-////						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-////						String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
-////						svc.putExtra("audiourl",audiourl);
-////						startService(svc);
-//
+					if(mService.isPlaying() )
+					{
+						but.setImageResource(R.drawable.mediacontroller_play01);
+						//audioplay.pause();
+						//svc= null;
+						mService.stopAudio();
+					}
+					else {
+						but.setImageResource(R.drawable.mediacontroller_pause01);
+
+						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+						shared.edit().putString("audiourl", url).commit();
+						but.setImageResource(R.drawable.mediacontroller_pause01);
+						mService.playAudio(url);
+						but.setImageResource(R.drawable.mediacontroller_pause01);
+//						svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+//						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+//						String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
+//						svc.putExtra("audiourl",audiourl);
+//						startService(svc);
+					}
 //
 //
 //						//svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
@@ -653,7 +656,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			//svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 			//svc.putExtra("audiourl", "http://icecast.kab.tv/rus.mp3");
 			//startService(svc);
-			String url = ("http://icecast.kab.tv/rus.mp3");
+			final String url = ("http://icecast.kab.tv/rus.mp3");
 //			audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
 //				@Override
 //				public void onPrepared(String query) {
@@ -683,7 +686,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
-					if(svc!=null)
+					if(mService.isPlaying())
 					{
 						but.setImageResource(R.drawable.mediacontroller_play01);
 						//stopService(svc);
@@ -693,13 +696,13 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 					}
 					else
 					{
-//						but.setImageResource(R.drawable.mediacontroller_pause01);
-//
-//						svc=new Intent(StreamListActivity.this,AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
-//						svc.putExtra("audiourl", "http://icecast.kab.tv/rus.mp3");
-//						startService(svc);
-						String url = ("http://icecast.kab.tv/rus.mp3");
+						but.setImageResource(R.drawable.mediacontroller_pause01);
+
+						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+						shared.edit().putString("audiourl", url).commit();
+						but.setImageResource(R.drawable.mediacontroller_pause01);
 						mService.playAudio(url);
+						but.setImageResource(R.drawable.mediacontroller_pause01);
 //						audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
 //							@Override
 //							public void onPrepared(String query) {
