@@ -42,8 +42,11 @@ import android.widget.ToggleButton;
 
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.android.gms.appinvite.AppInvite;
+import com.google.android.gms.appinvite.AppInviteInvitationResult;
+import com.google.android.gms.appinvite.AppInviteReferral;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.ResultCallback;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
@@ -148,6 +151,35 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 				.enableAutoManage(this, this)
 				.addApi(AppInvite.API)
 				.build();
+
+		mGoogleApiClient.connect();
+
+		boolean autoLaunchDeepLink = false;
+		AppInvite.AppInviteApi.getInvitation(mGoogleApiClient, this, autoLaunchDeepLink)
+				.setResultCallback(
+						new ResultCallback<AppInviteInvitationResult>() {
+							@Override
+							public void onResult(@NonNull AppInviteInvitationResult result) {
+								if (result.getStatus().isSuccess()) {
+									// Extract deep link from Intent
+									Intent intent = result.getInvitationIntent();
+									String deepLink = AppInviteReferral.getDeepLink(intent);
+
+									if(deepLink.contentEquals("https://channel66.com/radio"))
+									{
+										openRadio();
+									}
+									// Handle the deep link. For example, open the linked
+									// content, or apply promotional credit to the user's
+									// account.
+
+									// ...
+								} else {
+									Log.d("invite", "getInvitation: no deep link found.");
+								}
+							}
+						});
+
 
 //		Backendless.Messaging.registerDevice("727406170147", new AsyncCallback<Void>() {
 //			@Override
@@ -272,6 +304,117 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	{
 
 		handleMessageClicked(intent);
+	}
+
+	private void openRadio()
+	{
+		 final String url =  "http://icecast.kab.tv/radiozohar2014.mp3";
+		mService.playAudio(url);
+		EasyTracker.getTracker().trackEvent("radio by link","on item clicked", url,0L);
+//			startService(svc);
+//			audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
+//				@Override
+//				public void onPrepared(String query) {
+//					if (audioplay.isPrepared(query))
+//						audioplay.start();
+//
+//				}
+//
+//				@Override
+//				public void onCompletion(String query) {
+//
+//				}
+//
+//				@Override
+//				public void onError(String message) {
+//
+//				}
+//			});
+		playDialog = new Dialog(this);
+		playDialog.setTitle("Playing audio");
+		playDialog.setContentView(R.layout.mediacontroller);
+		final ImageButton ask = (ImageButton) playDialog.findViewById(R.id.mediacontroller_ask);
+		final ImageButton but = (ImageButton) playDialog.findViewById(R.id.mediacontroller_play_pause);
+		but.setImageResource(R.drawable.mediacontroller_pause01);
+		but.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				if(mService.isPlaying() )
+				{
+					but.setImageResource(R.drawable.mediacontroller_play01);
+					//audioplay.pause();
+					//svc= null;
+					mService.stopAudio();
+				}
+				else {
+					but.setImageResource(R.drawable.mediacontroller_pause01);
+
+					SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+					shared.edit().putString("audiourl", url).commit();
+					but.setImageResource(R.drawable.mediacontroller_pause01);
+					mService.playAudio(url);
+					but.setImageResource(R.drawable.mediacontroller_pause01);
+//						svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+//						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+//						String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
+//						svc.putExtra("audiourl",audiourl);
+//						startService(svc);
+				}
+//
+//
+//						//svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
+//						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+//						String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
+//						//svc.putExtra("audiourl",audiourl);
+//						//startService(svc);
+//
+////						audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
+////							@Override
+////							public void onPrepared(String query) {
+////								if (audioplay.isPrepared(query))
+////									audioplay.start();
+////
+////							}
+////
+////							@Override
+////							public void onCompletion(String query) {
+////
+////							}
+////
+////							@Override
+////							public void onError(String message) {
+////
+////							}
+////						});
+//						mService.playAudio(url);
+//					}
+			}
+		});
+		ask.setImageResource(R.drawable.system_help);
+		ask.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Questions question = new Questions(StreamListActivity.this);
+				question.show();
+			}
+		});
+
+		playDialog.setOnCancelListener(new DialogInterface.OnCancelListener()
+		{
+			@Override
+			public
+			void onCancel(DialogInterface dialog)
+			{
+				dialogBackpressed();
+			}
+		});
+		playDialog.show();
+
+
 	}
 
 	private void handleMessageClicked(Intent intent)
