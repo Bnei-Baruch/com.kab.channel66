@@ -22,6 +22,7 @@ android/support/v4/widget/DrawerLayout.class
 android/support/v4/net/ConnectivityManagerCompat$JellyBeanConnectivityManagerCompatImpl.class
 com/facebook/appevents/AppEventsConstants.class
 android/support/v4/net/ConnectivityManagerCompatHoneycombMR2.class
+com/facebook/share/model/ShareLinkContent$Builder.class
 android/support/customtabs/CustomTabsSession.class
 android/support/annotation/Dimension.class
 android/support/v4/media/MediaBrowserCompat$ServiceBinderWrapper.class
@@ -218,6 +219,7 @@ android/support/v4/view/ViewPager$PagerObserver.class
 android/support/v4/view/PagerAdapter.class
 com/google/android/gms/common/internal/ReflectedParcelable.class
 com/google/android/gms/common/zze.class
+com/facebook/share/model/ShareLinkContent.class
 android/support/v4/view/ViewPager$3.class
 android/support/v7/view/menu/MenuItemImpl.class
 android/support/v4/widget/MaterialProgressDrawable$2.class
@@ -270,6 +272,7 @@ android/support/v4/net/ConnectivityManagerCompat.class
 android/support/v7/app/AppCompatDelegateImplV23.class
 android/support/annotation/RequiresPermission.class
 com/google/gson/annotations/Until.class
+com/google/firebase/messaging/FirebaseMessaging.class
 com/google/android/gms/common/SignInButton$ButtonSize.class
 android/support/v4/widget/EdgeEffectCompat.class
 android/support/v4/widget/MaterialProgressDrawable$Ring.class

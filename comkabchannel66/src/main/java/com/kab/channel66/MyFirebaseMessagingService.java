@@ -3,6 +3,7 @@ package com.kab.channel66;
 /**
  * Created by igal on 03/08/2016.
  */
+
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -42,17 +43,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         // Not getting messages here? See why this may be: https://goo.gl/39bRNJ
         Log.d(TAG, "From: " + remoteMessage.getFrom());
 
+        String value = null;
         // Check if message contains a data payload.
-        if (remoteMessage.getData().size() > 0) {
-            Log.d(TAG, "Message data payload: " + remoteMessage.getData());
-            MessagesDataSource datasource = new MessagesDataSource(this);
-            datasource.open();
-            datasource.createComment(remoteMessage.getData().get("Body"));
-            datasource.close();
-            sendNotification(remoteMessage.getData().get("Body"));
-            this.sendBroadcast(new Intent("newMessage"));
-        }
-
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
             Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
@@ -61,8 +53,25 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             datasource.createComment(remoteMessage.getNotification().getBody());
             datasource.close();
             sendNotification(remoteMessage.getNotification().getBody());
+            value = remoteMessage.getNotification().getBody();
+            this.sendBroadcast(new Intent("newMessage"));
+            
+        }
+        else
+        if (remoteMessage.getData().size() > 0) {
+            Log.d(TAG, "Message data payload: " + remoteMessage.getData());
+            MessagesDataSource datasource = new MessagesDataSource(this);
+            datasource.open();
+            datasource.createComment(remoteMessage.getData().get("data"));
+            datasource.close();
+            sendNotification(remoteMessage.getData().get("data"));
+            value = remoteMessage.getData().get("data");
             this.sendBroadcast(new Intent("newMessage"));
         }
+
+
+
+
 
 
     }

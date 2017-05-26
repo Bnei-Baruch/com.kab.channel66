@@ -181,6 +181,8 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 						});
 
 
+
+
 //		Backendless.Messaging.registerDevice("727406170147", new AsyncCallback<Void>() {
 //			@Override
 //			public void handleResponse(Void response) {
@@ -421,7 +423,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	{
 		Bundle extras = intent.getExtras();
 		if(extras!=null) {
-			String notification_body = extras.getString("body");
+			String notification_body = extras.getString("data");
 			if (notification_body != null) {
 				Uri uri = CommonUtils.findURIInText(notification_body);
 				if (uri != null) {

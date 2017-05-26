@@ -1,15 +1,6 @@
 package com.kab.channel66;
 
 
-import com.google.analytics.tracking.android.EasyTracker;
-import com.kab.channel66.R;
-import com.kab.channel66.utils.CommonUtils;
-//import com.parse.Parse;
-//import com.parse.ParseAnalytics;
-//import com.parse.ParseInstallation;
-//import com.parse.PushService;
-
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -17,12 +8,20 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.MotionEvent;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
+//import com.parse.Parse;
+//import com.parse.ParseAnalytics;
+//import com.parse.ParseInstallation;
+//import com.parse.PushService;
+
 //import com.bugsense.trace.BugSenseHandler;
 
 public class SplashScreen extends Activity {
 	
-	protected int _splashTime = 2000; 
-	
+	protected int _splashTime = 2000;
+	Intent i = null;
+	Bundle extra;
 	private Thread splashTread;
 	
 	/** Called when the activity is first created. */
@@ -31,7 +30,13 @@ public class SplashScreen extends Activity {
 	    super.onCreate(savedInstanceState);
 	   // BugSenseHandler.initAndStartSession(SplashScreen.this, "031c1eab");
 	    setContentView(R.layout.splash);
-	   
+		String title = null;
+		String data = null;
+		Intent intent = getIntent();
+
+		extra = intent.getExtras();
+
+
 	    final SplashScreen sPlashScreen = this;
 //		if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this))
 //			return;
@@ -58,7 +63,13 @@ public class SplashScreen extends Activity {
 //	                else
 //	        		{
 	                	Intent intent = new Intent(sPlashScreen,StreamListActivity.class);
+					if(extra!=null)
+					intent.putExtras(extra);
 	  					startActivity(intent);
+					if(i!=null)
+					{
+						startActivity(i);
+					}
 //	        		}
 	        		
 	            }

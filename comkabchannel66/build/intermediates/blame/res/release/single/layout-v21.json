@@ -1,18 +1,18 @@
 [
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
-        "source": "/Users/igal/.android/build-cache/95db8f225d5e6e0ec688322d8678ea887f88a61e/output/res/layout-v21/notification_action.xml"
+        "source": "/Users/igal/.android/build-cache/8864f0ee557cae9833636a3368daa380234e473d/output/res/layout-v21/notification_action.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
-        "source": "/Users/igal/.android/build-cache/95db8f225d5e6e0ec688322d8678ea887f88a61e/output/res/layout-v21/notification_template_custom_big.xml"
+        "source": "/Users/igal/.android/build-cache/8864f0ee557cae9833636a3368daa380234e473d/output/res/layout-v21/notification_template_custom_big.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
-        "source": "/Users/igal/.android/build-cache/95db8f225d5e6e0ec688322d8678ea887f88a61e/output/res/layout-v21/notification_template_icon_group.xml"
+        "source": "/Users/igal/.android/build-cache/8864f0ee557cae9833636a3368daa380234e473d/output/res/layout-v21/notification_template_icon_group.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
-        "source": "/Users/igal/.android/build-cache/95db8f225d5e6e0ec688322d8678ea887f88a61e/output/res/layout-v21/notification_action_tombstone.xml"
+        "source": "/Users/igal/.android/build-cache/8864f0ee557cae9833636a3368daa380234e473d/output/res/layout-v21/notification_action_tombstone.xml"
     }
 ]

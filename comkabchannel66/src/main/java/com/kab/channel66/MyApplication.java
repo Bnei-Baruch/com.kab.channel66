@@ -9,6 +9,7 @@ import com.crashlytics.android.ndk.CrashlyticsNdk;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import io.fabric.sdk.android.Fabric;
 
@@ -53,7 +54,7 @@ public class MyApplication extends Application {
 
         myapp = this;
         String token = FirebaseInstanceId.getInstance().getToken();
-//        FirebaseMessaging.getInstance().subscribeToTopic("news");
+        FirebaseMessaging.getInstance().subscribeToTopic("news");
 
 
 //        Parse.enableLocalDatastore(getApplicationContext());

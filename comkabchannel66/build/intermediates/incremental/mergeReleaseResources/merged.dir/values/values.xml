@@ -388,6 +388,7 @@
     <integer name="google_play_services_version">9452000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="ClearMessages">Clear messages</string>
+    <string name="Feedback">Feedback</string>
     <string name="IncomingMessages">BB messages</string>
     <string name="VideoView_error_button">OK</string>
     <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
@@ -429,7 +430,7 @@
     <string name="autocheck">Auto check for broadcast</string>
     <string name="change_lang">Change language</string>
     <string name="channel66">Channel 66</string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">153151d9-2ae3-4fc7-907e-795f804bf56a</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">8b6b25ed-aef6-418f-8345-19795f7ba52f</string>
     <string name="com_facebook_device_auth_instructions">Visit &lt;b>facebook.com/device&lt;/b> and enter the code shown above.</string>
     <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
     <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>

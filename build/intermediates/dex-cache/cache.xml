@@ -57,6 +57,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/feedback_v6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="21e8cf4719568f3a82309d6c8b8b740da6ab2311">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/2/feedback_v6_d5e28fafb1187e63825fc5dfc9f0606a211a5a73/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
         jumboMode="true"
         optimize="true"
@@ -79,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="a7cf1e63cc854a0a739ba599b4e305dede40db08">
+        sha1="deca971d8844353f293d565763280e883124979d">
         <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_97dda646c46af86b29842cf92ccfcb83d14f1d76/classes.dex" />
     </item>
     <item
@@ -106,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="691a94947b2cff6fe73c749e6f2dfa91425760a0">
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
         <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_746f14636c68689d5657740b5b4c1f9d471ebff3/classes.dex" />
     </item>
     <item
@@ -129,21 +138,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/igal/.android/build-cache/374c6d9e89a57a0ffbd9fb7f61db64e194970755/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="cb2ef781533c3f11c4e80341cbaebad275c66586">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6007ca155fd2097a1af69cdc60b9d95752e1f6fe/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/libGoogleAnalyticsV2.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="8d04da1c73876c93ccce8ffd39add84f9415b64c">
         <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/2/libGoogleAnalyticsV2_a2b360e916e02d8bc3fe99919b30c2f66e4426f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/1c05eb84dbcf32924a8c456937de55b16b0781b6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b0e05029df1c15f67fcae8d8c13f158f1c244ca2">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_13e18cc21d71c4d63bc29ebd74976df61a6d9c53/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -180,15 +189,6 @@
         revision="25.0.0"
         sha1="557bcc987cc2438e5162476bc8c953a37b683fb9">
         <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1ca392cf5904908a7abd300d0e5eac47f51f4949/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/igal/.android/build-cache/b3f2eb3a0f0db76cc1906bb2a7791fa5c5f5cf98/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="43abcb2ec5686c280782c946ea468f9ac7ea15c0">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_42675b1fd489288cae7343e1efc85e0356c86b6e/classes.dex" />
     </item>
     <item
         is-multidex="true"
