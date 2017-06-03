@@ -1,35 +1,22 @@
 package com.kab.channel66.utils;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.CookieStore;
-import java.util.ArrayList;
-import java.util.List;
+import android.os.AsyncTask;
+import android.util.Log;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.params.HttpParams;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
 //import com.google.myjson.JsonObject;
 //import com.parse.signpost.http.HttpResponse;
-
-import android.app.Activity;
-import android.database.CursorJoiner.Result;
-import android.os.AsyncTask;
-import android.text.TextUtils;
-import android.util.Log;
-import android.webkit.CookieManager;
 
 
 
@@ -171,7 +158,10 @@ public class SvivaTovaLoginApiHelper extends AsyncTask< ArrayList<String>, Void,
 			}
 			 else
 			{
-				mSuccess = status.fail;
+				if(((String)res.get("error")).contains("#2"))
+					mSuccess = status.not_allowed;
+				else
+					mSuccess = status.fail;
 			}
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block

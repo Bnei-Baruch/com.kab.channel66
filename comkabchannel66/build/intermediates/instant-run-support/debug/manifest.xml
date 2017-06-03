@@ -39,6 +39,10 @@
         android:targetPackage="com.kab.svivatova" >
     </instrumentation>
     -->
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission

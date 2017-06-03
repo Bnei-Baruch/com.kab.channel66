@@ -84,12 +84,12 @@ application
 ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:38:5-216:19
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/.android/build-cache/4c3676b5b10a8bc274e17cd5ca84fbd5dde765d1/output/AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/.android/build-cache/0c1e4b00725b66bf6655a0190b339bceebbccc1c/output/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.22.1] /Users/igal/.android/build-cache/8238ad9395f9d02d90049568c586f0c822c647ba/output/AndroidManifest.xml:28:5-48:19
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/igal/.android/build-cache/8864f0ee557cae9833636a3368daa380234e473d/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/igal/.android/build-cache/42114ff7b13d1094ccb1bc802aa51b8f19ce2af7/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/igal/.android/build-cache/7bcf84cfb7abaf309657135bf333e44132888c95/output/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:cardview-v7:25.0.0] /Users/igal/.android/build-cache/4d691808afc0cc79185f3151985bb33ea2f3f1a0/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:customtabs:25.0.0] /Users/igal/.android/build-cache/93bb427b60d2946cbf05435a095c59e55a5271b0/output/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:28:5-48:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/igal/.android/build-cache/145293cf04e4cb89161e2702503615b8bbbcb19d/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/igal/.android/build-cache/04287cfc27da55ad2f2a414e6ea9f4b67898b9af/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] /Users/igal/.android/build-cache/5021d1b39acfd84203ce439aea80ccc8fb9290ba/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:customtabs:25.3.1] /Users/igal/.android/build-cache/2bb60451768884c74798b62cf12580b433e45ab9/output/AndroidManifest.xml:26:5-20
 MERGED from [com.crashlytics.sdk.android:crashlytics-ndk:1.1.3] /Users/igal/.android/build-cache/cfa2c1db7d4ea1712fffd1d2713db8b690ccf5ea/output/AndroidManifest.xml:10:5-20
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/.android/build-cache/69a65192cd05ca9bd1e0a133b5b5c7d2125d1741/output/AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/.android/build-cache/53aa8207b4644a7e37ee2c9c4d1b5a5325133bd1/output/AndroidManifest.xml:11:5-20
@@ -105,12 +105,12 @@ MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-
 MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/.android/build-cache/3a8812685dae0827e4d9e082213476109a0fcdbb/output/AndroidManifest.xml:5:5-12:19
 MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/.android/build-cache/fe6e43befa56ce6b3b362571d4266e9447993efd/output/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/.android/build-cache/ea80d224db3fb48bcef370395f0fb1128f2f5ee8/output/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:25.0.0] /Users/igal/.android/build-cache/a9ac369785082e5921763fd517d317f8d8b6ca30/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/igal/.android/build-cache/411d628a724de3fbf85b3327917ded73fdb1d181/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/igal/.android/build-cache/fbf174f2cce46a1ce727bee91ece99511e7f4379/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.0] /Users/igal/.android/build-cache/0ca6ab4341e2f6c4a97603932ef977dd15053f42/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/igal/.android/build-cache/cc90b1e4dc32e99142207a5137aa1b27d48ea1d9/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.0.0] /Users/igal/.android/build-cache/3572cb3ffabbcfe559f4b8981fe3bd74d3db2f71/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/igal/.android/build-cache/72174357a88569a98d806e767207aec880454e0a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/igal/.android/build-cache/0bcd3d745175d1fbbe0077cd076d35f1cf9010cd/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/igal/.android/build-cache/06b84584cf8e2d69d9acc00a5337681e71b64956/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/igal/.android/build-cache/613d37796c585ecfc2cca30dcca17cf6ad44ea96/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/igal/.android/build-cache/fb289d73110126a4e387b6d46a9eaec56a3da4ec/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/igal/.android/build-cache/3784f0a97074f75f00f41836117fa62702057ae2/output/AndroidManifest.xml:29:5-20
 	android:label
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:40:9-41
 	android:icon
@@ -245,14 +245,14 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:156:21-62
 activity#com.facebook.FacebookActivity
 ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:165:9-170:48
-MERGED from [com.facebook.android:facebook-android-sdk:4.22.1] /Users/igal/.android/build-cache/8238ad9395f9d02d90049568c586f0c822c647ba/output/AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:29:9-32:66
 	android:label
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:170:13-45
 	android:configChanges
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:166:13-114
 	android:theme
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:169:13-72
-		REJECTED from [com.facebook.android:facebook-android-sdk:4.22.1] /Users/igal/.android/build-cache/8238ad9395f9d02d90049568c586f0c822c647ba/output/AndroidManifest.xml:32:13-63
+		REJECTED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:32:13-63
 	tools:replace
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:168:13-42
 	android:name
@@ -289,12 +289,12 @@ MERGED from [com.android.support:multidex:1.0.1] /Users/igal/.android/build-cach
 MERGED from [de.mrmaffen:vlc-android-sdk:2.0.6] /Users/igal/.android/build-cache/1c05eb84dbcf32924a8c456937de55b16b0781b6/output/AndroidManifest.xml:8:5-10:41
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/.android/build-cache/4c3676b5b10a8bc274e17cd5ca84fbd5dde765d1/output/AndroidManifest.xml:7:5-43
 MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/.android/build-cache/0c1e4b00725b66bf6655a0190b339bceebbccc1c/output/AndroidManifest.xml:7:5-43
-MERGED from [com.facebook.android:facebook-android-sdk:4.22.1] /Users/igal/.android/build-cache/8238ad9395f9d02d90049568c586f0c822c647ba/output/AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/igal/.android/build-cache/8864f0ee557cae9833636a3368daa380234e473d/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/igal/.android/build-cache/42114ff7b13d1094ccb1bc802aa51b8f19ce2af7/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/igal/.android/build-cache/7bcf84cfb7abaf309657135bf333e44132888c95/output/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:cardview-v7:25.0.0] /Users/igal/.android/build-cache/4d691808afc0cc79185f3151985bb33ea2f3f1a0/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:customtabs:25.0.0] /Users/igal/.android/build-cache/93bb427b60d2946cbf05435a095c59e55a5271b0/output/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/igal/.android/build-cache/145293cf04e4cb89161e2702503615b8bbbcb19d/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/igal/.android/build-cache/04287cfc27da55ad2f2a414e6ea9f4b67898b9af/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] /Users/igal/.android/build-cache/5021d1b39acfd84203ce439aea80ccc8fb9290ba/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:customtabs:25.3.1] /Users/igal/.android/build-cache/2bb60451768884c74798b62cf12580b433e45ab9/output/AndroidManifest.xml:20:5-44
 MERGED from [com.crashlytics.sdk.android:crashlytics-ndk:1.1.3] /Users/igal/.android/build-cache/cfa2c1db7d4ea1712fffd1d2713db8b690ccf5ea/output/AndroidManifest.xml:8:5-43
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/.android/build-cache/69a65192cd05ca9bd1e0a133b5b5c7d2125d1741/output/AndroidManifest.xml:7:5-43
 MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/.android/build-cache/53aa8207b4644a7e37ee2c9c4d1b5a5325133bd1/output/AndroidManifest.xml:7:5-43
@@ -310,14 +310,14 @@ MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-
 MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/igal/.android/build-cache/3a8812685dae0827e4d9e082213476109a0fcdbb/output/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/igal/.android/build-cache/fe6e43befa56ce6b3b362571d4266e9447993efd/output/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/igal/.android/build-cache/ea80d224db3fb48bcef370395f0fb1128f2f5ee8/output/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:25.0.0] /Users/igal/.android/build-cache/a9ac369785082e5921763fd517d317f8d8b6ca30/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/igal/.android/build-cache/411d628a724de3fbf85b3327917ded73fdb1d181/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/igal/.android/build-cache/fbf174f2cce46a1ce727bee91ece99511e7f4379/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.0.0] /Users/igal/.android/build-cache/0ca6ab4341e2f6c4a97603932ef977dd15053f42/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/igal/.android/build-cache/cc90b1e4dc32e99142207a5137aa1b27d48ea1d9/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.0.0] /Users/igal/.android/build-cache/3572cb3ffabbcfe559f4b8981fe3bd74d3db2f71/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-v4:25.3.1] /Users/igal/.android/build-cache/72174357a88569a98d806e767207aec880454e0a/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/igal/.android/build-cache/0bcd3d745175d1fbbe0077cd076d35f1cf9010cd/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/igal/.android/build-cache/06b84584cf8e2d69d9acc00a5337681e71b64956/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/igal/.android/build-cache/613d37796c585ecfc2cca30dcca17cf6ad44ea96/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/igal/.android/build-cache/fb289d73110126a4e387b6d46a9eaec56a3da4ec/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] /Users/igal/.android/build-cache/3784f0a97074f75f00f41836117fa62702057ae2/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.0.0] /Users/igal/.android/build-cache/8864f0ee557cae9833636a3368daa380234e473d/output/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:220:9-38
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
@@ -327,17 +327,33 @@ MERGED from [com.android.support:support-compat:25.0.0] /Users/igal/.android/bui
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] /Users/igal/.android/build-cache/8238ad9395f9d02d90049568c586f0c822c647ba/output/AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] /Users/igal/.android/build-cache/8238ad9395f9d02d90049568c586f0c822c647ba/output/AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:33:19-68
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] /Users/igal/.android/build-cache/8238ad9395f9d02d90049568c586f0c822c647ba/output/AndroidManifest.xml:44:9-47:40
+ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:44:9-47:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] /Users/igal/.android/build-cache/8238ad9395f9d02d90049568c586f0c822c647ba/output/AndroidManifest.xml:46:13-72
+		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:46:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] /Users/igal/.android/build-cache/8238ad9395f9d02d90049568c586f0c822c647ba/output/AndroidManifest.xml:47:13-37
+		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] /Users/igal/.android/build-cache/8238ad9395f9d02d90049568c586f0c822c647ba/output/AndroidManifest.xml:45:13-70
+		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:45:13-70
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/igal/.android/build-cache/145293cf04e4cb89161e2702503615b8bbbcb19d/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/igal/.android/build-cache/04287cfc27da55ad2f2a414e6ea9f4b67898b9af/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] /Users/igal/.android/build-cache/5021d1b39acfd84203ce439aea80ccc8fb9290ba/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:customtabs:25.3.1] /Users/igal/.android/build-cache/2bb60451768884c74798b62cf12580b433e45ab9/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/igal/.android/build-cache/72174357a88569a98d806e767207aec880454e0a/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/igal/.android/build-cache/0bcd3d745175d1fbbe0077cd076d35f1cf9010cd/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/igal/.android/build-cache/06b84584cf8e2d69d9acc00a5337681e71b64956/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/igal/.android/build-cache/613d37796c585ecfc2cca30dcca17cf6ad44ea96/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/igal/.android/build-cache/fb289d73110126a4e387b6d46a9eaec56a3da4ec/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/igal/.android/build-cache/3784f0a97074f75f00f41836117fa62702057ae2/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:26:9-47
 service#com.google.firebase.messaging.FirebaseMessagingService
 ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/.android/build-cache/4b08048f1303d5c6b9edcbd90f67db4564150d46/output/AndroidManifest.xml:24:9-30:19
 	android:exported
