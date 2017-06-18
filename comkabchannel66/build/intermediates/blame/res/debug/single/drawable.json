@@ -8,12 +8,12 @@
         "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/drawable/abc_dialog_material_background.xml"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/drawable/abc_spinner_textfield_background_material.xml"
-    },
-    {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
         "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
@@ -200,6 +200,10 @@
         "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/drawable/abc_textfield_search_material.xml"
     },
     {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/icon_old.png",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/icon_old.png"
+    },
+    {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
         "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/drawable/notification_bg_low.xml"
     },
@@ -242,6 +246,10 @@
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
         "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/icon.jpg",
+        "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/drawable/icon.jpg"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable/mediacontroller_seekbar.xml",

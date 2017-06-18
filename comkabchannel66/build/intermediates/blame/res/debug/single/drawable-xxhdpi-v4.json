@@ -4,12 +4,12 @@
         "source": "/Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/res/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
-        "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_disabled.9.png",
         "source": "/Users/igal/.android/build-cache/8d391aae68042b327c2bf4097e88a35ced8449df/output/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_plus_signin_btn_text_light_normal.9.png",

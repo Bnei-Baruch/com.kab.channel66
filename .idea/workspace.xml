@@ -23,54 +23,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36bf4f6f-5392-4a51-b7ec-e2eac30d7605" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/buildConfig/androidTest/debug/com/kab/channel66/test/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/androidTest/debug/android/support/multidex/instrumentation/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/color.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/compileDebugAndroidTestAidl/dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/multi-dex/androidTest/debug/manifest_keep.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/multi-dex/debug/componentClasses.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/multi-dex/debug/components.flags" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/multi-dex/debug/maindexlist.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/multi-dex/debug/manifest_keep.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/notification_media_action.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/notification_media_action.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/notification_media_cancel_action.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/notification_template_big_media.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/notification_template_big_media_custom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/notification_template_big_media_narrow.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/notification_template_big_media_narrow_custom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_fc1f8a04f6a8446c9f4d395ec71d9d570c6569a5/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/cardview_v7_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/customtabs_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_http_legacy_android_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_09dad7a4cd1de8b788953db755b23e04b9f1d8aa/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_c8b8093c6f317daed79e1c9cffd3bff6592e0c56/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0680abfe64b4621183951d72ab236ca22a224039/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0bfa53f0608c12fa357496af66a1359f4f5322d0/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1ca392cf5904908a7abd300d0e5eac47f51f4949/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_52517027a0403b2454dd6257a488ee02666c70d8/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6274ee314403cdd1376bb12cfb0d25b1cbb021a6/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_63753ece198fc6acd86344245e5e75659a9acfdc/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_72ef65eb8389043378007d6ca6247cf8caaf7579/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_866ec26f4a98e1d56da8ea80d71349434a98b1cf/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_88fb541524570ddc60e7f90f50b7fce839942a49/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b352fa04faeaf225c6e9fed7ecbd4eb7e6a71d95/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ba48211127458970dc9d141523f237c2978b91d2/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c11944eac1bb3e45b99f72397377d9f76ee44ca3/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c18a0e026f42ce0f69abd3b215a4a6d928d0c573/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c210b437c6b211da5a3de460dc83b92f4c900090/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c37f9a914f87072f630f2bd9d851541f5be493aa/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/eventbus-2.4.0_8ca8b005f9a27e01ab521a45a6af2ae0ddfe0c45/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.4_83cb2c28260fc105f77a8ac95c91175cf403c217/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_97dda646c46af86b29842cf92ccfcb83d14f1d76/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_746f14636c68689d5657740b5b4c1f9d471ebff3/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/2/libGoogleAnalyticsV2_a2b360e916e02d8bc3fe99919b30c2f66e4426f9/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.png" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon_old.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/CustomAdapter.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/CustomAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/LoginLayout.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/LoginLayout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/MediaController.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/MediaController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/MessageAdapter.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/MessageAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/MyWidgetProvider.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/MyWidgetProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/PushMessagesActivity.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/PushMessagesActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/Questions.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/Questions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$attr.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$bool.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$color.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$color.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$drawable.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$id.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$layout.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$layout.class" />
@@ -78,382 +90,42 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$string.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$style.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$xml.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/SplashScreen.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/SplashScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity$12.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity$3.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity$6.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity$9.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/SvivaTovaLogin.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/SvivaTovaLogin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/utils/SvivaTovaLoginApiHelper$status.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/utils/SvivaTovaLoginApiHelper$status.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/utils/SvivaTovaLoginApiHelper.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/utils/SvivaTovaLoginApiHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/zip-cache/LjollkzkTTtp0L5JHoHs+2VXAe4=" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/zip-cache/LjollkzkTTtp0L5JHoHs+2VXAe4=" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageInstantRunResourcesDebug/zip-cache/LjollkzkTTtp0L5JHoHs+2VXAe4=" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageInstantRunResourcesDebug/zip-cache/LjollkzkTTtp0L5JHoHs+2VXAe4=" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageRelease/zip-cache/OLQTtIX+pQB6W8wMKBSpgGeJ2Nk=" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageRelease/zip-cache/OLQTtIX+pQB6W8wMKBSpgGeJ2Nk=" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/multi-dex/release/componentClasses.jar" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/multi-dex/release/componentClasses.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/zip-cache/pSVZW+1kEXk7Nm0d3qk+2vl_rzc=" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/zip-cache/pSVZW+1kEXk7Nm0d3qk+2vl_rzc=" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/resources-release.ap_" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/resources-release.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/dep/dependencies.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/dep/dependencies.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_0.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_0.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_1.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_1.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_2.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_2.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_3.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_3.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_4.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_4.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_5.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_5.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_6.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_6.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_7.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_7.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_8.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_8.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_9.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/split-apk/debug/slices/slice_9.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/jarMerging/release/jars/1/1f/combined.jar" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/jarMerging/release/jars/1/1f/combined.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/apk/comkabchannel66-debug.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/outputs/apk/comkabchannel66-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build.gradle" afterPath="$PROJECT_DIR$/comkabchannel66/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/release/values/com_crashlytics_build_id.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/release/values/com_crashlytics_build_id.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/buildConfig/release/com/kab/channel66/BuildConfig.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/buildConfig/release/com/kab/channel66/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/android/support/v7/cardview/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/android/support/v7/cardview/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/facebook/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/facebook/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/android/gms/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/kab/channel66/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/kab/channel66/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/release/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/release/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/release/android/support/v7/cardview/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/release/android/support/v7/cardview/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/release/com/facebook/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/release/com/facebook/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/release/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/release/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/release/com/kab/channel66/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/release/com/kab/channel66/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/assets/release/crashlytics-build.properties" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/assets/release/crashlytics-build.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-af.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-af.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-am.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-am.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ar.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ar.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-az-rAZ.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-az-rAZ.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-b+sr+Latn.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-b+sr+Latn.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-be-rBY.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-be-rBY.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-bg.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-bg.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-bn-rBD.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-bn-rBD.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-bn.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-bn.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-bs-rBA.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-bs-rBA.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ca.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ca.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-cs.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-cs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-da.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-da.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-de.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-de.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-el.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-el.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-en-rAU.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-en-rAU.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-en-rGB.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-en-rGB.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-en-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-en-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-es-rES.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-es-rES.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-es-rUS.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-es-rUS.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-es.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-es.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-et-rEE.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-et-rEE.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-eu-rES.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-eu-rES.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-fa.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-fa.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-fi.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-fi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-fr-rCA.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-fr-rCA.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-fr.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-fr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-gl-rES.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-gl-rES.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-gu-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-gu-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-gu.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-gu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-h720dp-v13.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-h720dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-hdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-hi.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-hi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-hr.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-hr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-hu.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-hu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-hy-rAM.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-hy-rAM.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-id.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-id.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-in.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-in.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-is-rIS.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-is-rIS.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-it.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-it.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-iw.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-iw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ja.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ja.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ka-rGE.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ka-rGE.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-kk-rKZ.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-kk-rKZ.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-km-rKH.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-km-rKH.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-kn-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-kn-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-kn.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-kn.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ko.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ko.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ky-rKG.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ky-rKG.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-land.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-land.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-large-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-large-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ldltr-v21.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ldltr-v21.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-lo-rLA.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-lo-rLA.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-lt.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-lt.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-lv.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-lv.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-mk-rMK.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-mk-rMK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ml-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ml-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ml.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ml.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-mn-rMN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-mn-rMN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-mr-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-mr-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-mr.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-mr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ms-rMY.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ms-rMY.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ms.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ms.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-my-rMM.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-my-rMM.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-nb.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-nb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ne-rNP.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ne-rNP.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-night-v8.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-night-v8.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-nl.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-nl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pa-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pa-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pa.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pa.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pl.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-port.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-port.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pt-rBR.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pt-rBR.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pt-rPT.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pt-rPT.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pt.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-pt.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ro.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ro.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ru.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-si-rLK.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-si-rLK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sk.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sk.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sl.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sq-rAL.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sq-rAL.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sr.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sv.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sv.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sw.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sw600dp-v13.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-sw600dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ta-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ta-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ta.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ta.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-te-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-te-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-te.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-te.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-th.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-th.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-tl.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-tl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-tr.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-tr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-uk.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-uk.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ur-rPK.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ur-rPK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-uz-rUZ.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-uz-rUZ.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v11.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v11.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v12.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v12.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v13.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v14.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v14.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v16.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v16.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v18.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v18.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v21.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v21.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v22.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v22.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v23.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v23.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v24.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v24.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v25.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-v25.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-vi.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-vi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-xlarge-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-xlarge-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-zh-rCN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-zh-rCN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-zh-rHK.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-zh-rHK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-zh-rTW.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-zh-rTW.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-zu.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-zu.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/anim.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/anim.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/color-v11.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/color-v11.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/color-v23.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/color-v23.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/color.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/color.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-ldrtl-hdpi-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-ldrtl-hdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-ldrtl-mdpi-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-ldrtl-mdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-ldrtl-xhdpi-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-ldrtl-xhdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-ldrtl-xxhdpi-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-ldrtl-xxhdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-ldrtl-xxxhdpi-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-ldrtl-xxxhdpi-v17.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-hdpi.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-hdpi.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-v21.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-v21.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-v23.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-v23.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/layout-v16.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/layout-v16.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/layout-v21.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/layout-v21.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-af.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-af.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-am.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-am.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ar.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ar.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-az-rAZ.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-az-rAZ.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-b+sr+Latn.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-b+sr+Latn.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-be-rBY.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-be-rBY.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-bg.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-bg.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-bn-rBD.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-bn-rBD.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-bn.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-bn.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-bs-rBA.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-bs-rBA.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ca.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ca.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-cs.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-cs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-da.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-da.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-de.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-de.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-el.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-el.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-en-rAU.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-en-rAU.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-en-rGB.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-en-rGB.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-en-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-en-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-es-rES.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-es-rES.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-es-rUS.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-es-rUS.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-es.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-es.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-et-rEE.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-et-rEE.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-eu-rES.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-eu-rES.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-fa.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-fa.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-fi.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-fi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-fr-rCA.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-fr-rCA.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-fr.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-fr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-gl-rES.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-gl-rES.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-gu-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-gu-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-gu.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-gu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-h720dp-v13.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-h720dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-hdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-hi.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-hi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-hr.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-hr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-hu.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-hu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-hy-rAM.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-hy-rAM.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-id.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-id.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-in.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-in.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-is-rIS.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-is-rIS.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-it.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-it.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-iw.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-iw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ja.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ja.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ka-rGE.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ka-rGE.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-kk-rKZ.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-kk-rKZ.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-km-rKH.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-km-rKH.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-kn-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-kn-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-kn.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-kn.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ko.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ko.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ky-rKG.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ky-rKG.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-land.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-land.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-large-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-large-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ldltr-v21.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ldltr-v21.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-lo-rLA.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-lo-rLA.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-lt.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-lt.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-lv.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-lv.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-mk-rMK.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-mk-rMK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ml-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ml-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ml.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ml.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-mn-rMN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-mn-rMN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-mr-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-mr-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-mr.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-mr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ms-rMY.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ms-rMY.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ms.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ms.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-my-rMM.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-my-rMM.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-nb.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-nb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ne-rNP.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ne-rNP.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-night-v8.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-night-v8.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-nl.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-nl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pa-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pa-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pa.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pa.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pl.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-port.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-port.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pt-rBR.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pt-rBR.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pt-rPT.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pt-rPT.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pt.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-pt.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ro.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ro.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ru.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-si-rLK.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-si-rLK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sk.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sk.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sl.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sq-rAL.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sq-rAL.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sr.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sv.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sv.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sw.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sw600dp-v13.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-sw600dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ta-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ta-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ta.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ta.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-te-rIN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-te-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-te.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-te.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-th.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-th.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-tl.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-tl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-tr.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-tr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-uk.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-uk.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ur-rPK.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-ur-rPK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-uz-rUZ.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-uz-rUZ.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v11.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v11.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v12.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v12.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v13.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v14.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v14.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v16.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v16.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v18.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v18.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v21.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v21.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v22.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v22.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v23.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v23.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v24.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v24.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v25.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-v25.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-vi.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-vi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-xlarge-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-xlarge-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-zh-rCN.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-zh-rCN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-zh-rHK.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-zh-rHK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-zh-rTW.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-zh-rTW.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-zu.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values-zu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/anim.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/anim.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/color-v11.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/color-v11.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/color-v23.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/color-v23.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/color.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/color.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-ldrtl-hdpi-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-ldrtl-hdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-ldrtl-mdpi-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-ldrtl-mdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-ldrtl-xhdpi-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-ldrtl-xhdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-ldrtl-xxhdpi-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-ldrtl-xxhdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-ldrtl-xxxhdpi-v17.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-ldrtl-xxxhdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-v21.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-v21.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-v23.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-v23.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-xxxhdpi-v4.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable-xxxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/layout-v16.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/layout-v16.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/layout-v21.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/layout-v21.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/layout.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/release/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/mergeReleaseResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageRelease/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageRelease/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageRelease/file-input-save-data.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageRelease/file-input-save-data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/manifest.crc" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/manifest.crc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/manifest.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/manifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_dependencies/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_dependencies/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_1/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_1/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_5/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_5/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_7/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_7/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_8/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_8/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/manifests/full/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/manifests/full/release/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/multi-dex/release/maindexlist.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/multi-dex/release/maindexlist.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-hy-rAM/values-hy-rAM.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-hy-rAM/values-hy-rAM.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-kn-rIN/values-kn-rIN.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-kn-rIN/values-kn-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-v11/values-v11.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-v11/values-v11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-v24/values-v24.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-v24/values-v24.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/abc_action_mode_close_item_material.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/abc_action_mode_close_item_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/abc_alert_dialog_button_bar_material.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/abc_alert_dialog_button_bar_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/abc_alert_dialog_material.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/abc_alert_dialog_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/abc_select_dialog_material.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/layout/abc_select_dialog_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/values-hy-rAM/values-hy-rAM.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/values-hy-rAM/values-hy-rAM.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/values-kn-rIN/values-kn-rIN.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/values-kn-rIN/values-kn-rIN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/values-v11/values-v11.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/values-v11/values-v11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/values-v24/values-v24.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/values-v24/values-v24.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/values/values.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/symbols/release/R.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/symbols/release/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/buildId.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/buildId.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-release-report.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-release-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/reports/lint-results-release-fatal.html" afterPath="$PROJECT_DIR$/comkabchannel66/build/reports/lint-results-release-fatal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" afterPath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" />
     </list>
     <ignored path="com.kab.channel66.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -522,6 +194,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="icon.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ic_action_search.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xhdpi/ic_action_search.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="splash.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/splash.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icon.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SvivaTovaLogin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/SvivaTovaLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+              <folding>
+                <element signature="e#3421#3429#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SvivaTovaLoginApiHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpClient.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/optional/org.apache.http.legacy.jar!/org/apache/http/client/HttpClient.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="StreamListActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -532,98 +276,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest">
+      <file leaf-file-name="icon_old.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon_old.png">
+          <provider selected="true" editor-type-id="images">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SplashScreen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/SplashScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyFirebaseMessagingService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SvivaTovaLogin.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/SvivaTovaLogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SvivaTovaLoginApiHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="155" column="16" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyFirebaseInstanceIDService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseInstanceIDService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="values-v24.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-v24/values-v24.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -2477,7 +2133,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4447397833000" />
+        <entry key="$PROJECT_DIR$" value="4449144726000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2835,7 +2491,7 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/com-intellij/uast/162.2228.14/uast-162.2228.14.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.fabric.tools/gradle/1.22.1/a45cb0acfa010ec924ac742ecc1c5e2997ffa692/gradle-1.22.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.fabric.tools/gradle/1.22.2/e24eda2a9d288247a9e2a19d8bfa2fb8f757d457/gradle-1.22.2.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/comkabchannel66" />
@@ -3146,14 +2802,14 @@
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VLCMediaPlayer.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyApplication.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/SplashScreen.java" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/comkabchannel66/build.gradle" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/comkabchannel66/build.gradle" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java" />
       </list>
     </option>
@@ -3229,9 +2885,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="comkabchannel66">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="comkabchannel66">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3308,6 +2980,92 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comkabchannel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-xhdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comkabchannel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comkabchannel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -3317,6 +3075,9 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
       <pane id="AndroidView">
         <subPane>
@@ -3360,25 +3121,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="comkabchannel66">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="comkabchannel66">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3409,7 +3151,7 @@
     <property name="ExportApk.BuildType" value="release" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="false" />
-    <property name="device.picker.selection" value="0815f840d2e81c05" />
+    <property name="device.picker.selection" value="Nexus_5X_API_25" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
@@ -3419,9 +3161,10 @@
       <recent name="com.kab.channel66" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/comkabchannel66" />
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.comkabchannel66">
@@ -3459,55 +3202,6 @@
         <option name="Make" enabled="false" />
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="AndroidNativeAttachConfigurationType" factoryName="Android Native Attach">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="do_nothing" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -3979,29 +3673,29 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="979" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273906" sideWeight="0.49676898" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.453958" sideWeight="0.61793214" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124542125" sideWeight="0.2962298" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45307067" sideWeight="0.6147741" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2808303" sideWeight="0.32315978" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31604537" sideWeight="0.57835215" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41491085" sideWeight="0.61793214" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1815235" sideWeight="0.38529888" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1815235" sideWeight="0.38529888" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273906" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35457706" sideWeight="0.63736266" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124542125" sideWeight="0.7037702" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35457706" sideWeight="0.64102566" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2808303" sideWeight="0.6768402" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875606" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35457706" sideWeight="0.36263737" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.58360654" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35457706" sideWeight="0.35897437" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4016,7 +3710,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.49676898" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22875817" sideWeight="0.63974154" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31170335" sideWeight="0.37057388" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31170335" sideWeight="0.36691087" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -4339,12 +4033,6 @@
           <option name="timeStamp" value="206" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>424</line>
-          <properties />
-          <option name="timeStamp" value="225" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/SvivaTovaLogin.java</url>
           <line>137</line>
           <properties />
@@ -4358,19 +4046,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
-          <line>68</line>
+          <line>86</line>
           <properties />
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
-          <line>93</line>
+          <line>113</line>
           <properties />
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
-          <line>104</line>
+          <line>124</line>
           <properties />
           <option name="timeStamp" value="238" />
         </line-breakpoint>
@@ -4394,77 +4082,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
-          <line>146</line>
+          <line>166</line>
           <properties />
           <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
-          <line>140</line>
+          <line>160</line>
           <properties />
           <option name="timeStamp" value="247" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="OCSymbolicBreakpointType">
+          <properties>
+            <option name="moduleName" value="libart.so" />
+            <option name="symbolPattern" value="art_sigsegv_fault" />
+          </properties>
+          <option name="timeStamp" value="252" />
+        </breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="248" />
+      <option name="time" value="253" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-23/android.jar!/android/view/ContextThemeWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-23/android.jar!/android/app/Activity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-23/android.jar!/android/app/ListActivity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/extras/android/m2repository/com/android/support/support-fragment/25.0.0/support-fragment-25.0.0-sources.jar!/android/support/v4/app/FragmentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3990">
-          <caret line="315" column="19" selection-start-line="315" selection-start-column="19" selection-end-line="315" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/CustomAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/FragmentListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="83" column="57" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/list_item.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BaseListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -4473,13 +4122,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/listviewlayout.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/QuestionPoster.java">
@@ -4555,23 +4204,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout-land/questions.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/questions.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/questions.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/android-sdks/platforms/android-23/android.jar!/android/app/Dialog.class">
@@ -4632,30 +4281,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VLCMediaPlayer.java">
@@ -4727,39 +4369,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5505">
-          <caret line="424" column="0" selection-start-line="424" selection-start-column="0" selection-end-line="424" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/release/values-v24/values-v24.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4775,15 +4388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4795,19 +4399,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.png" />
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="92" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="41" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xhdpi/ic_action_search.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/splash.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5505">
+          <caret line="424" column="0" selection-start-line="424" selection-start-column="0" selection-end-line="424" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon_old.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/optional/org.apache.http.legacy.jar!/org/apache/http/client/HttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="155" column="16" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="69">
+          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/SvivaTovaLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="168">
           <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#3421#3429#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

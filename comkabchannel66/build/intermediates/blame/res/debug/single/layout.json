@@ -12,12 +12,12 @@
         "source": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/res/layout/listviewlayout.xml"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/layout/select_dialog_item_material.xml"
-    },
-    {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
         "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/layout/select_dialog_item_material.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
