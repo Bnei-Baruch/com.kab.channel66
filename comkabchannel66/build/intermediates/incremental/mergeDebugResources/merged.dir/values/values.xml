@@ -247,9 +247,39 @@
             <enum name="screen" value="15"/>
         </attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <declare-styleable name="com_facebook_like_view"><attr format="color" name="com_facebook_foreground_color"/><attr format="string" name="com_facebook_object_id"/><attr name="com_facebook_object_type"><enum name="unknown" value="0"/><enum name="open_graph" value="1"/><enum name="page" value="2"/></attr><attr name="com_facebook_style"><enum name="standard" value="0"/><enum name="button" value="1"/><enum name="box_count" value="2"/></attr><attr name="com_facebook_auxiliary_view_position"><enum name="bottom" value="0"/><enum name="inline" value="1"/><enum name="top" value="2"/></attr><attr name="com_facebook_horizontal_alignment"><enum name="center" value="0"/><enum name="left" value="1"/><enum name="right" value="2"/></attr></declare-styleable>
-    <declare-styleable name="com_facebook_login_view"><attr format="boolean" name="com_facebook_confirm_logout"/><attr format="string" name="com_facebook_login_text"/><attr format="string" name="com_facebook_logout_text"/><attr name="com_facebook_tooltip_mode"><enum name="automatic" value="0"/><enum name="display_always" value="1"/><enum name="never_display" value="2"/></attr></declare-styleable>
-    <declare-styleable name="com_facebook_profile_picture_view"><attr name="com_facebook_preset_size"><enum name="small" value="-2"/><enum name="normal" value="-3"/><enum name="large" value="-4"/></attr><attr format="boolean" name="com_facebook_is_cropped"/></declare-styleable>
+    <declare-styleable name="com_facebook_like_view"><attr format="color" name="com_facebook_foreground_color"/><attr format="string" name="com_facebook_object_id"/><attr name="com_facebook_object_type">
+            
+            <enum name="unknown" value="0"/>
+            <enum name="open_graph" value="1"/>
+            <enum name="page" value="2"/>
+        </attr><attr name="com_facebook_style">
+            
+            <enum name="standard" value="0"/>
+            <enum name="button" value="1"/>
+            <enum name="box_count" value="2"/>
+        </attr><attr name="com_facebook_auxiliary_view_position">
+            
+            <enum name="bottom" value="0"/>
+            <enum name="inline" value="1"/>
+            <enum name="top" value="2"/>
+        </attr><attr name="com_facebook_horizontal_alignment">
+            
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr></declare-styleable>
+    <declare-styleable name="com_facebook_login_view"><attr format="boolean" name="com_facebook_confirm_logout"/><attr format="string" name="com_facebook_login_text"/><attr format="string" name="com_facebook_logout_text"/><attr name="com_facebook_tooltip_mode">
+            
+            <enum name="automatic" value="0"/>
+            <enum name="display_always" value="1"/>
+            <enum name="never_display" value="2"/>
+        </attr></declare-styleable>
+    <declare-styleable name="com_facebook_profile_picture_view"><attr name="com_facebook_preset_size">
+            
+            <enum name="small" value="-2"/>
+            <enum name="normal" value="-3"/>
+            <enum name="large" value="-4"/>
+        </attr><attr format="boolean" name="com_facebook_is_cropped"/></declare-styleable>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -433,7 +463,7 @@
     <string name="autocheck">Auto check for broadcast</string>
     <string name="change_lang">Change language</string>
     <string name="channel66">Channel 66</string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">80f4e8c3-fc59-4d34-aeb5-d14e79eaba2c</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">ce9436ac-fb0a-4f62-9635-a10eee79d5a2</string>
     <string name="com_facebook_device_auth_instructions">Visit &lt;b>facebook.com/device&lt;/b> and enter the code shown above.</string>
     <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
     <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
@@ -447,14 +477,14 @@
     <string name="com_facebook_loginview_log_in_button_long">Log in with Facebook</string>
     <string name="com_facebook_loginview_log_out_action">Log out</string>
     <string name="com_facebook_loginview_log_out_button">Log out</string>
-    <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_as">Logged in as: <ns2:g id="user name">%1$s</ns2:g></string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
     <string name="com_facebook_send_button_text">Send</string>
     <string name="com_facebook_share_button_text">Share</string>
     <string name="com_facebook_smart_device_instructions">To connect your account, open the Facebook app on your mobile device and check for notifications.</string>
     <string name="com_facebook_smart_device_instructions_or">- OR -</string>
     <string name="com_facebook_smart_login_confirmation_cancel">Not you?</string>
-    <string name="com_facebook_smart_login_confirmation_continue_as">Continue as %1$s</string>
+    <string name="com_facebook_smart_login_confirmation_continue_as">Continue as <ns2:g id="user name">%1$s</ns2:g></string>
     <string name="com_facebook_smart_login_confirmation_title">Confirm Login</string>
     <string name="com_facebook_tooltip_default">You\'re in control - choose what info you want to share with apps.</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>

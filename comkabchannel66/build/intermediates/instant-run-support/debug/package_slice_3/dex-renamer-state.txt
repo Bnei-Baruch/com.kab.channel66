@@ -1,4 +1,0 @@
-#Sat Jun 03 15:42:27 IDT 2017
-base.0=/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3
-renamed.0=classes.dex
-file.0=/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex

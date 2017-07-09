@@ -1,4 +1,0 @@
-#Mon May 29 11:50:58 IDT 2017
-base.0=/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/release/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex

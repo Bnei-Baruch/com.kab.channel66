@@ -33,7 +33,7 @@
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/color/com_facebook_button_text_color.xml",
-        "source": "/Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/res/color/com_facebook_button_text_color.xml"
+        "source": "/Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/res/color/com_facebook_button_text_color.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
@@ -49,7 +49,7 @@
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/color/com_facebook_send_button_text_color.xml",
-        "source": "/Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/res/color/com_facebook_send_button_text_color.xml"
+        "source": "/Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/res/color/com_facebook_send_button_text_color.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
@@ -68,12 +68,12 @@
         "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/color/abc_tint_default.xml"
     },
     {
-        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
-        "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/color/abc_tint_spinner.xml"
-    },
-    {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
         "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/res/color/abc_tint_spinner.xml"
     },
     {
         "merged": "/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",

@@ -84,7 +84,7 @@ application
 ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:38:5-216:19
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/.android/build-cache/4c3676b5b10a8bc274e17cd5ca84fbd5dde765d1/output/AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/.android/build-cache/0c1e4b00725b66bf6655a0190b339bceebbccc1c/output/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:28:5-48:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.24.0] /Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/AndroidManifest.xml:28:5-48:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/igal/.android/build-cache/145293cf04e4cb89161e2702503615b8bbbcb19d/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/igal/.android/build-cache/04287cfc27da55ad2f2a414e6ea9f4b67898b9af/output/AndroidManifest.xml:26:5-20
@@ -245,14 +245,14 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:156:21-62
 activity#com.facebook.FacebookActivity
 ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:165:9-170:48
-MERGED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-android-sdk:4.24.0] /Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/AndroidManifest.xml:29:9-32:66
 	android:label
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:170:13-45
 	android:configChanges
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:166:13-114
 	android:theme
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:169:13-72
-		REJECTED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:32:13-63
+		REJECTED from [com.facebook.android:facebook-android-sdk:4.24.0] /Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/AndroidManifest.xml:32:13-63
 	tools:replace
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:168:13-42
 	android:name
@@ -289,7 +289,7 @@ MERGED from [com.android.support:multidex:1.0.1] /Users/igal/.android/build-cach
 MERGED from [de.mrmaffen:vlc-android-sdk:2.0.6] /Users/igal/.android/build-cache/1c05eb84dbcf32924a8c456937de55b16b0781b6/output/AndroidManifest.xml:8:5-10:41
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/.android/build-cache/4c3676b5b10a8bc274e17cd5ca84fbd5dde765d1/output/AndroidManifest.xml:7:5-43
 MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/.android/build-cache/0c1e4b00725b66bf6655a0190b339bceebbccc1c/output/AndroidManifest.xml:7:5-43
-MERGED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.24.0] /Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/igal/.android/build-cache/145293cf04e4cb89161e2702503615b8bbbcb19d/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/igal/.android/build-cache/04287cfc27da55ad2f2a414e6ea9f4b67898b9af/output/AndroidManifest.xml:20:5-43
@@ -327,17 +327,17 @@ MERGED from [com.android.support:support-compat:25.3.1] /Users/igal/.android/bui
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-android-sdk:4.24.0] /Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-android-sdk:4.24.0] /Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/AndroidManifest.xml:33:19-68
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:44:9-47:40
+ADDED from [com.facebook.android:facebook-android-sdk:4.24.0] /Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/AndroidManifest.xml:44:9-47:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:46:13-72
+		ADDED from [com.facebook.android:facebook-android-sdk:4.24.0] /Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/AndroidManifest.xml:46:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:47:13-37
+		ADDED from [com.facebook.android:facebook-android-sdk:4.24.0] /Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] /Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/AndroidManifest.xml:45:13-70
+		ADDED from [com.facebook.android:facebook-android-sdk:4.24.0] /Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/AndroidManifest.xml:45:13-70
 meta-data#android.support.VERSION
 ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/igal/.android/build-cache/145293cf04e4cb89161e2702503615b8bbbcb19d/output/AndroidManifest.xml:22:5-24:34
