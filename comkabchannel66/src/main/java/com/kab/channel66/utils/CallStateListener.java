@@ -1,13 +1,9 @@
 package com.kab.channel66.utils;
 
 //import io.vov.vitamio.utils.Log;
-import android.app.Application;
-import android.content.Context;
-import android.content.pm.ApplicationInfo;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.util.Log;
-import android.widget.Toast;
 
 /**
  * Listener to detect incoming calls. 
@@ -25,7 +21,6 @@ public class CallStateListener extends PhoneStateListener {
  @Override
  public void onCallStateChanged(int state, String incomingNumber) {
      switch (state) {
-         case TelephonyManager.CALL_STATE_RINGING:
          case TelephonyManager.CALL_STATE_OFFHOOK:
          // called when someone is ringing to this phone
         	 Log.i("Telephone state", "ringing");
