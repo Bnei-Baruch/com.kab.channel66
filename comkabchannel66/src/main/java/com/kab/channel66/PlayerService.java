@@ -97,7 +97,7 @@ public class PlayerService extends Service implements CallStateInterface{
 
 			notification = new NotificationCompat.Builder(PlayerService.this)
 					.setSmallIcon(R.drawable.icon)
-					.setContentTitle("Channel 66 playing")
+					.setContentTitle("Audio playing")
 					.setContentText("Click to Access App")
 
 					.setContentIntent(pendingIntent)
@@ -135,12 +135,12 @@ public class PlayerService extends Service implements CallStateInterface{
 			} else if (intent.getAction().equals(Constants.ACTION.PLAY_ACTION)) {
 				Log.i("svc", "Clicked Play");
 				playAudio(mUrl);
-				createAndSetNotification("Channel 66 playing", "");
+				createAndSetNotification("Audio playing", "");
 			} else if (intent.getAction().equals(Constants.ACTION.PAUSE_ACTION)) {
 				Log.i("svc", "Clicked Pause");
 
 				stopAudio();
-				createAndSetNotification("Channel 66 paused", "");
+				createAndSetNotification("Audio paused", "");
 			} else if (intent.getAction().equals(
 					Constants.ACTION.STOPFOREGROUND_ACTION)) {
 				Log.i("svc", "Received Stop Foreground Intent");
