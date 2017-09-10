@@ -20,7 +20,7 @@ public class BaseListActivity extends FragmentActivity {
 			{
 			dlg = new AlertDialog.Builder(this)
 		    .setTitle("Data not available")
-		    .setMessage("Appliaction needs data connection")
+		    .setMessage("Application needs data connection")
 		    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		        public void onClick(DialogInterface dialog, int which) { 
 		            // continue with delete

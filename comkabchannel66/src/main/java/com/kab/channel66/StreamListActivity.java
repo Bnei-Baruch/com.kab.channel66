@@ -624,13 +624,13 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 					}
 				}
 		}
-		if(item.equals("ערוץ 66 - וידאו"))
+		if(item.equals("ערוץ קבלה לעם - וידאו"))
 		{
 			StopAudioIfNeeded();
 			//"mms://wms1.il.kab.tv/heb"
 			// String url = ExtractMMSfromAsx("http://streams.kab.tv/heb.asx");
 			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-			EasyTracker.getTracker().trackEvent("ערוץ 66 - וידאו", "on item clicked","http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8",0L);
+			EasyTracker.getTracker().trackEvent("ערוץ קבלה לעם - וידאו", "on item clicked","http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8",0L);
 			if(shared.getBoolean("quality", false))
 			{
 				//player.putExtra("path", ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
@@ -648,7 +648,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			}
 
 		}
-		else if(item.equals("ערוץ 66 - אודיו") || item.equals("רדיו ערוץ 66"))
+		else if(item.equals("ערוץ קבלה לעם - אודיו") || item.equals("רדיו קבלה לעם"))
 		{
 
 
@@ -658,7 +658,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 //			svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 //
 			final String url;
-			if(item.equals("ערוץ 66 - אודיו"))
+			if(item.equals("ערוץ קבלה לעם - אודיו"))
 				url =  "http://icecast.kab.tv/heb.mp3";
 			else
 				url =  "http://icecast.kab.tv/radiozohar2014.mp3";
@@ -776,7 +776,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			//http://stackoverflow.com/questions/14043618/background-music-in-my-app-doesnt-start
 
 		}
-		else if(item.equals("Канал 66 на Русском - Видео"))
+		else if(item.equals("Кабала на Русском - Видео"))
 		{
 			StopAudioIfNeeded();
 			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
@@ -792,7 +792,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 				startActivity(player);
 			}
 		}
-		else if(item.equals("Канал 66 на Русском - Аудио"))
+		else if(item.equals("Кабала на Русском - Аудио"))
 		{
 			//	    	Uri uri = Uri.parse("http://icecast.kab.tv/rus.mp3");
 			//	    	Intent player1 = new Intent(Intent.ACTION_VIEW,uri);
@@ -1060,17 +1060,17 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		} 	
 
 
-		description.add("ערוץ 66 - וידאו");
-		description.add("ערוץ 66 - אודיו");
-		description.add("רדיו ערוץ 66");
+		description.add("ערוץ קבלה לעם - וידאו");
+		description.add("ערוץ קבלה לעם - אודיו");
+		description.add("רדיו קבלה לעם");
 
-		description.add("Канал 66 на Русском - Видео");
-		description.add("Канал 66 на Русском - Аудио");
+		description.add("Кабала на Русском - Видео");
+		description.add("Кабала на Русском - Аудио");
 
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, description);
 
-		mAdataper.addSectionHeaderItem("Channel 66");
+		mAdataper.addSectionHeaderItem("קבלה לעם");
 		for(int i=0;i<description.size();i++)
 			mAdataper.addItem(description.get(i),false);
 

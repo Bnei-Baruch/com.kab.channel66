@@ -10,6 +10,9 @@ buildscript {
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
 
+
+
+
 repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
@@ -93,3 +96,4 @@ crashlytics {
 }
 
 apply plugin: 'com.google.gms.google-services'
+//2c527ff0156f4d9c0a3a6cb04c48b16314a7780b

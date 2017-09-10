@@ -34,8 +34,6 @@
     <string gender="unknown" name="com_facebook_loginview_log_out_button">Déconnexion</string>
     <string gender="unknown" name="com_facebook_loginview_logged_in_as">Connecté(e) en tant que : %1$s</string>
     <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">Connecté(e) avec Facebook</string>
-    <string gender="female" name="com_facebook_loginview_logged_in_using_facebook_f1gender">Connectée avec Facebook</string>
-    <string gender="male" name="com_facebook_loginview_logged_in_using_facebook_m2gender">Connecté avec Facebook</string>
     <string gender="unknown" name="com_facebook_send_button_text">Envoyer</string>
     <string gender="unknown" name="com_facebook_share_button_text">Publier</string>
     <string gender="unknown" name="com_facebook_smart_device_instructions">Pour associer votre compte, ouvrez l’app Facebook sur votre appareil mobile et vérifiez les notifications.</string>

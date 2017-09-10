@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/Users/igal/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/5a11f020cce2d11eb71ba916700600e18c4547e7/okhttp-3.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5a11f020cce2d11eb71ba916700600e18c4547e7">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.8.0_1f103207affa04c5c4ea5afb254ab47ae5b86034/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/igal/.android/build-cache/3a8812685dae0827e4d9e082213476109a0fcdbb/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -36,15 +45,6 @@
         revision="25.0.0"
         sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
         <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/eventbus-2.4.0_8ca8b005f9a27e01ab521a45a6af2ae0ddfe0c45/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/igal/.android/build-cache/52b5d2ccce098e0475f23d3b183d70bbd9a7f33f/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4504ae3ec47953f3d0c324dc66996aecfb7fbb5c">
-        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_14f9d5b7fb48d7354c169a0b943c44b2e3f123a0/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="4492c0b3d1d2817ac01b3aae6c112177ac46b95d">
+        sha1="a8b25a1afe3d6d266b301c0622f654b9b0af0342">
         <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_97dda646c46af86b29842cf92ccfcb83d14f1d76/classes.dex" />
     </item>
     <item
@@ -171,6 +171,15 @@
         revision="23.0.3"
         sha1="8d04da1c73876c93ccce8ffd39add84f9415b64c">
         <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/2/libGoogleAnalyticsV2_a2b360e916e02d8bc3fe99919b30c2f66e4426f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.13.0_ddde2d7b41d9054afb18605d6b1d5ded4027426b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -297,6 +306,15 @@
         revision="25.0.0"
         sha1="4711b6bd1e41291912e98c23954cb3d11ca36bd5">
         <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ba48211127458970dc9d141523f237c2978b91d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/.android/build-cache/d10963fb11828331f5250ebb188d5849b8a67a74/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0e0e8918eb74e3ee9e82eef6430a4359b2b577d3">
+        <dex dex="/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/10/classes_42488c5ca7e3a90163eeeb749940ae4711981494/classes.dex" />
     </item>
     <item
         is-multidex="true"
