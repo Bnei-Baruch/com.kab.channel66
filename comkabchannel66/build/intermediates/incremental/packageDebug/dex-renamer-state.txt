@@ -1,4 +1,4 @@
-#Thu Nov 02 13:47:07 IST 2017
+#Sun Nov 05 09:47:41 IST 2017
 base.0=/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/igal/Downloads/com.kab.channel66/comkabchannel66/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

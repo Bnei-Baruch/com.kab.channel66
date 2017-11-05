@@ -1,31 +1,6 @@
 package com.kab.channel66;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.concurrent.ExecutionException;
-
-import com.facebook.AccessToken;
-import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
-import com.facebook.GraphRequest;
-import com.facebook.GraphResponse;
-import com.facebook.Profile;
-import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
-import com.google.analytics.tracking.android.EasyTracker;
-import com.kab.channel66.utils.CommonUtils;
-import com.kab.channel66.utils.SvivaTovaLoginApiHelper;
-import com.kab.channel66.utils.SvivaTovaLoginHelper;
-//import com.kab.channel66.utils.status;
-
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,7 +10,27 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.facebook.AccessToken;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
+import com.google.analytics.tracking.android.EasyTracker;
+import com.kab.channel66.utils.CommonUtils;
+import com.kab.channel66.utils.SvivaTovaLoginApiHelper;
+
 import org.json.JSONObject;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
+
+//import com.kab.channel66.utils.status;
 
 
 public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListener {
@@ -136,7 +131,7 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 	private void logionWithEmail()
 	{
 		ArrayList<String> details = new ArrayList<String>();
-		details.add(mUser.getText().toString());
+		details.add(mUser.getText().toString().trim());
 		details.add(mPass.getText().toString());
 		SvivaTovaLoginApiHelper.status st;
 		mHelper = (SvivaTovaLoginApiHelper) new SvivaTovaLoginApiHelper().execute(details);
