@@ -776,7 +776,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			//http://stackoverflow.com/questions/14043618/background-music-in-my-app-doesnt-start
 
 		}
-		else if(item.equals("Кабала на Русском - Видео"))
+		else if(item.equals("Каббала на Русском - Видео"))
 		{
 			StopAudioIfNeeded();
 			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
@@ -792,7 +792,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 				startActivity(player);
 			}
 		}
-		else if(item.equals("Кабала на Русском - Аудио"))
+		else if(item.equals("Каббала на Русском - Аудио"))
 		{
 			//	    	Uri uri = Uri.parse("http://icecast.kab.tv/rus.mp3");
 			//	    	Intent player1 = new Intent(Intent.ACTION_VIEW,uri);
@@ -1064,8 +1064,8 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		description.add("ערוץ קבלה לעם - אודיו");
 		description.add("רדיו קבלה לעם");
 
-		description.add("Кабала на Русском - Видео");
-		description.add("Кабала на Русском - Аудио");
+		description.add("Каббала на Русском - Видео");
+		description.add("Каббала на Русском - Аудио");
 
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, description);

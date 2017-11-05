@@ -24,30 +24,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36bf4f6f-5392-4a51-b7ec-e2eac30d7605" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/apk/comkabchannel66-debug.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comkabchannel66/comkabchannel66-release.apk" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/KL_TV_Tree_APP_Android_L.jpg" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/kl_tv_tree_app_android_l.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_comkabchannel66_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/BuildConfig.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/BaseListActivity.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/BaseListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$color.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$drawable.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$id.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$layout.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$menu.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$string.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$style.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$xml.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/R$xml.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/StreamListActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/utils/CallStateListener.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/utils/CallStateListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/utils/CommonUtils.class" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/classes/debug/com/kab/channel66/utils/CommonUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/zip-cache/LjollkzkTTtp0L5JHoHs+2VXAe4=" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/zip-cache/LjollkzkTTtp0L5JHoHs+2VXAe4=" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_icon_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_icon_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_send_icon_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_send_icon_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_send_icon_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_send_icon_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_large_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_large_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_large_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_large_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_small_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_small_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_small_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_small_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_button_send_round_shadow.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_button_send_round_shadow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_icon_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_icon_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_send_icon_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_send_icon_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_send_icon_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_button_send_icon_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_close.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_large_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_large_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_large_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_large_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_small_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_small_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_small_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_bubble_small_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_button_send_round_shadow.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-mdpi-v4/messenger_button_send_round_shadow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_button_icon_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_button_icon_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_button_send_icon_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_button_send_icon_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_button_send_icon_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_button_send_icon_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/messenger_bubble_large_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/messenger_bubble_large_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/messenger_bubble_large_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/messenger_bubble_large_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/messenger_bubble_small_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/messenger_bubble_small_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/messenger_bubble_small_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/messenger_bubble_small_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/messenger_button_send_round_shadow.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xhdpi-v4/messenger_button_send_round_shadow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_large_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_large_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_large_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_large_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_small_blue.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_small_blue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_small_white.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_bubble_small_white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/apk/comkabchannel66-debug.apk" afterPath="$PROJECT_DIR$/comkabchannel66/build/outputs/apk/comkabchannel66-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.jpg" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.jpg" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.kab.channel66.iml" afterPath="$PROJECT_DIR$/com.kab.channel66.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build.gradle" afterPath="$PROJECT_DIR$/comkabchannel66/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/buildConfig/debug/com/kab/channel66/BuildConfig.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/buildConfig/debug/com/kab/channel66/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/facebook/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/facebook/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/android/gms/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/kab/channel66/R.java" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/kab/channel66/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-af.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-af.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ar.json" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/blame/res/debug/multi/values-ar.json" />
@@ -108,20 +169,50 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/com_facebook_device_auth_dialog_fragment.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/com_facebook_device_auth_dialog_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/com_facebook_smart_device_dialog_fragment.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/com_facebook_smart_device_dialog_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/listviewlayout.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/layout/listviewlayout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-af/values-af.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-af/values-af.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ar/values-ar.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ar/values-ar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-bn/values-bn.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-bn/values-bn.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-cs/values-cs.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-cs/values-cs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-da/values-da.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-da/values-da.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-de/values-de.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-de/values-de.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-el/values-el.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-el/values-el.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-es-rES/values-es-rES.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-es-rES/values-es-rES.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-es/values-es.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-es/values-es.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-fi/values-fi.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-fi/values-fi.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-fr/values-fr.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-fr/values-fr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-iw/values-iw.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-iw/values-iw.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-gu/values-gu.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-gu/values-gu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-hi/values-hi.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-hi/values-hi.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-in/values-in.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-in/values-in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-it/values-it.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-it/values-it.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ja/values-ja.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ja/values-ja.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-kn/values-kn.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-kn/values-kn.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ko/values-ko.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ko/values-ko.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ml/values-ml.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ml/values-ml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-mr/values-mr.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-mr/values-mr.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ms/values-ms.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ms/values-ms.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-nb/values-nb.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-nb/values-nb.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-nl/values-nl.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-nl/values-nl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-pa/values-pa.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-pa/values-pa.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-pl/values-pl.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-pl/values-pl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-pt-rPT/values-pt-rPT.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-pt-rPT/values-pt-rPT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-pt/values-pt.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-pt/values-pt.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ru/values-ru.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ru/values-ru.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-sv/values-sv.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-sv/values-sv.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ta/values-ta.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-ta/values-ta.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-te/values-te.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-te/values-te.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-th/values-th.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-th/values-th.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-tl/values-tl.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-tl/values-tl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-tr/values-tr.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-tr/values-tr.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-vi/values-vi.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-vi/values-vi.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-zh-rCN/values-zh-rCN.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-zh-rCN/values-zh-rCN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-zh-rHK/values-zh-rHK.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-zh-rHK/values-zh-rHK.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-zh-rTW/values-zh-rTW.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values-zh-rTW/values-zh-rTW.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" afterPath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BaseListActivity.java" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BaseListActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/listviewlayout.xml" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/listviewlayout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" />
     </list>
     <ignored path="com.kab.channel66.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -190,82 +281,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyFirebaseMessagingService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java">
+      <file leaf-file-name="kl_tv_tree_app_android_l.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/kl_tv_tree_app_android_l.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icon_old.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon_old.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="splash.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/splash.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+            <state relative-caret-position="105">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="56" column="64" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="64" />
-              <folding />
-            </state>
+      <file leaf-file-name="icon.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SplashScreen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/SplashScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="13" />
-              <folding />
-            </state>
+      <file leaf-file-name="kl_tv_tree_app_android_l.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/kl_tv_tree_app_android_l.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParsePushHandling.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ParsePushHandling.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="76" column="41" selection-start-line="65" selection-start-column="12" selection-end-line="78" selection-end-column="15" />
-              <folding />
-            </state>
+      <file leaf-file-name="kl_tv_tree_app_android_p.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/kl_tv_tree_app_android_p.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyFirebaseInstanceIDService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseInstanceIDService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PushMessagesActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PushMessagesActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-719">
-              <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StreamListActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StreamListActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="438" column="9" selection-start-line="438" selection-start-column="9" selection-end-line="438" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="1068" column="0" selection-start-line="1068" selection-start-column="0" selection-end-line="1068" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2381">
-              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="60">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+              <folding>
+                <element signature="e#1522#1540#0" expanded="true" />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="android-manifest">
@@ -273,23 +354,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VideoActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2340">
-              <caret line="179" column="50" selection-start-line="179" selection-start-column="50" selection-end-line="179" selection-end-column="50" />
+            <state relative-caret-position="120">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VLCMediaPlayer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VLCMediaPlayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-              <folding />
-            </state>
+      <file leaf-file-name="icon_old.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon_old.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -380,6 +458,11 @@
                 <option name="name" value="mockableAndroidJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-places:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComFacebookAndroidFacebookPlaces4270Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:appcompat-v7:25.3.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportAppcompatV72531Library" />
@@ -466,6 +549,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileDebugUnitTestJavaWithJavac" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-messenger:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComFacebookAndroidFacebookMessenger4270Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -571,11 +659,6 @@
                 <option name="name" value="installDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.facebook.android:facebook-android-sdk:4.26.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComFacebookAndroidFacebookAndroidSdk4260Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:support-core-ui:25.3.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportSupportCoreUi2531Library" />
@@ -606,6 +689,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="mergeDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-core:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComFacebookAndroidFacebookCore4270Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -911,8 +999,18 @@
                 <option name="name" value="testReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-android-sdk:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComFacebookAndroidFacebookAndroidSdk4270Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="mergeDebugShaders" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-share:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComFacebookAndroidFacebookShare4270Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -939,6 +1037,11 @@
                 <option name="name" value="prepareComAndroidSupportSupportV42531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-common:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComFacebookAndroidFacebookCommon4270Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Uploads cached Crashlytics symbol files to Crashlytics." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="crashlyticsUploadSymbolsRelease" />
@@ -956,8 +1059,18 @@
                 <option name="name" value="incrementalDebugAndroidTestJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-applinks:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComFacebookAndroidFacebookApplinks4270Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileDebugAndroidTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-login:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComFacebookAndroidFacebookLogin4270Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1280,6 +1393,11 @@
                 <option name="name" value="mockableAndroidJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-places:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="prepareComFacebookAndroidFacebookPlaces4270Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:appcompat-v7:25.3.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="prepareComAndroidSupportAppcompatV72531Library" />
@@ -1366,6 +1484,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="compileDebugUnitTestJavaWithJavac" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-messenger:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="prepareComFacebookAndroidFacebookMessenger4270Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
@@ -1471,11 +1594,6 @@
                 <option name="name" value="installDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.facebook.android:facebook-android-sdk:4.26.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
-                <option name="name" value="prepareComFacebookAndroidFacebookAndroidSdk4260Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:support-core-ui:25.3.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="prepareComAndroidSupportSupportCoreUi2531Library" />
@@ -1506,6 +1624,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="mergeDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-core:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="prepareComFacebookAndroidFacebookCore4270Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
@@ -1806,8 +1929,18 @@
                 <option name="name" value="testReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-android-sdk:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="prepareComFacebookAndroidFacebookAndroidSdk4270Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="mergeDebugShaders" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-share:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="prepareComFacebookAndroidFacebookShare4270Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
@@ -1834,6 +1967,11 @@
                 <option name="name" value="prepareComAndroidSupportSupportV42531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-common:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="prepareComFacebookAndroidFacebookCommon4270Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Uploads cached Crashlytics symbol files to Crashlytics." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="crashlyticsUploadSymbolsRelease" />
@@ -1851,8 +1989,18 @@
                 <option name="name" value="incrementalDebugAndroidTestJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-applinks:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="prepareComFacebookAndroidFacebookApplinks4270Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="compileDebugAndroidTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-login:4.27.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="prepareComFacebookAndroidFacebookLogin4270Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
@@ -2143,7 +2291,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4454256502000" />
+        <entry key="$PROJECT_DIR$" value="4475804152000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2501,7 +2649,7 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/com-intellij/uast/162.2228.14/uast-162.2228.14.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.fabric.tools/gradle/1.24.1/362e6846ef4dbc85ceec7bee13795c09185e39d3/gradle-1.24.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.fabric.tools/gradle/1.24.4/32fda08656ec7daa89371e7eca73dff5482d20b7/gradle-1.24.4.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/comkabchannel66" />
@@ -2815,12 +2963,12 @@
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CallStateListener.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/listviewlayout.xml" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/build.gradle" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BaseListActivity.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -2971,6 +3119,212 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comkabchannel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-xxxhdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comkabchannel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-xxhdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comkabchannel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-xhdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comkabchannel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-mdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comkabchannel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-hdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comkabchannel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.kab.channel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comkabchannel66" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -3015,6 +3369,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -3032,10 +3389,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
       <pane id="AndroidView">
         <subPane>
@@ -3133,6 +3486,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3163,28 +3517,28 @@
     <property name="ExportApk.BuildType" value="release" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.3.2" />
-    <property name="device.picker.selection" value="Nexus_5X_API_25" />
+    <property name="device.picker.selection" value="0815f840d2e81c05" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xxhdpi" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xhdpi" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-mdpi" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.kab.channel66" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi" />
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/layout-land" />
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/mipmap" />
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-prot" />
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-land" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-landscape" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kab.channel66" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xxhdpi" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xhdpi" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-mdpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.comkabchannel66">
@@ -3692,24 +4046,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="979" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="979" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267671" sideWeight="0.4945055" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45307067" sideWeight="0.5903541" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30402932" sideWeight="0.45940593" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45307067" sideWeight="0.5873016" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30402932" sideWeight="0.4672269" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31604537" sideWeight="0.57835215" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.414832" sideWeight="0.84493285" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.414832" sideWeight="0.84126985" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18076478" sideWeight="0.3833944" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.4920635" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267671" sideWeight="0.4908425" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.414832" sideWeight="0.15506716" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30402932" sideWeight="0.54059404" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3105446" sideWeight="0.34920636" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3105446" sideWeight="0.65262514" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30402932" sideWeight="0.53277314" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3105446" sideWeight="0.34737486" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875606" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3730,7 +4085,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.49676898" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22875817" sideWeight="0.63974154" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -3869,7 +4223,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CallStateListener.java</url>
-          <line>26</line>
+          <line>21</line>
           <properties />
           <option name="timeStamp" value="106" />
         </line-breakpoint>
@@ -4067,19 +4421,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
-          <line>86</line>
+          <line>92</line>
           <properties />
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
-          <line>113</line>
+          <line>120</line>
           <properties />
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
-          <line>124</line>
+          <line>131</line>
           <properties />
           <option name="timeStamp" value="238" />
         </line-breakpoint>
@@ -4103,19 +4457,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
-          <line>166</line>
+          <line>173</line>
           <properties />
           <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
-          <line>160</line>
+          <line>167</line>
           <properties />
           <option name="timeStamp" value="247" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java</url>
-          <line>94</line>
+          <line>101</line>
           <properties />
           <option name="timeStamp" value="248" />
         </line-breakpoint>
@@ -4141,27 +4495,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.android/build-cache/4c3676b5b10a8bc274e17cd5ca84fbd5dde765d1/output/jars/classes.jar!/com/crashlytics/android/Crashlytics.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="124" column="23" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.mrmaffen/vlc-android-sdk/2.0.6/54e4e3d477037bd88a34c3792122fdda6fe9d10e/vlc-android-sdk-2.0.6-sources.jar!/org/videolan/libvlc/LibVLC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.mrmaffen/vlc-android-sdk/3.0.0/a63186554ef439d9809c035c572cae837409e72/vlc-android-sdk-3.0.0-sources.jar!/org/videolan/libvlc/MediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/android-sdks/platforms/android-23/android.jar!/android/app/Instrumentation.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -4177,23 +4510,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/google-services.json">
@@ -4242,16 +4575,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon_old.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/optional/org.apache.http.legacy.jar!/org/apache/http/client/HttpClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -4271,70 +4594,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2490">
           <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/splash.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-mdpi/kl_tv_tree_app_android_l.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/kl_tv_tree_app_android_l.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/mipmap/KL_TV_Tree_APP_Android_L.jpg" />
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout-land/splash.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CallStateListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/kl_tv_tree_app_android_l.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/splash.xml">
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-mdpi/kl_tv_tree_app_android_l.jpg" />
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/mipmap/KL_TV_Tree_APP_Android_L.jpg" />
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout-land/splash.xml" />
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CallStateListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="360">
+          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -4362,20 +4632,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xxxhdpi/kl_tv_tree_app_android_l.jpg">
-      <provider selected="true" editor-type-id="images">
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xxxhdpi/kl_tv_tree_app_android_l.jpg" />
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/listviewlayout.xml">
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/listviewlayout.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -4435,7 +4701,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VLCMediaPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="120">
           <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
           <folding />
         </state>
@@ -4449,20 +4715,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2381">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ParsePushHandling.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
+        <state relative-caret-position="1020">
           <caret line="76" column="41" selection-start-line="65" selection-start-column="12" selection-end-line="78" selection-end-column="15" />
           <folding />
         </state>
@@ -4470,7 +4725,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PushMessagesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-719">
+        <state relative-caret-position="765">
           <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
           <folding />
         </state>
@@ -4478,15 +4733,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+        <state relative-caret-position="480">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
+        <state relative-caret-position="675">
           <caret line="56" column="64" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="64" />
           <folding />
         </state>
@@ -4494,18 +4749,97 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/SplashScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="435">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/kl_tv_tree_app_android_p.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/splash.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon_old.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/kl_tv_tree_app_android_p.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/kl_tv_tree_app_android_l.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon_old.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/splash.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/kl_tv_tree_app_android_l.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="438" column="9" selection-start-line="438" selection-start-column="9" selection-end-line="438" selection-end-column="9" />
+        <state relative-caret-position="187">
+          <caret line="1068" column="0" selection-start-line="1068" selection-start-column="0" selection-end-line="1068" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="e#1522#1540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
   </component>
