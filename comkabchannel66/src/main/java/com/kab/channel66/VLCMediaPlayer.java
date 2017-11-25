@@ -20,6 +20,10 @@ package com.kab.channel66;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.preference.PreferenceManager;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
@@ -33,7 +37,6 @@ import org.videolan.libvlc.MediaPlayer;
 import org.videolan.libvlc.util.AndroidUtil;
 
 import java.util.ArrayList;
-import java.util.concurrent.ConcurrentHashMap;
 
 import de.greenrobot.event.EventBus;
 
@@ -75,6 +78,8 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
     private final MediaPlayer.EventListener mMediaPlayerListener = new MediaPlayer.EventListener() {
         @Override
         public void onEvent(MediaPlayer.Event event) {
+
+            Log.d("vlc event",event.toString()+" type: "+event.type);
                 switch (event.type) {
                     case MediaPlayer.Event.EncounteredError:
                         Log.d(TAG, "onError()");
@@ -86,9 +91,25 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
                         Log.d(TAG, "onCompletion()");
                         mMediaPlayerCallback.onCompletion(mPreparedQuery);
                         break;
+
                 }
         }
     };
+
+
+    Handler handler = new Handler(Looper.getMainLooper())
+    {
+        @Override
+        public void handleMessage(Message msg)
+        {
+
+            Bundle bundle = msg.getData();
+
+            // Do something with message contents
+        }
+    };
+
+
 
     private VLCMediaPlayer() {
         ArrayList<String> options = new ArrayList<>();
@@ -105,6 +126,7 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
 
 
             mMediaPlayer.setEqualizer(equalizer);
+
         }
         mMediaPlayer.setEventListener(mMediaPlayerListener);
         EventBus.getDefault().register(this);
@@ -166,6 +188,7 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         Log.d(TAG, "pause()");
         if (getMediaPlayerInstance().isPlaying()) {
             getMediaPlayerInstance().pause();
+            getMediaPlayerInstance().release();
 
         }
         telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE); //Register our listener with TelephonyManager
@@ -192,6 +215,12 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         mPreparingQuery = query;
 
         Media media = new Media(mLibVLC, AndroidUtil.LocationToUri(query));
+        media.setEventListener(new Media.EventListener() {
+            @Override
+            public void onEvent(Media.Event event) {
+                Log.d("media vlc event",event.toString()+" type: "+event.type);
+            }
+        });
         getMediaPlayerInstance().setMedia(media);
         Log.d(TAG, "onPrepared()");
         mPreparedQuery = mPreparingQuery;

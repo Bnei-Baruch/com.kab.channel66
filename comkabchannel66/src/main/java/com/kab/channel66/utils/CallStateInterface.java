@@ -6,4 +6,6 @@ public interface CallStateInterface {
 
 	 void ResumePlay();
 
+	Boolean isPaused();
+
 }

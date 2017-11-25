@@ -455,7 +455,7 @@
     <string name="autocheck">Auto check for broadcast</string>
     <string name="change_lang">Change language</string>
     <string name="channel66">Channel 66</string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">8500546d-074a-4c4a-b6a5-6dd401c82ef1</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">2442496f-3aab-4b64-8a0b-979c554d04b9</string>
     <string name="com_facebook_device_auth_instructions">Visit &lt;b>facebook.com/device&lt;/b> and enter the code shown above.</string>
     <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
     <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>

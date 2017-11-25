@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-227:12
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-231:12
 	package
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:4:5-32
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
@@ -81,22 +81,22 @@ MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/igal/.android/build-
 	android:name
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:35:22-65
 application
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:38:5-216:19
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:38:5-220:19
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/.android/build-cache/4c3676b5b10a8bc274e17cd5ca84fbd5dde765d1/output/AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/.android/build-cache/0c1e4b00725b66bf6655a0190b339bceebbccc1c/output/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.27.0] /Users/igal/.android/build-cache/98d36df55f281dd05753491b24b6a5979c7c0ca8/output/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.27.0] /Users/igal/.android/build-cache/f7679a340909e8fe2fd13fae0b31a658a33d0db2/output/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.27.0] /Users/igal/.android/build-cache/e8ec3a49c5414dd350dbd29d08886e0b5eabde38/output/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:4.27.0] /Users/igal/.android/build-cache/fd7629fe6b05e5b89f87606ec9c7f00fdb772544/output/AndroidManifest.xml:28:5-34:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.28.0] /Users/igal/.android/build-cache/54e1ab3b8553b11e5d14380054ce7826260a2946/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.28.0] /Users/igal/.android/build-cache/647a5ddf9892d68d777871938aa9d3ff89f815e2/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.28.0] /Users/igal/.android/build-cache/846e9ad3592c30a18b75b69362dccb35256a2061/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.28.0] /Users/igal/.android/build-cache/dfa685a368d4ca8f67afb3bc3f9264510aaa9c79/output/AndroidManifest.xml:28:5-34:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/igal/.android/build-cache/145293cf04e4cb89161e2702503615b8bbbcb19d/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/igal/.android/build-cache/04287cfc27da55ad2f2a414e6ea9f4b67898b9af/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:cardview-v7:25.3.1] /Users/igal/.android/build-cache/5021d1b39acfd84203ce439aea80ccc8fb9290ba/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:customtabs:25.3.1] /Users/igal/.android/build-cache/2bb60451768884c74798b62cf12580b433e45ab9/output/AndroidManifest.xml:26:5-20
-MERGED from [com.facebook.android:facebook-places:4.27.0] /Users/igal/.android/build-cache/5c26f659aae23ba90235c2b28638dd0fca0bce8a/output/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.27.0] /Users/igal/.android/build-cache/bf5fd48b4788ff983604bb79b2d4e7297dd96f11/output/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.27.0] /Users/igal/.android/build-cache/cccd54409e3489d2a08839c5493ca9c58321d20a/output/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-core:4.27.0] /Users/igal/.android/build-cache/8e751106729fc49041bcdf271ea1a72b47b09b25/output/AndroidManifest.xml:28:5-43:19
+MERGED from [com.facebook.android:facebook-places:4.28.0] /Users/igal/.android/build-cache/ea82281b8bc32dab9ea3dddf1e8043a55276c0a7/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.28.0] /Users/igal/.android/build-cache/8781025e188a1a0e5da0f92c62c2b238c7797b12/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.28.0] /Users/igal/.android/build-cache/a3a52294453376855a1c26ddaf230bb69c13223d/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-core:4.28.0] /Users/igal/.android/build-cache/6384b15bb04614cfd930224a373bfa32caab4ef7/output/AndroidManifest.xml:28:5-43:19
 MERGED from [com.crashlytics.sdk.android:crashlytics-ndk:1.1.3] /Users/igal/.android/build-cache/cfa2c1db7d4ea1712fffd1d2713db8b690ccf5ea/output/AndroidManifest.xml:10:5-20
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/.android/build-cache/69a65192cd05ca9bd1e0a133b5b5c7d2125d1741/output/AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/.android/build-cache/53aa8207b4644a7e37ee2c9c4d1b5a5325133bd1/output/AndroidManifest.xml:11:5-20
@@ -121,7 +121,7 @@ MERGED from [com.android.support:support-compat:25.3.1] /Users/igal/.android/bui
 	android:label
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:40:9-41
 	android:supportsRtl
-		ADDED from [com.facebook.android:facebook-android-sdk:4.27.0] /Users/igal/.android/build-cache/98d36df55f281dd05753491b24b6a5979c7c0ca8/output/AndroidManifest.xml:28:18-44
+		ADDED from [com.facebook.android:facebook-android-sdk:4.28.0] /Users/igal/.android/build-cache/54e1ab3b8553b11e5d14380054ce7826260a2946/output/AndroidManifest.xml:28:18-44
 	android:icon
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:39:10-39
 	android:name
@@ -142,6 +142,22 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:51:17-52
 	android:name
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:50:17-58
+receiver#com.kab.channel66.utils.NetworkChangeReceiver
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:53:9-60:20
+	android:label
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:55:13-50
+	android:name
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:54:13-56
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE+android.net.wifi.WIFI_STATE_CHANGED
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:56:13-59:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:57:17-79
+	android:name
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:57:25-76
+action#android.net.wifi.WIFI_STATE_CHANGED
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:58:17-78
+	android:name
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:58:25-75
 meta-data#com.facebook.sdk.ApplicationId
 ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:61:9-107
 	android:value
@@ -149,168 +165,168 @@ ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/Andr
 	android:name
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:61:20-65
 service#com.kab.channel66.PlayerService
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:67:10-70:19
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:67:10-74:19
 	android:label
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:69:13-45
 	android:name
 		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:68:13-42
 activity#com.kab.channel66.VideoActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:71:9-76:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:75:9-80:20
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:74:13-34
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:78:13-34
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:73:13-59
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:77:13-59
 	android:theme
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:75:13-71
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:79:13-71
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:72:13-42
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:76:13-42
 activity#com.kab.channel66.LoginLayout
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:78:9-88:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:82:9-92:20
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:81:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:85:13-45
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:80:13-83
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:84:13-83
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:79:13-40
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:83:13-40
 intent-filter#android.intent.category.LAUNCHER
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:82:13-87:29
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:86:13-91:29
 category#android.intent.category.LAUNCHER
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:86:17-77
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:90:17-77
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:86:27-74
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:90:27-74
 activity#com.kab.channel66.StreamListActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:90:9-107:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:94:9-111:20
 	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:95:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:99:13-49
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:93:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:97:13-45
 	android:launchMode
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:94:13-44
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:98:13-44
 	android:exported
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:96:13-36
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:100:13-36
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:92:13-74
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:96:13-74
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:91:13-47
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:95:13-47
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:98:13-105:29
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:102:13-109:29
 action#android.intent.action.VIEW
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:99:17-68
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:103:17-68
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:99:25-66
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:103:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:100:17-75
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:104:17-75
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:100:27-73
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:104:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:101:17-77
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:105:17-77
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:101:27-75
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:105:27-75
 data
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:102:17-75
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:106:17-75
 	android:host
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:102:23-51
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:106:23-51
 	android:scheme
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:102:52-73
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:106:52-73
 activity#com.kab.channel66.SvivaTovaLogin
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:108:9-115:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:112:9-119:20
 	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:112:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:116:13-49
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:111:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:115:13-45
 	android:exported
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:113:13-37
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:117:13-37
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:110:13-74
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:114:13-74
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:109:13-43
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:113:13-43
 activity#com.kab.channel66.PushMessagesActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:116:10-123:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:120:10-127:20
 	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:120:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:124:13-49
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:119:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:123:13-45
 	android:exported
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:121:13-37
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:125:13-37
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:118:13-74
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:122:13-74
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:117:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:121:13-49
 activity#com.kab.channel66.SplashScreen
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:142:10-162:20
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:146:10-166:20
 	android:screenOrientation
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:145:13-49
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:149:13-49
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:144:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:148:13-45
 	android:launchMode
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:146:13-43
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:150:13-43
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:143:13-41
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:147:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:155:14-161:33
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:159:14-165:33
 action#android.intent.action.MAIN
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:156:13-157:26
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:160:13-161:26
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:156:21-62
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:160:21-62
 activity#com.facebook.FacebookActivity
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:165:9-170:48
-MERGED from [com.facebook.android:facebook-common:4.27.0] /Users/igal/.android/build-cache/fd7629fe6b05e5b89f87606ec9c7f00fdb772544/output/AndroidManifest.xml:29:9-32:66
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:169:9-174:48
+MERGED from [com.facebook.android:facebook-common:4.28.0] /Users/igal/.android/build-cache/dfa685a368d4ca8f67afb3bc3f9264510aaa9c79/output/AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:170:13-45
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:174:13-45
 	android:configChanges
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:166:13-114
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:170:13-114
 	android:theme
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:169:13-72
-		REJECTED from [com.facebook.android:facebook-common:4.27.0] /Users/igal/.android/build-cache/fd7629fe6b05e5b89f87606ec9c7f00fdb772544/output/AndroidManifest.xml:32:13-63
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:173:13-72
+		REJECTED from [com.facebook.android:facebook-common:4.28.0] /Users/igal/.android/build-cache/dfa685a368d4ca8f67afb3bc3f9264510aaa9c79/output/AndroidManifest.xml:32:13-63
 	tools:replace
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:168:13-42
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:172:13-42
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:165:19-63
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:169:19-63
 service#com.kab.channel66.MyFirebaseMessagingService
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:171:9-176:19
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:175:9-180:19
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:172:13-55
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:176:13-55
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:173:13-175:29
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:177:13-179:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:174:17-77
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:178:17-77
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:174:25-75
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:178:25-75
 service#com.kab.channel66.MyFirebaseInstanceIDService
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:178:9-183:19
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:182:9-187:19
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:179:13-56
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:183:13-56
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:180:13-182:29
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:184:13-186:29
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:181:17-79
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:185:17-79
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:181:25-77
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:185:25-77
 meta-data#io.fabric.ApiKey
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:213:9-215:72
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:217:9-219:72
 	android:value
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:215:13-69
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:219:13-69
 	android:name
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:214:13-44
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:218:13-44
 uses-sdk
-ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:218:5-220:41
+ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:222:5-224:41
 MERGED from [com.android.support:multidex:1.0.1] /Users/igal/.android/build-cache/66e1d97f00135abd22b249689f54b65e25942554/output/AndroidManifest.xml:18:5-42
 MERGED from [de.mrmaffen:vlc-android-sdk:2.0.6] /Users/igal/.android/build-cache/1c05eb84dbcf32924a8c456937de55b16b0781b6/output/AndroidManifest.xml:8:5-10:41
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.6] /Users/igal/.android/build-cache/4c3676b5b10a8bc274e17cd5ca84fbd5dde765d1/output/AndroidManifest.xml:7:5-43
 MERGED from [com.crashlytics.sdk.android:beta:1.1.5] /Users/igal/.android/build-cache/0c1e4b00725b66bf6655a0190b339bceebbccc1c/output/AndroidManifest.xml:7:5-43
-MERGED from [com.facebook.android:facebook-android-sdk:4.27.0] /Users/igal/.android/build-cache/98d36df55f281dd05753491b24b6a5979c7c0ca8/output/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.27.0] /Users/igal/.android/build-cache/f7679a340909e8fe2fd13fae0b31a658a33d0db2/output/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.27.0] /Users/igal/.android/build-cache/e8ec3a49c5414dd350dbd29d08886e0b5eabde38/output/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.27.0] /Users/igal/.android/build-cache/fd7629fe6b05e5b89f87606ec9c7f00fdb772544/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.28.0] /Users/igal/.android/build-cache/54e1ab3b8553b11e5d14380054ce7826260a2946/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.28.0] /Users/igal/.android/build-cache/647a5ddf9892d68d777871938aa9d3ff89f815e2/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.28.0] /Users/igal/.android/build-cache/846e9ad3592c30a18b75b69362dccb35256a2061/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.28.0] /Users/igal/.android/build-cache/dfa685a368d4ca8f67afb3bc3f9264510aaa9c79/output/AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/igal/.android/build-cache/145293cf04e4cb89161e2702503615b8bbbcb19d/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/igal/.android/build-cache/04287cfc27da55ad2f2a414e6ea9f4b67898b9af/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:cardview-v7:25.3.1] /Users/igal/.android/build-cache/5021d1b39acfd84203ce439aea80ccc8fb9290ba/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:customtabs:25.3.1] /Users/igal/.android/build-cache/2bb60451768884c74798b62cf12580b433e45ab9/output/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-places:4.27.0] /Users/igal/.android/build-cache/5c26f659aae23ba90235c2b28638dd0fca0bce8a/output/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.27.0] /Users/igal/.android/build-cache/bf5fd48b4788ff983604bb79b2d4e7297dd96f11/output/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.27.0] /Users/igal/.android/build-cache/cccd54409e3489d2a08839c5493ca9c58321d20a/output/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.27.0] /Users/igal/.android/build-cache/8e751106729fc49041bcdf271ea1a72b47b09b25/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:4.28.0] /Users/igal/.android/build-cache/ea82281b8bc32dab9ea3dddf1e8043a55276c0a7/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.28.0] /Users/igal/.android/build-cache/8781025e188a1a0e5da0f92c62c2b238c7797b12/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.28.0] /Users/igal/.android/build-cache/a3a52294453376855a1c26ddaf230bb69c13223d/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.28.0] /Users/igal/.android/build-cache/6384b15bb04614cfd930224a373bfa32caab4ef7/output/AndroidManifest.xml:24:5-26:41
 MERGED from [com.crashlytics.sdk.android:crashlytics-ndk:1.1.3] /Users/igal/.android/build-cache/cfa2c1db7d4ea1712fffd1d2713db8b690ccf5ea/output/AndroidManifest.xml:8:5-43
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.9] /Users/igal/.android/build-cache/69a65192cd05ca9bd1e0a133b5b5c7d2125d1741/output/AndroidManifest.xml:7:5-43
 MERGED from [com.crashlytics.sdk.android:answers:1.3.7] /Users/igal/.android/build-cache/53aa8207b4644a7e37ee2c9c4d1b5a5325133bd1/output/AndroidManifest.xml:7:5-43
@@ -335,17 +351,17 @@ MERGED from [com.android.support:support-compat:25.3.1] /Users/igal/.android/bui
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:220:9-38
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:224:9-38
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:219:9-34
+		ADDED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:223:9-34
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 		INJECTED from /Users/igal/Downloads/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:4.27.0] /Users/igal/.android/build-cache/fd7629fe6b05e5b89f87606ec9c7f00fdb772544/output/AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-common:4.28.0] /Users/igal/.android/build-cache/dfa685a368d4ca8f67afb3bc3f9264510aaa9c79/output/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.27.0] /Users/igal/.android/build-cache/fd7629fe6b05e5b89f87606ec9c7f00fdb772544/output/AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-common:4.28.0] /Users/igal/.android/build-cache/dfa685a368d4ca8f67afb3bc3f9264510aaa9c79/output/AndroidManifest.xml:33:19-68
 meta-data#android.support.VERSION
 ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/igal/.android/build-cache/145293cf04e4cb89161e2702503615b8bbbcb19d/output/AndroidManifest.xml:22:5-24:34
@@ -363,13 +379,13 @@ MERGED from [com.android.support:support-compat:25.3.1] /Users/igal/.android/bui
 	android:name
 		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/igal/.android/build-cache/44920031471ceb183a0270a18fbab9cf7ec93882/output/AndroidManifest.xml:26:9-47
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:4.27.0] /Users/igal/.android/build-cache/8e751106729fc49041bcdf271ea1a72b47b09b25/output/AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:4.28.0] /Users/igal/.android/build-cache/6384b15bb04614cfd930224a373bfa32caab4ef7/output/AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:4.27.0] /Users/igal/.android/build-cache/8e751106729fc49041bcdf271ea1a72b47b09b25/output/AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:4.28.0] /Users/igal/.android/build-cache/6384b15bb04614cfd930224a373bfa32caab4ef7/output/AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.27.0] /Users/igal/.android/build-cache/8e751106729fc49041bcdf271ea1a72b47b09b25/output/AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:4.28.0] /Users/igal/.android/build-cache/6384b15bb04614cfd930224a373bfa32caab4ef7/output/AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.27.0] /Users/igal/.android/build-cache/8e751106729fc49041bcdf271ea1a72b47b09b25/output/AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:4.28.0] /Users/igal/.android/build-cache/6384b15bb04614cfd930224a373bfa32caab4ef7/output/AndroidManifest.xml:40:13-70
 service#com.google.firebase.messaging.FirebaseMessagingService
 ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/igal/.android/build-cache/4b08048f1303d5c6b9edcbd90f67db4564150d46/output/AndroidManifest.xml:24:9-30:19
 	android:exported

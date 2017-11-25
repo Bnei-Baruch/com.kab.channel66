@@ -7,6 +7,7 @@ import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -22,34 +23,39 @@ import android.widget.Toast;
 import com.kab.channel66.utils.CallStateInterface;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.Constants;
-import com.kab.channel66.utils.NetworkChangeReceiver;
 
-import static android.provider.Settings.Global.WIFI_ON;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
-public class PlayerService extends Service implements CallStateInterface{
+public class PlayerService extends Service implements CallStateInterface,TomahawkMediaPlayerCallback{
 
 	private VLCMediaPlayer mAudioplay;
 	private CallStateListener calllistener;
 	private String mUrl;
 	private Notification notification;
+	TomahawkMediaPlayerCallback mTomhawkCallback;
 	// Binder given to clients
 	private final IBinder mBinder = new LocalBinder();
 
 	private BroadcastReceiver data_stat = new BroadcastReceiver() {
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			if(intent.getAction().contentEquals(NetworkChangeReceiver.MOBILE_DATA_ON)|| intent.getAction().contentEquals(WIFI_ON))
-			{
-				SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 
-				if(shared.getBoolean("play",false)) {
-					mAudioplay.pause();
-					mAudioplay.start();
+				if (intent.getAction().contentEquals("network_status")) {
+
+					onCompletion(mUrl);
+//				SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+//
+//				if(shared.getBoolean("play",false)) {
+//					mAudioplay.pause();
+//					mAudioplay.start();
+//				}
 				}
 			}
-		}
+
 	};
+	private Timer mTimer;
 
 	@Override
 	public void PausePlay() {
@@ -63,6 +69,11 @@ public class PlayerService extends Service implements CallStateInterface{
 			mAudioplay.start();
 	}
 
+	@Override
+	public Boolean isPaused() {
+		return mAudioplay.isPrepared(mUrl);
+	}
+
 
 	/**
 	 * Class used for the client Binder.  Because we know this service always
@@ -74,7 +85,8 @@ public class PlayerService extends Service implements CallStateInterface{
 			calllistener = new CallStateListener(PlayerService.this);
 			mAudioplay.setCalllistener(calllistener);
 
-			//registerReceiver(data_stat,new IntentFilter());
+
+			registerReceiver(data_stat,new IntentFilter("network_status"));
 			Log.i("svc", "Received Start Foreground Intent ");
 			Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
 //			notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
@@ -246,38 +258,11 @@ public class PlayerService extends Service implements CallStateInterface{
 	}
 	public int playAudio(String url)
 	{
-		mAudioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
-			@Override
-			public void onPrepared(String query) {
-				if (mAudioplay.isPrepared(query)) {
-					mAudioplay.start();
-					SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-					shared.edit().putString("audiourl", query).commit();
-					shared.edit().putBoolean("play",true).commit();
-					mUrl = query;
 
-					//setForeground();
+		mAudioplay.prepare(MyApplication.getMyApp(), url, this);
 
 
 
-
-
-
-
-
-				}
-			}
-
-			@Override
-			public void onCompletion(String query) {
-
-			}
-
-			@Override
-			public void onError(String message) {
-
-			}
-		});
 		return 0;
 	}
 
@@ -287,6 +272,7 @@ public class PlayerService extends Service implements CallStateInterface{
 		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 
 		shared.edit().putBoolean("play",false).commit();
+		unregisterReceiver(data_stat);
 		return 0;
 	}
 	public boolean isPlaying()
@@ -295,5 +281,84 @@ public class PlayerService extends Service implements CallStateInterface{
 		return mAudioplay.isPlaying(mUrl);
 	}
 
+	@Override
+	public void onPrepared(String query) {
+		if (mAudioplay.isPrepared(query)) {
+			mAudioplay.start();
+			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+			shared.edit().putString("audiourl", query).commit();
+			shared.edit().putBoolean("play",true).commit();
+			mUrl = query;
 
+			//setForeground();
+
+
+
+
+
+
+
+
+		}
+	}
+
+	@Override
+	public void onCompletion(String query) {
+
+		//check if user asked or it was disconnected
+		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+
+		if(shared.getBoolean("play",false)) {
+
+			ConnectivityManager cm =
+					(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+
+			NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+			boolean isConnected = activeNetwork != null &&
+					activeNetwork.isConnectedOrConnecting();
+
+			if(isConnected)
+				playAudio(mUrl);
+			else {
+				final long period = 1000;
+				mTimer =new Timer();
+				mTimer.schedule(new TimerTask() {
+					@Override
+					public void run() {
+						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+
+						if(shared.getBoolean("play",false)) {
+							ConnectivityManager cm =
+									(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+							NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+							boolean isConnected = activeNetwork != null &&
+									activeNetwork.isConnectedOrConnecting();
+
+							if (isConnected) {
+								playAudio(mUrl);
+								mTimer.cancel();
+
+							}
+						}
+						// do your task here
+					}
+				}, 0, period);
+			}
+		}
+
+		//if user asked then conitnue
+
+		//if diconnected
+		//check network status
+		//if available play again
+		//if not available wait 2 sec and try again
+		//show diaglog to user that it reconnects
+
+	}
+
+	@Override
+	public void onError(String message) {
+
+	}
 }

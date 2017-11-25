@@ -28,10 +28,10 @@ public class NetworkChangeReceiver extends BroadcastReceiver {
 
 
         if (wifi.isConnected()) {
-            context.sendBroadcast(new Intent(WIFI_ON));
+            context.sendBroadcast(new Intent("network_status").putExtra("status",WIFI_ON));
         }
             if (mobile!=null && mobile.isConnectedOrConnecting()) {
-                context.sendBroadcast(new Intent(MOBILE_DATA_ON));
+                context.sendBroadcast(new Intent("network_status").putExtra("status",MOBILE_DATA_ON));
             }
 
     }

@@ -30,6 +30,7 @@ public class CallStateListener extends PhoneStateListener {
          break;
          case TelephonyManager.CALL_STATE_IDLE:
         	 Log.i("Telephone state", "idle");
+             if(m_player.isPaused())
         	 m_player.ResumePlay();
 
          break;
