@@ -245,7 +245,13 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         Log.d(TAG, "release()");
         mPreparedQuery = null;
         mPreparingQuery = null;
-        getMediaPlayerInstance().stop();
+        try {
+            getMediaPlayerInstance().stop();
+        }
+        catch (IllegalStateException e)
+        {
+            Log.d("VLCMediaPlayer",e.getStackTrace().toString());
+        }
         telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE); //Register our listener with TelephonyManager
     }
 

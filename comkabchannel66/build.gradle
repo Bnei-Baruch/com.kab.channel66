@@ -19,8 +19,8 @@ repositories {
 
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.0'
+    compileSdkVersion 26
+    buildToolsVersion '26.0.1'
 
     useLibrary 'org.apache.http.legacy'
 
@@ -85,6 +85,7 @@ dependencies {
     compile 'com.google.firebase:firebase-invites:9.4.0'
     compile 'com.google.code.gson:gson:2.4'
     compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.android.support:support-v4:25.4.0'
     //compile 'com.backendless:backendless:3.+'
     compile files('libs/feedback_v6.jar')
 }

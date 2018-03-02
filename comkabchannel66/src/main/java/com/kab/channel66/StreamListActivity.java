@@ -1238,8 +1238,8 @@ listview.setItemsCanFocus(true);
 			Intent intent = new Intent(StreamListActivity.this,PushMessagesActivity.class);
 			startActivity(intent);
 			return true;
-			case R.id.Feedback:
-				feedBackDialog.show();
+//			case R.id.Feedback:
+//				feedBackDialog.show();
 
 		default:
 			return super.onOptionsItemSelected(item);

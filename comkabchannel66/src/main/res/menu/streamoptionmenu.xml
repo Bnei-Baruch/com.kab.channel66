@@ -3,9 +3,6 @@
     <item android:id="@+id/login"
           android:title="@string/login" >
     </item>
-    <item android:id="@+id/Feedback"
-        android:title="@string/Feedback" >
-    </item>
     <!--<item android:id="@+id/playType"-->
         <!--android:title="@string/device" android:checkable="true">-->
     <!--</item>-->
