@@ -86,7 +86,6 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 			mAudioplay.setCalllistener(calllistener);
 
 
-			registerReceiver(data_stat,new IntentFilter("network_status"));
 			Log.i("svc", "Received Start Foreground Intent ");
 			Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
 //			notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
@@ -259,6 +258,7 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 	public int playAudio(String url)
 	{
 
+		registerReceiver(data_stat,new IntentFilter("network_status"));
 		mAudioplay.prepare(MyApplication.getMyApp(), url, this);
 
 
@@ -268,11 +268,13 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 
 	public int stopAudio()
 	{
-		mAudioplay.stop();
-		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+		if(isPlaying()) {
+			mAudioplay.stop();
+			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 
-		shared.edit().putBoolean("play",false).commit();
-		unregisterReceiver(data_stat);
+			shared.edit().putBoolean("play", false).commit();
+			unregisterReceiver(data_stat);
+		}
 		return 0;
 	}
 	public boolean isPlaying()

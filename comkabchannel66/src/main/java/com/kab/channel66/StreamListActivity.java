@@ -1156,6 +1156,7 @@ listview.setItemsCanFocus(true);
 //		if(svc!=null)
 //			stopService(svc);
 
+		if(mService!=null)
 		mService.stopAudio();
 	}
 	@SuppressLint("ShowToast")

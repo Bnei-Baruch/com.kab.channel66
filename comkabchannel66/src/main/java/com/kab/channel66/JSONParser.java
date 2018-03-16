@@ -1,6 +1,14 @@
 package com.kab.channel66;
 
 
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.os.AsyncTask;
+
+import org.apache.http.client.ClientProtocolException;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,24 +16,6 @@ import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLConnection;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import android.app.ProgressDialog;
-import android.content.Context;
-import android.location.GpsStatus.Listener;
-import android.os.AsyncTask;
-
-import com.kab.channel66.StreamListActivity;
-
-
-import com.kab.channel66.utils.CommonUtils;
 //import android.util.Log;
 //import com.apphance.android.Log;
 public class JSONParser  extends AsyncTask <String, Void, JSONObject>{
@@ -54,6 +44,8 @@ public class JSONParser  extends AsyncTask <String, Void, JSONObject>{
 
 			/* Open a connection to that URL. */
 			URLConnection ucon = myURL.openConnection();
+			ucon.setReadTimeout(10000);
+			ucon.setConnectTimeout(10000);
 			ucon.setUseCaches(false);
 			ucon.setRequestProperty("Cache-Control", "no-cache");
 			ucon.connect();

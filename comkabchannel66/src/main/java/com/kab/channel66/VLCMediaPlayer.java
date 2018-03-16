@@ -187,8 +187,8 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
     public void stop() throws IllegalStateException {
         Log.d(TAG, "pause()");
         if (getMediaPlayerInstance().isPlaying()) {
-            getMediaPlayerInstance().pause();
-            getMediaPlayerInstance().release();
+            getMediaPlayerInstance().stop();
+//            getMediaPlayerInstance().release();
 
         }
         telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE); //Register our listener with TelephonyManager

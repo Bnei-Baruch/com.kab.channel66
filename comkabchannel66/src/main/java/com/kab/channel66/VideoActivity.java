@@ -280,8 +280,9 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 
     @Override
     public Boolean isPaused() {
-        if(mMediaPlayer!=null && !mMediaPlayer.isPlaying() )
-        return true;
+
+        if(mMediaPlayer!=null &&! mMediaPlayer.isReleased() && !mMediaPlayer.isPlaying() )
+            return true;
         else
             return false;
     }
