@@ -2,10 +2,16 @@
 package com.kab.channel66;
 
 import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.view.Gravity;
@@ -16,6 +22,7 @@ import android.widget.Toast;
 
 import com.kab.channel66.utils.CallStateInterface;
 import com.kab.channel66.utils.CallStateListener;
+import com.kab.channel66.utils.Constants;
 
 import org.videolan.libvlc.IVLCVout;
 import org.videolan.libvlc.LibVLC;
@@ -46,6 +53,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 
     private CallStateListener calllistener;
     private TelephonyManager telephony;
+    private Notification notification;
 
     /*************
      * Activity
@@ -91,6 +99,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     @Override
     protected void onPause() {
         super.onPause();
+
         //releasePlayer();
     }
 
@@ -98,8 +107,37 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     @Override
     protected void onStop() {
         super.onStop();
-        releasePlayer();
-        telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE);
+       // releasePlayer();
+        final IVLCVout vout = mMediaPlayer.getVLCVout();
+        vout.removeCallback(this);
+        vout.detachViews();
+
+
+
+
+
+
+
+        Intent notificationIntent = new Intent(VideoActivity.this, VideoActivity.class);
+        notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
+        notificationIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        PendingIntent pendingIntent = PendingIntent.getActivity(VideoActivity.this, 0,
+                notificationIntent, 0);
+
+
+        Bitmap icon = BitmapFactory.decodeResource(getResources(),
+                R.drawable.icon);
+
+        notification = new NotificationCompat.Builder(VideoActivity.this)
+                .setSmallIcon(R.drawable.icon)
+                .setContentTitle("Video playing in background")
+                .setContentText("Click to Access App")
+                .setContentIntent(pendingIntent)
+                .setOngoing(true)
+                .build();
+        NotificationManager mNotificationManager =
+                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        mNotificationManager.notify(0, notification);
     }
 
 
@@ -108,7 +146,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         super.onDestroy();
         releasePlayer();
         holder = null;
-
+        telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE);
     }
 
     /*************

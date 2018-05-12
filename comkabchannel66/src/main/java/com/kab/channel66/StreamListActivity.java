@@ -464,17 +464,12 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 	@Override
 	public void onItemClick(AdapterView<?> adapterView, View v, int position, long id)
-//	@Override
-//	public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l)
 	{
 
 
-//	@Override
-//	protected void onListItemClick(ListView l, View v, int position, long id) {
 		String item = (String) listview.getAdapter().getItem(position);
-		Toast.makeText(this, item + " selected", Toast.LENGTH_LONG).show();
-		// Intent player = new Intent(StreamListActivity.this, VideoViewDemo.class);
-		//Intent player = new Intent(StreamListActivity.this, VideoPlayerActivity.class);
+		if(BuildConfig.DEBUG)
+			Toast.makeText(this, item + " selected", Toast.LENGTH_LONG).show();
 		Intent player = new Intent(StreamListActivity.this, VideoActivity.class);
 
 		if(pages!=null)
@@ -627,8 +622,6 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		if(item.equals("ערוץ קבלה לעם - וידאו"))
 		{
 			StopAudioIfNeeded();
-			//"mms://wms1.il.kab.tv/heb"
-			// String url = ExtractMMSfromAsx("http://streams.kab.tv/heb.asx");
 			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
 			EasyTracker.getTracker().trackEvent("ערוץ קבלה לעם - וידאו", "on item clicked","http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8",0L);
 			if(shared.getBoolean("quality", false))
@@ -648,7 +641,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			}
 
 		}
-		else if(item.equals("ערוץ קבלה לעם - אודיו") || item.equals("רדיו קבלה לעם"))
+		else if(item.equals("ערוץ קבלה לעם - אודיו") || item.equals("רדיו קבלה לעם") || item.equals("רדיו חיים חדשים"))
 		{
 
 
@@ -660,29 +653,12 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			final String url;
 			if(item.equals("ערוץ קבלה לעם - אודיו"))
 				url =  "http://icecast.kab.tv/heb.mp3";
-			else
+			else if(item.equals("רדיו קבלה לעם"))
 				url =  "http://icecast.kab.tv/radiozohar2014.mp3";
+			else
+				url = "http://icecast.kab.tv/newlife";
 			mService.playAudio(url);
 			EasyTracker.getTracker().trackEvent(item,"on item clicked", url,0L);
-//			startService(svc);
-//			audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
-//				@Override
-//				public void onPrepared(String query) {
-//					if (audioplay.isPrepared(query))
-//						audioplay.start();
-//
-//				}
-//
-//				@Override
-//				public void onCompletion(String query) {
-//
-//				}
-//
-//				@Override
-//				public void onError(String message) {
-//
-//				}
-//			});
 			playDialog = new Dialog(this);
 			playDialog.setTitle("Playing audio");
 			playDialog.setContentView(R.layout.mediacontroller);
@@ -709,40 +685,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 						but.setImageResource(R.drawable.mediacontroller_pause01);
 						mService.playAudio(url);
 						but.setImageResource(R.drawable.mediacontroller_pause01);
-//						svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
-//						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-//						String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
-//						svc.putExtra("audiourl",audiourl);
-//						startService(svc);
 					}
-//
-//
-//						//svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
-//						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-//						String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
-//						//svc.putExtra("audiourl",audiourl);
-//						//startService(svc);
-//
-////						audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
-////							@Override
-////							public void onPrepared(String query) {
-////								if (audioplay.isPrepared(query))
-////									audioplay.start();
-////
-////							}
-////
-////							@Override
-////							public void onCompletion(String query) {
-////
-////							}
-////
-////							@Override
-////							public void onError(String message) {
-////
-////							}
-////						});
-//						mService.playAudio(url);
-//					}
 				}
 			});
 			ask.setImageResource(R.drawable.system_help);
@@ -766,15 +709,6 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 				}
 			});
 			playDialog.show();      
-
-			//            
-			//            bindService(svc, connection, Context.BIND_AUTO_CREATE);
-			//	    	Uri uri = Uri.parse("http://icecast.kab.tv/heb.mp3");
-			//	    	Intent player1 = new Intent(Intent.ACTION_VIEW,uri);
-			//	    	 player1.setDataAndType(uri, "audio/*");
-			//			startActivity(player1);	  
-			//http://stackoverflow.com/questions/14043618/background-music-in-my-app-doesnt-start
-
 		}
 		else if(item.equals("Каббала на Русском - Видео"))
 		{
@@ -1063,6 +997,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		description.add("ערוץ קבלה לעם - וידאו");
 		description.add("ערוץ קבלה לעם - אודיו");
 		description.add("רדיו קבלה לעם");
+		description.add("רדיו חיים חדשים");
 
 		description.add("Каббала на Русском - Видео");
 		description.add("Каббала на Русском - Аудио");
@@ -1168,47 +1103,16 @@ listview.setItemsCanFocus(true);
 
 			String token = FirebaseInstanceId.getInstance().getToken();
 
-			// Log and toast
-			String msg = getString(R.string.msg_token_fmt, token);
-			Log.d("token", msg);
-			Toast.makeText(StreamListActivity.this, msg, Toast.LENGTH_SHORT).show();
-
+			if(BuildConfig.DEBUG) {
+				// Log and toast
+				String msg = getString(R.string.msg_token_fmt, token);
+				Log.d("token", msg);
+				Toast.makeText(StreamListActivity.this, msg, Toast.LENGTH_SHORT).show();
+			}
 
 			Intent intent = new Intent(getApplicationContext(), SvivaTovaLogin.class);
 			startActivity(intent);
 
-//			AlertDialog.Builder alert = new AlertDialog.Builder(this);
-//			alert.setTitle("Login");
-//			alert.setMessage("Enter Pin :");
-//
-//			// Set an EditText view to get user input
-//			final EditText input = new EditText(this);
-//			alert.setView(input);
-//
-//			alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-//				public void onClick(DialogInterface dialog, int whichButton) {
-//					String value = input.getText().toString();
-//					EasyTracker.getTracker().trackEvent("Stream list", "pin code value",value,0L);
-//
-//					if(value.equals("arvut"))
-//					{
-//						Intent intent = new Intent(getApplicationContext(), SvivaTovaLogin.class);
-//						startActivity(intent);
-//					}
-////					Log.d( "Login", "Pin Value : " + value);
-//
-//					return;
-//				}
-//			});
-//
-//			alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-//
-//				public void onClick(DialogInterface dialog, int which) {
-//					// TODO Auto-generated method stub
-//					return;
-//				}
-//			});
-//			alert.show();
 
 
 			return true;

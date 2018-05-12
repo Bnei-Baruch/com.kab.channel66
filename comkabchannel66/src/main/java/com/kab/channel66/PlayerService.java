@@ -45,12 +45,6 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 				if (intent.getAction().contentEquals("network_status")) {
 
 					onCompletion(mUrl);
-//				SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-//
-//				if(shared.getBoolean("play",false)) {
-//					mAudioplay.pause();
-//					mAudioplay.start();
-//				}
 				}
 			}
 
@@ -128,12 +122,6 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-//		mAudioplay = VLCMediaPlayer.get();
-//		calllistener = new CallStateListener(PlayerService.this);
-//		mAudioplay.setCalllistener(calllistener);
-//		if (!checkConnectivity()) {
-//			return 0;
-//		}
 
 		Log.i("svc", "Received Start Foreground Intent ");
 
@@ -195,7 +183,6 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 				.setSmallIcon(R.drawable.icon)
 				.setContentTitle(title)
 				.setContentText("Click to Access App")
-
 				.setContentIntent(pendingIntent)
 				.setOngoing(true)
 				.addAction(android.R.drawable.ic_media_pause,
