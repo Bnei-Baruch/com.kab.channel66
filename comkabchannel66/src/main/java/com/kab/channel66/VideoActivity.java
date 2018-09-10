@@ -90,6 +90,8 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     protected void onResume() {
         super.onResume();
         createPlayer(mFilePath);
+        NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.cancel(0);
     }
 
 
@@ -145,6 +147,8 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     protected void onDestroy() {
         super.onDestroy();
         releasePlayer();
+        NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.cancel(0);
         holder = null;
         telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE);
     }
