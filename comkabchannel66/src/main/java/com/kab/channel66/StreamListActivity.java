@@ -333,7 +333,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 //				}
 //			});
 		playDialog = new Dialog(this);
-		playDialog.setTitle("Playing audio");
+		playDialog.setTitle("Playing audio -"+ "רדיו קבלה לעם");
 		playDialog.setContentView(R.layout.mediacontroller);
 		final ImageButton ask = (ImageButton) playDialog.findViewById(R.id.mediacontroller_ask);
 		final ImageButton but = (ImageButton) playDialog.findViewById(R.id.mediacontroller_play_pause);
@@ -543,7 +543,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 //						});
 						//startService(svc);
 						playDialog = new Dialog(this);
-						playDialog.setTitle("Playing audio");
+						playDialog.setTitle("Playing audio -"+chosenStream.url_quality_name);
 						playDialog.setContentView(R.layout.mediacontroller);
 						final ImageButton ask = (ImageButton) playDialog.findViewById(R.id.mediacontroller_ask);
 						final ImageButton but = (ImageButton) playDialog.findViewById(R.id.mediacontroller_play_pause);
@@ -650,17 +650,24 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 //			svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 //
+			String info = "";
 			final String url;
-			if(item.equals("ערוץ קבלה לעם - אודיו"))
-				url =  "http://icecast.kab.tv/heb.mp3";
-			else if(item.equals("רדיו קבלה לעם"))
-				url =  "http://icecast.kab.tv/radiozohar2014.mp3";
-			else
+			if(item.equals("ערוץ קבלה לעם - אודיו")) {
+				url = "http://icecast.kab.tv/heb.mp3";
+				info = "ערוץ קבלה לעם";
+			}
+			else if(item.equals("רדיו קבלה לעם")) {
+				url = "http://icecast.kab.tv/radiozohar2014.mp3";
+				info = "רדיו קבלה לעם";
+			}
+			else {
 				url = "http://icecast.kab.tv/newlife";
+				info = "רדיו חיים חדשים";
+			}
 			mService.playAudio(url);
 			EasyTracker.getTracker().trackEvent(item,"on item clicked", url,0L);
 			playDialog = new Dialog(this);
-			playDialog.setTitle("Playing audio");
+			playDialog.setTitle("Playing audio -"+info );
 			playDialog.setContentView(R.layout.mediacontroller);
 			final ImageButton ask = (ImageButton) playDialog.findViewById(R.id.mediacontroller_ask);
 			final ImageButton but = (ImageButton) playDialog.findViewById(R.id.mediacontroller_play_pause);
@@ -756,7 +763,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 //			});
 			mService.playAudio(url);
 			playDialog = new Dialog(this);
-			playDialog.setTitle("Playing audio");
+			playDialog.setTitle("Playing audio -"+"Каббала на Русском - Аудио");
 			playDialog.setContentView(R.layout.mediacontroller);
 			final ImageButton but = (ImageButton) playDialog.findViewById(R.id.mediacontroller_play_pause);
 			but.setImageResource(R.drawable.mediacontroller_pause01);
