@@ -1,10 +1,6 @@
 package com.kab.channel66.utils;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.regex.Matcher;
-
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -17,20 +13,23 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.preference.PreferenceManager;
+import android.util.Patterns;
+import android.widget.EditText;
 
 import com.google.analytics.tracking.android.EasyTracker;
 import com.kab.channel66.LanguageSeletedListener;
 import com.kab.channel66.R;
 import com.kab.channel66.StreamListActivity;
 
-import android.util.Patterns;
-import android.widget.EditText;
-
-import android.app.Activity;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Matcher;
 
 public class CommonUtils {
 
-	
+	public final static ArrayList<String> ask_languages = new ArrayList<String>(Arrays.asList("English","Spansih","French","Russian","Italian","German","Hebrew","Turkish"));
+
 	public final static ArrayList<String> languages = new ArrayList<String>(Arrays.asList("English","Español","Français","Pycckий","Italiano","Duetsch","עברית","Türkçe"));
 	public final static ArrayList<String> langs = new ArrayList<String>(Arrays.asList("eng","spa","fre","rus","ita","ger","heb","trk"));
 	 

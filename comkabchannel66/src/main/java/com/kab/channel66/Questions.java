@@ -26,6 +26,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.kab.channel66.utils.CommonUtils;
+
 public class Questions extends Dialog {
 	private EditText question;
 	private EditText from;
@@ -64,6 +66,11 @@ public class Questions extends Dialog {
 	   
 	        // Add your data
 	        ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+
+	        int index = CommonUtils.langs.indexOf(CommonUtils.getLastKnownLang(getContext()));
+	        String lang = CommonUtils.ask_languages.get(index);
+
+			nameValuePairs.add(new BasicNameValuePair("lang", lang.toString()));
 	        nameValuePairs.add(new BasicNameValuePair("QName", name.getText().toString()));
 	        nameValuePairs.add(new BasicNameValuePair("QFrom", from.getText().toString()));
 	        nameValuePairs.add(new BasicNameValuePair("QQuestion", question.getText().toString()));

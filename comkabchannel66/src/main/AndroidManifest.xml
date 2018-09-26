@@ -2,10 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.kab.channel66"
-    android:versionCode="54"
-    android:versionName="2.8.2">
+    android:versionCode="55"
+    android:versionName="2.8.3">
 
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <uses-permission android:name="android.permission.INTERNET" >
     </uses-permission>
