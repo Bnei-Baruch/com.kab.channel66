@@ -1,7 +1,9 @@
 *.class
 *.bin
 *.lock
-comkabchannel66/build/**
 /.gradle/**
 /.idea/**
 .gradle/3.3/**/*
+/build/**
+comkabchannel66/build/**
+/comkabchannel66/build/**
