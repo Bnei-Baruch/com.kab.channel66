@@ -29,41 +29,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36bf4f6f-5392-4a51-b7ec-e2eac30d7605" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/android/support/multidex/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/crashlytics/android/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/crashlytics/android/answers/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/crashlytics/android/beta/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/crashlytics/android/core/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/crashlytics/android/ndk/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/android/gms/appinvite/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/android/gms/base/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/android/gms/measurement/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/android/gms/measurement/impl/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/android/gms/tasks/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/firebase/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/firebase/firebase_core/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/firebase/firebase_invites/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/firebase/iid/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/google/firebase/messaging/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/kab/channel66/Manifest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/io/fabric/sdk/android/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/org/videolan/libvlc/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/assets/debug/groups.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/assets/debug/groupsmapping.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/assets/debug/jsonresponseexample.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/assets/debug/jsonresponseexample.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/assets/debug/jsonresponseexample_current.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <ignored path="com.kab.channel66.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -157,8 +131,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="165">
+              <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -172,7 +146,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
@@ -199,19 +173,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomHttpClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/CustomHttpClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StreamListActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="1975">
               <caret line="337" column="48" selection-start-line="337" selection-start-column="43" selection-end-line="337" selection-end-column="48" />
               <folding>
                 <element signature="e#5415#6148#0" expanded="true" />
@@ -254,11 +219,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CommonUtils.java">
+      <file leaf-file-name="fragment_registration.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2340">
-              <caret line="180" column="57" selection-start-line="180" selection-start-column="57" selection-end-line="180" selection-end-column="57" />
+            <state relative-caret-position="166">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceRegistrationFragment.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -266,7 +243,7 @@
       <file leaf-file-name="PlayerService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4590">
+            <state relative-caret-position="498">
               <caret line="338" column="18" selection-start-line="338" selection-start-column="18" selection-end-line="338" selection-end-column="18" />
             </state>
           </provider>
@@ -487,6 +464,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="preDebugAndroidTestBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the releaseUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseUnitTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -718,6 +700,11 @@
                 <option name="name" value="testDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the debugAndroidTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugAndroidTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Installs the Debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="installDebug" />
@@ -821,6 +808,11 @@
                 <option name="description" value="Uploads an APK to Crashlytics for distribution." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="crashlyticsUploadDistributionRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the release kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all Release builds." />
@@ -953,6 +945,11 @@
                 <option name="name" value="buildDebugPreBundle" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the debug kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="packageDebugUniversalApk" />
               </ExternalTaskPojo>
@@ -1063,6 +1060,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="checkReleaseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the debugUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugUnitTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1419,6 +1421,11 @@
                 <option name="name" value="preDebugAndroidTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the releaseUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="compileReleaseUnitTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="processDebugAndroidTestJavaRes" />
               </ExternalTaskPojo>
@@ -1648,6 +1655,11 @@
                 <option name="name" value="testDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the debugAndroidTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="compileDebugAndroidTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Installs the Debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="installDebug" />
@@ -1751,6 +1763,11 @@
                 <option name="description" value="Uploads an APK to Crashlytics for distribution." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="crashlyticsUploadDistributionRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the release kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="compileReleaseKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all Release builds." />
@@ -1878,6 +1895,11 @@
                 <option name="name" value="buildDebugPreBundle" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the debug kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="compileDebugKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="packageDebugUniversalApk" />
               </ExternalTaskPojo>
@@ -1988,6 +2010,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
                 <option name="name" value="checkReleaseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the debugUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
+                <option name="name" value="compileDebugUnitTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/comkabchannel66" />
@@ -2238,6 +2265,8 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gms/google-services/3.0.0/ee538ce9cf4148485e43017c5542202b8c78ff8e/google-services-3.0.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/gradle.plugin.com.onesignal/onesignal-gradle-plugin/0.12.1/8c8ae43269a7a8e47cbe664b5ca66fb5d6bbe6e2/onesignal-gradle-plugin-0.12.1-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/gradle.plugin.com.onesignal/onesignal-gradle-plugin/0.12.1/2cb22c05161fcfcfd5d9d76525d12914ea27680b/onesignal-gradle-plugin-0.12.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.3.0/b378dac6a689f1c74bca6dc0acd266af57c79748/kotlin-gradle-plugin-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.3.0/7e11e020c6d35f9f5aee917f0654e121ec93b3c6/kotlin-gradle-plugin-1.3.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.2.0/306d544045e6581bb7db05c8126b449564d3dd4e/builder-3.2.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.2.0/4b1a6361fe804bf24270535f86ea734f3a6b4e46/builder-3.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.2.0/29ea93eba1326f59da41983d38c5e5c72bc7e8f0/shared-26.2.0-sources.jar" />
@@ -2269,6 +2298,26 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/bundletool/0.5.0/ffd6077d13937213b860c0022174ece60000eabc/bundletool-0.5.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build.jetifier/jetifier-core/1.0.0-alpha10/9eb7027c383061de12f93aae7a22cbeb97832d2a/jetifier-core-1.0.0-alpha10.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build.jetifier/jetifier-processor/1.0.0-alpha10/6d494a04e0af27ecd4ec7a35c93759dd9c7443bc/jetifier-processor-1.0.0-alpha10.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.3.0/6da72eda558a132e46f4f4a8527dde32b8f32943/kotlin-gradle-plugin-api-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.3.0/b166fab9f3ae23caa2f6c731803114cc39a6a70c/kotlin-gradle-plugin-api-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.3.0/b1c6ce3d2a8e715cec9847e98333ecbb2648d323/kotlin-gradle-plugin-model-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.3.0/7fdf2669ecfe739646e7307036bb3588e2047453/kotlin-gradle-plugin-model-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/98515ba3feb571f93b923e61f643bdaed59d14ac/kotlin-stdlib-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/a134b0cfe9bb44f98b0b3e889cda07923eea9428/kotlin-stdlib-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.3.0/5584413479b93a0d5edeb37c0179e4abd805acd4/kotlin-native-utils-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.3.0/a96fcab88b5546fca05ef7e4f3a87f5a84aa9541/kotlin-native-utils-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.0/c56ca8dafc29e93b3a216b62168e658e7bff657d/kotlin-compiler-embeddable-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.0/6e8167f9aab0f6cfec309c2722f72dc26572a782/kotlin-compiler-embeddable-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.3.0/eb75ce3fdf49a526de475d0ff6b397f0593f2893/kotlin-annotation-processing-gradle-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.3.0/d348139d1750895f6081773c5ef6392cba7139ae/kotlin-annotation-processing-gradle-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.0/de508fd043c780bb0b62d3271bffd85c08facf5a/kotlin-android-extensions-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.0/87970b36b9e1855d0d0e4942865f63a1015026c9/kotlin-android-extensions-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.3.0/a39743e43de106b0e5b942c1030a452f64353fc9/kotlin-compiler-runner-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.3.0/aed39acd6a672619377e5a90d0d9aed7a37e1426/kotlin-compiler-runner-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.3.0/d3ff8096e57851fffcf6851d4b7b0cc65c843734/kotlin-scripting-compiler-embeddable-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.3.0/ac82572a3016d6fd4a3ab00edafb6604fb70aa0a/kotlin-scripting-compiler-embeddable-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.0/2c0e9afd8097b36a2288df59af219bfe2b78ab6d/kotlin-reflect-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.0/6fd129fd9ba8581f2cb9c58bfd431dda4ee0457e/kotlin-reflect-1.3.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.2.0/19f1cfabab44b1ef5fec49ee5fd655a096ea2ae0/builder-model-3.2.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.2.0/80c620e25a9bdc1ae3e41a948f372f72b14a3fbd/builder-model-3.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.2.0/5753c33e403601b8a909af296ceca351118602be/builder-test-api-3.2.0-sources.jar" />
@@ -2313,8 +2362,6 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.5/e7501a1b34325abb00d17dde96150604a0658b54/httpcore-4.4.5.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/b9f9e3e5255b6ddc3bf21be05428c7a60d00e042/httpclient-4.5.2-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/733db77aa8d9b2d68015189df76ab06304406e50/httpclient-4.5.2.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.0/7fb1210ceec26e7e5195894fa83e9e67ea4d2ba/kotlin-reflect-1.2.0-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.0/4bbda3b5425aa38a9f6960468a29c5ef3e8a28c9/kotlin-reflect-1.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.2.0/85698edea3e426d61f68daa75147f375fd5a1cb2/databinding-common-3.2.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.2.0/8908b4818c8f5add9fb9e33130135e96be1bb6ab/databinding-common-3.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.2.0/7b85d2d6741e8307b4d9d66ada39becdb3692c95/baseLibrary-3.2.0-sources.jar" />
@@ -2342,8 +2389,12 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java-util/3.4.0/96aba8ab71c16018c6adf66771ce15c6491bc0fe/protobuf-java-util-3.4.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/3dcf8ba7582eeac3b67ed5155ee3659e16c8dadc/jdom2-2.0.6-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/6f14738ec2e9dd0011e343717fa624a10f8aab64/jdom2-2.0.6.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.20/9ab74271f4694e32e8b2ee645a96ac9bcaf0bc32/kotlin-stdlib-1.2.20-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.20/1ce9e25c74aade0aa039cce459f2906a8c8ffc8e/kotlin-stdlib-1.2.20.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.0/9f968a154aa662ae26a78396f56e46086eb0bef9/kotlin-script-runtime-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.0/c7173ea6208fa189fb56d679624fbc5e2026187f/kotlin-script-runtime-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.3.0/312cc4787b4d17a71069dad2b1df71882c173ad3/kotlin-build-common-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.3.0/b4ac03101fd9e1b9aab001e62a3adc8e85ab7c43/kotlin-build-common-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.3.0/815fb5d9a0d09660cf13d065d40ed879fe600d03/kotlin-daemon-client-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.3.0/f1abc91057f86f98a661dd9d83ab90562f921e2a/kotlin-daemon-client-1.3.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.2.0/83f554f45431804c1ac0ad5f3be3fb5ab9e001bb/layoutlib-api-26.2.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.2.0/c88ff985eead6e7173b9aa8682d7b5e08794acae/layoutlib-api-26.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.2.0/cf1cde20a35991d1adba47b869c70e01a35e6af0/dvlib-26.2.0-sources.jar" />
@@ -2387,6 +2438,8 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.2.11/2df047d8c187a62f2177bf6013f1f9786cdfc8a2/txw2-2.2.11.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.21/5d42dda44aa68ff87756e93ae0042cd66d2daa78/istack-commons-runtime-2.21-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.21/c969d8f15c467f0ef7d7b04889afbe7b5d48e22f/istack-commons-runtime-2.21.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/8bee30ce9d075088b3d590488a270e2c3ea39b3a/kotlin-stdlib-common-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/84a2e0288dc17cd64d692eb1e5e0de8cd5ff0846/kotlin-stdlib-common-1.3.0.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$" />
@@ -2616,6 +2669,8 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gms/google-services/3.0.0/ee538ce9cf4148485e43017c5542202b8c78ff8e/google-services-3.0.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/gradle.plugin.com.onesignal/onesignal-gradle-plugin/0.12.1/8c8ae43269a7a8e47cbe664b5ca66fb5d6bbe6e2/onesignal-gradle-plugin-0.12.1-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/gradle.plugin.com.onesignal/onesignal-gradle-plugin/0.12.1/2cb22c05161fcfcfd5d9d76525d12914ea27680b/onesignal-gradle-plugin-0.12.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.3.0/b378dac6a689f1c74bca6dc0acd266af57c79748/kotlin-gradle-plugin-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.3.0/7e11e020c6d35f9f5aee917f0654e121ec93b3c6/kotlin-gradle-plugin-1.3.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.2.0/306d544045e6581bb7db05c8126b449564d3dd4e/builder-3.2.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.2.0/4b1a6361fe804bf24270535f86ea734f3a6b4e46/builder-3.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.2.0/29ea93eba1326f59da41983d38c5e5c72bc7e8f0/shared-26.2.0-sources.jar" />
@@ -2647,6 +2702,26 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/bundletool/0.5.0/ffd6077d13937213b860c0022174ece60000eabc/bundletool-0.5.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build.jetifier/jetifier-core/1.0.0-alpha10/9eb7027c383061de12f93aae7a22cbeb97832d2a/jetifier-core-1.0.0-alpha10.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build.jetifier/jetifier-processor/1.0.0-alpha10/6d494a04e0af27ecd4ec7a35c93759dd9c7443bc/jetifier-processor-1.0.0-alpha10.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.3.0/6da72eda558a132e46f4f4a8527dde32b8f32943/kotlin-gradle-plugin-api-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.3.0/b166fab9f3ae23caa2f6c731803114cc39a6a70c/kotlin-gradle-plugin-api-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.3.0/b1c6ce3d2a8e715cec9847e98333ecbb2648d323/kotlin-gradle-plugin-model-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.3.0/7fdf2669ecfe739646e7307036bb3588e2047453/kotlin-gradle-plugin-model-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/98515ba3feb571f93b923e61f643bdaed59d14ac/kotlin-stdlib-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/a134b0cfe9bb44f98b0b3e889cda07923eea9428/kotlin-stdlib-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.3.0/5584413479b93a0d5edeb37c0179e4abd805acd4/kotlin-native-utils-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.3.0/a96fcab88b5546fca05ef7e4f3a87f5a84aa9541/kotlin-native-utils-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.0/c56ca8dafc29e93b3a216b62168e658e7bff657d/kotlin-compiler-embeddable-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.0/6e8167f9aab0f6cfec309c2722f72dc26572a782/kotlin-compiler-embeddable-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.3.0/eb75ce3fdf49a526de475d0ff6b397f0593f2893/kotlin-annotation-processing-gradle-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.3.0/d348139d1750895f6081773c5ef6392cba7139ae/kotlin-annotation-processing-gradle-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.0/de508fd043c780bb0b62d3271bffd85c08facf5a/kotlin-android-extensions-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.0/87970b36b9e1855d0d0e4942865f63a1015026c9/kotlin-android-extensions-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.3.0/a39743e43de106b0e5b942c1030a452f64353fc9/kotlin-compiler-runner-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.3.0/aed39acd6a672619377e5a90d0d9aed7a37e1426/kotlin-compiler-runner-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.3.0/d3ff8096e57851fffcf6851d4b7b0cc65c843734/kotlin-scripting-compiler-embeddable-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.3.0/ac82572a3016d6fd4a3ab00edafb6604fb70aa0a/kotlin-scripting-compiler-embeddable-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.0/2c0e9afd8097b36a2288df59af219bfe2b78ab6d/kotlin-reflect-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.0/6fd129fd9ba8581f2cb9c58bfd431dda4ee0457e/kotlin-reflect-1.3.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.2.0/19f1cfabab44b1ef5fec49ee5fd655a096ea2ae0/builder-model-3.2.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.2.0/80c620e25a9bdc1ae3e41a948f372f72b14a3fbd/builder-model-3.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.2.0/5753c33e403601b8a909af296ceca351118602be/builder-test-api-3.2.0-sources.jar" />
@@ -2691,8 +2766,6 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.5/e7501a1b34325abb00d17dde96150604a0658b54/httpcore-4.4.5.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/b9f9e3e5255b6ddc3bf21be05428c7a60d00e042/httpclient-4.5.2-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/733db77aa8d9b2d68015189df76ab06304406e50/httpclient-4.5.2.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.0/7fb1210ceec26e7e5195894fa83e9e67ea4d2ba/kotlin-reflect-1.2.0-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.0/4bbda3b5425aa38a9f6960468a29c5ef3e8a28c9/kotlin-reflect-1.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.2.0/85698edea3e426d61f68daa75147f375fd5a1cb2/databinding-common-3.2.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.2.0/8908b4818c8f5add9fb9e33130135e96be1bb6ab/databinding-common-3.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.2.0/7b85d2d6741e8307b4d9d66ada39becdb3692c95/baseLibrary-3.2.0-sources.jar" />
@@ -2720,8 +2793,12 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java-util/3.4.0/96aba8ab71c16018c6adf66771ce15c6491bc0fe/protobuf-java-util-3.4.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/3dcf8ba7582eeac3b67ed5155ee3659e16c8dadc/jdom2-2.0.6-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/6f14738ec2e9dd0011e343717fa624a10f8aab64/jdom2-2.0.6.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.20/9ab74271f4694e32e8b2ee645a96ac9bcaf0bc32/kotlin-stdlib-1.2.20-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.20/1ce9e25c74aade0aa039cce459f2906a8c8ffc8e/kotlin-stdlib-1.2.20.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.0/9f968a154aa662ae26a78396f56e46086eb0bef9/kotlin-script-runtime-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.0/c7173ea6208fa189fb56d679624fbc5e2026187f/kotlin-script-runtime-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.3.0/312cc4787b4d17a71069dad2b1df71882c173ad3/kotlin-build-common-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.3.0/b4ac03101fd9e1b9aab001e62a3adc8e85ab7c43/kotlin-build-common-1.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.3.0/815fb5d9a0d09660cf13d065d40ed879fe600d03/kotlin-daemon-client-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.3.0/f1abc91057f86f98a661dd9d83ab90562f921e2a/kotlin-daemon-client-1.3.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.2.0/83f554f45431804c1ac0ad5f3be3fb5ab9e001bb/layoutlib-api-26.2.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.2.0/c88ff985eead6e7173b9aa8682d7b5e08794acae/layoutlib-api-26.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.2.0/cf1cde20a35991d1adba47b869c70e01a35e6af0/dvlib-26.2.0-sources.jar" />
@@ -2765,6 +2842,8 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.2.11/2df047d8c187a62f2177bf6013f1f9786cdfc8a2/txw2-2.2.11.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.21/5d42dda44aa68ff87756e93ae0042cd66d2daa78/istack-commons-runtime-2.21-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.21/c969d8f15c467f0ef7d7b04889afbe7b5d48e22f/istack-commons-runtime-2.21.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/8bee30ce9d075088b3d590488a270e2c3ea39b3a/kotlin-stdlib-common-1.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/84a2e0288dc17cd64d692eb1e5e0de8cd5ff0846/kotlin-stdlib-common-1.3.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.fabric.tools/gradle/1.26.1/fce05a68250fd74f39ec91dde13d02c6d190eccd/gradle-1.26.1.jar" />
                           </list>
                         </option>
@@ -3046,9 +3125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BaseService.java" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/CustomAdapter.java" />
-        <option value="$PROJECT_DIR$/comkabchannel66/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/res/values-v23/values-v23.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginHelper.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/login.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/LoginLayout.java" />
@@ -3093,10 +3169,13 @@
         <option value="$PROJECT_DIR$/comkabchannel66/google-services.json" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyApplication.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/build.gradle" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BlankFragment.kt" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml" />
       </list>
     </option>
   </component>
@@ -3165,6 +3244,62 @@
             <path>
               <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
               <item name="com.kab.channel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="comkabchannel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.kab.channel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="comkabchannel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.kab.channel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="comkabchannel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.kab.channel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="comkabchannel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.kab.channel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="comkabchannel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.kab.channel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="comkabchannel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kab" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.kab.channel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="comkabchannel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kab" type="462c0819:PsiDirectoryNode" />
+              <item name="channel66" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.kab.channel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="gradle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -3218,14 +3353,7 @@
     <property name="sync.plugin.last.upgrade.timestamp" value="1542596315759" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xxhdpi" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xhdpi" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-mdpi" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
+    <key name="android.template.packageName">
       <recent name="com.kab.channel66" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -3234,6 +3362,16 @@
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/mipmap" />
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-prot" />
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-land" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kab.channel66" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xxhdpi" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xhdpi" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-mdpi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -3703,29 +3841,30 @@
     <frame x="0" y="23" width="1680" height="975" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" sideWeight="0.497558" weight="0.32908458" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" sideWeight="0.497558" weight="0.32908458" />
+      <window_info id="Build Variants" order="2" sideWeight="0.5547826" side_tool="true" visible="true" weight="0.30341882" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.13247864" side_tool="true" visible="true" weight="0.32748538" />
+      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.56715506" weight="0.43040934" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info anchor="right" id="Designer" order="3" />
+      <window_info active="true" anchor="bottom" id="Build" order="8" sideWeight="0.86752135" visible="true" weight="0.32748538" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.35714287" weight="0.35273573" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.46031746" weight="0.3263158" />
       <window_info id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="3" />
-      <window_info id="Build Variants" order="2" sideWeight="0.5547826" side_tool="true" visible="true" weight="0.30341882" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.13247864" side_tool="true" visible="true" weight="0.32748538" />
+      <window_info anchor="right" id="Preview" order="4" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.3833944" weight="0.17961165" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4920635" weight="0.32865497" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4908425" weight="0.3263158" />
-      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.56715506" weight="0.43040934" />
       <window_info id="Captures" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info anchor="right" id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4452174" visible="true" weight="0.30341882" />
-      <window_info active="true" anchor="bottom" id="Build" order="8" sideWeight="0.86752135" visible="true" weight="0.32748538" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.34188035" weight="0.3096624" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32875606" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Fabric" order="6" weight="0.32875606" />
-      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.35714287" weight="0.35273573" />
       <window_info id="Favorites" order="2" sideWeight="0.58360654" side_tool="true" weight="0.24959612" />
       <window_info id="Nl-Palette" order="3" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
@@ -3733,7 +3872,6 @@
       <window_info anchor="bottom" id="SonarQube" order="9" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Preview" order="4" />
       <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -4176,16 +4314,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon_old.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -4557,13 +4685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4590">
-          <caret line="338" column="18" selection-start-line="338" selection-start-column="18" selection-end-line="338" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/google-services.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -4571,9 +4692,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="56" column="29" selection-start-line="56" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1897">
+          <caret line="16" column="77" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
+          <folding>
+            <element signature="e#1241#1259#0" expanded="true" />
+            <element signature="e#2119#2144#0" expanded="true" />
+            <element signature="e#2255#2273#0" expanded="true" />
+            <element signature="e#2907#2925#0" expanded="true" />
+            <element signature="e#3328#3346#0" expanded="true" />
+            <element signature="e#4090#4108#0" expanded="true" />
+            <element signature="e#4386#4404#0" expanded="true" />
+            <element signature="e#4619#4637#0" expanded="true" />
+            <element signature="e#5342#5360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="1975">
           <caret line="337" column="48" selection-start-line="337" selection-start-column="43" selection-end-line="337" selection-end-column="48" />
           <folding>
             <element signature="e#5415#6148#0" expanded="true" />
@@ -4615,53 +4771,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="56" column="29" selection-start-line="56" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1897">
-          <caret line="16" column="77" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
-          <folding>
-            <element signature="e#1241#1259#0" expanded="true" />
-            <element signature="e#2119#2144#0" expanded="true" />
-            <element signature="e#2255#2273#0" expanded="true" />
-            <element signature="e#2907#2925#0" expanded="true" />
-            <element signature="e#3328#3346#0" expanded="true" />
-            <element signature="e#4090#4108#0" expanded="true" />
-            <element signature="e#4386#4404#0" expanded="true" />
-            <element signature="e#4619#4637#0" expanded="true" />
-            <element signature="e#5342#5360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="39" column="71" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="338" column="18" selection-start-line="338" selection-start-column="18" selection-end-line="338" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>

@@ -21,6 +21,34 @@
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$MODULE_DIR$/libs/libGoogleAnalyticsV2.jar:/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/feedback_v6.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.1.aar/d6de8e588ee8972d5731624325be9504/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/db1b44f2073572d3b730768e8b978bfc/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/vlc-android-sdk-2.0.6.aar/2c6f02a3150c7c5c837b681d15a7b11c/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/crashlytics-2.5.6.aar/7b5c6ab9cc167cc3e86ccbe56121f9d4/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.38.1.aar/053c62b7154e52d6f35bfb1a877c59ab/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/crashlytics-ndk-1.1.3.aar/674bf093620abe6925b1a4c114f94786/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/cbd887971e5f38a0aa63308d36c449b6/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/e1c3e7eb4946a15a954ee39e16e98cda/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-invites-12.0.1.aar/ff2517c3f319e1d43f60ea6462368585/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/5a11f020cce2d11eb71ba916700600e18c4547e7/okhttp-3.8.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/94587f635405fe118dbaa01cfbe5c161/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/9763474cc395ea1f22fcf2f65d26991f/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/4a5489164c983f8084fa789a38b92dc7/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.1.aar/14c3533592d0be75c20d864015983d06/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.1.aar/bc58975ffaed7e5d889f479b5c6e7a7c/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/1cb208be65c724acd4b7fb59760e64ce/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.1.aar/01cb2c96f818775f309d6af1d29c6628/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-12.0.1.aar/6003224832bfacc25ff5d09b11d5b749/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.1.aar/da3f8e1c999dd59e270648d1f19faeb8/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-location-12.0.1.aar/60e4ffe8b9f20893d20d77ba4c529004/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/cc3abcedd737551200b6620461063bcc/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/68eb31bed1626a36136d2f20df590143/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/56adfd87a88cd827bd334c38cf655e19/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/a505d58c3e537ada33adf897cadf2ec3/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.0/683e04a4e7f17437d7e1390480f312e122e42e9e/kotlin-stdlib-jdk7-1.3.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-places-4.38.1.aar/cc6a0e985d9a018a2f6e4f9029f22614/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.38.1.aar/a976566e38ca137afad5dda303f7fa11/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.38.1.aar/238b806b86e19013c9b315e47cac04f5/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.38.1.aar/d88b7ca18f90ac785f539d8afe40b678/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/4ed891ed6542264fadb5b51409cf7b67/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/09f0f53e97f59bc4b620e6ad6aac18cb/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a417bf0ce014b44bbc51db953ccb31a6/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/9daa9fc84b0d0f2fe41964a32a1a2ea6/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/9a2cb7cc33414136fce5bc9f0d86e914/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/6d3cb083dc0a31f5bf31e4cb72892fe2/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/cec3cb9ed2e712f3a414370104cb4e2b/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/5ec9440d00a816fd59b32f94ef283a30/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/b12d78b1357444c533466a7aef0a7032/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/21e08d115c49561b41299f466545c2b4/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/38f365da218592b1deaa810f25f705e5/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.3.9.aar/5961b1bcfc1ddb236a8b1345afe44929/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/answers-1.3.7.aar/0d56f959bd696a449d5b50c123335d27/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/beta-1.1.5.aar/b5886f97fad632f30c39581e131342dd/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/fabric-1.3.11.aar/0500a97b829ba556663cf0ca1d83518a/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/50a85cd9eb33e470b42f13994e7be81b/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/a134b0cfe9bb44f98b0b3e889cda07923eea9428/kotlin-stdlib-1.3.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-12.0.1.aar/8196cefca041a07a4f992e685f6b617a/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.4.0/cc174c559b5177982887bf6e1b76003aebad9516/bolts-android-1.4.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.1.aar/50d917b837e20efcb198a334c775870b/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/ddec29396701777714c49b791271821d/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-common-license-12.0.1.aar/6d18bf208c06904126009ab420c77feb/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-license-12.0.1.aar/77768c309c5d3f04d02ce6a96d16670b/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/3490be0f3f0961ab29429c6e201df8d3/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-location-license-12.0.1.aar/14998ad543915983cae8009635ae232d/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/42b4d41ff6ed133e26b9bff4ae5ccb05/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/84a2e0288dc17cd64d692eb1e5e0de8cd5ff0846/kotlin-stdlib-common-1.3.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-12.0.1.aar/e0a29ce12b9a7ad974c0b4bbba12c506/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/bb87fd84232ab0d7fc22de6dab04b3c9/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-license-12.0.1.aar/69220578868180e3748af45de1bcd663/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar:/Users/igal/android-sdks/platforms/android-26/android.jar:/Users/igal/android-sdks/platforms/android-26/optional/org.apache.http.legacy.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="comkabchannel66_debug" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
+              <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
+              <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.0/87970b36b9e1855d0d0e4942865f63a1015026c9/kotlin-android-extensions-1.3.0.jar" />
+            </array>
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes" />
@@ -90,6 +118,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/apk_list" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/build-info" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-libraries" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/checkDebugClasspath" />
@@ -105,6 +134,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javac" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/legacy_multidex_aapt_derived_proguard_rules" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint_jar" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifest-checker" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_manifests" />
@@ -136,6 +166,7 @@
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-12.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.android:facebook-android-sdk-4.38.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.zxing:core:3.3.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.0@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:multidex-1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:multidex-1.0.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable-27.0.2" level="project" />
@@ -143,6 +174,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-core-ui-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils-27.0.2" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/libGoogleAnalyticsV2.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-license-12.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-invites-12.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-fragment-27.1.1" level="project" />
@@ -172,6 +204,7 @@
     <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-12.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common-license-12.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.13.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-2.5.6" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:customtabs-27.0.2" level="project" />
@@ -211,6 +244,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-invites-9.4.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.0.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.http.legacy-android-26" level="project" />
   </component>

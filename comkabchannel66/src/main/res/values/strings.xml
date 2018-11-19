@@ -6,7 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_web_login">Bnei Baruch Kabbalah</string>
- 	<string name="vitamio_theme_app_name">VPlayer codec</string>
+    <string name="vitamio_theme_app_name">VPlayer codec</string>
     <string name="VideoView_error_title">Cannot play video</string>
     <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
 		this device.</string>
@@ -16,17 +16,20 @@
     <string name="login">Login</string>
     <string name="device">Use device audio player</string>
     <string name="channel66">Channel 66</string>
-     <string name="quality">Video quality</string>
-     <string name="questions">Ask question</string>
+    <string name="quality">Video quality</string>
+    <string name="questions">Ask question</string>
     <string name="sviva">Sviva Tova</string>
-     <string name="language">Select language</string>
+    <string name="language">Select language</string>
     <string name="autocheck">Auto check for broadcast</string>
-     <string name="change_lang">Change language</string>
-      <string name="IncomingMessages">BB messages</string>
+    <string name="change_lang">Change language</string>
+    <string name="IncomingMessages">BB messages</string>
     <string name="Feedback">Feedback</string>
 
     <string name="ClearMessages">Clear messages</string>
     <string name="report">App crashed, sending email report to developer</string>
     <string name="facebook_app_id">243615172677749</string>
     <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
