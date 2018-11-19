@@ -50,6 +50,7 @@ import com.google.android.gms.common.api.ResultCallback;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
+import com.onesignal.OneSignal;
 import com.suredigit.inappfeedback.FeedbackDialog;
 import com.suredigit.inappfeedback.FeedbackSettings;
 
@@ -137,6 +138,12 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 //		int verCode = pInfo.versionCode;
 		//remove old plugin library
 //		Backendless.initApp( this, "EAD5E9C4-0007-D572-FF17-08523CED4200", "B485FC16-0FC2-A9D2-FF3E-406DF81A7000", version );
+
+		// OneSignal Initialization
+		OneSignal.startInit(this)
+				.inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+				.unsubscribeWhenNotificationsAreDisabled(true)
+				.init();
 
 		feedBackDialog = new FeedbackDialog(this,"AF-2EF522E45745-F5");
 		FeedbackSettings settings = new FeedbackSettings();

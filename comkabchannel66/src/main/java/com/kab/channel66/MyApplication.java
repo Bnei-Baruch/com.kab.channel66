@@ -54,7 +54,7 @@ public class MyApplication extends Application {
 
         myapp = this;
         String token = FirebaseInstanceId.getInstance().getToken();
-        FirebaseMessaging.getInstance().subscribeToTopic("news");
+//        FirebaseMessaging.getInstance().subscribeToTopic("news");
 
 
 //        Parse.enableLocalDatastore(getApplicationContext());

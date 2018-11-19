@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.kab.channel66"
-   >
+    package="com.kab.channel66">
 
 
     <uses-permission android:name="android.permission.INTERNET" >
@@ -24,6 +23,9 @@
  
 
 <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+
+
     <uses-permission android:name="android.permission.WAKE_LOCK" >
     </uses-permission>
 
@@ -161,8 +163,7 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="7e57fed40952c3cf6bb7a31f3fb649bf967223a7" />
+
     </application>
-
-
 
 </manifest>
