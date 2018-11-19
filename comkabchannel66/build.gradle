@@ -20,11 +20,13 @@ repositories {
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '26.0.1'
+    buildToolsVersion '28.0.3'
 
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
+        versionCode 55
+        versionName "2.8.3"
         applicationId "com.kab.channel66"
         minSdkVersion 15
         targetSdkVersion 16

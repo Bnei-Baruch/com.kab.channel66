@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.kab.channel66"
-    android:versionCode="55"
-    android:versionName="2.8.3">
+   >
 
 
     <uses-permission android:name="android.permission.INTERNET" >
@@ -25,12 +24,6 @@
  
 
 <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-<!--
-  IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
-  to match your app's package name + ".permission.C2D_MESSAGE".
--->
-
-
     <uses-permission android:name="android.permission.WAKE_LOCK" >
     </uses-permission>
 
@@ -125,22 +118,7 @@
 
         </activity>
         
-         
-        
-      <!--    <activity-alias
-            android:name=".LauncherActivity"
-            android:targetActivity="com.apphance.android.LauncherActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" >
-                </action>
 
-                <category android:name="android.intent.category.LAUNCHER" >
-                </category>
-            </intent-filter>
-        </activity-alias>
-        
-        -->
-        
         
          <activity
             android:name=".SplashScreen"
@@ -148,13 +126,7 @@
             android:screenOrientation="portrait" 
             android:launchMode="singleTop" 
             >
-           <!-- <intent-filter>
-                 <action android:name="com.apphance.android.LAUNCH" >
-                </action>
 
-                <category android:name="android.intent.category.DEFAULT" >
-                </category>
-            </intent-filter>-->
              <intent-filter>
             <action android:name="android.intent.action.MAIN" >
                 </action>
@@ -185,46 +157,12 @@
             </intent-filter>
         </service>
 
-      <!--<service android:name=".NativeBackgroundPlayer"  android:enabled="true"></service>-->
-        <!--<service android:name="com.parse.PushService" />-->
-<!--<receiver android:name="com.parse.ParseBroadcastReceiver">-->
-  <!--<intent-filter>-->
-    <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
-    <!--<action android:name="android.intent.action.USER_PRESENT" />-->
-  <!--</intent-filter>-->
-<!--</receiver>-->
-<!--<receiver android:name="com.kab.channel66.ParsePushHandling"-->
-    <!--android:exported="false">-->
-  <!--<intent-filter>-->
-    <!--<action android:name="com.parse.push.intent.RECEIVE" />-->
-    <!--<action android:name="com.parse.push.intent.DELETE" />-->
-    <!--<action android:name="com.parse.push.intent.OPEN" />-->
-    <!--</intent-filter>-->
-<!--</receiver>-->
-<!--<receiver android:name="com.parse.GcmBroadcastReceiver"-->
-    <!--android:permission="com.google.android.c2dm.permission.SEND">-->
-  <!--<intent-filter>-->
-    <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
-    <!--<action android:name="com.google.android.c2dm.intent.REGISTRATION" />-->
- <!---->
-    <!--&lt;!&ndash;-->
-      <!--IMPORTANT: Change "com.parse.starter" to match your app's package name.-->
-    <!--&ndash;&gt;-->
-    <!--<category android:name="com.kab.channel66" />-->
-  <!--</intent-filter>-->
-<!--</receiver>-->
+
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="7e57fed40952c3cf6bb7a31f3fb649bf967223a7" />
     </application>
 
-    <uses-sdk
-        android:minSdkVersion="7"
-        android:targetSdkVersion="16" />
 
-   <!-- <instrumentation
-        android:name="com.apphance.android.ApphanceInstrumentation"
-        android:targetPackage="com.kab.svivatova" >
-    </instrumentation>
- --> 
+
 </manifest>
