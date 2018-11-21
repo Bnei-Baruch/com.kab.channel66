@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -28,6 +30,13 @@ class ServiceRegistrationFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     private var listener: OnFragmentInteractionListener? = null
+    private var name: EditText? =null
+    private var email: EditText? =null
+    private var number: EditText? =null
+    private var group: EditText? =null
+    private var register:Button ?=null
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,8 +49,25 @@ class ServiceRegistrationFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_registration, container, false)
+        var view: View = inflater.inflate(R.layout.fragment_registration, container, false)
+
+        name = view.findViewById(R.id.input_name)
+        email = view.findViewById(R.id.input_email)
+        number = view.findViewById(R.id.input_tel)
+        group = view.findViewById(R.id.input_group)
+        register = view.findViewById(R.id.btn_register)
+        register?.setOnClickListener(clickListener)
+
+
+        return view;
     }
+
+
+    val clickListener = View.OnClickListener {view ->
+
+
+    }
+
 
     // TODO: Rename method, update argument and hook method into UI event
     fun onButtonPressed(uri: Uri) {

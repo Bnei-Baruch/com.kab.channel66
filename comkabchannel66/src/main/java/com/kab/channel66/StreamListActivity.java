@@ -54,6 +54,7 @@ import com.onesignal.OneSignal;
 import com.suredigit.inappfeedback.FeedbackDialog;
 import com.suredigit.inappfeedback.FeedbackSettings;
 
+import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -62,7 +63,7 @@ import java.util.concurrent.ExecutionException;
 
 //import com.apphance.android.Log;
 
-public class StreamListActivity extends BaseListActivity implements GoogleApiClient.OnConnectionFailedListener  ,LanguageSeletedListener , ListView.OnItemClickListener {
+public class StreamListActivity extends BaseListActivity implements GoogleApiClient.OnConnectionFailedListener  ,LanguageSeletedListener , ListView.OnItemClickListener, ServiceRegistrationFragment.OnFragmentInteractionListener {
 
 	private ServiceConnection mConnection = new ServiceConnection() {
 		@Override
@@ -906,7 +907,15 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 		prepareStreamData();
 
+		SharedPreferences userInfoPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+		Boolean activated = userInfoPreferences.getBoolean("activated", false);
+		if(activated)
+			showServiceRegistration();
 
+	}
+
+	private void showServiceRegistration() {
+		getSupportFragmentManager().beginTransaction().add(R.id.myFragment,new ServiceRegistrationFragment()).commit();
 	}
 
 	public void prepareStreamData()
@@ -1220,7 +1229,8 @@ listview.setItemsCanFocus(true);
 	}
 
 
+	@Override
+	public void onFragmentInteraction(@NotNull Uri uri) {
 
-
-
+	}
 }
