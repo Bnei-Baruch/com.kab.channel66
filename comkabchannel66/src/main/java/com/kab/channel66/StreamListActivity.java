@@ -910,11 +910,27 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		SharedPreferences userInfoPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		Boolean activated = userInfoPreferences.getBoolean("activated", false);
 		if(activated)
-			showServiceRegistration();
+			OneSignal.getTags(new OneSignal.GetTagsHandler() {
+				@Override
+				public void tagsAvailable(JSONObject tags) {
+
+					if(tags==null)
+						showServiceRegistration();
+				}
+			});
+
 
 	}
 
 	private void showServiceRegistration() {
+		View view = findViewById(R.id.myFragment);
+		view.setVisibility(View.VISIBLE);
+		getSupportFragmentManager().beginTransaction().add(R.id.myFragment,new ServiceRegistrationFragment()).commit();
+	}
+
+	private void hideServiceRegistration() {
+		View view = findViewById(R.id.myFragment);
+		view.setVisibility(View.GONE);
 		getSupportFragmentManager().beginTransaction().add(R.id.myFragment,new ServiceRegistrationFragment()).commit();
 	}
 
@@ -1229,8 +1245,11 @@ listview.setItemsCanFocus(true);
 	}
 
 
-	@Override
-	public void onFragmentInteraction(@NotNull Uri uri) {
 
+
+	@Override
+	public void onFragmentInteraction(@NotNull JSONObject data) {
+		hideServiceRegistration();
+		OneSignal.sendTags(data);
 	}
 }

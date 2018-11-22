@@ -1,14 +1,15 @@
 package com.kab.channel66
 
 import android.content.Context
-import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.text.format.Time
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import org.json.JSONObject
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -65,14 +66,21 @@ class ServiceRegistrationFragment : Fragment() {
 
     val clickListener = View.OnClickListener {view ->
 
+        var data:JSONObject  =  JSONObject()
 
+        data.put("name",name?.text)
+        data.put("email",email?.text)
+        data.put("number",number?.text)
+        data.put("group",group?.text)
+        data.put("timezone", Time.getCurrentTimezone())
+        listener?.onFragmentInteraction(data)
+
+        activity!!.supportFragmentManager.beginTransaction().remove(this).commit();
     }
 
 
     // TODO: Rename method, update argument and hook method into UI event
-    fun onButtonPressed(uri: Uri) {
-        listener?.onFragmentInteraction(uri)
-    }
+
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -101,7 +109,7 @@ class ServiceRegistrationFragment : Fragment() {
      */
     interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        fun onFragmentInteraction(uri: Uri)
+        fun onFragmentInteraction(data: JSONObject)
     }
 
     companion object {
