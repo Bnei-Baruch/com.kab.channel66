@@ -30,7 +30,7 @@ public class CommonUtils {
 
 	public final static ArrayList<String> ask_languages = new ArrayList<String>(Arrays.asList("English","Spansih","French","Russian","Italian","German","Hebrew","Turkish"));
 
-	public final static ArrayList<String> languages = new ArrayList<String>(Arrays.asList("English","Español","Français","Pycckий","Italiano","Duetsch","עברית","Türkçe"));
+	public final static ArrayList<String> languages = new ArrayList<String>(Arrays.asList("English","Español","Français","Pycckий","Italiano","Deutsch","עברית","Türkçe"));
 	public final static ArrayList<String> langs = new ArrayList<String>(Arrays.asList("eng","spa","fre","rus","ita","ger","heb","trk"));
 	 
 	public static int FROM_WIDGET = 10;
