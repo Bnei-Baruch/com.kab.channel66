@@ -144,7 +144,9 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		OneSignal.startInit(this)
 				.inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
 				.unsubscribeWhenNotificationsAreDisabled(true)
+				.setNotificationOpenedHandler(new OneSignalNotificationOpenedHandler())
 				.init();
+
 
 		feedBackDialog = new FeedbackDialog(this,"AF-2EF522E45745-F5");
 		FeedbackSettings settings = new FeedbackSettings();
