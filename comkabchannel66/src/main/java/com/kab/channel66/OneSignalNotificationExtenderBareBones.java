@@ -13,6 +13,7 @@ public class OneSignalNotificationExtenderBareBones extends NotificationExtender
     protected boolean onNotificationProcessing(OSNotificationReceivedResult receivedResult) {
         // Read properties from result.
         Log.d(TAG, "Message data payload: " + receivedResult.payload.rawPayload);
+
         MessagesDataSource datasource = new MessagesDataSource(this);
         datasource.open();
         datasource.createComment(receivedResult.payload.body);
@@ -20,6 +21,7 @@ public class OneSignalNotificationExtenderBareBones extends NotificationExtender
         //sendNotification(receivedResult.payload.body);
 
         // Return true to stop the notification from displaying.
+
         return false;
     }
 }

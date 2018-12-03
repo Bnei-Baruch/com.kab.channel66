@@ -146,6 +146,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 				.unsubscribeWhenNotificationsAreDisabled(true)
 				.setNotificationOpenedHandler(new OneSignalNotificationOpenedHandler())
 				.init();
+		OneSignal.setSubscription(false);
 
 
 		feedBackDialog = new FeedbackDialog(this,"AF-2EF522E45745-F5");
@@ -911,15 +912,26 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 		SharedPreferences userInfoPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		Boolean activated = userInfoPreferences.getBoolean("activated", false);
-		if(activated)
+		if(activated) {
+			OneSignal.setSubscription(true);
 			OneSignal.getTags(new OneSignal.GetTagsHandler() {
 				@Override
 				public void tagsAvailable(JSONObject tags) {
 
-					if(tags==null)
-						showServiceRegistration();
+					try {
+						if (tags == null || tags.get("name")==null)
+							showServiceRegistration();
+					} catch (JSONException e) {
+						e.printStackTrace();
+					}
+
 				}
 			});
+		}
+		else
+		{
+			OneSignal.setSubscription(false);
+		}
 
 
 	}
@@ -1099,7 +1111,7 @@ listview.setItemsCanFocus(true);
 	public boolean onCreateOptionsMenu(Menu menu) {
 		SharedPreferences userInfoPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		Boolean activated = userInfoPreferences.getBoolean("activated", false);
-		Boolean isNative =  userInfoPreferences.getBoolean("isNative", true);
+		Boolean isNative =  userInfoPreferences.getBoolean("pushed_subscribed", true);
 		if(!activated)
 		{
 			MenuInflater inflater = getMenuInflater();
@@ -1111,10 +1123,23 @@ listview.setItemsCanFocus(true);
 			MenuInflater inflater = getMenuInflater();
 			inflater.inflate(R.menu.streamoptionmenu_activated, menu);
 
+			MenuItem item = menu.findItem(R.id.pushSubscribe);
+			item.setChecked(isNative);
+			item.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+				@Override
+				public boolean onMenuItemClick(MenuItem menuItem) {
+					menuItem.setChecked(!menuItem.isChecked());
+
+					PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this).edit().putBoolean("pushed_subscribed",menuItem.isChecked()).apply();
+
+
+					return true;
+				}
+			});
+
 		}
 
-//		MenuItem item = menu.findItem(R.id.playType);
-//		item.setChecked(isNative);
+
 		return true;
 	}
 
@@ -1253,5 +1278,6 @@ listview.setItemsCanFocus(true);
 	public void onFragmentInteraction(@NotNull JSONObject data) {
 		hideServiceRegistration();
 		OneSignal.sendTags(data);
+		PreferenceManager.getDefaultSharedPreferences(this).edit().putBoolean("pushed_subscribed",true).apply();
 	}
 }

@@ -18,9 +18,8 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="OneSignalExample" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Unnamed-0" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="CMakeSettings">
@@ -30,12 +29,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36bf4f6f-5392-4a51-b7ec-e2eac30d7605" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationReceivedHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <ignored path="com.kab.channel66.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,38 +104,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StreamListActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StreamListActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="146" column="64" selection-start-line="146" selection-start-column="64" selection-end-line="146" selection-end-column="64" />
+            <state relative-caret-position="289">
+              <caret line="1132" column="85" selection-start-line="1132" selection-start-column="85" selection-end-line="1132" selection-end-column="85" />
+              <folding>
+                <element signature="e#5629#6362#0" expanded="true" />
+                <element signature="e#6361#6362#0" expanded="true" />
+                <element signature="e#9280#9288#0" expanded="true" />
+                <element signature="e#9400#9408#0" expanded="true" />
+                <element signature="e#10920#12903#0" expanded="true" />
+                <element signature="e#12902#12903#0" expanded="true" />
+                <element signature="e#12979#13183#0" expanded="true" />
+                <element signature="e#13182#13183#0" expanded="true" />
+                <element signature="e#13220#13365#0" expanded="true" />
+                <element signature="e#13364#13365#0" expanded="true" />
+                <element signature="e#17274#18773#0" expanded="true" />
+                <element signature="e#18772#18773#0" expanded="true" />
+                <element signature="e#18857#19089#0" expanded="true" />
+                <element signature="e#19088#19089#0" expanded="true" />
+                <element signature="e#19130#19307#0" expanded="true" />
+                <element signature="e#19306#19307#0" expanded="true" />
+                <element signature="e#21889#22599#0" expanded="true" />
+                <element signature="e#22598#22599#0" expanded="true" />
+                <element signature="e#22677#22888#0" expanded="true" />
+                <element signature="e#22887#22888#0" expanded="true" />
+                <element signature="e#22926#23079#0" expanded="true" />
+                <element signature="e#23078#23079#0" expanded="true" />
+                <element signature="e#24937#26105#0" expanded="true" />
+                <element signature="e#26104#26105#0" expanded="true" />
+                <element signature="e#26142#26295#0" expanded="true" />
+                <element signature="e#26294#26295#0" expanded="true" />
+                <element signature="e#28444#28714#0" expanded="true" />
+                <element signature="e#28713#28714#0" expanded="true" />
+                <element signature="e#30470#30796#0" expanded="true" />
+                <element signature="e#30795#30796#0" expanded="true" />
+                <element signature="e#30842#31018#0" expanded="true" />
+                <element signature="e#31017#31018#0" expanded="true" />
+                <element signature="e#31217#31225#0" expanded="true" />
+                <element signature="e#32689#32697#0" expanded="true" />
+                <element signature="e#34562#34733#0" expanded="true" />
+                <element signature="e#34732#34733#0" expanded="true" />
+                <element signature="e#35129#35169#0" expanded="true" />
+                <element signature="e#36631#37084#0" expanded="true" />
+                <element signature="e#37083#37084#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessagesDataSource.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="streamoptionmenu.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="streamoptionmenu_activated.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessagesDataSource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/db/MessagesDataSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="38" column="70" lean-forward="true" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySQLiteHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/db/MySQLiteHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/db/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="390">
+              <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -142,7 +197,7 @@
       <file leaf-file-name="OneSignalNotificationOpenedHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationOpenedHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
+            <state relative-caret-position="390">
               <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -154,7 +209,7 @@
       <file leaf-file-name="OneSignalNotificationReceivedHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationReceivedHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="60">
               <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -166,45 +221,30 @@
       <file leaf-file-name="OneSignalNotificationExtenderBareBones.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HanderActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/HanderActivity.java">
+      <file leaf-file-name="ServiceRegistrationFragment.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="222">
+              <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyFirebaseMessagingService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="68" column="57" selection-start-line="61" selection-start-column="11" selection-end-line="68" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="162" column="65" selection-start-line="162" selection-start-column="65" selection-end-line="162" selection-end-column="65" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest">
+      <file leaf-file-name="fragment_registration.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml">
+          <provider editor-type-id="android-designer2">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -221,11 +261,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mul</find>
-      <find>dialog</find>
-      <find>playDialog</find>
-      <find>info</find>
-      <find>playDialog.setTitle</find>
       <find>chosenStream</find>
       <find>list</find>
       <find>choose</find>
@@ -251,6 +286,11 @@
       <find>OnFragmentInteractionListener</find>
       <find>fragment</find>
       <find>MyFirebaseMessagingService</find>
+      <find>onesi</find>
+      <find>onesign</find>
+      <find>acti</find>
+      <find>menu</find>
+      <find>pushed_subscribed</find>
     </findStrings>
   </component>
   <component name="GenerateSignedApkSettings">
@@ -3097,13 +3137,11 @@
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/FragmentListActivity.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PushMessagesActivity.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout-land/questions.xml" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/SplashScreen.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginApiHelper.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout-land/splash.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/splash.xml" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BaseListActivity.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/SvivaTovaLogin.java" />
@@ -3124,10 +3162,7 @@
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BlankFragment.kt" />
         <option value="$PROJECT_DIR$/comkabchannel66/build.gradle" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/listviewlayout.xml" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalOpenHandler.java" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/HanderActivity.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationOpenedHandler.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/oneSignalReceivedHandler.java" />
@@ -3135,6 +3170,11 @@
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationReceivedHandler.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" />
       </list>
     </option>
   </component>
@@ -3272,8 +3312,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3308,7 +3348,7 @@
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="instant.run" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.3.2" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1542986645557" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1543806358031" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -3803,24 +3843,25 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.45970696" weight="0.3263158" />
       <window_info id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="3" />
-      <window_info active="true" id="Build Variants" order="2" sideWeight="0.5595668" side_tool="true" visible="true" weight="0.30341882" />
+      <window_info id="Build Variants" order="2" sideWeight="0.5646817" side_tool="true" visible="true" weight="0.30341882" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.64468867" side_tool="true" visible="true" weight="0.3520468" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.17826618" side_tool="true" visible="true" weight="0.43040934" />
+      <window_info anchor="right" id="Preview" order="4" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.3827839" weight="0.17894737" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.491453" weight="0.32865497" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.490232" weight="0.3263158" />
-      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.8223443" weight="0.43040934" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="7" sideWeight="0.82173383" visible="true" weight="0.43040934" />
       <window_info id="Captures" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info anchor="right" id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4404332" visible="true" weight="0.30341882" />
-      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.86080587" weight="0.32748538" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43531826" visible="true" weight="0.30341882" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.85958487" weight="0.32748538" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32875606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Fabric" order="6" weight="0.32875606" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.35531136" visible="true" weight="0.3520468" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.35531136" weight="0.3520468" />
       <window_info id="Favorites" order="2" sideWeight="0.58360654" side_tool="true" weight="0.24959612" />
       <window_info id="Nl-Palette" order="3" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
@@ -3828,7 +3869,6 @@
       <window_info anchor="bottom" id="SonarQube" order="9" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Preview" order="4" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.34188035" weight="0.3096624" />
       <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -3935,13 +3975,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>587</line>
+          <line>588</line>
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>581</line>
+          <line>582</line>
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
@@ -4049,7 +4089,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>638</line>
+          <line>639</line>
           <properties />
           <option name="timeStamp" value="149" />
         </line-breakpoint>
@@ -4073,7 +4113,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>298</line>
+          <line>299</line>
           <properties />
           <option name="timeStamp" value="161" />
         </line-breakpoint>
@@ -4230,7 +4270,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>679</line>
+          <line>680</line>
           <properties />
           <option name="timeStamp" value="288" />
         </line-breakpoint>
@@ -4284,112 +4324,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.mrmaffen/vlc-android-sdk/2.0.6/54e4e3d477037bd88a34c3792122fdda6fe9d10e/vlc-android-sdk-2.0.6-sources.jar!/org/videolan/libvlc/MediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5760">
-          <caret line="458" column="16" selection-start-line="458" selection-start-column="16" selection-end-line="458" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#1097#0" />
-            <element signature="imports" />
-            <element signature="e#2791#2792#0" />
-            <element signature="e#2826#2827#0" />
-            <element signature="e#2873#2874#0" />
-            <element signature="e#2914#2915#0" />
-            <element signature="e#2962#2963#0" />
-            <element signature="e#3003#3004#0" />
-            <element signature="e#3043#3044#0" />
-            <element signature="e#3078#3079#0" />
-            <element signature="e#3122#3123#0" />
-            <element signature="e#3157#3158#0" />
-            <element signature="e#3193#3194#0" />
-            <element signature="e#3234#3235#0" />
-            <element signature="e#3274#3275#0" />
-            <element signature="e#3315#3316#0" />
-            <element signature="e#3354#3355#0" />
-            <element signature="e#3394#3395#0" />
-            <element signature="e#3433#3434#0" />
-            <element signature="e#3473#3474#0" />
-            <element signature="e#3511#3512#0" />
-            <element signature="e#3546#3547#0" />
-            <element signature="e#5049#5050#0" />
-            <element signature="e#5110#5111#0" />
-            <element signature="e#5152#5153#0" />
-            <element signature="e#5220#5221#0" />
-            <element signature="e#6769#6770#0" />
-            <element signature="e#6804#6805#0" />
-            <element signature="e#6844#6845#0" />
-            <element signature="e#6894#6895#0" />
-            <element signature="e#7376#7377#0" />
-            <element signature="e#7422#7423#0" />
-            <element signature="e#7749#7750#0" />
-            <element signature="e#7800#7801#0" />
-            <element signature="e#7918#7919#0" />
-            <element signature="e#7971#7972#0" />
-            <element signature="e#8368#8369#0" />
-            <element signature="e#8425#8426#0" />
-            <element signature="e#8565#8566#0" />
-            <element signature="e#8616#8617#0" />
-            <element signature="e#9036#9037#0" />
-            <element signature="e#9096#9097#0" />
-            <element signature="e#9274#9275#0" />
-            <element signature="e#9322#9323#0" />
-            <element signature="e#9783#9784#0" />
-            <element signature="e#9837#9838#0" />
-            <element signature="e#10155#10156#0" />
-            <element signature="e#10205#10206#0" />
-            <element signature="e#10778#10779#0" />
-            <element signature="e#10833#10834#0" />
-            <element signature="e#12814#12815#0" />
-            <element signature="e#12885#12886#0" />
-            <element signature="e#13358#13359#0" />
-            <element signature="e#13388#13389#0" />
-            <element signature="e#16565#16566#0" />
-            <element signature="e#16605#16606#0" />
-            <element signature="e#16850#16851#0" />
-            <element signature="e#16897#16898#0" />
-            <element signature="e#17002#17003#0" />
-            <element signature="e#17052#17053#0" />
-            <element signature="e#17165#17166#0" />
-            <element signature="e#17210#17211#0" />
-            <element signature="e#17362#17363#0" />
-            <element signature="e#17406#17407#0" />
-            <element signature="e#18881#18882#0" />
-            <element signature="e#18931#18932#0" />
-            <element signature="e#19044#19045#0" />
-            <element signature="e#19089#19090#0" />
-            <element signature="e#19241#19242#0" />
-            <element signature="e#19285#19286#0" />
-            <element signature="e#19415#19416#0" />
-            <element signature="e#19464#19465#0" />
-            <element signature="e#19596#19597#0" />
-            <element signature="e#19640#19641#0" />
-            <element signature="e#19879#19880#0" />
-            <element signature="e#19928#19929#0" />
-            <element signature="e#20040#20041#0" />
-            <element signature="e#20088#20089#0" />
-            <element signature="e#20208#20209#0" />
-            <element signature="e#20251#20252#0" />
-            <element signature="e#20419#20420#0" />
-            <element signature="e#20461#20462#0" />
-            <element signature="e#20598#20599#0" />
-            <element signature="e#20645#20646#0" />
-            <element signature="e#20784#20785#0" />
-            <element signature="e#20826#20827#0" />
-            <element signature="e#21070#21071#0" />
-            <element signature="e#21117#21118#0" />
-            <element signature="e#22052#22053#0" />
-            <element signature="e#22104#22105#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/android.jar!/android/media/MediaPlayer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="291" column="20" selection-start-line="291" selection-start-column="20" selection-end-line="291" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyWidgetProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -4495,13 +4429,6 @@
           <folding>
             <element signature="imports" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -4649,37 +4576,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/android-sdks/platforms/android-27/android.jar!/android/view/View.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3630">
           <caret line="310" column="16" selection-start-line="310" selection-start-column="16" selection-end-line="310" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#27#298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="146" column="64" selection-start-line="146" selection-start-column="64" selection-end-line="146" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -4693,50 +4593,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationReceivedHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="2430">
           <caret line="162" column="65" selection-start-line="162" selection-start-column="65" selection-end-line="162" selection-end-column="65" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationOpenedHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
+        <state relative-caret-position="855">
           <caret line="68" column="57" selection-start-line="61" selection-start-column="11" selection-end-line="68" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4756,8 +4626,125 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/db/MessagesDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="38" column="70" lean-forward="true" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
+        <state relative-caret-position="390">
+          <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationReceivedHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationOpenedHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="1132" column="85" selection-start-line="1132" selection-start-column="85" selection-end-line="1132" selection-end-column="85" />
+          <folding>
+            <element signature="e#5629#6362#0" expanded="true" />
+            <element signature="e#6361#6362#0" expanded="true" />
+            <element signature="e#9280#9288#0" expanded="true" />
+            <element signature="e#9400#9408#0" expanded="true" />
+            <element signature="e#10920#12903#0" expanded="true" />
+            <element signature="e#12902#12903#0" expanded="true" />
+            <element signature="e#12979#13183#0" expanded="true" />
+            <element signature="e#13182#13183#0" expanded="true" />
+            <element signature="e#13220#13365#0" expanded="true" />
+            <element signature="e#13364#13365#0" expanded="true" />
+            <element signature="e#17274#18773#0" expanded="true" />
+            <element signature="e#18772#18773#0" expanded="true" />
+            <element signature="e#18857#19089#0" expanded="true" />
+            <element signature="e#19088#19089#0" expanded="true" />
+            <element signature="e#19130#19307#0" expanded="true" />
+            <element signature="e#19306#19307#0" expanded="true" />
+            <element signature="e#21889#22599#0" expanded="true" />
+            <element signature="e#22598#22599#0" expanded="true" />
+            <element signature="e#22677#22888#0" expanded="true" />
+            <element signature="e#22887#22888#0" expanded="true" />
+            <element signature="e#22926#23079#0" expanded="true" />
+            <element signature="e#23078#23079#0" expanded="true" />
+            <element signature="e#24937#26105#0" expanded="true" />
+            <element signature="e#26104#26105#0" expanded="true" />
+            <element signature="e#26142#26295#0" expanded="true" />
+            <element signature="e#26294#26295#0" expanded="true" />
+            <element signature="e#28444#28714#0" expanded="true" />
+            <element signature="e#28713#28714#0" expanded="true" />
+            <element signature="e#30470#30796#0" expanded="true" />
+            <element signature="e#30795#30796#0" expanded="true" />
+            <element signature="e#30842#31018#0" expanded="true" />
+            <element signature="e#31017#31018#0" expanded="true" />
+            <element signature="e#31217#31225#0" expanded="true" />
+            <element signature="e#32689#32697#0" expanded="true" />
+            <element signature="e#34562#34733#0" expanded="true" />
+            <element signature="e#34732#34733#0" expanded="true" />
+            <element signature="e#35129#35169#0" expanded="true" />
+            <element signature="e#36631#37084#0" expanded="true" />
+            <element signature="e#37083#37084#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -14,7 +14,7 @@
     <string name="VideoView_error_button">OK</string>
     <string name="mediacontroller_play_pause">Play/Pause</string>
     <string name="login">Login</string>
-    <string name="device">Use device audio player</string>
+    <string name="push">Wakening system</string>
     <string name="channel66">Channel 66</string>
     <string name="quality">Video quality</string>
     <string name="questions">Ask question</string>

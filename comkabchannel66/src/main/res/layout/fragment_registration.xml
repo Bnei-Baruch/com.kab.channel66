@@ -14,11 +14,17 @@
         android:paddingRight="24dp">
 
         <ImageView android:src="@drawable/icon"
-            android:layout_width="wrap_content"
+            android:layout_width="72dp"
             android:layout_height="72dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="12dp"
             android:layout_gravity="center_horizontal" />
-
+        <TextView android:id="@+id/intro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Bnei Baruch Wakening System"
+            android:gravity="center"
+            android:textSize="22dip"/>
         <!--  Name Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -33,6 +39,36 @@
                 android:hint="Name" />
         </android.support.design.widget.TextInputLayout>
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <RadioGroup
+                android:checkedButton="@id/male"
+                android:id="@+id/input_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="Gender"
+                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/female"
+                android:text="Female"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+            </RadioButton>
+                <RadioButton
+                    android:id="@+id/male"
+                    android:text="Male"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content">
+
+                </RadioButton>
+            </RadioGroup>
+        </android.support.design.widget.TextInputLayout>
         <!-- Email Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"

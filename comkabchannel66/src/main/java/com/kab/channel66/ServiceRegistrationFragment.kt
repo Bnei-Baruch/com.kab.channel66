@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.RadioGroup
 import org.json.JSONObject
 
 
@@ -35,6 +36,7 @@ class ServiceRegistrationFragment : Fragment() {
     private var email: EditText? =null
     private var number: EditText? =null
     private var group: EditText? =null
+    private var gender: RadioGroup? = null
     private var register:Button ?=null
 
 
@@ -56,6 +58,7 @@ class ServiceRegistrationFragment : Fragment() {
         email = view.findViewById(R.id.input_email)
         number = view.findViewById(R.id.input_tel)
         group = view.findViewById(R.id.input_group)
+        gender = view.findViewById(R.id.input_gender)
         register = view.findViewById(R.id.btn_register)
         register?.setOnClickListener(clickListener)
 
@@ -72,6 +75,7 @@ class ServiceRegistrationFragment : Fragment() {
         data.put("email",email?.text)
         data.put("number",number?.text)
         data.put("group",group?.text)
+        data.put("gender", resources.getResourceEntryName(gender!!.checkedRadioButtonId))
         data.put("timezone", Time.getCurrentTimezone())
         listener?.onFragmentInteraction(data)
 
