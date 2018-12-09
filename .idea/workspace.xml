@@ -30,13 +30,9 @@
   <component name="ChangeListManager">
     <list default="true" id="36bf4f6f-5392-4a51-b7ec-e2eac30d7605" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationOpenedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationOpenedHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <ignored path="com.kab.channel66.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,82 +100,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StreamListActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StreamListActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="1132" column="85" selection-start-line="1132" selection-start-column="85" selection-end-line="1132" selection-end-column="85" />
-              <folding>
-                <element signature="e#5629#6362#0" expanded="true" />
-                <element signature="e#6361#6362#0" expanded="true" />
-                <element signature="e#9280#9288#0" expanded="true" />
-                <element signature="e#9400#9408#0" expanded="true" />
-                <element signature="e#10920#12903#0" expanded="true" />
-                <element signature="e#12902#12903#0" expanded="true" />
-                <element signature="e#12979#13183#0" expanded="true" />
-                <element signature="e#13182#13183#0" expanded="true" />
-                <element signature="e#13220#13365#0" expanded="true" />
-                <element signature="e#13364#13365#0" expanded="true" />
-                <element signature="e#17274#18773#0" expanded="true" />
-                <element signature="e#18772#18773#0" expanded="true" />
-                <element signature="e#18857#19089#0" expanded="true" />
-                <element signature="e#19088#19089#0" expanded="true" />
-                <element signature="e#19130#19307#0" expanded="true" />
-                <element signature="e#19306#19307#0" expanded="true" />
-                <element signature="e#21889#22599#0" expanded="true" />
-                <element signature="e#22598#22599#0" expanded="true" />
-                <element signature="e#22677#22888#0" expanded="true" />
-                <element signature="e#22887#22888#0" expanded="true" />
-                <element signature="e#22926#23079#0" expanded="true" />
-                <element signature="e#23078#23079#0" expanded="true" />
-                <element signature="e#24937#26105#0" expanded="true" />
-                <element signature="e#26104#26105#0" expanded="true" />
-                <element signature="e#26142#26295#0" expanded="true" />
-                <element signature="e#26294#26295#0" expanded="true" />
-                <element signature="e#28444#28714#0" expanded="true" />
-                <element signature="e#28713#28714#0" expanded="true" />
-                <element signature="e#30470#30796#0" expanded="true" />
-                <element signature="e#30795#30796#0" expanded="true" />
-                <element signature="e#30842#31018#0" expanded="true" />
-                <element signature="e#31017#31018#0" expanded="true" />
-                <element signature="e#31217#31225#0" expanded="true" />
-                <element signature="e#32689#32697#0" expanded="true" />
-                <element signature="e#34562#34733#0" expanded="true" />
-                <element signature="e#34732#34733#0" expanded="true" />
-                <element signature="e#35129#35169#0" expanded="true" />
-                <element signature="e#36631#37084#0" expanded="true" />
-                <element signature="e#37083#37084#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="384">
+              <caret line="1135" lean-forward="true" selection-start-line="1135" selection-end-line="1135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OneSignal.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.onesignal/OneSignal/3.10.3/204b6b78945e6935027e3fa08785344d3a0c447f/OneSignal-3.10.3-sources.jar!/com/onesignal/OneSignal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="2285" selection-start-line="2285" selection-end-line="2285" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="streamoptionmenu.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu.xml">
-          <provider editor-type-id="android-designer2">
+          <provider selected="true" editor-type-id="text-editor">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
+          <provider editor-type-id="android-designer2">
             <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="streamoptionmenu_activated.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="240">
               <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
@@ -188,7 +152,7 @@
       <file leaf-file-name="MessagesDataSource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/db/MessagesDataSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="-31">
               <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
             </state>
           </provider>
@@ -197,8 +161,8 @@
       <file leaf-file-name="OneSignalNotificationOpenedHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationOpenedHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
+            <state relative-caret-position="316">
+              <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -206,23 +170,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OneSignalNotificationReceivedHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationReceivedHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OneSignalNotificationExtenderBareBones.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OneSignalNotificationExtenderBareBones.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -230,7 +185,7 @@
       <file leaf-file-name="ServiceRegistrationFragment.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
+            <state relative-caret-position="660">
               <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
             </state>
           </provider>
@@ -238,13 +193,13 @@
       </file>
       <file leaf-file-name="fragment_registration.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="240">
               <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
@@ -289,8 +244,8 @@
       <find>onesi</find>
       <find>onesign</find>
       <find>acti</find>
-      <find>menu</find>
       <find>pushed_subscribed</find>
+      <find>menu</find>
     </findStrings>
   </component>
   <component name="GenerateSignedApkSettings">
@@ -3164,7 +3119,6 @@
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/listviewlayout.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalOpenHandler.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/HanderActivity.java" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationOpenedHandler.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/oneSignalReceivedHandler.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalReceivedHandler.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationReceivedHandler.java" />
@@ -3174,6 +3128,7 @@
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationOpenedHandler.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" />
       </list>
     </option>
@@ -3234,6 +3189,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -3312,14 +3269,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="4.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="80A354043046906543" />
-    <property name="DEBUGGABLE_DEVICE" value="Nexus_5X_API_28 [emulator-5554]" />
+    <property name="DEBUGGABLE_DEVICE" value="sm_g920f-0815f840d2e81c05" />
     <property name="DEBUGGABLE_PROCESS" value="com.kab.channel66" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="ExportApk.ApkPath" value="$USER_HOME$/Desktop" />
@@ -3339,7 +3294,7 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/android-sdks" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537924679207" />
-    <property name="device.picker.selection" value="Nexus_5X_API_28" />
+    <property name="device.picker.selection" value="0815f840d2e81c05" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/comkabchannel66/libs/feedback_v6.jar" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.searchVisible" value="true" />
@@ -3348,7 +3303,7 @@
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="instant.run" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.3.2" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1543806358031" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1544263696599" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -3836,32 +3791,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="975" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="975" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" sideWeight="0.497558" weight="0.32908458" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.45970696" weight="0.3263158" />
       <window_info id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="3" />
-      <window_info id="Build Variants" order="2" sideWeight="0.5646817" side_tool="true" visible="true" weight="0.30341882" />
+      <window_info id="Build Variants" order="2" sideWeight="0.5685921" side_tool="true" visible="true" weight="0.30341882" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.17826618" side_tool="true" visible="true" weight="0.43040934" />
-      <window_info anchor="right" id="Preview" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.64529914" side_tool="true" visible="true" weight="0.3520468" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.3827839" weight="0.17894737" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.491453" weight="0.32865497" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.490232" weight="0.3263158" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="7" sideWeight="0.82173383" visible="true" weight="0.43040934" />
+      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.8211233" weight="0.43040934" />
       <window_info id="Captures" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info anchor="right" id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43531826" visible="true" weight="0.30341882" />
-      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.85958487" weight="0.32748538" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43140793" visible="true" weight="0.30341882" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.85836387" weight="0.32748538" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.34188035" weight="0.3096624" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32875606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Fabric" order="6" weight="0.32875606" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.35531136" weight="0.3520468" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.35470086" visible="true" weight="0.3520468" />
       <window_info id="Favorites" order="2" sideWeight="0.58360654" side_tool="true" weight="0.24959612" />
       <window_info id="Nl-Palette" order="3" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
@@ -3869,7 +3824,7 @@
       <window_info anchor="bottom" id="SonarQube" order="9" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.34188035" weight="0.3096624" />
+      <window_info anchor="right" id="Preview" order="4" />
       <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -4316,21 +4271,29 @@
           <properties />
           <option name="timeStamp" value="301" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
+          <line>1134</line>
+          <properties />
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="302" />
+      <option name="time" value="303" />
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>menuItem.isChecked()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyWidgetProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CallStateInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -4567,13 +4530,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/listviewlayout.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/android-sdks/platforms/android-27/android.jar!/android/view/View.class">
@@ -4624,13 +4587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/db/MessagesDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationReceivedHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -4641,109 +4597,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java">
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="660">
+          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationOpenedHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
+        <state relative-caret-position="316">
+          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ServiceRegistrationFragment.kt">
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/db/MessagesDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+        <state relative-caret-position="-31">
+          <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/fragment_registration.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.onesignal/OneSignal/3.10.3/204b6b78945e6935027e3fa08785344d3a0c447f/OneSignal-3.10.3-sources.jar!/com/onesignal/OneSignal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="164">
+          <caret line="2285" selection-start-line="2285" selection-end-line="2285" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu_activated.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/menu/streamoptionmenu.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="1132" column="85" selection-start-line="1132" selection-start-column="85" selection-end-line="1132" selection-end-column="85" />
+        <state relative-caret-position="384">
+          <caret line="1135" lean-forward="true" selection-start-line="1135" selection-end-line="1135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/OneSignalNotificationExtenderBareBones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="e#5629#6362#0" expanded="true" />
-            <element signature="e#6361#6362#0" expanded="true" />
-            <element signature="e#9280#9288#0" expanded="true" />
-            <element signature="e#9400#9408#0" expanded="true" />
-            <element signature="e#10920#12903#0" expanded="true" />
-            <element signature="e#12902#12903#0" expanded="true" />
-            <element signature="e#12979#13183#0" expanded="true" />
-            <element signature="e#13182#13183#0" expanded="true" />
-            <element signature="e#13220#13365#0" expanded="true" />
-            <element signature="e#13364#13365#0" expanded="true" />
-            <element signature="e#17274#18773#0" expanded="true" />
-            <element signature="e#18772#18773#0" expanded="true" />
-            <element signature="e#18857#19089#0" expanded="true" />
-            <element signature="e#19088#19089#0" expanded="true" />
-            <element signature="e#19130#19307#0" expanded="true" />
-            <element signature="e#19306#19307#0" expanded="true" />
-            <element signature="e#21889#22599#0" expanded="true" />
-            <element signature="e#22598#22599#0" expanded="true" />
-            <element signature="e#22677#22888#0" expanded="true" />
-            <element signature="e#22887#22888#0" expanded="true" />
-            <element signature="e#22926#23079#0" expanded="true" />
-            <element signature="e#23078#23079#0" expanded="true" />
-            <element signature="e#24937#26105#0" expanded="true" />
-            <element signature="e#26104#26105#0" expanded="true" />
-            <element signature="e#26142#26295#0" expanded="true" />
-            <element signature="e#26294#26295#0" expanded="true" />
-            <element signature="e#28444#28714#0" expanded="true" />
-            <element signature="e#28713#28714#0" expanded="true" />
-            <element signature="e#30470#30796#0" expanded="true" />
-            <element signature="e#30795#30796#0" expanded="true" />
-            <element signature="e#30842#31018#0" expanded="true" />
-            <element signature="e#31017#31018#0" expanded="true" />
-            <element signature="e#31217#31225#0" expanded="true" />
-            <element signature="e#32689#32697#0" expanded="true" />
-            <element signature="e#34562#34733#0" expanded="true" />
-            <element signature="e#34732#34733#0" expanded="true" />
-            <element signature="e#35129#35169#0" expanded="true" />
-            <element signature="e#36631#37084#0" expanded="true" />
-            <element signature="e#37083#37084#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

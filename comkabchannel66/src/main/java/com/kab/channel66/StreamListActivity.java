@@ -1112,6 +1112,7 @@ listview.setItemsCanFocus(true);
 		SharedPreferences userInfoPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		Boolean activated = userInfoPreferences.getBoolean("activated", false);
 		Boolean isNative =  userInfoPreferences.getBoolean("pushed_subscribed", true);
+		OneSignal.setSubscription(isNative);
 		if(!activated)
 		{
 			MenuInflater inflater = getMenuInflater();
@@ -1131,7 +1132,7 @@ listview.setItemsCanFocus(true);
 					menuItem.setChecked(!menuItem.isChecked());
 
 					PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this).edit().putBoolean("pushed_subscribed",menuItem.isChecked()).apply();
-
+					OneSignal.setSubscription(menuItem.isChecked());
 
 					return true;
 				}

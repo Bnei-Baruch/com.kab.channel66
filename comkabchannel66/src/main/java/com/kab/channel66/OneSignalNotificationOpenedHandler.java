@@ -24,15 +24,21 @@ class OneSignalNotificationOpenedHandler implements OneSignal.NotificationOpened
                 Log.i("OneSignalExample", "customkey set with value: " + customKey);
         }
 
-        if (actionType == OSNotificationAction.ActionType.ActionTaken)
+        if (actionType == OSNotificationAction.ActionType.ActionTaken) {
             Log.i("OneSignalExample", "Button pressed with id: " + result.action.actionID);
-
+            OneSignal.sendTag((new Date(System.currentTimeMillis())).toString(), "clicked " + result.action.actionID);
+        }
+        else
+        {
+            //just opened
+            OneSignal.sendTag((new Date(System.currentTimeMillis())).toString(), "opened");
+        }
         // The following can be used to open an Activity of your choice.
         // Replace - getApplicationContext() - with any Android Context.
 //         Intent intent = new Intent(MyApplication.getMyApp().getApplicationContext(), HanderActivity.class);
 //         intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT | Intent.FLAG_ACTIVITY_NEW_TASK);
 //        MyApplication.getMyApp().getApplicationContext().startActivity(intent);
-        OneSignal.sendTag((new Date(System.currentTimeMillis())).toString(),"clicked");
+
 
         // Add the following to your AndroidManifest.xml to prevent the launching of your main Activity
         //   if you are calling startActivity above.
