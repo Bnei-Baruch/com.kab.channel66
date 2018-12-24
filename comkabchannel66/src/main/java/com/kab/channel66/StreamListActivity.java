@@ -106,6 +106,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 	GoogleApiClient mGoogleApiClient;
 	private FeedbackDialog feedBackDialog;
+	private ServiceRegistrationFragment registrationFragment;
 
 
 	public StreamListActivity() {
@@ -937,15 +938,29 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	}
 
 	private void showServiceRegistration() {
-		View view = findViewById(R.id.myFragment);
-		view.setVisibility(View.VISIBLE);
-		getSupportFragmentManager().beginTransaction().add(R.id.myFragment,new ServiceRegistrationFragment()).commit();
+		final View view = findViewById(R.id.myFragment);
+		if(registrationFragment==null)
+			registrationFragment = new ServiceRegistrationFragment();
+		runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				view.setVisibility(View.VISIBLE);
+				getSupportFragmentManager().beginTransaction().add(R.id.myFragment,new ServiceRegistrationFragment()).commit();
+			}
+		});
+
 	}
 
 	private void hideServiceRegistration() {
-		View view = findViewById(R.id.myFragment);
-		view.setVisibility(View.GONE);
-		getSupportFragmentManager().beginTransaction().add(R.id.myFragment,new ServiceRegistrationFragment()).commit();
+		final View view = findViewById(R.id.myFragment);
+		runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				view.setVisibility(View.GONE);
+				getSupportFragmentManager().beginTransaction().hide(registrationFragment).commit();
+			}
+		});
+
 	}
 
 	public void prepareStreamData()

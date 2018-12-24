@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.text.format.Time
+import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,6 +39,7 @@ class ServiceRegistrationFragment : Fragment() {
     private var group: EditText? =null
     private var gender: RadioGroup? = null
     private var register:Button ?=null
+    private var cancel:Button ?=null
 
 
 
@@ -61,6 +63,7 @@ class ServiceRegistrationFragment : Fragment() {
         gender = view.findViewById(R.id.input_gender)
         register = view.findViewById(R.id.btn_register)
         register?.setOnClickListener(clickListener)
+        cancel?.setOnClickListener(cancelClickListener)
 
 
         return view;
@@ -77,7 +80,22 @@ class ServiceRegistrationFragment : Fragment() {
         data.put("group",group?.text)
         data.put("gender", resources.getResourceEntryName(gender!!.checkedRadioButtonId))
         data.put("timezone", Time.getCurrentTimezone())
+        for( key:String  in  data.keys())
+        {
+                if(data.getString(key).isEmpty())
+                    showError()
+
+        }
+        if(!email.toString().isValidEmail())
+            showEmailError()
+
         listener?.onFragmentInteraction(data)
+
+        activity!!.supportFragmentManager.beginTransaction().remove(this).commit();
+    }
+
+    val cancelClickListener = View.OnClickListener {view ->
+
 
         activity!!.supportFragmentManager.beginTransaction().remove(this).commit();
     }
@@ -86,6 +104,15 @@ class ServiceRegistrationFragment : Fragment() {
     // TODO: Rename method, update argument and hook method into UI event
 
 
+    fun String.isValidEmail(): Boolean
+            = this.isNotEmpty() &&
+            Patterns.EMAIL_ADDRESS.matcher(this).matches()
+
+
+    private fun isEmpty(etText: EditText): Boolean {
+        return if (etText.text.toString().trim { it <= ' ' }.length > 0) false else true
+
+    }
     override fun onAttach(context: Context) {
         super.onAttach(context)
         if (context is OnFragmentInteractionListener) {
