@@ -32,4 +32,90 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+        <string-array name="groups_array">
+            <item>Africa</item>
+            <item>AUSTRALASIA</item>
+            <item>Austria Vienna</item>
+            <item>Azerbaijan</item>
+            <item>Belarus Minsk</item>
+            <item>Brazil</item>
+            <item>Bulgaria</item>
+            <item>China</item>
+            <item>Czech-Slovakia</item>
+            <item>Estonia Tallinn</item>
+            <item>EX-YUGO</item>
+            <item>France</item>
+            <item>Georgia Tbilisi</item>
+            <item>Germany</item>
+            <item>Germany Berlin</item>
+            <item>Germany Kln / Dsseldorf</item>
+            <item>Germany Nuremberg</item>
+            <item>Germany virtual G3</item>
+            <item>HAVERIM VG US</item>
+            <item>HEBREW VG</item>
+            <item>Holland</item>
+            <item>Hungary</item>
+            <item>Italy</item>
+            <item>Japan</item>
+            <item>Kazahstan and Kirgizia</item>
+            <item>Kiev</item>
+            <item>Latino America</item>
+            <item>Latvia</item>
+            <item>Lithuania</item>
+            <item>Lvov</item>
+            <item>Moldova</item>
+            <item>North America</item>
+            <item>Poland</item>
+            <item>Romania</item>
+            <item>Russia Barnaul</item>
+            <item>Russia Chelyabinsk</item>
+            <item>Russia Ekaterinburg</item>
+            <item>Russia Kaliningrad</item>
+            <item>Russia Kazan</item>
+            <item>Russia Krasnodar</item>
+            <item>Russia Krasnoyarsk</item>
+            <item>Russia Moscow</item>
+            <item>Russia NOVOSIBIRSK</item>
+            <item>Russia Omsk, Perm</item>
+            <item>Russia Piter</item>
+            <item>Russia South</item>
+            <item>Spain</item>
+            <item>Turkey</item>
+            <item>UK</item>
+            <item>Ukraine Dnepro</item>
+            <item>Ukraine Harkiv</item>
+            <item>Ukraine Kropyvnytkiy</item>
+            <item>Ukraine Nykolayev</item>
+            <item>Ukraine Odessa</item>
+            <item>Ukraine Zaporizh\'ya</item>
+            <item>United VG</item>
+            <item>Volga VG</item>
+            <item>אילת</item>
+            <item>אם המושבות</item>
+            <item>אשדוד</item>
+            <item>אשקלון</item>
+            <item>באר שבע</item>
+            <item>גליל מערבי</item>
+            <item>דרום הגולן</item>
+            <item>זכרון יעקב</item>
+            <item>חב"ר</item>
+            <item>חדרה</item>
+            <item>חיפה</item>
+            <item>טבריה</item>
+            <item>ירושלים</item>
+            <item>כרמיאל</item>
+            <item>נהריה</item>
+            <item>נצרת עלית ועפולה</item>
+            <item>נתניה</item>
+            <item>פתח תקווה</item>
+            <item>קרית גת</item>
+            <item>רבדים</item>
+            <item>רחובות</item>
+            <item>רעננה</item>
+            <item>תל אביב</item>
+        </string-array>
+
+
+
 </resources>

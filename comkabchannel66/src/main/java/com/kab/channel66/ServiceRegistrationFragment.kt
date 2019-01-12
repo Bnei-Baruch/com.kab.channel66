@@ -3,14 +3,13 @@ package com.kab.channel66
 import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.app.AlertDialog
 import android.text.format.Time
 import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.RadioGroup
+import android.widget.*
 import org.json.JSONObject
 
 
@@ -28,7 +27,7 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  *
  */
-class ServiceRegistrationFragment : Fragment() {
+class ServiceRegistrationFragment : Fragment() , AdapterView.OnItemSelectedListener{
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,10 +35,11 @@ class ServiceRegistrationFragment : Fragment() {
     private var name: EditText? =null
     private var email: EditText? =null
     private var number: EditText? =null
-    private var group: EditText? =null
+    private var group: Spinner? =null
     private var gender: RadioGroup? = null
     private var register:Button ?=null
     private var cancel:Button ?=null
+    private var group_tv: TextView? = null
 
 
 
@@ -51,19 +51,37 @@ class ServiceRegistrationFragment : Fragment() {
         }
     }
 
+
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         var view: View = inflater.inflate(R.layout.fragment_registration, container, false)
-
+        val groups: Array<out String> = resources.getStringArray(R.array.groups_array)
         name = view.findViewById(R.id.input_name)
         email = view.findViewById(R.id.input_email)
         number = view.findViewById(R.id.input_tel)
         group = view.findViewById(R.id.input_group)
+        group_tv = view.findViewById(R.id.input_group_text)
         gender = view.findViewById(R.id.input_gender)
         register = view.findViewById(R.id.btn_register)
         register?.setOnClickListener(clickListener)
         cancel?.setOnClickListener(cancelClickListener)
+
+
+
+
+        ArrayAdapter.createFromResource(
+                activity,
+                R.array.groups_array,
+                android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            group?.adapter = adapter
+        }
+
 
 
         return view;
@@ -77,7 +95,7 @@ class ServiceRegistrationFragment : Fragment() {
         data.put("name",name?.text)
         data.put("email",email?.text)
         data.put("number",number?.text)
-        data.put("group",group?.text)
+        data.put("group",group_tv?.text)
         data.put("gender", resources.getResourceEntryName(gender!!.checkedRadioButtonId))
         data.put("timezone", Time.getCurrentTimezone())
         for( key:String  in  data.keys())
@@ -92,6 +110,81 @@ class ServiceRegistrationFragment : Fragment() {
         listener?.onFragmentInteraction(data)
 
         activity!!.supportFragmentManager.beginTransaction().remove(this).commit();
+    }
+
+    override fun onItemSelected(parent: AdapterView<*>, view: View, pos: Int, id: Long) {
+        // An item was selected. You can retrieve the selected item using
+        // parent.getItemAtPosition(pos)
+        group_tv?.setText(parent.getItemAtPosition(pos).toString())
+    }
+
+    override fun onNothingSelected(parent: AdapterView<*>) {
+        // Another interface callback
+    }
+
+
+    private fun showEmailError() {
+
+        val builder = AlertDialog.Builder(this!!.context!!)
+
+        // Set the alert dialog title
+        builder.setTitle("Wrong input data")
+
+        // Display a message on alert dialog
+        builder.setMessage("Please fix email")
+
+        // Set a positive button and its click listener on alert dialog
+
+
+
+//        // Display a negative button on alert dialog
+//        builder.setNegativeButton("No"){dialog,which ->
+//            Toast.makeText(applicationContext,"You are not agree.",Toast.LENGTH_SHORT).show()
+//        }
+//
+//
+//        // Display a neutral button on alert dialog
+//        builder.setNeutralButton("Cancel"){_,_ ->
+//            Toast.makeText(applicationContext,"You cancelled the dialog.",Toast.LENGTH_SHORT).show()
+//        }
+
+        // Finally, make the alert dialog using builder
+        val dialog: AlertDialog = builder.create()
+
+        // Display the alert dialog on app interface
+        dialog.show()
+    }
+
+    private fun showError() {
+        val builder = AlertDialog.Builder(this!!.context!!)
+
+        // Set the alert dialog title
+        builder.setTitle("Wrong input data")
+
+        // Display a message on alert dialog
+        builder.setMessage("Please make sure all fields are filled")
+
+        // Set a positive button and its click listener on alert dialog
+
+
+
+//        // Display a negative button on alert dialog
+//        builder.setNegativeButton("No"){dialog,which ->
+//            Toast.makeText(applicationContext,"You are not agree.",Toast.LENGTH_SHORT).show()
+//        }
+//
+//
+//        // Display a neutral button on alert dialog
+//        builder.setNeutralButton("Cancel"){_,_ ->
+//            Toast.makeText(applicationContext,"You cancelled the dialog.",Toast.LENGTH_SHORT).show()
+//        }
+
+        // Finally, make the alert dialog using builder
+        val dialog: AlertDialog = builder.create()
+
+        // Display the alert dialog on app interface
+        dialog.show()
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     val cancelClickListener = View.OnClickListener {view ->
@@ -117,6 +210,7 @@ class ServiceRegistrationFragment : Fragment() {
         super.onAttach(context)
         if (context is OnFragmentInteractionListener) {
             listener = context
+
         } else {
             throw RuntimeException(context.toString() + " must implement OnFragmentInteractionListener")
         }

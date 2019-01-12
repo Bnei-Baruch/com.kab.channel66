@@ -941,13 +941,15 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		final View view = findViewById(R.id.myFragment);
 		if(registrationFragment==null)
 			registrationFragment = new ServiceRegistrationFragment();
-		runOnUiThread(new Runnable() {
-			@Override
-			public void run() {
-				view.setVisibility(View.VISIBLE);
-				getSupportFragmentManager().beginTransaction().add(R.id.myFragment,new ServiceRegistrationFragment()).commit();
-			}
-		});
+		if(registrationFragment.isHidden()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					view.setVisibility(View.VISIBLE);
+					getSupportFragmentManager().beginTransaction().add(R.id.myFragment, new ServiceRegistrationFragment()).commit();
+				}
+			});
+		}
 
 	}
 
