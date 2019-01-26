@@ -918,14 +918,8 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			OneSignal.getTags(new OneSignal.GetTagsHandler() {
 				@Override
 				public void tagsAvailable(JSONObject tags) {
-
-					try {
-						if (tags == null || tags.get("name")==null)
+						if (tags == null || tags.isNull("name"))
 							showServiceRegistration();
-					} catch (JSONException e) {
-						e.printStackTrace();
-					}
-
 				}
 			});
 		}
@@ -939,9 +933,16 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 	private void showServiceRegistration() {
 		final View view = findViewById(R.id.myFragment);
-		if(registrationFragment==null)
+		if (registrationFragment == null) {
 			registrationFragment = new ServiceRegistrationFragment();
-		if(registrationFragment.isHidden()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					view.setVisibility(View.VISIBLE);
+					getSupportFragmentManager().beginTransaction().add(R.id.myFragment, new ServiceRegistrationFragment()).commit();
+				}
+			});
+		} else if (registrationFragment.isHidden()) {
 			runOnUiThread(new Runnable() {
 				@Override
 				public void run() {

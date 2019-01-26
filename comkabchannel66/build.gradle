@@ -110,11 +110,11 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
-crashlytics {
-    enableNdk true
-    androidNdkOut 'src/main/obj'
-    androidNdkLibsOut 'src/main/libs'
-}
+//crashlytics {
+//    enableNdk true
+//    androidNdkOut 'src/main/obj'
+//    androidNdkLibsOut 'src/main/libs'
+//}
 
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'kotlin-android'

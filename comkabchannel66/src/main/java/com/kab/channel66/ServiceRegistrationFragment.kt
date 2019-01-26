@@ -1,9 +1,9 @@
 package com.kab.channel66
 
+import android.app.AlertDialog
 import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.app.AlertDialog
 import android.text.format.Time
 import android.util.Patterns
 import android.view.LayoutInflater
@@ -27,7 +27,10 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  *
  */
-class ServiceRegistrationFragment : Fragment() , AdapterView.OnItemSelectedListener{
+class ServiceRegistrationFragment() : Fragment(), AdapterView.OnItemSelectedListener {
+
+
+
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -80,9 +83,19 @@ class ServiceRegistrationFragment : Fragment() , AdapterView.OnItemSelectedListe
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             // Apply the adapter to the spinner
             group?.adapter = adapter
+
         }
 
+        group?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+            override fun onNothingSelected(parent: AdapterView<*>?) {
 
+            }
+
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                group_tv?.text = group?.getItemAtPosition(position).toString()
+            }
+
+        }
 
         return view;
     }
@@ -100,22 +113,24 @@ class ServiceRegistrationFragment : Fragment() , AdapterView.OnItemSelectedListe
         data.put("timezone", Time.getCurrentTimezone())
         for( key:String  in  data.keys())
         {
-                if(data.getString(key).isEmpty())
+                if(data.getString(key).isEmpty()) {
                     showError()
-
+                    return@OnClickListener
+                }
         }
-        if(!email.toString().isValidEmail())
+        if(!email?.text.toString().isValidEmail()) {
             showEmailError()
-
+            return@OnClickListener
+        }
         listener?.onFragmentInteraction(data)
 
-        activity!!.supportFragmentManager.beginTransaction().remove(this).commit();
+        activity!!.supportFragmentManager.beginTransaction().remove(this).commit()
     }
 
     override fun onItemSelected(parent: AdapterView<*>, view: View, pos: Int, id: Long) {
         // An item was selected. You can retrieve the selected item using
         // parent.getItemAtPosition(pos)
-        group_tv?.setText(parent.getItemAtPosition(pos).toString())
+        group_tv?.text = group?.getItemAtPosition(pos).toString()
     }
 
     override fun onNothingSelected(parent: AdapterView<*>) {
@@ -156,7 +171,7 @@ class ServiceRegistrationFragment : Fragment() , AdapterView.OnItemSelectedListe
     }
 
     private fun showError() {
-        val builder = AlertDialog.Builder(this!!.context!!)
+        val builder = AlertDialog.Builder(context)
 
         // Set the alert dialog title
         builder.setTitle("Wrong input data")
@@ -184,7 +199,7 @@ class ServiceRegistrationFragment : Fragment() , AdapterView.OnItemSelectedListe
 
         // Display the alert dialog on app interface
         dialog.show()
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     val cancelClickListener = View.OnClickListener {view ->
@@ -256,4 +271,5 @@ class ServiceRegistrationFragment : Fragment() , AdapterView.OnItemSelectedListe
                     }
                 }
     }
+
 }
