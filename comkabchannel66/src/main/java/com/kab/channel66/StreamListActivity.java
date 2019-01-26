@@ -942,7 +942,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 					getSupportFragmentManager().beginTransaction().add(R.id.myFragment, new ServiceRegistrationFragment()).commit();
 				}
 			});
-		} else if (registrationFragment.isHidden()) {
+		} else if (view.getVisibility() == View.GONE) {
 			runOnUiThread(new Runnable() {
 				@Override
 				public void run() {
@@ -1129,7 +1129,7 @@ listview.setItemsCanFocus(true);
 	public boolean onCreateOptionsMenu(Menu menu) {
 		SharedPreferences userInfoPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		Boolean activated = userInfoPreferences.getBoolean("activated", false);
-		Boolean isNative =  userInfoPreferences.getBoolean("pushed_subscribed", true);
+		Boolean isNative =  userInfoPreferences.getBoolean("pushed_subscribed", false);
 		OneSignal.setSubscription(isNative);
 		if(!activated)
 		{
@@ -1146,11 +1146,29 @@ listview.setItemsCanFocus(true);
 			item.setChecked(isNative);
 			item.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
 				@Override
-				public boolean onMenuItemClick(MenuItem menuItem) {
-					menuItem.setChecked(!menuItem.isChecked());
+				public boolean onMenuItemClick(final MenuItem menuItem) {
 
-					PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this).edit().putBoolean("pushed_subscribed",menuItem.isChecked()).apply();
-					OneSignal.setSubscription(menuItem.isChecked());
+
+					OneSignal.getTags(new OneSignal.GetTagsHandler() {
+						@Override
+						public void tagsAvailable(JSONObject tags) {
+							if (tags == null || tags.isNull("name"))
+								showServiceRegistration();
+							else {
+								runOnUiThread(new Runnable() {
+									@Override
+									public void run() {
+										menuItem.setChecked(!menuItem.isChecked());
+										PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this).edit().putBoolean("pushed_subscribed", menuItem.isChecked()).apply();
+										OneSignal.setSubscription(menuItem.isChecked());
+									}
+								});
+
+							}
+
+						}
+					});
+
 
 					return true;
 				}
@@ -1298,5 +1316,6 @@ listview.setItemsCanFocus(true);
 		hideServiceRegistration();
 		OneSignal.sendTags(data);
 		PreferenceManager.getDefaultSharedPreferences(this).edit().putBoolean("pushed_subscribed",true).apply();
+		invalidateOptionsMenu();
 	}
 }

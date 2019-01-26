@@ -69,6 +69,7 @@ class ServiceRegistrationFragment() : Fragment(), AdapterView.OnItemSelectedList
         gender = view.findViewById(R.id.input_gender)
         register = view.findViewById(R.id.btn_register)
         register?.setOnClickListener(clickListener)
+        cancel = view.findViewById(R.id.btn_cancel)
         cancel?.setOnClickListener(cancelClickListener)
 
 
@@ -202,10 +203,12 @@ class ServiceRegistrationFragment() : Fragment(), AdapterView.OnItemSelectedList
 
     }
 
-    val cancelClickListener = View.OnClickListener {view ->
+    private val cancelClickListener = View.OnClickListener { view ->
 
 
-        activity!!.supportFragmentManager.beginTransaction().remove(this).commit();
+        activity!!.supportFragmentManager.beginTransaction().remove(this).commit()
+        val view = activity!!.findViewById(R.id.myFragment) as View
+        view.visibility = View.GONE
     }
 
 
