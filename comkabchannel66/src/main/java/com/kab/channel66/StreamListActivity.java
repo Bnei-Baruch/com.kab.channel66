@@ -1174,6 +1174,27 @@ listview.setItemsCanFocus(true);
 				}
 			});
 
+			MenuItem cat = menu.findItem(R.id.categories);
+			cat.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+				@Override
+				public boolean onMenuItemClick(MenuItem menuItem) {
+					boolean[] checkedItems = new boolean[]{true, false, true, false, true};//read from saved setting //this will checked the items when user open the dialog
+					AlertDialog.Builder builder = new AlertDialog.Builder(StreamListActivity.this);
+					builder.setTitle(R.string.categories).setMultiChoiceItems(getResources().getStringArray(R.array.category), checkedItems,new DialogInterface.OnMultiChoiceClickListener() {
+
+						@Override
+						public void onClick(DialogInterface dialogInterface, int i, boolean b) {
+							OneSignal.sendTag(getResources().getStringArray(R.array.category)[i],String.valueOf(b));
+						}
+
+
+					}).show();
+					return true;
+
+				}
+
+			});
+
 		}
 
 

@@ -26,7 +26,7 @@
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
-          <option name="classpath" value="$MODULE_DIR$/libs/libGoogleAnalyticsV2.jar:/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/feedback_v6.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.1.aar/ad1500bd75fa87cecd4fe118c9134a04/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/ca233625682eb6655535eb3a9bf6d926/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/vlc-android-sdk-2.0.6.aar/cdd2eb0c6a9f71e90c7858c0ebfdf5d4/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/crashlytics-2.5.6.aar/72192b693ee20d1a32a45e62c016129f/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.39.0.aar/8b3e309b81ecfd1418c34726e7d50de3/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/crashlytics-ndk-1.1.3.aar/f5c05e4790c175a487aae6e47a41a3e0/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.5.aar/e7cc82b5f1255865c2a0145119879310/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/e189d5fe337002ea8d1907195f8dc4de/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-invites-12.0.1.aar/e710430f663b6ddbe68b914282dff566/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/5a11f020cce2d11eb71ba916700600e18c4547e7/okhttp-3.8.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/226aabfac66f1af8d745ebc8e7668cab/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-login-4.39.0.aar/aec5c5e293c36dde1a6fe7497ce3b263/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-share-4.39.0.aar/53bec1ec9f9c38e835d6d190a11dd563/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-common-4.39.0.aar/61ac5f96d20aa7e4db6728f7a6eaf7e8/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.1.aar/0a4d492c4d9df09bccd8de50fede9353/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.1.aar/697e134735dc11462597f8a55b2bc152/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/c4b542eadc5d095208fec34af738b549/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.1.aar/c1f7290331aff73ec349fe658c8eddf8/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-12.0.1.aar/d7f6f12ff8cf4277aad884dfd421aaa8/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.1.aar/7f8ccfa3fceadcc07c8874f8fca60231/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-location-12.0.1.aar/07a87094b035d5689639b576715ce6ce/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/b42ce50164d7bfb9d3a8a87c0f85652c/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/5e6c15498e16040ae0022453b8cd5725/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/914f5c3d804d262b486c03031b570c92/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/870eaada1cd576414247c32786f9cc06/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/4313504fa227da5d261c9e507463d583/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.0/683e04a4e7f17437d7e1390480f312e122e42e9e/kotlin-stdlib-jdk7-1.3.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-places-4.39.0.aar/c38d12aa073a99edc0ac1ea015d57f3d/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.39.0.aar/dfe5730d9f28981402c67d3f57387101/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.39.0.aar/201bbe64028de6f6c09fff2802e42fd3/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.39.0.aar/65239d0f4b7ea5552a80d380b9c8d51c/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-core-4.39.0.aar/ad4b454f5fd7f0f43f1ccc737d5d726d/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/009582b1a5ecfdecfdcbc8d94187659e/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e6ff4cf37929ad0bd9735d5a66b5cac4/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/6734be86f48e8afa4f72bb92c46f9e9c/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/a7f65a598679a7385bd2138a56026423/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/customtabs-27.1.1.aar/f2f1122a84c74edda726be4d1b6c8705/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/55cff91361867166eb29ef695060da60/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3385f91ba9523c5bdcb749ff9d87c4bc/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/257bea619628f2cc09728bbe74a29f34/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/6ebdb33c0f9c38e9480e3206b030e37f/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c83ce57e83623e2dfbd7ebac14736d39/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/ec00409c5e1411549d3db30f918f10f2/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.3.9.aar/9b854d1d7a60acaed822a036636d7cae/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/answers-1.3.7.aar/01d290a9eae93554e6fa99382fe710a4/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/beta-1.1.5.aar/dec54346df03b8412f45c5ca55b840f7/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/fabric-1.3.11.aar/9c0ab41cd013b40b15be3671b62e1241/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/a52983ca46d95f96ffe8873b45a1f47a/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/a134b0cfe9bb44f98b0b3e889cda07923eea9428/kotlin-stdlib-1.3.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-12.0.1.aar/d775ecf07d845a97e85abdf74897a7aa/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.4.0/cc174c559b5177982887bf6e1b76003aebad9516/bolts-android-1.4.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.1.aar/2e4119a65f96205341f45cf8a0ce6ce1/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/aedf2bdabe9f7dcd23b51e80f1713d22/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-common-license-12.0.1.aar/5199849392e5883cfd894c3a7010c05f/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-license-12.0.1.aar/26bc20a42478237c2031b940f1be6385/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/47abdcdbbeaed095fcad958e5c18b7b1/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/f53700d1513189ccdbd2d098f42e7775/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/bc76224e5174fde842ce9ed3b5cf5f34/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-location-license-12.0.1.aar/213958411a82b6d8852a7cde12cf9c8b/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/c8e8e00d7069b065e2329ea840004adf/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/84a2e0288dc17cd64d692eb1e5e0de8cd5ff0846/kotlin-stdlib-common-1.3.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-12.0.1.aar/c09463989d95afde1822368ac6f0f032/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/d7bee2e1e6c1a9aa7f4ba48d8f5d2328/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-license-12.0.1.aar/279d0df46dbef63c6b74447994792b62/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/3e9a303cffef01b6af1c44e5618008af/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar:/Users/igal/android-sdks/platforms/android-27/android.jar:/Users/igal/android-sdks/platforms/android-27/optional/org.apache.http.legacy.jar" />
+          <option name="classpath" value="$MODULE_DIR$/libs/libGoogleAnalyticsV2.jar:/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/feedback_v6.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.1.aar/066fdb634ad2ea32c22199bf49c2a963/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/f4f8bab3ad9645405a9f66c5f596162b/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/vlc-android-sdk-2.0.6.aar/ca7e2b83dc87ca5e711c6aa0785f0248/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/crashlytics-2.5.6.aar/abc705fa2d9b7374e4b2a414cc7b6daa/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/635f0b93b04c22f89cfeca65e4cd4c90/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/crashlytics-ndk-1.1.3.aar/10ad6670b7ca5ad0449f2e423bdb5b9b/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.6.aar/611bfeca54c79f7691ca21312e580920/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/8b28cf6f915ab9db56798a8d866f6ac6/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-invites-12.0.1.aar/f70044f8a8f1cd7956ffa049aa3a0032/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/5a11f020cce2d11eb71ba916700600e18c4547e7/okhttp-3.8.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/c5fb860a9d535bd0ca13a86c1cc728db/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/d9c63e557d1688ae5afd7f31b0dd5e84/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/f88b48d3a59f2b3af05e66005d09ab09/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/4dcdfd895493511a2aa1f9ceb8f152cc/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.1.aar/eab5dad2137a70a237e5ac319428903e/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.1.aar/60446023c64dfdea592ed0e8e5fedcdf/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/fa0c2c3865f36a1d4e0eff38e3ade8f0/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.1.aar/41f5bee7bc9242f67c3977cd65da4d8e/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-12.0.1.aar/b4b3dd359561344991f923d4162b5a9d/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.1.aar/d0122ba138490d9775bcd8941c05d4c9/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-location-12.0.1.aar/6b69ae98f63f3e2bc5b5910e316f4af2/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/5d0dbfa01d2c4cf33ec1478059687e8d/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/40442a86505d3d796614ae745cda13a2/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/832f6faa4aa22679e5a7718c42a4155b/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/6c53007ec38e037b77dfdba3a4ecacb5/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/076b5f51d844299785c7e971e0cabbe4/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.0/683e04a4e7f17437d7e1390480f312e122e42e9e/kotlin-stdlib-jdk7-1.3.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/f5aedfc16a561acaf8828a9bd57949df/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/413626d112f270167b91c22e659523c9/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/35ba86c782db26fd4d415a56eead2677/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/aec23078a9c20f879cbaba8a5eff28b2/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/187e853103261f6e5d343903d92d5790/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/77b49da3be153805f4e6a5d44a546178/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/b5ef2484ff89c8a73b566b7e2cce9ff3/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/731e4361d1685f03c19b1f5ed71d7f0c/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/6ce49a7fce0528d879dce6acab0c2f28/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/customtabs-27.1.1.aar/50cd99147a50c24de9c793d58d663a6c/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/8cd2085213b239c9efb5582e37f6f2c9/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c984dadc28c9df08cdd38880662a7ff8/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/3aaca1d063a4f74ba89fa5b138f4c25e/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/ca2867011446ef2ca1693bfcaf5a78ea/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ba1dd1390b84017dd08ded64af8f814b/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/d28499202ddbe7648221af830fd2ee03/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.3.9.aar/bb1b69f5e9757db670954e6a747afa3f/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/answers-1.3.7.aar/5eef97498b51385fc72a49b7613373d3/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/beta-1.1.5.aar/733c1464aa7eee5e8425403a8ea4c90a/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/fabric-1.3.11.aar/383758d80f5ad75fd027e641eebfaf0a/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/8786f9008589900ef11fc16b15cec283/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/a134b0cfe9bb44f98b0b3e889cda07923eea9428/kotlin-stdlib-1.3.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-12.0.1.aar/90f3ad9ad6bd9b4edb465ef4ca277213/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.4.0/cc174c559b5177982887bf6e1b76003aebad9516/bolts-android-1.4.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.1.aar/881d54a229b00b2fcf7f6baf261a9bd2/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/ef73e06eb5552114823a7906bd5547f1/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-common-license-12.0.1.aar/b7432a59f2833746a516e0fd13233958/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-license-12.0.1.aar/d414f742cc31dd24b38bd18538c90a26/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/276138129c7fd0f5034b5f0419962121/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/4bb18621475eb42d8674d4cdd0bd5847/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/79fa2dc8c3f2c67adf21a7dd196b2d21/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-location-license-12.0.1.aar/f4432c6b0f3add99380597d764ff68a5/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/95cc087c93f9e45f944f0407b360c365/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/84a2e0288dc17cd64d692eb1e5e0de8cd5ff0846/kotlin-stdlib-common-1.3.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-12.0.1.aar/2a8315ff558076525de540042a3f4ddb/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/31b917de41df28caa7407e5860631ea1/jars/classes.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-license-12.0.1.aar/2bd66029206f16990a06de3068b79b34/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar:/Users/igal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/9bfd667ad1dec008058ab594365bf98e/jars/classes.jar:/Users/igal/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar:/Users/igal/android-sdks/platforms/android-27/android.jar:/Users/igal/android-sdks/platforms/android-27/optional/org.apache.http.legacy.jar" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="comkabchannel66_debug" />
@@ -56,19 +56,17 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/debug/compileDebugRenderscript/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/fabric/res/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/google-services/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources/debugAndroidTest/processDebugAndroidTestResources/r" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/debugAndroidTest/compileDebugAndroidTestAidl/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/debugAndroidTest/compileDebugAndroidTestRenderscript/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/debug" isTestSource="true" generated="true" />
@@ -114,20 +112,25 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources" />
+      <excludeFolder url="file://$MODULE_DIR$/build/generated/source/r" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotation_processor_list" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/apk_list" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/build-info" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-libraries" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-manifest" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/checkDebugClasspath" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundle_manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check_manifest_result" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/compatible_screen_manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dex" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/external_libs_dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-runtime-classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-verifier" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-apk" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-resources" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_app_manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_app_info_output_file" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_main_apk_resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_merged_manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_split_apk_resources" />
@@ -135,10 +138,10 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/legacy_multidex_aapt_derived_proguard_rules" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/legacy_multidex_main_dex_list" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint_jar" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifest-checker" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_manifests" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/metadata_feature_manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/prebuild" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/processed_res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/reload-dex" />
@@ -147,8 +150,8 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shader_assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shaders" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/signing_config" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/split-apk" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/split_list" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/kotlin" />
@@ -157,92 +160,92 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 27 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-dynamic-links-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-v4-27.1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-appinvite-9.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:answers:1.3.7@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-appinvite:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-core:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:customtabs:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:transition:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.1.0@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:cardview-v7-27.0.2" level="project" />
-    <orderEntry type="library" name="Gradle: io.fabric.sdk.android:fabric-1.3.11" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:customtabs-27.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-license:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-v4:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.zxing:core:3.3.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-common-4.39.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:cardview-v7:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:design:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.core:runtime:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7-27.1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:multidex-1.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:multidex-1.0.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-marketing-4.39.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-media-compat-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-core-ui-27.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-marketing:4.40.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-invites:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement:12.0.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-analytics-impl:9.4.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/libGoogleAnalyticsV2.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-license-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-login-4.39.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-invites-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-fragment-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-core-4.39.0" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.core:runtime-1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-license-12.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:multidex-instrumentation-1.0.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-impl-license-12.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-messaging:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-messaging-license:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-core-ui:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-applinks:4.40.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-core:9.4.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-android-sdk:4.40.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.8.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-dynamic-links-license-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-share-4.39.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:beta:1.1.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-core:4.40.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: de.greenrobot:eventbus:2.4.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:answers-1.3.7" level="project" />
-    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-applinks-4.39.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-ndk-1.1.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-messaging-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-impl-12.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-dynamic-links-license:12.0.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:cardview-v7:27.0.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-places:4.40.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common-license:12.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.4@jar" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-appinvite-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:transition-27.1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-analytics-impl-9.4.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-location-12.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:27.1.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:cardview-v7-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-android:1.4.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-compat-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common-license-12.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:multidex:1.0.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-appinvite:9.4.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.13.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-2.5.6" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel-1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-core-2.3.9" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:customtabs-27.0.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-android-sdk-4.39.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:multidex-instrumentation:1.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-applinks:1.4.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.onesignal:OneSignal-3.10.5" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-core-9.4.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-license-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-appinvite-license-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-core-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base-license-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement-license-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-core-utils-27.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-messaging-license-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-places-4.39.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:beta-1.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-12.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-analytics-9.4.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-location-license-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core-1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-impl-license:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics-impl:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-login:4.40.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-share:4.40.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.onesignal:OneSignal:3.10.6@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:multidex:1.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base-license:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-location:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-appinvite-license:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-ndk:1.1.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: de.mrmaffen:vlc-android-sdk:2.0.6@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics:2.5.6@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-compat:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric.sdk.android:fabric:1.3.11@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-location-license:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-common:4.40.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-dynamic-links:12.0.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:customtabs:27.0.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-media-compat:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-messenger:4.40.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-fragment:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:crashlytics-core:2.3.9@aar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/igal/Downloads/com.kab.channel66/comkabchannel66/libs/feedback_v6.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base-12.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: de.mrmaffen:vlc-android-sdk-2.0.6" level="project" />
-    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-messenger-4.39.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-invites-9.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks-license:12.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement-license:12.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-invites:9.4.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-license:12.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.0@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-analytics:9.4.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.http.legacy-android-27" level="project" />
   </component>
   <component name="sonarModuleSettings">

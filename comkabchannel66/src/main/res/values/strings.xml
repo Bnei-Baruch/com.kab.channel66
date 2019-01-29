@@ -32,8 +32,17 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categories">Message Filter</string>
 
-        <string-array name="groups_array">
+
+    <string-array name="category">
+        <item>הפצה</item>
+        <item>קהילה</item>
+        <item>לו"ז</item>
+        <item>הודעות כלליות</item>
+        <item> קבוצה - תוכן לעשיריות</item>
+    </string-array>
+    <string-array name="groups_array">
             <item>Africa</item>
             <item>AUSTRALASIA</item>
             <item>Austria Vienna</item>

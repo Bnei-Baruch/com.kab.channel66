@@ -12,5 +12,10 @@
     <item android:id="@+id/pushSubscribe"
         android:title="@string/push" android:checkable="true">
     </item>
-    
+    <item android:id="@+id/categories"
+        android:title="@string/categories" >
+    </item>
+
+
+
 </menu>
