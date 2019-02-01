@@ -48,6 +48,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.gson.Gson;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
 import com.onesignal.OneSignal;
@@ -58,6 +59,7 @@ import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
@@ -1178,13 +1180,31 @@ listview.setItemsCanFocus(true);
 			cat.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
 				@Override
 				public boolean onMenuItemClick(MenuItem menuItem) {
-					boolean[] checkedItems = new boolean[]{true, false, true, false, true};//read from saved setting //this will checked the items when user open the dialog
+					boolean[] checkedItems = new boolean[5];
+					boolean[] checked = new boolean[5];
+					SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
+					SharedPreferences.Editor edit = shared.edit();
+
+
+					if(shared.getString("category",null) == null)
+						checkedItems = new boolean[]{true, true, true, true, true};//read from saved setting //this will checked the items when user open the dialog
+					else {
+
+						checkedItems = new Gson().fromJson(shared.getString("category",""), (Type) boolean[].class);
+					}
+
 					AlertDialog.Builder builder = new AlertDialog.Builder(StreamListActivity.this);
+					boolean[] finalCheckedItems = checkedItems;
 					builder.setTitle(R.string.categories).setMultiChoiceItems(getResources().getStringArray(R.array.category), checkedItems,new DialogInterface.OnMultiChoiceClickListener() {
 
 						@Override
 						public void onClick(DialogInterface dialogInterface, int i, boolean b) {
 							OneSignal.sendTag(getResources().getStringArray(R.array.category)[i],String.valueOf(b));
+							finalCheckedItems[i] = b;
+
+
+							edit.putString("category",new Gson().toJson(finalCheckedItems)).apply();
+
 						}
 
 
