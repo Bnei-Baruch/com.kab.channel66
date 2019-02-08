@@ -1208,6 +1208,16 @@ listview.setItemsCanFocus(true);
 						}
 
 
+
+					}).setOnCancelListener(new DialogInterface.OnCancelListener() {
+
+						@Override
+						public void onCancel(DialogInterface dialogInterface) {
+							edit.putString("category",new Gson().toJson(finalCheckedItems)).apply();
+							for(int count =0;count<finalCheckedItems.length;count++) {
+								OneSignal.sendTag(getResources().getStringArray(R.array.category)[count], String.valueOf(finalCheckedItems[count]));
+							}
+						}
 					}).show();
 					return true;
 
