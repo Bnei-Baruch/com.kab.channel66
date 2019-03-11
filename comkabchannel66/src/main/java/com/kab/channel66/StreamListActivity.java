@@ -61,6 +61,8 @@ import org.json.JSONObject;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 //import com.apphance.android.Log;
@@ -1195,6 +1197,13 @@ listview.setItemsCanFocus(true);
 
 					AlertDialog.Builder builder = new AlertDialog.Builder(StreamListActivity.this);
 					boolean[] finalCheckedItems = checkedItems;
+
+					List<String> kli_israeli = new ArrayList<String>();
+					Collections.addAll(kli_israeli,getResources().getStringArray(R.array.kli_israeli));
+					List<String> kli_olami = new ArrayList<String>();
+					Collections.addAll(kli_olami,getResources().getStringArray(R.array.kli_olami));
+
+
 					builder.setTitle(R.string.categories).setMultiChoiceItems(getResources().getStringArray(R.array.category), checkedItems,new DialogInterface.OnMultiChoiceClickListener() {
 
 						@Override
@@ -1364,9 +1373,24 @@ listview.setItemsCanFocus(true);
 
 	@Override
 	public void onFragmentInteraction(@NotNull JSONObject data) {
+		List<String> kli_israeli = new ArrayList<String>();
+		Collections.addAll(kli_israeli,getResources().getStringArray(R.array.kli_israeli));
+		List<String> kli_olami = new ArrayList<String>();
+		Collections.addAll(kli_olami,getResources().getStringArray(R.array.kli_olami));
 		hideServiceRegistration();
+		try {
+			if(kli_israeli.contains(data.getString("group")))
+				data.put("group_cat","כלי ישראלי");
+			if(kli_olami.contains(data.getString("group")))
+				data.put("group_cat","כלי עולמי");
+
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
 		OneSignal.sendTags(data);
+
 		PreferenceManager.getDefaultSharedPreferences(this).edit().putBoolean("pushed_subscribed",true).apply();
+		PreferenceManager.getDefaultSharedPreferences(this).edit().putString("data_subscribed",data.toString()).apply();
 		invalidateOptionsMenu();
 	}
 }
