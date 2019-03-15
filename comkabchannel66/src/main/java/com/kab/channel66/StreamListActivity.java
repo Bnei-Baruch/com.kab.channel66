@@ -86,6 +86,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 	};
 
+	JSONObject subscribed_data;
 	PlayerService mService;
 	boolean mBound = false;
 
@@ -1391,6 +1392,7 @@ listview.setItemsCanFocus(true);
 
 		PreferenceManager.getDefaultSharedPreferences(this).edit().putBoolean("pushed_subscribed",true).apply();
 		PreferenceManager.getDefaultSharedPreferences(this).edit().putString("data_subscribed",data.toString()).apply();
+		subscribed_data = data;
 		invalidateOptionsMenu();
 	}
 }
