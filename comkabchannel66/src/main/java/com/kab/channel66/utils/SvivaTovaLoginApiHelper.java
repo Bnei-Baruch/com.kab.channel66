@@ -28,7 +28,7 @@ import okhttp3.Response;
 public class SvivaTovaLoginApiHelper extends AsyncTask< ArrayList<String>, Void, SvivaTovaLoginApiHelper.status> {
 
 
-	final public String  kSvivaTovaLoginURL ="http://kabbalahgroup.info/internet/api/v1/tokens.json";
+	final public String  kSvivaTovaLoginURL ="https://kabbalahgroup.info/internet/api/v1/tokens.json";
 
 	HttpClient mHttpclient;
 	String mUser;
