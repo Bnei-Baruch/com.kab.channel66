@@ -1,9 +1,5 @@
 package com.kab.channel66;
 
-import java.util.Random;
-
-import com.google.analytics.tracking.android.EasyTracker;
-
 import android.annotation.SuppressLint;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -18,6 +14,11 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.RemoteViews;
 
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
+
+import java.util.Random;
+
 public class MyWidgetProvider extends AppWidgetProvider {
 
   private static final String ACTION_CLICK_PLAY = "ACTION_CLICK_PLAY";
@@ -30,12 +31,22 @@ public class MyWidgetProvider extends AppWidgetProvider {
 
   Intent svc;
     VLCMediaPlayer audioplayer;
+    private Tracker mTracker;
 
-  @Override
+    @Override
   public void onUpdate(Context context, AppWidgetManager appWidgetManager,
       int[] appWidgetIds) {
-	  EasyTracker.getInstance().setContext(context.getApplicationContext());
-	  EasyTracker.getTracker().trackEvent("Widget", "installing widget","onUpdate",0L);
+	  //EasyTracker.getInstance().setContext(context.getApplicationContext());
+
+      MyApplication application = (MyApplication) MyApplication.getMyApp();
+      mTracker = application.getDefaultTracker();
+
+        mTracker.send(new HitBuilders.EventBuilder()
+                .setCategory("installing widget")
+                .setAction("onUpdate")
+                .setValue(0)
+                .build());
+	 // EasyTracker.getTracker().trackEvent("Widget", "installing widget","onUpdate",0L);
 	    audioplayer = VLCMediaPlayer.get();
     // Get all ids
     ComponentName thisWidget = new ComponentName(context,

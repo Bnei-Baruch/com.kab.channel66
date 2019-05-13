@@ -16,8 +16,10 @@ import android.preference.PreferenceManager;
 import android.util.Patterns;
 import android.widget.EditText;
 
-import com.google.analytics.tracking.android.EasyTracker;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.kab.channel66.LanguageSeletedListener;
+import com.kab.channel66.MyApplication;
 import com.kab.channel66.R;
 import com.kab.channel66.StreamListActivity;
 
@@ -126,7 +128,14 @@ public class CommonUtils {
        	         String value = input.getText().toString();
        	         setGroup(value,context);
 //       	         Log.d( "Login", "Group member : " + value);
-       	         EasyTracker.getTracker().trackEvent("Group", "name", value,0L);
+       	         //EasyTracker.getTracker().trackEvent("Group", "name", value,0L);
+				 MyApplication application = (MyApplication) MyApplication.getMyApp();
+				 Tracker mTracker = application.getDefaultTracker();
+				 mTracker.send(new HitBuilders.EventBuilder()
+						 .setLabel("Group")
+						 .setCategory("name")
+						 .setAction(value)
+						 .build());
        	        
        	      Intent intent = new Intent(context,StreamListActivity.class);
 				 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);

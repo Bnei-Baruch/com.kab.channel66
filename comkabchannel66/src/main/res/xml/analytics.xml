@@ -1,6 +1,6 @@
 <resources>
   <!--Replace placeholder ID with your tracking ID-->
-  <string name="ga_trackingId">UA-36608494-1</string>
+  <string name="ga_trackingId"  translatable="false">UA-36608494-1</string>
 
   <!--Enable Activity tracking-->
   <bool name="ga_autoActivityTracking">true</bool>

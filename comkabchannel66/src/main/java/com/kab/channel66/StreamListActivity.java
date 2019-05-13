@@ -27,6 +27,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -40,7 +41,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import com.google.analytics.tracking.android.EasyTracker;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.google.android.gms.appinvite.AppInvite;
 import com.google.android.gms.appinvite.AppInviteInvitationResult;
 import com.google.android.gms.appinvite.AppInviteReferral;
@@ -50,8 +52,6 @@ import com.google.android.gms.common.api.ResultCallback;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
-import com.suredigit.inappfeedback.FeedbackDialog;
-import com.suredigit.inappfeedback.FeedbackSettings;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -61,7 +61,7 @@ import java.util.concurrent.ExecutionException;
 
 //import com.apphance.android.Log;
 
-public class StreamListActivity extends BaseListActivity implements GoogleApiClient.OnConnectionFailedListener  ,LanguageSeletedListener , ListView.OnItemClickListener {
+public class StreamListActivity extends BaseListActivity implements GoogleApiClient.OnConnectionFailedListener , GoogleApiClient.ConnectionCallbacks,LanguageSeletedListener , ListView.OnItemClickListener {
 
 	private ServiceConnection mConnection = new ServiceConnection() {
 		@Override
@@ -103,7 +103,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	private ListView listview;
 
 	GoogleApiClient mGoogleApiClient;
-	private FeedbackDialog feedBackDialog;
+	private Tracker mTracker;
 
 
 	public StreamListActivity() {
@@ -138,17 +138,18 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		//remove old plugin library
 //		Backendless.initApp( this, "EAD5E9C4-0007-D572-FF17-08523CED4200", "B485FC16-0FC2-A9D2-FF3E-406DF81A7000", version );
 
-		feedBackDialog = new FeedbackDialog(this,"AF-2EF522E45745-F5");
-		FeedbackSettings settings = new FeedbackSettings();
-				settings.setText("Would like to suggest a new feature or report a bug? We would love to hear from you");
-		feedBackDialog.setSettings(settings);
+		MyApplication application = (MyApplication) MyApplication.getMyApp();
+		mTracker = application.getDefaultTracker();
+
 		CommonUtils.RemoveOldPlugin(this);
 		setContentView(R.layout.listviewlayout);
+
 
 		 listview = (ListView) findViewById(R.id.listview);
 
 		mGoogleApiClient = new GoogleApiClient.Builder(this)
 				.enableAutoManage(this, this)
+				.addConnectionCallbacks(this)
 				.addApi(AppInvite.API)
 				.build();
 
@@ -312,7 +313,16 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	{
 		 final String url =  "http://icecast.kab.tv/radiozohar2014.mp3";
 		mService.playAudio(url);
-		EasyTracker.getTracker().trackEvent("radio by link","on item clicked", url,0L);
+		MyApplication application = (MyApplication) MyApplication.getMyApp();
+		mTracker = application.getDefaultTracker();
+
+		mTracker.send(new HitBuilders.EventBuilder()
+				.setLabel("radio by link")
+				.setCategory("on item clicked")
+				.setAction(url)
+				.setValue(0)
+				.build());
+		//EasyTracker.getTracker().trackEvent("radio by link","on item clicked", url,0L);
 //			startService(svc);
 //			audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
 //				@Override
@@ -510,7 +520,13 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 						}
 
 
-						EasyTracker.getTracker().trackEvent("Stream list", "on item clicked",url1,0L);
+						//EasyTracker.getTracker().trackEvent("Stream list", "on item clicked",url1,0L);
+						mTracker.send(new HitBuilders.EventBuilder()
+								.setLabel("Stream list")
+								.setCategory("on item clicked")
+								.setAction(url1)
+								.setValue(0)
+								.build());
 
 						startActivity(player);
 
@@ -522,7 +538,13 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 						//svc.putExtra("audiourl", chosenStream.url_value);
 						final String location = chosenStream.url_value;
 						mService.playAudio(location);
-						EasyTracker.getTracker().trackEvent("Stream list audio", "on item clicked",location,0L);
+					//	EasyTracker.getTracker().trackEvent("Stream list audio", "on item clicked",location,0L);
+						mTracker.send(new HitBuilders.EventBuilder()
+								.setLabel("Stream list audio")
+								.setCategory("on item clicked")
+								.setAction(location)
+								.setValue(0)
+								.build());
 //						audioplay.prepare(MyApplication.getMyApp(), chosenStream.url_value, new TomahawkMediaPlayerCallback() {
 //							@Override
 //							public void onPrepared(String query) {
@@ -623,7 +645,12 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		{
 			StopAudioIfNeeded();
 			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-			EasyTracker.getTracker().trackEvent("ערוץ קבלה לעם - וידאו", "on item clicked","http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8",0L);
+			//EasyTracker.getTracker().trackEvent("ערוץ קבלה לעם - וידאו", "on item clicked","http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8",0L);
+			mTracker.send(new HitBuilders.EventBuilder()
+					.setLabel("ערוץ קבלה לעם - וידאו")
+					.setCategory("on item clicked")
+					.setAction("http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8")
+					.build());
 			if(shared.getBoolean("quality", false))
 			{
 				//player.putExtra("path", ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
@@ -641,7 +668,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			}
 
 		}
-		else if(item.equals("ערוץ קבלה לעם - אודיו") || item.equals("רדיו קבלה לעם") || item.equals("רדיו חיים חדשים"))
+		else if(item.equals("ערוץ קבלה לעם - אודיו") || item.equals("רדיו קבלה לעם"))// || item.equals("רדיו חיים חדשים"))
 		{
 
 
@@ -651,7 +678,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 //			svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
 //
 			String info = "";
-			final String url;
+			String url = "";
 			if(item.equals("ערוץ קבלה לעם - אודיו")) {
 				url = "http://icecast.kab.tv/heb.mp3";
 				info = "ערוץ קבלה לעם";
@@ -660,18 +687,24 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 				url = "http://icecast.kab.tv/radiozohar2014.mp3";
 				info = "רדיו קבלה לעם";
 			}
-			else {
-				url = "http://icecast.kab.tv/newlife";
-				info = "רדיו חיים חדשים";
-			}
+//			else {
+//				url = "http://icecast.kab.tv/newlife";
+//				info = "רדיו חיים חדשים";
+//			}
 			mService.playAudio(url);
-			EasyTracker.getTracker().trackEvent(item,"on item clicked", url,0L);
+			//EasyTracker.getTracker().trackEvent(item,"on item clicked", url,0L);
+			mTracker.send(new HitBuilders.EventBuilder()
+					.setLabel(item)
+					.setCategory("on item clicked")
+					.setAction(url)
+					.build());
 			playDialog = new Dialog(this);
 			playDialog.setTitle("Playing audio -"+info );
 			playDialog.setContentView(R.layout.mediacontroller);
 			final ImageButton ask = (ImageButton) playDialog.findViewById(R.id.mediacontroller_ask);
 			final ImageButton but = (ImageButton) playDialog.findViewById(R.id.mediacontroller_play_pause);
 			but.setImageResource(R.drawable.mediacontroller_pause01);
+			final String finalUrl = url;
 			but.setOnClickListener(new OnClickListener() {
 
 				@Override
@@ -688,9 +721,9 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 						but.setImageResource(R.drawable.mediacontroller_pause01);
 
 						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-						shared.edit().putString("audiourl", url).commit();
+						shared.edit().putString("audiourl", finalUrl).commit();
 						but.setImageResource(R.drawable.mediacontroller_pause01);
-						mService.playAudio(url);
+						mService.playAudio(finalUrl);
 						but.setImageResource(R.drawable.mediacontroller_pause01);
 					}
 				}
@@ -843,8 +876,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 		super.onPause();
 
-		feedBackDialog.dismiss();
-		
+
 		
 	}
 	@SuppressLint("NewApi")
@@ -853,7 +885,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		super.onResume();
 
 
-		EasyTracker.getInstance().setContext(this);
+//		EasyTracker.getInstance().setContext(this);
 
 
 
@@ -1004,7 +1036,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		description.add("ערוץ קבלה לעם - וידאו");
 		description.add("ערוץ קבלה לעם - אודיו");
 		description.add("רדיו קבלה לעם");
-		description.add("רדיו חיים חדשים");
+		//description.add("רדיו חיים חדשים");
 
 		description.add("Каббала на Русском - Видео");
 		description.add("Каббала на Русском - Аудио");
@@ -1027,8 +1059,8 @@ listview.setItemsCanFocus(true);
 	public void onStart() {
 		super.onStart();
 		// The rest of your onStart() code.
-		EasyTracker.getInstance().setContext(this.getApplicationContext());
-		EasyTracker.getInstance().activityStart(this);
+		//EasyTracker.getInstance().setContext(this.getApplicationContext());
+		//EasyTracker.getInstance().activityStart(this);
 		// Bind to LocalService
 		Intent intent = new Intent(this, PlayerService.class);
 		bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
@@ -1056,7 +1088,7 @@ listview.setItemsCanFocus(true);
 		{
 			mService.setForeground();
 		}
-		EasyTracker.getInstance().activityStop(this); // Add this method.
+		//Tracker.getInstance().activityStop(this); // Add this method.
 
 
 	}
@@ -1213,7 +1245,13 @@ listview.setItemsCanFocus(true);
 	}
 
 
+	@Override
+	public void onConnected(@Nullable Bundle bundle) {
 
+	}
 
+	@Override
+	public void onConnectionSuspended(int i) {
 
+	}
 }

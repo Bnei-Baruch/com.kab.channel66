@@ -3,11 +3,14 @@ package com.kab.channel66;
 import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
+import android.support.v7.app.AppCompatDelegate;
 
 import com.crashlytics.android.Crashlytics;
 import com.crashlytics.android.ndk.CrashlyticsNdk;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.Tracker;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 
@@ -44,6 +47,8 @@ import io.fabric.sdk.android.Fabric;
 
 public class MyApplication extends Application {
     static Application myapp;
+    private static GoogleAnalytics sAnalytics;
+    private static Tracker sTracker;
 	@Override
     public void onCreate() {
         super.onCreate();
@@ -51,12 +56,14 @@ public class MyApplication extends Application {
 //        if(CommonUtils.checkConnectivity(getApplicationContext()))
 //        	ACRA.init(this);
        // LibsChecker.checkVitamioLibs(this);
-
+        sAnalytics = GoogleAnalytics.getInstance(this);
         myapp = this;
         String token = FirebaseInstanceId.getInstance().getToken();
         FirebaseMessaging.getInstance().subscribeToTopic("news");
 
 
+        AppCompatDelegate.setDefaultNightMode(
+                AppCompatDelegate.MODE_NIGHT_YES);
 //        Parse.enableLocalDatastore(getApplicationContext());
 //
 //
@@ -84,7 +91,14 @@ public class MyApplication extends Application {
         MultiDex.install(this);
     }
 
+    synchronized public Tracker getDefaultTracker() {
+        // To enable debug logging use: adb shell setprop log.tag.GAv4 DEBUG
+        if (sTracker == null) {
+            sTracker = sAnalytics.newTracker(R.xml.analytics);
+        }
 
+        return sTracker;
+    }
 
     static public Application getMyApp()
     {

@@ -5,9 +5,9 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 
-public class BaseListActivity extends FragmentActivity {
+public class BaseListActivity extends AppCompatActivity {
 	AlertDialog dlg = null;
 	@Override
 	public void onResume()
