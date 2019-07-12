@@ -1,7 +1,6 @@
 
 package com.kab.channel66;
 
-import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -12,14 +11,26 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.MediaRouteButton;
+import android.support.v7.widget.Toolbar;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.view.Gravity;
+import android.view.Menu;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Toast;
 
+import com.google.android.gms.cast.MediaInfo;
+import com.google.android.gms.cast.MediaLoadOptions;
+import com.google.android.gms.cast.MediaMetadata;
+import com.google.android.gms.cast.framework.CastButtonFactory;
+import com.google.android.gms.cast.framework.CastContext;
+import com.google.android.gms.cast.framework.CastSession;
+import com.google.android.gms.cast.framework.SessionManagerListener;
+import com.google.android.gms.cast.framework.media.RemoteMediaClient;
 import com.kab.channel66.utils.CallStateInterface;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.Constants;
@@ -33,8 +44,8 @@ import org.videolan.libvlc.util.AndroidUtil;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC.OnNativeCrashListener,CallStateInterface {
-    public final static String TAG = "LibVLCAndroidSample/VideoActivity";
+public class VideoActivity extends AppCompatActivity implements IVLCVout.Callback, LibVLC.OnNativeCrashListener,CallStateInterface {
+    public final static String TAG = "LibVLCVideoActivity";
 
     public final static String LOCATION = "com.compdigitec.libvlcandroidsample.VideoActivity.location";
 
@@ -43,6 +54,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     // display surface
     private SurfaceView mSurface;
     private SurfaceHolder holder;
+//    private CastStateListener mCastStateListener;
 
     // media player
     private LibVLC libvlc;
@@ -54,6 +66,11 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     private CallStateListener calllistener;
     private TelephonyManager telephony;
     private Notification notification;
+    private SessionManagerListener<CastSession> mSessionManagerListener;
+    private CastSession mCastSession;
+    private MediaRouteButton mMediaRouteButton;
+    private CastContext mCastContext;
+    private MediaMetadata movieMetadata;
 
     /*************
      * Activity
@@ -68,6 +85,12 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         Intent intent = getIntent();
         mFilePath = intent.getExtras().getString(LOCATION);
 
+
+        movieMetadata = new MediaMetadata(MediaMetadata.MEDIA_TYPE_MOVIE);
+
+        movieMetadata.putString(MediaMetadata.KEY_TITLE, "Sviva Tova");
+        movieMetadata.putString(MediaMetadata.KEY_SUBTITLE, "Kabbalah");
+       
         //Log.d(TAG, "Playing back " + mFilePath);
 
         mSurface = (SurfaceView) findViewById(R.id.surface_view);
@@ -78,8 +101,182 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE); //Register our listener with TelephonyManager
 
         //holder.addCallback(this);
+
+        mMediaRouteButton = (MediaRouteButton) findViewById(R.id.media_route_button);
+        CastButtonFactory.setUpMediaRouteButton(getApplicationContext(), mMediaRouteButton);
+
+        mCastContext = CastContext.getSharedInstance(this);
+
+        setupCastListener();
+
+        setupActionBar();
+
+
     }
 
+    @Override
+    public void onStart() {
+        CastContext.getSharedInstance(getApplicationContext()).getSessionManager()
+                .addSessionManagerListener(mSessionManagerListener, CastSession.class);
+        super.onStart();
+    }
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.player_menu, menu);
+        CastButtonFactory.setUpMediaRouteButton(getApplicationContext(), menu,
+                R.id.media_route_menu_item);
+        return true;
+    }
+
+
+
+    private void setupCastListener() {
+        mSessionManagerListener = new SessionManagerListener<CastSession>() {
+
+            @Override
+            public void onSessionEnded(CastSession session, int error) {
+                onApplicationDisconnected();
+            }
+
+            @Override
+            public void onSessionResumed(CastSession session, boolean wasSuspended) {
+                onApplicationConnected(session);
+            }
+
+            @Override
+            public void onSessionResumeFailed(CastSession session, int error) {
+                onApplicationDisconnected();
+            }
+
+            @Override
+            public void onSessionStarted(CastSession session, String sessionId) {
+                onApplicationConnected(session);
+            }
+
+            @Override
+            public void onSessionStartFailed(CastSession session, int error) {
+                onApplicationDisconnected();
+            }
+
+            @Override
+            public void onSessionStarting(CastSession session) {
+            }
+
+            @Override
+            public void onSessionEnding(CastSession session) {
+            }
+
+            @Override
+            public void onSessionResuming(CastSession session, String sessionId) {
+            }
+
+            @Override
+            public void onSessionSuspended(CastSession session, int reason) {
+            }
+
+            private void onApplicationConnected(CastSession castSession) {
+                mCastSession = castSession;
+
+                mMediaPlayer.pause();
+                loadRemoteMedia(0, true);
+
+
+
+//                updatePlayButton(mPlaybackState);
+                invalidateOptionsMenu();
+                return;
+            }
+
+            private void onApplicationDisconnected() {
+//                updatePlaybackLocation(PlaybackLocation.LOCAL);
+//                mPlaybackState = PlaybackState.IDLE;
+//                mLocation = PlaybackLocation.LOCAL;
+//                updatePlayButton(mPlaybackState);
+                invalidateOptionsMenu();
+            }
+        };
+    }
+
+
+        private void loadRemoteMedia(int position, boolean autoPlay) {
+            if (mCastSession == null) {
+                return;
+            }
+            final RemoteMediaClient remoteMediaClient = mCastSession.getRemoteMediaClient();
+            if (remoteMediaClient == null) {
+                return;
+            }
+            remoteMediaClient.registerCallback(new RemoteMediaClient.Callback() {
+                @Override
+                public void onStatusUpdated() {
+                    Intent intent = new Intent(VideoActivity.this, ExpandedControlsActivity.class);
+                    startActivity(intent);
+                    remoteMediaClient.unregisterCallback(this);
+                }
+            });
+//            remoteMediaClient.load(MediaInfo.CREATOR.newArray(1)[0],
+//                    new MediaLoadOptions.Builder()
+//                            .setAutoplay(autoPlay)
+//                            .setPlayPosition(position).build());
+
+            MediaInfo mediaInfo = new MediaInfo.Builder(mFilePath)
+                    .setStreamType(MediaInfo.STREAM_TYPE_BUFFERED)
+                    .setContentType("videos/mp4")
+                    .setMetadata(movieMetadata)
+                    .build();
+
+            remoteMediaClient.load(mediaInfo,
+                    new MediaLoadOptions.Builder()
+                            .setAutoplay(autoPlay)
+                            .setPlayPosition(position).build());
+        }
+
+//        private void updatePlayButton(PlaybackState state) {
+//            Log.d(TAG, "Controls: PlayBackState: " + state);
+//            boolean isConnected = (mCastSession != null)
+//                    && (mCastSession.isConnected() || mCastSession.isConnecting());
+//            mControllers.setVisibility(isConnected ? View.GONE : View.VISIBLE);
+//            mPlayCircle.setVisibility(isConnected ? View.GONE : View.VISIBLE);
+//            switch (state) {
+//                case PLAYING:
+//                    mLoading.setVisibility(View.INVISIBLE);
+//                    mPlayPause.setVisibility(View.VISIBLE);
+//                    mPlayPause.setImageDrawable(
+//                            getResources().getDrawable(R.drawable.ic_av_pause_dark));
+//                    mPlayCircle.setVisibility(isConnected ? View.VISIBLE : View.GONE);
+//                    break;
+//                case IDLE:
+//                    mPlayCircle.setVisibility(View.VISIBLE);
+//                    mControllers.setVisibility(View.GONE);
+//                    mCoverArt.setVisibility(View.VISIBLE);
+//                    mVideoView.setVisibility(View.INVISIBLE);
+//                    break;
+//                case PAUSED:
+//                    mLoading.setVisibility(View.INVISIBLE);
+//                    mPlayPause.setVisibility(View.VISIBLE);
+//                    mPlayPause.setImageDrawable(
+//                            getResources().getDrawable(R.drawable.ic_av_play_dark));
+//                    mPlayCircle.setVisibility(isConnected ? View.VISIBLE : View.GONE);
+//                    break;
+//                case BUFFERING:
+//                    mPlayPause.setVisibility(View.INVISIBLE);
+//                    mLoading.setVisibility(View.VISIBLE);
+//                    break;
+//                default:
+//                    break;
+//            }
+//        }
+
+    private void setupActionBar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("Video");
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
@@ -92,6 +289,14 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         createPlayer(mFilePath);
         NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.cancel(0);
+
+//        mCastContext.addCastStateListener(mCastStateListener);
+        mCastContext.getSessionManager().addSessionManagerListener(
+                mSessionManagerListener, CastSession.class);
+        if (mCastSession == null) {
+            mCastSession = CastContext.getSharedInstance(this).getSessionManager()
+                    .getCurrentCastSession();
+        }
     }
 
 
@@ -101,6 +306,10 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     @Override
     protected void onPause() {
         super.onPause();
+
+//        mCastContext.removeCastStateListener(mCastStateListener);
+        mCastContext.getSessionManager().removeSessionManagerListener(
+                mSessionManagerListener, CastSession.class);
 
         //releasePlayer();
     }
@@ -113,12 +322,6 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         final IVLCVout vout = mMediaPlayer.getVLCVout();
         vout.removeCallback(this);
         vout.detachViews();
-
-
-
-
-
-
 
         Intent notificationIntent = new Intent(VideoActivity.this, VideoActivity.class);
         notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
@@ -140,6 +343,9 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         NotificationManager mNotificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         mNotificationManager.notify(0, notification);
+
+        CastContext.getSharedInstance(getApplicationContext()).getSessionManager()
+                .removeSessionManagerListener(mSessionManagerListener, CastSession.class);
     }
 
 
@@ -358,6 +564,9 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
                     break;
             }
         }
+
+
+
     }
 
 //    @Override
@@ -367,4 +576,6 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 //        this.releasePlayer();
 //        Toast.makeText(this, "Error with hardware acceleration", Toast.LENGTH_LONG).show();
 //    }
+
+
 }
