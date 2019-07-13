@@ -31,7 +31,7 @@ class CastOptionsProvider implements OptionsProvider {
 
         CastOptions castOptions = new CastOptions.Builder()
                 .setReceiverApplicationId(appContext.getString(R.string.google_cast_id))
-                .setSupportedNamespaces(supportedNamespaces)
+               // .setSupportedNamespaces(supportedNamespaces)
                 .setCastMediaOptions(mediaOptions)
                 .build();
         return castOptions;

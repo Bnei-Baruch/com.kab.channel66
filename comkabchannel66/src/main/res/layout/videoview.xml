@@ -63,15 +63,15 @@
     <fragment
         android:id="@+id/cast_mini_controller"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:visibility="gone"
         app:castShowImageThumbnail="true"
         class="com.google.android.gms.cast.framework.media.widget.MiniControllerFragment" />
     <android.support.v7.app.MediaRouteButton
         android:id="@+id/media_route_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_weight="1"
         android:mediaRouteTypes="user"
         android:visibility="gone" />
