@@ -34,7 +34,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
 public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC.OnNativeCrashListener,CallStateInterface {
-    public final static String TAG = "LibVLCAndroidSample/VideoActivity";
+    public final static String TAG = "LibVLCVideoActivity";
 
     public final static String LOCATION = "com.compdigitec.libvlcandroidsample.VideoActivity.location";
 
@@ -43,6 +43,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     // display surface
     private SurfaceView mSurface;
     private SurfaceHolder holder;
+//    private CastStateListener mCastStateListener;
 
     // media player
     private LibVLC libvlc;
@@ -54,6 +55,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     private CallStateListener calllistener;
     private TelephonyManager telephony;
     private Notification notification;
+
 
     /*************
      * Activity
@@ -68,6 +70,9 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         Intent intent = getIntent();
         mFilePath = intent.getExtras().getString(LOCATION);
 
+
+
+       
         //Log.d(TAG, "Playing back " + mFilePath);
 
         mSurface = (SurfaceView) findViewById(R.id.surface_view);
@@ -78,7 +83,19 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE); //Register our listener with TelephonyManager
 
         //holder.addCallback(this);
+
+
+
+
     }
+
+    @Override
+    public void onStart() {
+
+        super.onStart();
+    }
+
+
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
@@ -92,9 +109,9 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         createPlayer(mFilePath);
         NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.cancel(0);
+
+
     }
-
-
 
 
 
@@ -102,7 +119,6 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     protected void onPause() {
         super.onPause();
 
-        //releasePlayer();
     }
 
 
@@ -113,12 +129,6 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         final IVLCVout vout = mMediaPlayer.getVLCVout();
         vout.removeCallback(this);
         vout.detachViews();
-
-
-
-
-
-
 
         Intent notificationIntent = new Intent(VideoActivity.this, VideoActivity.class);
         notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
@@ -140,6 +150,8 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
         NotificationManager mNotificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         mNotificationManager.notify(0, notification);
+
+
     }
 
 
@@ -220,8 +232,10 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
             options.add("-vvv"); // verbosity
             options.add("--http-reconnect");
             options.add("--network-caching=2000");
-            libvlc = new LibVLC(this,options);
+            libvlc = new LibVLC();
+
             libvlc.setOnNativeCrashListener(this);
+
 
             holder.setKeepScreenOn(true);
 
@@ -238,6 +252,10 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
             vout.attachViews();
 
             Media m = new Media(libvlc,AndroidUtil.LocationToUri(media));
+            m.addOption(":aout=opensles");
+            m.addOption(":audio-time-stretch");
+            m.addOption(":http-reconnect");
+            m.addOption(":network-caching=2000");
 
             mMediaPlayer.setMedia(m);
 
@@ -292,10 +310,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 
     }
 
-    @Override
-    public void onHardwareAccelerationError(IVLCVout vlcVout) {
 
-    }
 
     @Override
     public void PausePlay() {
@@ -358,6 +373,9 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
                     break;
             }
         }
+
+
+
     }
 
 //    @Override
@@ -367,4 +385,6 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 //        this.releasePlayer();
 //        Toast.makeText(this, "Error with hardware acceleration", Toast.LENGTH_LONG).show();
 //    }
+
+
 }

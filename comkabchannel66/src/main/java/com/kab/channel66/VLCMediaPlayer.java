@@ -115,7 +115,7 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         ArrayList<String> options = new ArrayList<>();
         options.add("--http-reconnect");
         options.add("--network-caching=4000");
-        mLibVLC = new LibVLC(getMyApp().getApplicationContext(),options);
+        mLibVLC = new LibVLC();//new LibVLC(getMyApp().getApplicationContext(),options);
         mMediaPlayer = new MediaPlayer(mLibVLC);
         SharedPreferences pref =
                 PreferenceManager.getDefaultSharedPreferences(getMyApp());
@@ -215,6 +215,8 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         mPreparingQuery = query;
 
         Media media = new Media(mLibVLC, AndroidUtil.LocationToUri(query));
+        media.addOption(":http-reconnect");
+        media.addOption(":network-caching=4000");
         media.setEventListener(new Media.EventListener() {
             @Override
             public void onEvent(Media.Event event) {
