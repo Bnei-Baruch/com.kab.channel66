@@ -6,4 +6,7 @@
 .gradle/3.3/**/*
 /build/**
 comkabchannel66/build/**
-/comkabchannel66/build/**
+comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml
+comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml
+comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml
+comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt
