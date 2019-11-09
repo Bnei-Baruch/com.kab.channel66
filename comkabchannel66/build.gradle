@@ -25,14 +25,14 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        versionCode 57
+        versionCode 59
         versionName "2.8.5"
         applicationId "com.kab.channel66"
         minSdkVersion 16
         targetSdkVersion 28
         multiDexEnabled true
         ndk {
-            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips","arm64-v8a","x86_64"
         }
     }
 
