@@ -25,7 +25,7 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        versionCode 59
+        versionCode 60
         versionName "2.8.5"
         applicationId "com.kab.channel66"
         minSdkVersion 16
@@ -33,6 +33,17 @@ android {
         multiDexEnabled true
         ndk {
             abiFilters "armeabi", "armeabi-v7a", "x86", "mips","arm64-v8a","x86_64"
+        }
+        packagingOptions {
+            exclude "lib/arm64-v8a/libvlcjni.so"
+            exclude "lib/arm64-v8a/libanw.10.so"
+            exclude "lib/arm64-v8a/libanw.13.so"
+            exclude "lib/arm64-v8a/libanw.14.so"
+            exclude "lib/arm64-v8a/libanw.18.so"
+            exclude "lib/arm64-v8a/libanw.21.so"
+            exclude "lib/arm64-v8a/libiomx.10.so"
+            exclude "lib/arm64-v8a/libiomx.13.so"
+            exclude "lib/arm64-v8a/libiomx.14.so"
         }
     }
 
@@ -95,8 +106,8 @@ dependencies {
     compile 'com.google.firebase:firebase-invites:17.0.0'
     compile 'com.google.code.gson:gson:2.4'
     compile 'com.squareup.okhttp3:okhttp:3.8.0'
-    compile 'com.android.support:support-v4:26.1.0'
-    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:support-v4:28.0.0'
+    compile 'com.android.support:appcompat-v7:28.0.0'
     //compile 'com.backendless:backendless:3.+'
     //compile files('libs/feedback_v6.jar')
 }
