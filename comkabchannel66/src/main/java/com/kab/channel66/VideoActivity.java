@@ -68,7 +68,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 
         // Receive path to play from intent
         Intent intent = getIntent();
-        mFilePath = intent.getExtras().getString(LOCATION);
+        //mFilePath = intent.getExtras().getString(LOCATION);
 
 
 
@@ -223,6 +223,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
                 toast.show();
             }
 
+            mFilePath = media;
             // Create LibVLC
             // TODO: make this more robust, and sync with audio demo
             ArrayList<String> options = new ArrayList<String>();
@@ -269,6 +270,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     private void releasePlayer() {
         if (libvlc == null)
             return;
+        mFilePath = "";
         mMediaPlayer.stop();
         final IVLCVout vout = mMediaPlayer.getVLCVout();
         vout.removeCallback(this);

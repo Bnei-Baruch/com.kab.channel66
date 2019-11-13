@@ -260,7 +260,13 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 
 			shared.edit().putBoolean("play", false).commit();
-			unregisterReceiver(data_stat);
+			try {
+				unregisterReceiver(data_stat);
+			}
+			catch(IllegalArgumentException e) {
+
+				e.printStackTrace();
+			}
 		}
 		return 0;
 	}

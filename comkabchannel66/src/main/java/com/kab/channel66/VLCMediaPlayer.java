@@ -91,7 +91,6 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
                         Log.d(TAG, "onCompletion()");
                         mMediaPlayerCallback.onCompletion(mPreparedQuery);
                         break;
-
                 }
         }
     };
