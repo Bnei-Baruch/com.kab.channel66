@@ -7,4 +7,5 @@
     <string name="google_app_id" translatable="false">1:727406170147:android:22bdcb52f8cac71d</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBn81T53cEdbJAZJUigEhmSAJSu3snJw9s</string>
     <string name="google_storage_bucket" translatable="false">channel-66.appspot.com</string>
+    <string name="project_id" translatable="false">channel-66</string>
 </resources>

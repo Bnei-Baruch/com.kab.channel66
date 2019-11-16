@@ -5,12 +5,14 @@ buildscript {
             url 'https://maven.google.com/'
             name 'Google'
         }
+
+
         jcenter()
         mavenCentral()
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.5.2'
         classpath 'com.google.gms:google-services:4.2.0'
     }
 }
@@ -20,6 +22,9 @@ allprojects {
         maven {
             url 'https://maven.google.com/'
             name 'Google'
+        }
+        maven {
+            url "https://dl.bintray.com/videolan/Android"
         }
         jcenter()
         mavenCentral()

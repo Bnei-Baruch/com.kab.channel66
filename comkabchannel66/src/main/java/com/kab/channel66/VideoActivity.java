@@ -10,11 +10,14 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Point;
 import android.os.Bundle;
-import android.support.v4.app.NotificationCompat;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
+import android.util.Log;
+import android.view.Display;
 import android.view.Gravity;
+import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.ViewGroup.LayoutParams;
@@ -33,7 +36,9 @@ import org.videolan.libvlc.util.AndroidUtil;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC.OnNativeCrashListener,CallStateInterface {
+import androidx.core.app.NotificationCompat;
+
+public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVout.OnNewVideoLayoutListener,CallStateInterface {
     public final static String TAG = "LibVLCVideoActivity";
 
     public final static String LOCATION = "com.compdigitec.libvlcandroidsample.VideoActivity.location";
@@ -68,7 +73,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 
         // Receive path to play from intent
         Intent intent = getIntent();
-        //mFilePath = intent.getExtras().getString(LOCATION);
+        mFilePath = intent.getExtras().getString(LOCATION);
 
 
 
@@ -106,7 +111,8 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     @Override
     protected void onResume() {
         super.onResume();
-        createPlayer(mFilePath);
+        if(mFilePath!=null)
+            createPlayer(mFilePath);
         NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.cancel(0);
 
@@ -233,9 +239,9 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
             options.add("-vvv"); // verbosity
             options.add("--http-reconnect");
             options.add("--network-caching=2000");
-            libvlc = new LibVLC();
+            libvlc = new LibVLC(getBaseContext());
 
-            libvlc.setOnNativeCrashListener(this);
+            //libvlc.setOnNativeCrashListener(this);
 
 
             holder.setKeepScreenOn(true);
@@ -244,13 +250,15 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
             mMediaPlayer = new MediaPlayer(libvlc);
 
             mMediaPlayer.setEventListener(mPlayerListener);
-
+            mMediaPlayer.setVideoScale(MediaPlayer.ScaleType.SURFACE_4_3);
             // Set up video output
             final IVLCVout vout = mMediaPlayer.getVLCVout();
             vout.setVideoView(mSurface);
+            vout.attachViews(this);
             //vout.setSubtitlesView(mSurfaceSubtitles);
             vout.addCallback(this);
-            vout.attachViews();
+
+
 
             Media m = new Media(libvlc,AndroidUtil.LocationToUri(media));
             m.addOption(":aout=opensles");
@@ -291,20 +299,11 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
 
     private MediaPlayer.EventListener mPlayerListener = new MyPlayerListener(this);
 
-    @Override
-    public void onNewLayout(IVLCVout vout, int width, int height, int visibleWidth, int visibleHeight, int sarNum, int sarDen) {
-        if (width * height == 0)
-            return;
 
-        // store video size
-        mVideoWidth = width;
-        mVideoHeight = height;
-        setSize(mVideoWidth, mVideoHeight);
-    }
 
     @Override
     public void onSurfacesCreated(IVLCVout vout) {
-
+        Log.d(TAG,"onSurfacesCreated");
     }
 
     @Override
@@ -347,9 +346,38 @@ public class VideoActivity extends Activity implements IVLCVout.Callback, LibVLC
     }
 
     @Override
-    public void onNativeCrash() {
+    public void onNewVideoLayout(IVLCVout vlcVout, int width, int height, int visibleWidth, int visibleHeight, int sarNum, int sarDen) {
+//        if (width * height == 0)
+//            return;
 
+        Display display = getWindowManager(). getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+
+
+        // store video size
+        if(display.getRotation() == Surface.ROTATION_0 ||display.getRotation() == Surface.ROTATION_180 ) {
+            mVideoHeight = size.x;
+            mVideoWidth = size.y;
+        }
+        else
+        {
+            mVideoWidth = size.x;
+            mVideoHeight = size.y;
+
+
+        }
+
+        Log. e("Width", "" + width);
+        Log. e("height", "" + height);
+        vlcVout.setWindowSize(mVideoWidth,mVideoHeight);
+        setSize(mVideoWidth, mVideoHeight);
     }
+
+//    @Override
+//    public void onNativeCrash() {
+//
+//    }
 
 
     private static class MyPlayerListener implements MediaPlayer.EventListener {
