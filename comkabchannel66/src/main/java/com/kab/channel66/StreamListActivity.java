@@ -26,8 +26,6 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -58,6 +56,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 //import com.apphance.android.Log;
 
@@ -311,7 +312,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 	private void openRadio()
 	{
-		 final String url =  "http://icecast.kab.tv/radiozohar2014.mp3";
+		 final String url =  "https://icecast.kab.tv/radiozohar2014.mp3";
 		mService.playAudio(url);
 		MyApplication application = (MyApplication) MyApplication.getMyApp();
 		mTracker = application.getDefaultTracker();
@@ -680,11 +681,11 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			String info = "";
 			String url = "";
 			if(item.equals("ערוץ קבלה לעם - אודיו")) {
-				url = "http://icecast.kab.tv/heb.mp3";
+				url = "https://icecast.kab.tv/heb.mp3";
 				info = "ערוץ קבלה לעם";
 			}
 			else if(item.equals("רדיו קבלה לעם")) {
-				url = "http://icecast.kab.tv/radiozohar2014.mp3";
+				url = "https://icecast.kab.tv/radiozohar2014.mp3";
 				info = "רדיו קבלה לעם";
 			}
 //			else {
@@ -894,6 +895,8 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			mService.setBackground();
 			if(playDialog!=null && playDialog.isShowing() && !mService.isPlaying())
 				playDialog.dismiss();
+			if(playDialog!=null && !playDialog.isShowing() && mService.isPlaying())
+				playDialog.show();
 		}
 
 		ContentParser cparser = new ContentParser();
@@ -902,14 +905,14 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 		if (Build.VERSION.SDK_INT >= 11)
 		{
-			cparser.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,"http://kabbalahgroup.info/internet/events/render_event_response?locale=he&source=stream_container&type=update_presets&timestamp=2011-11-25+13:29:53+UTC&stream_preset_id=3&flash=true&wmv=true");
-			parser.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,"http://mobile.kbb1.com/kab_channel/sviva_tova/jsonresponseexample.json");
+			cparser.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,"https://kabbalahgroup.info/internet/events/render_event_response?locale=he&source=stream_container&type=update_presets&timestamp=2011-11-25+13:29:53+UTC&stream_preset_id=3&flash=true&wmv=true");
+			parser.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,"https://mobile.kbb1.com/kab_channel/sviva_tova/jsonresponseexample.json");
 
 		}
 		else
 		{
-			cparser.execute("http://kabbalahgroup.info/internet/events/render_event_response?locale=he&source=stream_container&type=update_presets&timestamp=2011-11-25+13:29:53+UTC&stream_preset_id=3&flash=true&wmv=true");
-			parser.execute("http://mobile.kbb1.com/kab_channel/sviva_tova/jsonresponseexample.json");    
+			cparser.execute("https://kabbalahgroup.info/internet/events/render_event_response?locale=he&source=stream_container&type=update_presets&timestamp=2011-11-25+13:29:53+UTC&stream_preset_id=3&flash=true&wmv=true");
+			parser.execute("https://mobile.kbb1.com/kab_channel/sviva_tova/jsonresponseexample.json");
 		}
 
 		try {

@@ -29,13 +29,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36bf4f6f-5392-4a51-b7ec-e2eac30d7605" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/res/google-services/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build/generated/res/google-services/debug/values/values.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/android/support/multidex/R.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/crashlytics/android/R.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/source/r/debug/com/crashlytics/android/answers/R.java" beforeDir="false" />
@@ -61,18 +58,13 @@
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/assets/debug/jsonresponseexample.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build/intermediates/assets/debug/jsonresponseexample_current.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BaseListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BaseListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyFirebaseMessagingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VLCMediaPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VLCMediaPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/FragmentListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/FragmentListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.jpg" beforeDir="false" />
     </list>
     <ignored path="com.kab.channel66.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -143,72 +135,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
-              <caret line="360" column="33" selection-start-line="360" selection-start-column="33" selection-end-line="360" selection-end-column="33" />
-              <folding>
-                <element signature="e#8981#8982#0" expanded="true" />
-                <element signature="e#9003#9004#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="112">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/content/res/Resources.class">
+        <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/java/lang/Class.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="221" column="25" selection-start-line="221" selection-start-column="25" selection-end-line="221" selection-end-column="25" />
-              <folding>
-                <element signature="e#7079#7080#0" expanded="true" />
-                <element signature="e#7130#7131#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/view/ContextThemeWrapper.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-              <folding>
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/view/View.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="1408" column="21" selection-start-line="1408" selection-start-column="21" selection-end-line="1408" selection-end-column="21" />
-              <folding>
-                <element signature="e#44259#44260#0" expanded="true" />
-                <element signature="e#44310#44311#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.videolan.android/libvlc-all/3.1.12/7a3da64d2d9bdc74f50debb2e3f2e19ffe0c9f94/libvlc-all-3.1.12-sources.jar!/org/videolan/libvlc/IVLCVout.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="215" column="9" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.videolan.android/libvlc-all/3.1.12/7a3da64d2d9bdc74f50debb2e3f2e19ffe0c9f94/libvlc-all-3.1.12-sources.jar!/org/videolan/libvlc/MediaPlayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="124" column="21" selection-start-line="124" selection-start-column="21" selection-end-line="124" selection-end-column="21" />
+            <state relative-caret-position="126">
+              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -216,38 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/app/Instrumentation.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="247" column="16" selection-start-line="247" selection-start-column="16" selection-end-line="247" selection-end-column="16" />
-              <folding>
-                <element signature="e#7659#7660#0" expanded="true" />
-                <element signature="e#7710#7711#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/app/Activity.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="162" selection-start-line="162" selection-end-line="162" />
-              <folding>
-                <element signature="e#0#33428#0" expanded="true" />
-                <element signature="e#5201#5202#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/os/Looper.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-              <folding>
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="203" column="20" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -255,13 +165,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/os/Handler.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
+            <state relative-caret-position="131">
+              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
               <folding>
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#2903#2904#0" expanded="true" />
                 <element signature="e#2954#2955#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="187" column="49" selection-start-line="187" selection-start-column="49" selection-end-line="187" selection-end-column="49" />
+              <folding>
+                <element signature="e#1455#1654#0" expanded="true" />
+                <element signature="e#1653#1654#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="164" column="48" lean-forward="true" selection-start-line="164" selection-start-column="48" selection-end-line="164" selection-end-column="48" />
+              <folding>
+                <element signature="e#9145#9146#0" expanded="true" />
+                <element signature="e#9191#9192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/util/Log.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+              <folding>
+                <element signature="e#1028#1029#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon_old.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -277,14 +248,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>MyA</find>
-      <find>MyAp</find>
-      <find>MyAppl</find>
-      <find>my</find>
-      <find>mul</find>
-      <find>dialog</find>
-      <find>playDialog</find>
-      <find>info</find>
       <find>playDialog.setTitle</find>
       <find>chosenStream</find>
       <find>list</find>
@@ -307,6 +270,14 @@
       <find>Callback</find>
       <find>IVLCVout</find>
       <find>onNewVideoLayout</find>
+      <find>libvlc</find>
+      <find>http</find>
+      <find>https</find>
+      <find>create</find>
+      <find>getSystemService</find>
+      <find>notification</find>
+      <find>notificationIntent</find>
+      <find>mBound</find>
     </findStrings>
   </component>
   <component name="GenerateSignedApkSettings">
@@ -325,7 +296,6 @@
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BaseService.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/CustomAdapter.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/res/values-v23/values-v23.xml" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginHelper.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/res/layout/login.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/LoginLayout.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/Events.java" />
@@ -360,18 +330,19 @@
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CallStateInterface.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CallStateListener.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/NetworkChangeReceiver.java" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/QuestionPoster.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/Questions.java" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CommonUtils.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/gradle.properties" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-        <option value="$PROJECT_DIR$/comkabchannel66/build.gradle" />
-        <option value="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VLCMediaPlayer.java" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/SvivaTovaLoginHelper.java" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java" />
+        <option value="$PROJECT_DIR$/comkabchannel66/build.gradle" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" />
+        <option value="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java" />
       </list>
     </option>
   </component>
@@ -389,7 +360,7 @@
     <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="976" />
+    <option name="height" value="975" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -431,7 +402,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -465,6 +435,23 @@
             <path>
               <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
               <item name="com.kab.channel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="comkabchannel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.kab.channel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="comkabchannel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable-hdpi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.kab.channel66" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="gradle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -479,47 +466,6 @@
             </path>
             <path>
               <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.videolan.android:libvlc-all:3.1.12@aar" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.videolan.android:libvlc-all:3.1.12@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.videolan.android:libvlc-all:3.1.12@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.videolan.android:libvlc-all:3.1.12@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="videolan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.videolan.android:libvlc-all:3.1.12@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="videolan" type="462c0819:PsiDirectoryNode" />
-              <item name="libvlc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.videolan.android:libvlc-all:3.1.12@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com.kab.channel66" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -531,17 +477,20 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="4.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="80A354043046906543" />
-    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$/comkabchannel66/build/outputs/apk/debug/comkabchannel66-debug.apk" />
-    <property name="DEBUGGABLE_DEVICE" value="samsung-sm_g920f-0815f840d2e81c05" />
+    <property name="AnalyzeApkAction.lastApkPath" value="$USER_HOME$/Desktop/release/comkabchannel66-release.2.8.5.apk" />
+    <property name="DEBUGGABLE_DEVICE" value="xiaomi-mi_a2-a43b4e1" />
     <property name="DEBUGGABLE_PROCESS" value="com.kab.channel66" />
     <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_29" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-11-18T03:25:37.595Z" />
     <property name="ExportApk.ApkPath" value="$USER_HOME$/Desktop" />
     <property name="ExportApk.BuildType" value="release" />
     <property name="ExportApk.BuildVariants" value="release" />
@@ -562,7 +511,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/android-sdks" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537924679207" />
     <property name="device.picker.selection" value="Nexus_5X_API_26" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/comkabchannel66/libs/feedback_v6.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -574,24 +523,25 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.3.2" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xxhdpi" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xhdpi" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi" />
-      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-mdpi" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.kab.channel66" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi" />
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/layout-land" />
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/mipmap" />
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-prot" />
       <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-land" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kab.channel66" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xxhdpi" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-xhdpi" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi" />
+      <recent name="$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-mdpi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1042,22 +992,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1680" height="976" extended-state="0" />
+    <frame x="-1" y="23" width="1680" height="975" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75085324" visible="true" weight="0.30341882" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74940336" visible="true" weight="0.30341882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Build Variants" order="2" sideWeight="0.24914676" side_tool="true" visible="true" weight="0.30341882" />
+      <window_info id="Build Variants" order="2" sideWeight="0.25059667" side_tool="true" visible="true" weight="0.30341882" />
       <window_info id="Favorites" order="3" sideWeight="0.58360654" side_tool="true" weight="0.24959612" />
-      <window_info id="Captures" order="4" />
+      <window_info id="Captures" order="4" side_tool="true" />
       <window_info id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Nl-Palette" order="8" />
+      <window_info id="Resources Explorer" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.34188035" weight="0.3089431" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.3833944" weight="0.52497095" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.35714287" visible="true" weight="0.31939605" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.3833944" weight="0.19163764" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.35714287" visible="true" weight="0.5127907" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" sideWeight="0.49676898" weight="0.39869282" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4945055" weight="0.3267671" />
@@ -1066,13 +1017,14 @@
       <window_info anchor="bottom" id="Android Profiler" order="9" sideWeight="0.497558" weight="0.32908458" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4908425" weight="0.3267671" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.53724056" side_tool="true" weight="0.32752612" />
-      <window_info anchor="bottom" id="Logcat" order="12" sideWeight="0.56715506" weight="0.31126598" />
+      <window_info anchor="bottom" id="Logcat" order="12" sideWeight="0.56715506" weight="0.2891986" />
       <window_info anchor="bottom" id="Application Servers" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4920635" weight="0.32908458" />
       <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.5750916" weight="0.4514563" />
-      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.46275946" weight="0.39372823" />
+      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.46275946" weight="0.39256677" />
       <window_info anchor="bottom" id="Android Monitor" order="17" sideWeight="0.82295483" weight="0.414832" />
       <window_info anchor="bottom" id="SonarQube" order="18" />
+      <window_info anchor="bottom" id="Flutter Performance" order="19" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1086,6 +1038,9 @@
       <window_info anchor="right" id="Preview" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="11" />
       <window_info anchor="right" id="Fabric" order="12" weight="0.32875606" />
+      <window_info anchor="right" id="Flutter Inspector" order="13" />
+      <window_info anchor="right" id="Assistant" order="14" weight="0.32967034" />
+      <window_info anchor="right" id="Flutter Outline" order="15" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3617021" visible="true" weight="0.24959612" />
@@ -1136,15 +1091,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>173</line>
+          <line>199</line>
           <properties />
           <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>213</line>
-          <properties />
-          <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyWidgetProvider.java</url>
@@ -1171,46 +1120,22 @@
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>274</line>
-          <properties />
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>577</line>
+          <line>578</line>
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>571</line>
-          <properties />
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java</url>
-          <line>132</line>
+          <line>140</line>
           <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>76</line>
+          <line>77</line>
           <properties />
           <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>326</line>
-          <properties />
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>311</line>
-          <properties />
-          <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CallStateListener.java</url>
@@ -1292,7 +1217,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>628</line>
+          <line>629</line>
           <properties />
           <option name="timeStamp" value="149" />
         </line-breakpoint>
@@ -1316,7 +1241,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>288</line>
+          <line>289</line>
           <properties />
           <option name="timeStamp" value="161" />
         </line-breakpoint>
@@ -1334,13 +1259,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>140</line>
+          <line>152</line>
           <properties />
           <option name="timeStamp" value="180" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java</url>
-          <line>50</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="184" />
         </line-breakpoint>
@@ -1455,13 +1380,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java</url>
-          <line>88</line>
+          <line>94</line>
           <properties />
           <option name="timeStamp" value="282" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java</url>
-          <line>44</line>
+          <line>50</line>
           <properties />
           <option name="timeStamp" value="285" />
         </line-breakpoint>
@@ -1473,13 +1398,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java</url>
-          <line>308</line>
+          <line>344</line>
           <properties />
           <option name="timeStamp" value="287" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>669</line>
+          <line>670</line>
           <properties />
           <option name="timeStamp" value="288" />
         </line-breakpoint>
@@ -1509,233 +1434,68 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>272</line>
-          <properties />
-          <option name="timeStamp" value="295" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>224</line>
-          <properties />
-          <option name="timeStamp" value="296" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>349</line>
+          <line>375</line>
           <properties />
           <option name="timeStamp" value="298" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>305</line>
+          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java</url>
+          <line>175</line>
           <properties />
-          <option name="timeStamp" value="299" />
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java</url>
+          <line>133</line>
+          <properties />
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="308" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
           <line>177</line>
           <properties />
-          <option name="timeStamp" value="300" />
+          <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>186</line>
+          <line>170</line>
           <properties />
-          <option name="timeStamp" value="301" />
+          <option name="timeStamp" value="310" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java</url>
-          <line>191</line>
+          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
+          <line>892</line>
           <properties />
-          <option name="timeStamp" value="302" />
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
+          <line>1083</line>
+          <properties />
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
+          <line>84</line>
+          <properties field="mBound" class="com.kab.channel66.StreamListActivity" />
+          <option name="timeStamp" value="313" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.mrmaffen/vlc-android-sdk/2.0.6/54e4e3d477037bd88a34c3792122fdda6fe9d10e/vlc-android-sdk-2.0.6-sources.jar!/org/videolan/libvlc/MediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5760">
-          <caret line="458" column="16" selection-start-line="458" selection-start-column="16" selection-end-line="458" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#1097#0" />
-            <element signature="imports" />
-            <element signature="e#2791#2792#0" />
-            <element signature="e#2826#2827#0" />
-            <element signature="e#2873#2874#0" />
-            <element signature="e#2914#2915#0" />
-            <element signature="e#2962#2963#0" />
-            <element signature="e#3003#3004#0" />
-            <element signature="e#3043#3044#0" />
-            <element signature="e#3078#3079#0" />
-            <element signature="e#3122#3123#0" />
-            <element signature="e#3157#3158#0" />
-            <element signature="e#3193#3194#0" />
-            <element signature="e#3234#3235#0" />
-            <element signature="e#3274#3275#0" />
-            <element signature="e#3315#3316#0" />
-            <element signature="e#3354#3355#0" />
-            <element signature="e#3394#3395#0" />
-            <element signature="e#3433#3434#0" />
-            <element signature="e#3473#3474#0" />
-            <element signature="e#3511#3512#0" />
-            <element signature="e#3546#3547#0" />
-            <element signature="e#5049#5050#0" />
-            <element signature="e#5110#5111#0" />
-            <element signature="e#5152#5153#0" />
-            <element signature="e#5220#5221#0" />
-            <element signature="e#6769#6770#0" />
-            <element signature="e#6804#6805#0" />
-            <element signature="e#6844#6845#0" />
-            <element signature="e#6894#6895#0" />
-            <element signature="e#7376#7377#0" />
-            <element signature="e#7422#7423#0" />
-            <element signature="e#7749#7750#0" />
-            <element signature="e#7800#7801#0" />
-            <element signature="e#7918#7919#0" />
-            <element signature="e#7971#7972#0" />
-            <element signature="e#8368#8369#0" />
-            <element signature="e#8425#8426#0" />
-            <element signature="e#8565#8566#0" />
-            <element signature="e#8616#8617#0" />
-            <element signature="e#9036#9037#0" />
-            <element signature="e#9096#9097#0" />
-            <element signature="e#9274#9275#0" />
-            <element signature="e#9322#9323#0" />
-            <element signature="e#9783#9784#0" />
-            <element signature="e#9837#9838#0" />
-            <element signature="e#10155#10156#0" />
-            <element signature="e#10205#10206#0" />
-            <element signature="e#10778#10779#0" />
-            <element signature="e#10833#10834#0" />
-            <element signature="e#12814#12815#0" />
-            <element signature="e#12885#12886#0" />
-            <element signature="e#13358#13359#0" />
-            <element signature="e#13388#13389#0" />
-            <element signature="e#16565#16566#0" />
-            <element signature="e#16605#16606#0" />
-            <element signature="e#16850#16851#0" />
-            <element signature="e#16897#16898#0" />
-            <element signature="e#17002#17003#0" />
-            <element signature="e#17052#17053#0" />
-            <element signature="e#17165#17166#0" />
-            <element signature="e#17210#17211#0" />
-            <element signature="e#17362#17363#0" />
-            <element signature="e#17406#17407#0" />
-            <element signature="e#18881#18882#0" />
-            <element signature="e#18931#18932#0" />
-            <element signature="e#19044#19045#0" />
-            <element signature="e#19089#19090#0" />
-            <element signature="e#19241#19242#0" />
-            <element signature="e#19285#19286#0" />
-            <element signature="e#19415#19416#0" />
-            <element signature="e#19464#19465#0" />
-            <element signature="e#19596#19597#0" />
-            <element signature="e#19640#19641#0" />
-            <element signature="e#19879#19880#0" />
-            <element signature="e#19928#19929#0" />
-            <element signature="e#20040#20041#0" />
-            <element signature="e#20088#20089#0" />
-            <element signature="e#20208#20209#0" />
-            <element signature="e#20251#20252#0" />
-            <element signature="e#20419#20420#0" />
-            <element signature="e#20461#20462#0" />
-            <element signature="e#20598#20599#0" />
-            <element signature="e#20645#20646#0" />
-            <element signature="e#20784#20785#0" />
-            <element signature="e#20826#20827#0" />
-            <element signature="e#21070#21071#0" />
-            <element signature="e#21117#21118#0" />
-            <element signature="e#22052#22053#0" />
-            <element signature="e#22104#22105#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/android.jar!/android/media/MediaPlayer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="291" column="20" selection-start-line="291" selection-start-column="20" selection-end-line="291" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/MyWidgetProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CallStateInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/android.jar!/android/content/ContextWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="336" column="18" selection-start-line="336" selection-start-column="18" selection-end-line="336" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/android.jar!/android/net/NetworkInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/TomahawkMediaPlayerCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/BaseListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/android.jar!/android/net/ConnectivityManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/android.jar!/android/app/Service.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/android.jar!/android/content/IntentFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/android.jar!/android/content/Intent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4425">
-          <caret line="318" column="11" selection-start-line="318" selection-start-column="11" selection-end-line="318" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-25/android.jar!/android/os/Looper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/android-sdks/extras/android/m2repository/com/android/support/support-core-utils/25.3.1/support-core-utils-25.3.1-sources.jar!/android/support/v4/content/LocalBroadcastManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4065">
@@ -1813,27 +1573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/CustomHttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4590">
-          <caret line="338" column="18" selection-start-line="338" selection-start-column="18" selection-end-line="338" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7800">
-          <caret line="577" selection-start-line="577" selection-end-line="577" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/layout/listviewlayout.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -1852,16 +1591,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/release/comkabchannel66-release.apk">
-      <provider selected="true" editor-type-id="apk-viewer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/release/comkabchannel66-release.apk" />
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/a9468ef09d456d03c943411346d4b191/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1879,24 +1609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="150" column="28" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
-          <folding>
-            <element signature="e#5499#5517#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1931,16 +1643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/os/Handler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="e#2954#2955#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/os/Looper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -1952,82 +1654,200 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/app/Instrumentation.class">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="247" column="16" selection-start-line="247" selection-start-column="16" selection-end-line="247" selection-end-column="16" />
-          <folding>
-            <element signature="e#7659#7660#0" expanded="true" />
-            <element signature="e#7710#7711#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/content/res/Resources.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2955">
+          <caret line="221" column="25" selection-start-line="221" selection-start-column="25" selection-end-line="221" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/view/ContextThemeWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/view/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15360">
+          <caret line="1408" column="21" selection-start-line="1408" selection-start-column="21" selection-end-line="1408" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.videolan.android/libvlc-all/3.1.12/7a3da64d2d9bdc74f50debb2e3f2e19ffe0c9f94/libvlc-all-3.1.12-sources.jar!/org/videolan/libvlc/IVLCVout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2850">
+          <caret line="215" column="9" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.videolan.android/libvlc-all/3.1.12/7a3da64d2d9bdc74f50debb2e3f2e19ffe0c9f94/libvlc-all-3.1.12-sources.jar!/org/videolan/libvlc/MediaPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="810">
           <caret line="124" column="21" selection-start-line="124" selection-start-column="21" selection-end-line="124" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="1155">
           <caret line="162" selection-start-line="162" selection-end-line="162" />
           <folding>
-            <element signature="e#0#33428#0" expanded="true" />
             <element signature="e#5201#5202#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/view/View.class">
+    <entry file="file://$USER_HOME$/Desktop/release/comkabchannel66-release.2.8.5.apk">
+      <provider selected="true" editor-type-id="apk-viewer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="1408" column="21" selection-start-line="1408" selection-start-column="21" selection-end-line="1408" selection-end-column="21" />
-          <folding>
-            <element signature="e#44259#44260#0" expanded="true" />
-            <element signature="e#44310#44311#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/view/ContextThemeWrapper.class">
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/CustomHttpClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-          <folding>
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/content/res/Resources.class">
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/LoginLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="221" column="25" selection-start-line="221" selection-start-column="25" selection-end-line="221" selection-end-column="25" />
-          <folding>
-            <element signature="e#7079#7080#0" expanded="true" />
-            <element signature="e#7130#7131#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="660">
+          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.videolan.android/libvlc-all/3.1.12/7a3da64d2d9bdc74f50debb2e3f2e19ffe0c9f94/libvlc-all-3.1.12-sources.jar!/org/videolan/libvlc/IVLCVout.java">
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/ContentParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="215" column="9" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
+        <state relative-caret-position="105">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/SvivaTovaLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/content/ContextWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="250" selection-start-line="250" selection-end-line="250" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/app/Service.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/content/ComponentName.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon_old.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable-hdpi/icon.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/res/drawable/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/util/Log.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+          <folding>
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/VideoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="360" column="33" selection-start-line="360" selection-start-column="33" selection-end-line="360" selection-end-column="33" />
+        <state relative-caret-position="176">
+          <caret line="164" column="48" lean-forward="true" selection-start-line="164" selection-start-column="48" selection-end-line="164" selection-end-column="48" />
           <folding>
-            <element signature="e#8981#8982#0" expanded="true" />
-            <element signature="e#9003#9004#0" expanded="true" />
+            <element signature="e#9145#9146#0" expanded="true" />
+            <element signature="e#9191#9192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/java/lang/Class.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/app/Instrumentation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="203" column="20" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-28/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding>
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#2903#2904#0" expanded="true" />
+            <element signature="e#2954#2955#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="187" column="49" selection-start-line="187" selection-start-column="49" selection-end-line="187" selection-end-column="49" />
+          <folding>
+            <element signature="e#1455#1654#0" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
           </folding>
         </state>
       </provider>

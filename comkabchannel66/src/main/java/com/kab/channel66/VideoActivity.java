@@ -3,6 +3,7 @@ package com.kab.channel66;
 
 import android.app.Activity;
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -10,7 +11,9 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.Point;
+import android.os.Build;
 import android.os.Bundle;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
@@ -36,6 +39,7 @@ import org.videolan.libvlc.util.AndroidUtil;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
+import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
 public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVout.OnNewVideoLayoutListener,CallStateInterface {
@@ -136,6 +140,14 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
         vout.removeCallback(this);
         vout.detachViews();
 
+        String channelId;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            channelId = createNotificationChannel("service", "video");
+        } else {
+            // If earlier version channel ID is not used
+            // https://developer.android.com/reference/android/support/v4/app/NotificationCompat.Builder.html#NotificationCompat.Builder(android.content.Context)
+            channelId = "";
+        }
         Intent notificationIntent = new Intent(VideoActivity.this, VideoActivity.class);
         notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -146,11 +158,12 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
         Bitmap icon = BitmapFactory.decodeResource(getResources(),
                 R.drawable.icon);
 
-        notification = new NotificationCompat.Builder(VideoActivity.this)
+        notification = new NotificationCompat.Builder(VideoActivity.this,channelId)
                 .setSmallIcon(R.drawable.icon)
                 .setContentTitle("Video playing in background")
                 .setContentText("Click to Access App")
                 .setContentIntent(pendingIntent)
+                .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
                 .setOngoing(true)
                 .build();
         NotificationManager mNotificationManager =
@@ -158,6 +171,19 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
         mNotificationManager.notify(0, notification);
 
 
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    private String createNotificationChannel(String channelId , String channelName){
+        NotificationChannel chan = new NotificationChannel(channelId,
+                channelName, NotificationManager.IMPORTANCE_DEFAULT);
+        chan.setLightColor(Color.BLUE);
+        chan.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
+        chan.setShowBadge(true);
+
+        NotificationManager service = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+        service.createNotificationChannel(chan);
+        return channelId;
     }
 
 

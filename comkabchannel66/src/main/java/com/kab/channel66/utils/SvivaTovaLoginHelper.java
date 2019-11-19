@@ -1,32 +1,22 @@
 package com.kab.channel66.utils;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.CookieStore;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.utils.URLEncodedUtils;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.params.HttpParams;
-
-//import com.parse.signpost.http.HttpResponse;
-
-import android.app.Activity;
-import android.database.CursorJoiner.Result;
 import android.os.AsyncTask;
 import android.text.TextUtils;
 import android.util.Log;
-import android.webkit.CookieManager;
+
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+//import com.parse.signpost.http.HttpResponse;
 
 
 
@@ -34,10 +24,10 @@ import android.webkit.CookieManager;
 
 public class SvivaTovaLoginHelper extends AsyncTask< ArrayList<String>, Void, Boolean> {
 
-	final public String kSuccesfulLoginIndicator= "<a href=\"http://kabbalahgroup.info/internet/he/users/logout\" title=\"יציאה\">יציאה</a>";
+	final public String kSuccesfulLoginIndicator= "<a href=\"https://kabbalahgroup.info/internet/he/users/logout\" title=\"יציאה\">יציאה</a>";
 	final public String kSuccesfulLoginIndicator2= "<div id=\"internet\"></div>";
 	final public String  kFailedLoginIndicator =  "אימייל או סיסמא שגויים";
-	final public String  kSvivaTovaLoginURL ="http://kabbalahgroup.info/internet/he/users/login";
+	final public String  kSvivaTovaLoginURL ="https://kabbalahgroup.info/internet/he/users/login";
 
 	HttpClient mHttpclient;
 	String mUser;

@@ -2,6 +2,8 @@ package com.kab.channel66;
 
 import android.app.Dialog;
 import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -11,12 +13,13 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Binder;
+import android.os.Build;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
-import androidx.core.app.NotificationCompat;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -26,6 +29,9 @@ import com.kab.channel66.utils.Constants;
 
 import java.util.Timer;
 import java.util.TimerTask;
+
+import androidx.annotation.RequiresApi;
+import androidx.core.app.NotificationCompat;
 
 
 public class PlayerService extends Service implements CallStateInterface,TomahawkMediaPlayerCallback{
@@ -81,37 +87,39 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 
 
 			Log.i("svc", "Received Start Foreground Intent ");
-			Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
-//			notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
-//			notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-//					| Intent.FLAG_ACTIVITY_CLEAR_TASK);
-			PendingIntent pendingIntent = PendingIntent.getActivity(PlayerService.this, 0,
-					notificationIntent, 0);
+//			Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
+////			notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
+////			notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+////					| Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//			PendingIntent pendingIntent = PendingIntent.getActivity(PlayerService.this, 0,
+//					notificationIntent, 0);
+//
+//			Intent pauseIntent = new Intent(PlayerService.this, PlayerService.class);
+//			pauseIntent.setAction(Constants.ACTION.PAUSE_ACTION);
+//			PendingIntent ppauseIntent = PendingIntent.getService(PlayerService.this, 0,
+//					pauseIntent, 0);
+//
+//			Intent playIntent = new Intent(PlayerService.this, PlayerService.class);
+//			playIntent.setAction(Constants.ACTION.PLAY_ACTION);
+//			PendingIntent pplayIntent = PendingIntent.getService(PlayerService.this, 0,
+//					playIntent, 0);
+//			Bitmap icon = BitmapFactory.decodeResource(getResources(),
+//					R.drawable.icon);
 
-			Intent pauseIntent = new Intent(PlayerService.this, PlayerService.class);
-			pauseIntent.setAction(Constants.ACTION.PAUSE_ACTION);
-			PendingIntent ppauseIntent = PendingIntent.getService(PlayerService.this, 0,
-					pauseIntent, 0);
+			createAndSetNotification("Audio playing", "Click to Access App");
 
-			Intent playIntent = new Intent(PlayerService.this, PlayerService.class);
-			playIntent.setAction(Constants.ACTION.PLAY_ACTION);
-			PendingIntent pplayIntent = PendingIntent.getService(PlayerService.this, 0,
-					playIntent, 0);
-			Bitmap icon = BitmapFactory.decodeResource(getResources(),
-					R.drawable.icon);
-
-			notification = new NotificationCompat.Builder(PlayerService.this)
-					.setSmallIcon(R.drawable.icon)
-					.setContentTitle("Audio playing")
-					.setContentText("Click to Access App")
-
-					.setContentIntent(pendingIntent)
-					.setOngoing(true)
-					.addAction(android.R.drawable.ic_media_pause,
-							"Pause", ppauseIntent)
-					.addAction(android.R.drawable.ic_media_play, "Play",
-							pplayIntent)
-					.build();
+//			notification = new NotificationCompat.Builder(PlayerService.this)
+//					.setSmallIcon(R.drawable.icon)
+//					.setContentTitle("Audio playing")
+//					.setContentText("Click to Access App")
+//
+//					.setContentIntent(pendingIntent)
+//					.setOngoing(true)
+//					.addAction(android.R.drawable.ic_media_pause,
+//							"Pause", ppauseIntent)
+//					.addAction(android.R.drawable.ic_media_play, "Play",
+//							pplayIntent)
+//					.build();
 			// Return this instance of LocalService so clients can call public methods
 			return PlayerService.this;
 		}
@@ -134,12 +142,16 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 			} else if (intent.getAction().equals(Constants.ACTION.PLAY_ACTION)) {
 				Log.i("svc", "Clicked Play");
 				playAudio(mUrl);
-				createAndSetNotification("Audio playing", "");
+				createAndSetNotification("Audio playing", "Click to Access App");
+				startForeground(Constants.NOTIFICATION_ID.FOREGROUND_SERVICE,
+						notification);
 			} else if (intent.getAction().equals(Constants.ACTION.PAUSE_ACTION)) {
 				Log.i("svc", "Clicked Pause");
 
 				stopAudio();
-				createAndSetNotification("Audio paused", "");
+				createAndSetNotification("Audio paused", "Click to Access App");
+				startForeground(Constants.NOTIFICATION_ID.FOREGROUND_SERVICE,
+						notification);
 			} else if (intent.getAction().equals(
 					Constants.ACTION.STOPFOREGROUND_ACTION)) {
 				Log.i("svc", "Received Stop Foreground Intent");
@@ -159,6 +171,16 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 
 	private void createAndSetNotification(String title, String subtext)
 	{
+
+
+		String channelId;
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+			 channelId = createNotificationChannel("my_not_service", "audio");
+		} else {
+			// If earlier version channel ID is not used
+			// https://developer.android.com/reference/android/support/v4/app/NotificationCompat.Builder.html#NotificationCompat.Builder(android.content.Context)
+			channelId = "";
+		}
 		Log.i("svc", "Received Start Foreground Intent ");
 		Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
 		notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
@@ -179,10 +201,10 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 		Bitmap icon = BitmapFactory.decodeResource(getResources(),
 				R.drawable.icon);
 
-		notification = new NotificationCompat.Builder(PlayerService.this)
+		notification = new NotificationCompat.Builder(PlayerService.this,channelId)
 				.setSmallIcon(R.drawable.icon)
 				.setContentTitle(title)
-				.setContentText("Click to Access App")
+				.setContentText(subtext)
 				.setContentIntent(pendingIntent)
 				.setOngoing(true)
 				.addAction(android.R.drawable.ic_media_pause,
@@ -190,9 +212,23 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 				.addAction(android.R.drawable.ic_media_play, "Play",
 						pplayIntent)
 				.build();
-		startForeground(Constants.NOTIFICATION_ID.FOREGROUND_SERVICE,
-				notification);
+
 	}
+
+	@RequiresApi(Build.VERSION_CODES.O)
+	private String createNotificationChannel(String channelId , String channelName){
+		NotificationChannel chan = new NotificationChannel(channelId,
+				channelName, NotificationManager.IMPORTANCE_NONE);
+		chan.setLightColor(Color.BLUE);
+		chan.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
+		chan.setShowBadge(true);
+
+		NotificationManager service = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+		service.createNotificationChannel(chan);
+		return channelId;
+	}
+
+
 	private boolean checkConnectivity()
 	{
 		Dialog blockApp;
