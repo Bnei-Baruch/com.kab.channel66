@@ -650,20 +650,20 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			mTracker.send(new HitBuilders.EventBuilder()
 					.setLabel("ערוץ קבלה לעם - וידאו")
 					.setCategory("on item clicked")
-					.setAction("http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8")
+					.setAction("https://edge2.il.kab.tv/rtplive/tv66-heb-medium.stream/playlist.m3u8")//http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8")
 					.build());
 			if(shared.getBoolean("quality", false))
 			{
 				//player.putExtra("path", ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
 				//player.putExtra("path", "http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
-				player.putExtra(VideoActivity.LOCATION, "http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
+				player.putExtra(VideoActivity.LOCATION, "https://edge2.il.kab.tv/rtplive/tv66-heb-medium.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
 
 				startActivity(player);
 			}
 			else
 			{
 				//player.putExtra("path", "http://edge1.il.kab.tv/rtplive/tv66-heb-low.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
-				player.putExtra(VideoActivity.LOCATION, "http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
+				player.putExtra(VideoActivity.LOCATION, "https://edge2.il.kab.tv/rtplive/tv66-heb-medium.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
 
 				startActivity(player);
 			}
@@ -758,12 +758,12 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 			if(shared.getBoolean("quality", false))
 			{
-				player.putExtra(VideoActivity.LOCATION,  "http://edge1.il.kab.tv/rtplive/tv66-rus-mobile.stream/playlist.m3u8");
+				player.putExtra(VideoActivity.LOCATION,  "https://edge2.il.kab.tv/rtplive/tv66-rus-medium.stream/playlist.m3u8");
 				startActivity(player);
 			}
 			else
 			{
-				player.putExtra(VideoActivity.LOCATION, "http://edge1.il.kab.tv/rtplive/tv66-rus-low.stream/playlist.m3u8");
+				player.putExtra(VideoActivity.LOCATION, "https://edge2.il.kab.tv/rtplive/tv66-rus-medium.stream/playlist.m3u8");
 				startActivity(player);
 			}
 		}

@@ -184,8 +184,9 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 		Log.i("svc", "Received Start Foreground Intent ");
 		Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
 		notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
-		notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-				| Intent.FLAG_ACTIVITY_CLEAR_TASK);
+		notificationIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+		notificationIntent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+				);
 		PendingIntent pendingIntent = PendingIntent.getActivity(PlayerService.this, 0,
 				notificationIntent, 0);
 
