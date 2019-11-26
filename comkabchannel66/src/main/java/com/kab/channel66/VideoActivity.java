@@ -77,8 +77,13 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
 
         // Receive path to play from intent
         Intent intent = getIntent();
-        mFilePath = intent.getExtras().getString(LOCATION);
-
+        if(intent!=null) {
+            mFilePath = intent.getExtras().getString(LOCATION);
+        }
+        else if (mFilePath==null)
+        {
+            mFilePath = savedInstanceState.getString("url");
+        }
 
 
        
@@ -115,14 +120,47 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
     @Override
     protected void onResume() {
         super.onResume();
-        if(mFilePath!=null)
-            createPlayer(mFilePath);
+        if(mFilePath!=null) {
+            if(mMediaPlayer!=null) {
+                final IVLCVout vout = mMediaPlayer.getVLCVout();
+                if(!vout.areViewsAttached())
+                {
+                    vout.setVideoView(mSurface);
+                    vout.attachViews(this);
+                }
+
+                vout.addCallback(this);
+
+            }
+            else
+                createPlayer(mFilePath);
+        }
         NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.cancel(0);
 
 
     }
 
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        // Save UI state changes to the savedInstanceState.
+        // This bundle will be passed to onCreate if the process is
+        // killed and restarted.
+        savedInstanceState.putString("url", mFilePath);
+
+        // etc.
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        // Restore UI state from the savedInstanceState.
+        // This bundle has also been passed to onCreate.
+
+        mFilePath = savedInstanceState.getString("url");
+    }
 
 
     @Override

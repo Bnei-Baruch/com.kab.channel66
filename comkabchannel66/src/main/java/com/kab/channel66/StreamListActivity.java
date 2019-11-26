@@ -92,7 +92,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	private StreamAvailabilityChecker myChecker = null;
 	PowerManager.WakeLock wl = null;
 	JSONObject serverJSON = null;
-	String content = null;
+
 
 	ArrayList<String> pushMessages;
 	BroadcastReceiver myReciever;
@@ -899,19 +899,16 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 				playDialog.show();
 		}
 
-		ContentParser cparser = new ContentParser();
 		JSONParser parser = new JSONParser();
 		parser.myContext = this;
 
 		if (Build.VERSION.SDK_INT >= 11)
 		{
-			cparser.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,"https://kabbalahgroup.info/internet/events/render_event_response?locale=he&source=stream_container&type=update_presets&timestamp=2011-11-25+13:29:53+UTC&stream_preset_id=3&flash=true&wmv=true");
 			parser.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,"https://mobile.kbb1.com/kab_channel/sviva_tova/jsonresponseexample.json");
 
 		}
 		else
 		{
-			cparser.execute("https://kabbalahgroup.info/internet/events/render_event_response?locale=he&source=stream_container&type=update_presets&timestamp=2011-11-25+13:29:53+UTC&stream_preset_id=3&flash=true&wmv=true");
 			parser.execute("https://mobile.kbb1.com/kab_channel/sviva_tova/jsonresponseexample.json");
 		}
 
@@ -919,7 +916,6 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			if(serverJSON==null)
 			{
 				serverJSON = parser.get();
-				content = cparser.get();
 			}
 			
 		} catch (InterruptedException e2) {

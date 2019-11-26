@@ -56,6 +56,11 @@ public class JSONParser  extends AsyncTask <String, Void, JSONObject>{
 
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
+			try {
+				return new JSONObject("");
+			} catch (JSONException ex) {
+				ex.printStackTrace();
+			}
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
