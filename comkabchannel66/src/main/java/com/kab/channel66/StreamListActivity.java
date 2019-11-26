@@ -47,7 +47,11 @@ import com.google.android.gms.appinvite.AppInviteReferral;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
 
@@ -105,6 +109,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 	GoogleApiClient mGoogleApiClient;
 	private Tracker mTracker;
+	private FirebaseStorage storage;
 
 
 	public StreamListActivity() {
@@ -183,121 +188,8 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 						});
 
 
+		storage = FirebaseStorage.getInstance();
 
-
-//		Backendless.Messaging.registerDevice("727406170147", new AsyncCallback<Void>() {
-//			@Override
-//			public void handleResponse(Void response) {
-//
-//			}
-//
-//			@Override
-//			public void handleFault(BackendlessFault fault) {
-//
-//			}
-//		});
-
-
-//		try {
-//			//  test channel
-//			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-//			final String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
-//
-//			if (mService.mAudioplay.isPlaying(audiourl)) {
-//				//show dialog
-//				playDialog = new Dialog(this);
-//				playDialog.setTitle("Playing audio");
-//				playDialog.setContentView(R.layout.mediacontroller);
-//				final ImageButton ask = (ImageButton) playDialog.findViewById(R.id.mediacontroller_ask);
-//				final ImageButton but = (ImageButton) playDialog.findViewById(R.id.mediacontroller_play_pause);
-//				but.setImageResource(R.drawable.mediacontroller_pause01);
-//				but.setOnClickListener(new OnClickListener() {
-//
-//					@Override
-//					public void onClick(View v) {
-//						// TODO Auto-generated method stub
-//						SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-//						String location = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
-//						if(audioplay.isPlaying(location))
-//						{
-//							but.setImageResource(R.drawable.mediacontroller_play01);
-//							audioplay.pause();
-//
-//						}
-//						else
-//						{
-//							but.setImageResource(R.drawable.mediacontroller_pause01);
-////									svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
-//
-//							audioplay.prepare(MyApplication.getMyApp(), audiourl, new TomahawkMediaPlayerCallback() {
-//								@Override
-//								public void onPrepared(String query) {
-//									if (audioplay.isPrepared(query))
-//										audioplay.start();
-//
-//								}
-//
-//								@Override
-//								public void onCompletion(String query) {
-//
-//								}
-//
-//								@Override
-//								public void onError(String message) {
-//
-//								}
-//							});
-//						}
-//					}
-//				});
-//				ask.setImageResource(R.drawable.system_help);
-//				ask.setOnClickListener(new OnClickListener() {
-//
-//					@Override
-//					public void onClick(View v) {
-//						// TODO Auto-generated method stub
-//						Questions question = new Questions(StreamListActivity.this);
-//						question.show();
-//					}
-//				});
-//
-//				playDialog.setOnCancelListener(new DialogInterface.OnCancelListener()
-//				{
-//					@Override
-//					public
-//					void onCancel(DialogInterface dialog)
-//					{
-//						dialogBackpressed();
-//					}
-//				});
-//				playDialog.show();
-//			}
-//			else
-//				audioplay.pause();
-//
-//
-//		} catch (Throwable t) {
-////			Log.e("Failure during static initialization", t);
-//
-//		}
-//
-
-
-		ArrayList<String> channels = new ArrayList<String>();
-		channels = getIntent().getStringArrayListExtra("channel");
-		ArrayList<String> description = new ArrayList<String>();
-
-//		String notification_body = getIntent().getExtras().getString("body");
-//		if(notification_body!=null)
-//		{
-//			Uri uri = CommonUtils.findURIInText(notification_body);
-//			if(uri != null)
-//			{
-//				Intent i = new Intent(Intent.ACTION_VIEW);
-//				i.setData(uri);
-//				startActivity(i);
-//			}
-//		}
 
 		if(getIntent()!=null)
 			handleMessageClicked(getIntent());
@@ -911,6 +803,22 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		{
 			parser.execute("https://mobile.kbb1.com/kab_channel/sviva_tova/jsonresponseexample.json");
 		}
+
+		StorageReference ref = storage.getReference();
+		StorageReference child = ref.child("jsonresponseexample.json");
+		Task<byte[]> task = child.getBytes(20000);
+		task.addOnCompleteListener(new OnCompleteListener<byte[]>() {
+			@Override
+			public void onComplete(@NonNull Task<byte[]> task) {
+				byte[] mybytes = task.getResult();
+				String myjson = new String(mybytes);
+				Log.d("StreamListActivity",myjson);
+			}
+		});
+
+
+
+
 
 		try {
 			if(serverJSON==null)
