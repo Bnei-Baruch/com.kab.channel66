@@ -77,7 +77,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
 
         // Receive path to play from intent
         Intent intent = getIntent();
-        if(intent!=null) {
+        if(intent!=null && intent.getExtras()!=null) {
             mFilePath = intent.getExtras().getString(LOCATION);
         }
         else if (mFilePath==null)

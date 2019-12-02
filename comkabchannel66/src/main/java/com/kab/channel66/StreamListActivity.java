@@ -47,11 +47,8 @@ import com.google.android.gms.appinvite.AppInviteReferral;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
 
@@ -803,18 +800,18 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		{
 			parser.execute("https://mobile.kbb1.com/kab_channel/sviva_tova/jsonresponseexample.json");
 		}
-
-		StorageReference ref = storage.getReference();
-		StorageReference child = ref.child("jsonresponseexample.json");
-		Task<byte[]> task = child.getBytes(20000);
-		task.addOnCompleteListener(new OnCompleteListener<byte[]>() {
-			@Override
-			public void onComplete(@NonNull Task<byte[]> task) {
-				byte[] mybytes = task.getResult();
-				String myjson = new String(mybytes);
-				Log.d("StreamListActivity",myjson);
-			}
-		});
+//
+//		StorageReference ref = storage.getReference();
+//		StorageReference child = ref.child("jsonresponseexample.json");
+//		Task<byte[]> task = child.getBytes(20000);
+//		task.addOnCompleteListener(new OnCompleteListener<byte[]>() {
+//			@Override
+//			public void onComplete(@NonNull Task<byte[]> task) {
+//				byte[] mybytes = task.getResult();
+//				String myjson = new String(mybytes);
+//				Log.d("StreamListActivity",myjson);
+//			}
+//		});
 
 
 
