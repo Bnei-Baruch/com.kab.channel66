@@ -141,6 +141,9 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		//remove old plugin library
 //		Backendless.initApp( this, "EAD5E9C4-0007-D572-FF17-08523CED4200", "B485FC16-0FC2-A9D2-FF3E-406DF81A7000", version );
 
+		Intent stickyService = new Intent(this, StickyService.class);
+		startService(stickyService);
+
 		MyApplication application = (MyApplication) MyApplication.getMyApp();
 		mTracker = application.getDefaultTracker();
 

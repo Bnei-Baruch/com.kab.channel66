@@ -2,8 +2,6 @@ package com.kab.channel66;
 
 import android.app.Application;
 import android.content.Context;
-import androidx.multidex.MultiDex;
-import androidx.appcompat.app.AppCompatDelegate;
 
 import com.crashlytics.android.Crashlytics;
 import com.crashlytics.android.ndk.CrashlyticsNdk;
@@ -14,6 +12,8 @@ import com.google.android.gms.analytics.Tracker;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.multidex.MultiDex;
 import io.fabric.sdk.android.Fabric;
 
 //import io.vov.vitamio.LibsChecker;
@@ -53,9 +53,6 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
-//        if(CommonUtils.checkConnectivity(getApplicationContext()))
-//        	ACRA.init(this);
-       // LibsChecker.checkVitamioLibs(this);
         sAnalytics = GoogleAnalytics.getInstance(this);
         myapp = this;
         String token = FirebaseInstanceId.getInstance().getToken();
@@ -64,27 +61,14 @@ public class MyApplication extends Application {
 
         AppCompatDelegate.setDefaultNightMode(
                 AppCompatDelegate.MODE_NIGHT_YES);
-//        Parse.enableLocalDatastore(getApplicationContext());
-//
-//
-//     // channel66a
-//        Parse.initialize(this, "dmSTSXcOcBxITZBioUAmC7HXps0OCUteMJEklSCD", "b0gN0SoJgOmQ51fkQoNb9B7bNEIF2agc9SYhFG7U");//real
-//
-//		//chanel test 2
-////        Parse.initialize(this, "ayoTJHpHAVbwWEprqxzQeYpYCIaxz98HY19DbQiF", "imLHqDJYiH6S3iPtZ3gw1yilsXna8wHM0oSiGktp");//test
-//
-//		ParseInstallation.getCurrentInstallation().saveInBackground();
-//
-//
-//		Parse.setLogLevel(Parse.LOG_LEVEL_VERBOSE);
-		
-        // The following line triggers the initialization of ACRA
 
 
         //Facebook
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
     }
+
+
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);

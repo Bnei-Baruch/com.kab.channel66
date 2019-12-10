@@ -103,6 +103,8 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
 
     }
 
+
+
     @Override
     public void onStart() {
 

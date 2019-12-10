@@ -152,6 +152,8 @@
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
             </intent-filter>
         </service>
+        <service android:name="StickyService"></service>
+
         <service
             android:name=".MyFirebaseInstanceIDService">
             <intent-filter>

@@ -87,40 +87,9 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 
 
 			Log.i("svc", "Received Start Foreground Intent ");
-//			Intent notificationIntent = new Intent(PlayerService.this, StreamListActivity.class);
-////			notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
-////			notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-////					| Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//			PendingIntent pendingIntent = PendingIntent.getActivity(PlayerService.this, 0,
-//					notificationIntent, 0);
-//
-//			Intent pauseIntent = new Intent(PlayerService.this, PlayerService.class);
-//			pauseIntent.setAction(Constants.ACTION.PAUSE_ACTION);
-//			PendingIntent ppauseIntent = PendingIntent.getService(PlayerService.this, 0,
-//					pauseIntent, 0);
-//
-//			Intent playIntent = new Intent(PlayerService.this, PlayerService.class);
-//			playIntent.setAction(Constants.ACTION.PLAY_ACTION);
-//			PendingIntent pplayIntent = PendingIntent.getService(PlayerService.this, 0,
-//					playIntent, 0);
-//			Bitmap icon = BitmapFactory.decodeResource(getResources(),
-//					R.drawable.icon);
 
 			createAndSetNotification("Audio playing", "Click to Access App");
 
-//			notification = new NotificationCompat.Builder(PlayerService.this)
-//					.setSmallIcon(R.drawable.icon)
-//					.setContentTitle("Audio playing")
-//					.setContentText("Click to Access App")
-//
-//					.setContentIntent(pendingIntent)
-//					.setOngoing(true)
-//					.addAction(android.R.drawable.ic_media_pause,
-//							"Pause", ppauseIntent)
-//					.addAction(android.R.drawable.ic_media_play, "Play",
-//							pplayIntent)
-//					.build();
-			// Return this instance of LocalService so clients can call public methods
 			return PlayerService.this;
 		}
 	}
@@ -392,5 +361,11 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 	@Override
 	public void onError(String message) {
 
+	}
+
+	@Override
+	public void onDestroy()
+	{
+		stopAudio();
 	}
 }
