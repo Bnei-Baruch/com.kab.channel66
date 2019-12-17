@@ -279,7 +279,7 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 	public boolean isPlaying()
 	{
 
-		return mAudioplay.isPlaying(mUrl);
+		return mAudioplay!=null && mAudioplay.isPlaying(mUrl);
 	}
 
 	@Override
