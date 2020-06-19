@@ -39,6 +39,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 import com.google.android.gms.appinvite.AppInvite;
@@ -47,6 +50,7 @@ import com.google.android.gms.appinvite.AppInviteReferral;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.storage.FirebaseStorage;
 import com.kab.channel66.utils.CallStateListener;
@@ -107,7 +111,8 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	GoogleApiClient mGoogleApiClient;
 	private Tracker mTracker;
 	private FirebaseStorage storage;
-
+	private AdView mAdView;
+	private FirebaseAnalytics mFirebaseAnalytics;
 
 	public StreamListActivity() {
 
@@ -135,6 +140,10 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
+		MobileAds.initialize(this, "ca-app-pub-5716767383344062~4717491201");
+		// Obtain the FirebaseAnalytics instance.
+		mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
 //		PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
 //		String version = pInfo.versionName;
 //		int verCode = pInfo.versionCode;
@@ -150,8 +159,23 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		CommonUtils.RemoveOldPlugin(this);
 		setContentView(R.layout.listviewlayout);
 
+		mAdView = findViewById(R.id.adView);
+		//mAdView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+		AdRequest adRequest = new AdRequest.Builder().build();
+		mAdView.loadAd(adRequest);
 
-		 listview = (ListView) findViewById(R.id.listview);
+		/*
+		ca-app-pub-5716767383344062/5342277352 - ad unit english
+
+		ca-app-pub-5716767383344062/6401822554 - hebrew
+        ads:adUnitId="ca-app-pub-5716767383344062/6401822554">
+
+
+		virtual home russian
+		ca-app-pub-5716767383344062/8487315445
+		 */
+
+		listview = (ListView) findViewById(R.id.listview);
 
 		mGoogleApiClient = new GoogleApiClient.Builder(this)
 				.enableAutoManage(this, this)
@@ -215,6 +239,12 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 				.setAction(url)
 				.setValue(0)
 				.build());
+
+		Bundle bundle = new Bundle();
+		bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "start");
+		bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "radio");
+		bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "audio");
+		mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
 		//EasyTracker.getTracker().trackEvent("radio by link","on item clicked", url,0L);
 //			startService(svc);
 //			audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
@@ -542,20 +572,21 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			mTracker.send(new HitBuilders.EventBuilder()
 					.setLabel("ערוץ קבלה לעם - וידאו")
 					.setCategory("on item clicked")
-					.setAction("https://edge2.il.kab.tv/rtplive/tv66-heb-medium.stream/playlist.m3u8")//http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8")
+					.setAction("https://edge3.uk.kab.tv/live/tv66-heb-medium/playlist.m3u8")//http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8")
+
 					.build());
 			if(shared.getBoolean("quality", false))
 			{
 				//player.putExtra("path", ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
 				//player.putExtra("path", "http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
-				player.putExtra(VideoActivity.LOCATION, "https://edge2.il.kab.tv/rtplive/tv66-heb-medium.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
+				player.putExtra(VideoActivity.LOCATION, "https://edge3.uk.kab.tv/live/tv66-heb-medium/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
 
 				startActivity(player);
 			}
 			else
 			{
 				//player.putExtra("path", "http://edge1.il.kab.tv/rtplive/tv66-heb-low.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
-				player.putExtra(VideoActivity.LOCATION, "https://edge2.il.kab.tv/rtplive/tv66-heb-medium.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
+				player.putExtra(VideoActivity.LOCATION, "https://edge3.uk.kab.tv/live/tv66-heb-medium/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
 
 				startActivity(player);
 			}
@@ -591,6 +622,13 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 					.setCategory("on item clicked")
 					.setAction(url)
 					.build());
+
+			Bundle bundle = new Bundle();
+			bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "start");
+			bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "radio");
+			bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "audio");
+			mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+
 			playDialog = new Dialog(this);
 			playDialog.setTitle("Playing audio -"+info );
 			playDialog.setContentView(R.layout.mediacontroller);
@@ -650,43 +688,20 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 			if(shared.getBoolean("quality", false))
 			{
-				player.putExtra(VideoActivity.LOCATION,  "https://edge2.il.kab.tv/rtplive/tv66-rus-medium.stream/playlist.m3u8");
+				player.putExtra(VideoActivity.LOCATION,  "https://edge3.uk.kab.tv/live/tv66-rus-medium/playlist.m3u8");
 				startActivity(player);
 			}
 			else
 			{
-				player.putExtra(VideoActivity.LOCATION, "https://edge2.il.kab.tv/rtplive/tv66-rus-medium.stream/playlist.m3u8");
+				player.putExtra(VideoActivity.LOCATION, "https://edge3.uk.kab.tv/live/tv66-rus-medium/playlist.m3u8");
 				startActivity(player);
 			}
 		}
 		else if(item.equals("Каббала на Русском - Аудио"))
 		{
-			//	    	Uri uri = Uri.parse("http://icecast.kab.tv/rus.mp3");
-			//	    	Intent player1 = new Intent(Intent.ACTION_VIEW,uri);
-			//	    	 player1.setDataAndType(uri, "audio/*");
-			//			startActivity(player1);	 
-			//svc=new Intent(this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
-			//svc.putExtra("audiourl", "http://icecast.kab.tv/rus.mp3");
-			//startService(svc);
+
 			final String url = ("http://icecast.kab.tv/rus.mp3");
-//			audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
-//				@Override
-//				public void onPrepared(String query) {
-//					if (audioplay.isPrepared(query))
-//						audioplay.start();
 //
-//				}
-//
-//				@Override
-//				public void onCompletion(String query) {
-//
-//				}
-//
-//				@Override
-//				public void onError(String message) {
-//
-//				}
-//			});
 			mService.playAudio(url);
 			playDialog = new Dialog(this);
 			playDialog.setTitle("Playing audio -"+"Каббала на Русском - Аудио");
@@ -715,24 +730,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 						but.setImageResource(R.drawable.mediacontroller_pause01);
 						mService.playAudio(url);
 						but.setImageResource(R.drawable.mediacontroller_pause01);
-//						audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
-//							@Override
-//							public void onPrepared(String query) {
-//								if (audioplay.isPrepared(query))
-//									audioplay.start();
 //
-//							}
-//
-//							@Override
-//							public void onCompletion(String query) {
-//
-//							}
-//
-//							@Override
-//							public void onError(String message) {
-//
-//							}
-//						});
 					}
 				}
 			});
@@ -804,20 +802,6 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			parser.execute("https://mobile.kbb1.com/kab_channel/sviva_tova/jsonresponseexample.json");
 		}
 //
-//		StorageReference ref = storage.getReference();
-//		StorageReference child = ref.child("jsonresponseexample.json");
-//		Task<byte[]> task = child.getBytes(20000);
-//		task.addOnCompleteListener(new OnCompleteListener<byte[]>() {
-//			@Override
-//			public void onComplete(@NonNull Task<byte[]> task) {
-//				byte[] mybytes = task.getResult();
-//				String myjson = new String(mybytes);
-//				Log.d("StreamListActivity",myjson);
-//			}
-//		});
-
-
-
 
 
 		try {
@@ -1058,6 +1042,9 @@ listview.setItemsCanFocus(true);
 
 			Intent intent = new Intent(getApplicationContext(), SvivaTovaLogin.class);
 			startActivity(intent);
+
+	//		FlutterFragment login = Flutter.createFragment("login");
+			
 
 
 

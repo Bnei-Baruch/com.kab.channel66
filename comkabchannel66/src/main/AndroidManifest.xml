@@ -1,46 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.kab.channel66"
-   >
+    package="com.kab.channel66">
 
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE">
-    </uses-permission>
-    <uses-permission android:name="android.permission.INTERNET" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.GET_TASKS" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-	<uses-permission android:name="android.permission.VIBRATE" />
-    
- 
-
-<uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
 
     <application
-         android:icon="@drawable/icon2"
+        android:name=".MyApplication"
+        android:appComponentFactory="someString"
+        android:icon="@drawable/icon2"
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
-        tools:replace="android:appComponentFactory"
-        android:appComponentFactory="someString"
-         android:name="MyApplication">
+        tools:replace="android:appComponentFactory">
+        <meta-data
+            android:name="com.google.android.gms.car.application"
+            android:resource="@xml/automotive_app_desc" />
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5716767383344062~4717491201"/>
 
-        <uses-library android:name="org.apache.http.legacy" android:required="false" />
-        <receiver android:name="MyWidgetProvider" >
-            <intent-filter >
-                <action 
-                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+    <!--
+     Main music service, provides media browsing and media playback services to
+     consumers through MediaBrowserService and MediaSession. Consumers connect to it through
+     MediaBrowser (for browsing) and MediaController (for playback control)
+    -->
+        <service
+            android:name=".MyMediaBrowserService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <receiver android:name=".MyWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
 
             <meta-data
@@ -55,19 +66,20 @@
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
             </intent-filter>
         </receiver>
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
         <activity
             android:name=".VideoActivity"
             android:configChanges="orientation|screenSize"
             android:label="Video"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-        </activity>
-
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
             android:name=".LoginLayout"
             android:configChanges="orientation|keyboard|keyboardHidden|navigation"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
 
                 <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -75,75 +87,62 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".StreamListActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleTask"
-
-            android:screenOrientation="portrait"
-            android:exported="true">
-
+            android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="channel66.com" android:scheme="http"/>
-                <data android:host="channel66.com" android:scheme="https"/>
+                <action android:name="android.intent.action.VIEW" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="channel66.com"
+                    android:scheme="http" />
+                <data
+                    android:host="channel66.com"
+                    android:scheme="https" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".SvivaTovaLogin"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" 
-            android:exported="false">
-
-        </activity>
-         <activity
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".PushMessagesActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" 
-            android:exported="false">
-
-        </activity>
-        
-
-        
-         <activity
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".SplashScreen"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" 
-            android:launchMode="singleTop" 
-            >
-
-             <intent-filter>
-            <action android:name="android.intent.action.MAIN" >
-                </action>
-
-                <category android:name="android.intent.category.LAUNCHER" >
-                </category>
-                </intent-filter>
-        </activity>
-
-
-        <activity android:name="com.facebook.FacebookActivity"
-            android:configChanges=
-                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            tools:replace="android:theme"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:label="@string/app_name" />
-        <service
-            android:name=".MyFirebaseMessagingService">
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="android.intent.action.MAIN"></action>
+
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
         <service
             android:name=".PlayerService"
             android:label="@string/app_name">
@@ -152,21 +151,16 @@
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
             </intent-filter>
         </service>
-        <service android:name="StickyService"></service>
-
-        <service
-            android:name=".MyFirebaseInstanceIDService">
+        <service android:name=".StickyService" />
+        <service android:name=".MyFirebaseInstanceIDService">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-
 
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="7e57fed40952c3cf6bb7a31f3fb649bf967223a7" />
     </application>
-
-
 
 </manifest>

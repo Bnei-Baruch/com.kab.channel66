@@ -1,1 +1,10 @@
 include ':comkabchannel66'
+
+setBinding(new Binding([gradle:this]))
+
+//evaluate(new File(
+//        settingsDir.parentFile,
+//        'com.kab.channel66/flutter_ui/.android/include_flutter.groovy'
+//))
+//include ':flutter_ui'
+
