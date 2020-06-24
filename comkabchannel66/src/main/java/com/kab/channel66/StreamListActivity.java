@@ -42,8 +42,7 @@ import android.widget.ToggleButton;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
+import com.google.android.gms.ads.RequestConfiguration;
 import com.google.android.gms.appinvite.AppInvite;
 import com.google.android.gms.appinvite.AppInviteInvitationResult;
 import com.google.android.gms.appinvite.AppInviteReferral;
@@ -60,6 +59,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 import androidx.annotation.NonNull;
@@ -109,7 +110,6 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	private ListView listview;
 
 	GoogleApiClient mGoogleApiClient;
-	private Tracker mTracker;
 	private FirebaseStorage storage;
 	private AdView mAdView;
 	private FirebaseAnalytics mFirebaseAnalytics;
@@ -141,27 +141,36 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 		MobileAds.initialize(this, "ca-app-pub-5716767383344062~4717491201");
+
+		//MobileAds.openDebugMenu(this,"ca-app-pub-5716767383344062/6401822554");
+
+
+		List<String> testDeviceIds = Arrays.asList("D2BE1DC818CF2B7B8FED459FBCA250CD");
+		RequestConfiguration configuration =
+				new RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build();
+		MobileAds.setRequestConfiguration(configuration);
+
+
 		// Obtain the FirebaseAnalytics instance.
 		mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-//		PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
-//		String version = pInfo.versionName;
-//		int verCode = pInfo.versionCode;
-		//remove old plugin library
-//		Backendless.initApp( this, "EAD5E9C4-0007-D572-FF17-08523CED4200", "B485FC16-0FC2-A9D2-FF3E-406DF81A7000", version );
+//
 
 		Intent stickyService = new Intent(this, StickyService.class);
 		startService(stickyService);
 
 		MyApplication application = (MyApplication) MyApplication.getMyApp();
-		mTracker = application.getDefaultTracker();
 
 		CommonUtils.RemoveOldPlugin(this);
 		setContentView(R.layout.listviewlayout);
 
 		mAdView = findViewById(R.id.adView);
+		
+		//mAdView.setAdSize(AdSize.SMART_BANNER);
 		//mAdView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+		//ca-app-pub-3940256099942544/6300978111 - test
 		AdRequest adRequest = new AdRequest.Builder().build();
+		Log.d("StreamListActivity", "IS TEST DEVICE: "+adRequest.isTestDevice(this));
 		mAdView.loadAd(adRequest);
 
 		/*
@@ -222,6 +231,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	@Override
 	public void onNewIntent(Intent intent)
 	{
+		super.onNewIntent(intent);
 
 		handleMessageClicked(intent);
 	}
@@ -231,20 +241,13 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		 final String url =  "https://icecast.kab.tv/radiozohar2014.mp3";
 		mService.playAudio(url);
 		MyApplication application = (MyApplication) MyApplication.getMyApp();
-		mTracker = application.getDefaultTracker();
 
-		mTracker.send(new HitBuilders.EventBuilder()
-				.setLabel("radio by link")
-				.setCategory("on item clicked")
-				.setAction(url)
-				.setValue(0)
-				.build());
 
 		Bundle bundle = new Bundle();
 		bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "start");
 		bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "radio");
 		bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "audio");
-		mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+		mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM, bundle);
 		//EasyTracker.getTracker().trackEvent("radio by link","on item clicked", url,0L);
 //			startService(svc);
 //			audioplay.prepare(MyApplication.getMyApp(), url, new TomahawkMediaPlayerCallback() {
@@ -443,13 +446,14 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 						}
 
 
-						//EasyTracker.getTracker().trackEvent("Stream list", "on item clicked",url1,0L);
-						mTracker.send(new HitBuilders.EventBuilder()
-								.setLabel("Stream list")
-								.setCategory("on item clicked")
-								.setAction(url1)
-								.setValue(0)
-								.build());
+
+
+						Bundle bundle = new Bundle();
+						bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Video");
+						bundle.putString(FirebaseAnalytics.Param.ITEM_NAME,chosenStream.url_quality_name);
+						bundle.putString(FirebaseAnalytics.Param.ITEM_VARIANT,pages.get(0).description);
+						bundle.putString(FirebaseAnalytics.Param.CONTENT, url1);
+						mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM, bundle);
 
 						startActivity(player);
 
@@ -461,32 +465,15 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 						//svc.putExtra("audiourl", chosenStream.url_value);
 						final String location = chosenStream.url_value;
 						mService.playAudio(location);
-					//	EasyTracker.getTracker().trackEvent("Stream list audio", "on item clicked",location,0L);
-						mTracker.send(new HitBuilders.EventBuilder()
-								.setLabel("Stream list audio")
-								.setCategory("on item clicked")
-								.setAction(location)
-								.setValue(0)
-								.build());
-//						audioplay.prepare(MyApplication.getMyApp(), chosenStream.url_value, new TomahawkMediaPlayerCallback() {
-//							@Override
-//							public void onPrepared(String query) {
-//								if (audioplay.isPrepared(query))
-//									audioplay.start();
-//
-//							}
-//
-//							@Override
-//							public void onCompletion(String query) {
-//
-//							}
-//
-//							@Override
-//							public void onError(String message) {
-//
-//							}
-//						});
-						//startService(svc);
+
+						Bundle bundle = new Bundle();
+						bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Audio");
+						bundle.putString(FirebaseAnalytics.Param.ITEM_NAME,chosenStream.url_quality_name);
+						bundle.putString(FirebaseAnalytics.Param.ITEM_VARIANT,pages.get(0).description);
+						bundle.putString(FirebaseAnalytics.Param.CONTENT, location);
+						mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM, bundle);
+
+
 						playDialog = new Dialog(this);
 						playDialog.setTitle("Playing audio -"+chosenStream.url_quality_name);
 						playDialog.setContentView(R.layout.mediacontroller);
@@ -514,29 +501,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 									but.setImageResource(R.drawable.mediacontroller_pause01);
 									mService.playAudio(location);
 									but.setImageResource(R.drawable.mediacontroller_pause01);
-//									svc=new Intent(StreamListActivity.this, AudioPlayerFactory.GetAudioPlayer(StreamListActivity.this).getClass());
-//									SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
-//									String audiourl = shared.getString("audiourl", "http://icecast.kab.tv/heb.mp3");
-
-//									startService(svc);
-//									audioplay.prepare(MyApplication.getMyApp(), audiourl, new TomahawkMediaPlayerCallback() {
-//										@Override
-//										public void onPrepared(String query) {
-//											if (audioplay.isPrepared(query))
-//												audioplay.start();
 //
-//										}
-//
-//										@Override
-//										public void onCompletion(String query) {
-//
-//										}
-//
-//										@Override
-//										public void onError(String message) {
-//
-//										}
-//									});
 								}
 							}
 						});
@@ -569,27 +534,21 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			StopAudioIfNeeded();
 			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
 			//EasyTracker.getTracker().trackEvent("ערוץ קבלה לעם - וידאו", "on item clicked","http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8",0L);
-			mTracker.send(new HitBuilders.EventBuilder()
-					.setLabel("ערוץ קבלה לעם - וידאו")
-					.setCategory("on item clicked")
-					.setAction("https://edge3.uk.kab.tv/live/tv66-heb-medium/playlist.m3u8")//http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8")
 
-					.build());
-			if(shared.getBoolean("quality", false))
-			{
-				//player.putExtra("path", ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
-				//player.putExtra("path", "http://edge1.il.kab.tv/rtplive/tv66-heb-mobile.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
+
+			Bundle bundle = new Bundle();
+			bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Video");
+			bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "ערוץ קבלה לעם - וידאו");
+			bundle.putString(FirebaseAnalytics.Param.CONTENT, "https://edge3.uk.kab.tv/live/tv66-heb-medium/playlist.m3u8");
+			mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM, bundle);
+
+
+
+
 				player.putExtra(VideoActivity.LOCATION, "https://edge3.uk.kab.tv/live/tv66-heb-medium/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
 
 				startActivity(player);
-			}
-			else
-			{
-				//player.putExtra("path", "http://edge1.il.kab.tv/rtplive/tv66-heb-low.stream/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
-				player.putExtra(VideoActivity.LOCATION, "https://edge3.uk.kab.tv/live/tv66-heb-medium/playlist.m3u8");//"rtsp://wms1.il.kab.tv/heb");// ExtractMMSfromAsx("http://streams.kab.tv/heb.asx"));
 
-				startActivity(player);
-			}
 
 		}
 		else if(item.equals("ערוץ קבלה לעם - אודיו") || item.equals("רדיו קבלה לעם"))// || item.equals("רדיו חיים חדשים"))
@@ -617,17 +576,13 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 //			}
 			mService.playAudio(url);
 			//EasyTracker.getTracker().trackEvent(item,"on item clicked", url,0L);
-			mTracker.send(new HitBuilders.EventBuilder()
-					.setLabel(item)
-					.setCategory("on item clicked")
-					.setAction(url)
-					.build());
+
 
 			Bundle bundle = new Bundle();
-			bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "start");
-			bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "radio");
-			bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "audio");
-			mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+			bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Audio");
+			bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, info);
+			bundle.putString(FirebaseAnalytics.Param.CONTENT, url);
+			mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM, bundle);
 
 			playDialog = new Dialog(this);
 			playDialog.setTitle("Playing audio -"+info );
@@ -686,22 +641,30 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			StopAudioIfNeeded();
 			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
 
-			if(shared.getBoolean("quality", false))
-			{
+			Bundle bundle = new Bundle();
+			bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Video");
+			bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Каббала на Русском - Видео");
+			bundle.putString(FirebaseAnalytics.Param.CONTENT, "https://edge3.uk.kab.tv/live/tv66-rus-medium/playlist.m3u8");
+			mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM, bundle);
+
 				player.putExtra(VideoActivity.LOCATION,  "https://edge3.uk.kab.tv/live/tv66-rus-medium/playlist.m3u8");
 				startActivity(player);
-			}
-			else
-			{
-				player.putExtra(VideoActivity.LOCATION, "https://edge3.uk.kab.tv/live/tv66-rus-medium/playlist.m3u8");
-				startActivity(player);
-			}
+
 		}
 		else if(item.equals("Каббала на Русском - Аудио"))
 		{
 
 			final String url = ("http://icecast.kab.tv/rus.mp3");
 //
+
+			Bundle bundle = new Bundle();
+			bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Audio");
+			bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Каббала на Русском - Аудио");
+			bundle.putString(FirebaseAnalytics.Param.CONTENT, url);
+			mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM, bundle);
+
+
+
 			mService.playAudio(url);
 			playDialog = new Dialog(this);
 			playDialog.setTitle("Playing audio -"+"Каббала на Русском - Аудио");

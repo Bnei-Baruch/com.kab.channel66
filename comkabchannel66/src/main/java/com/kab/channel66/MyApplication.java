@@ -7,8 +7,7 @@ import com.crashlytics.android.Crashlytics;
 import com.crashlytics.android.ndk.CrashlyticsNdk;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
-import com.google.android.gms.analytics.GoogleAnalytics;
-import com.google.android.gms.analytics.Tracker;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 
@@ -47,13 +46,11 @@ import io.fabric.sdk.android.Fabric;
 
 public class MyApplication extends Application {
     static Application myapp;
-    private static GoogleAnalytics sAnalytics;
-    private static Tracker sTracker;
+
 	@Override
     public void onCreate() {
         super.onCreate();
         Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
-        sAnalytics = GoogleAnalytics.getInstance(this);
         myapp = this;
         String token = FirebaseInstanceId.getInstance().getToken();
         FirebaseMessaging.getInstance().subscribeToTopic("news");
@@ -63,6 +60,7 @@ public class MyApplication extends Application {
                 AppCompatDelegate.MODE_NIGHT_YES);
 
 
+        FirebaseAnalytics.getInstance(this).setAnalyticsCollectionEnabled(true);
         //Facebook
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
@@ -75,14 +73,6 @@ public class MyApplication extends Application {
         MultiDex.install(this);
     }
 
-    synchronized public Tracker getDefaultTracker() {
-        // To enable debug logging use: adb shell setprop log.tag.GAv4 DEBUG
-        if (sTracker == null) {
-            sTracker = sAnalytics.newTracker(R.xml.analytics);
-        }
-
-        return sTracker;
-    }
 
     static public Application getMyApp()
     {

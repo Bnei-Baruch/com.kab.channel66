@@ -10,12 +10,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.RemoteViews;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.Random;
 
@@ -39,13 +41,19 @@ public class MyWidgetProvider extends AppWidgetProvider {
 	  //EasyTracker.getInstance().setContext(context.getApplicationContext());
 
       MyApplication application = (MyApplication) MyApplication.getMyApp();
-      mTracker = application.getDefaultTracker();
+
 
         mTracker.send(new HitBuilders.EventBuilder()
                 .setCategory("installing widget")
                 .setAction("onUpdate")
                 .setValue(0)
                 .build());
+
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "widget");
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "install");
+        FirebaseAnalytics.getInstance(context).logEvent(FirebaseAnalytics.Event.SELECT_ITEM, bundle);
+
 	 // EasyTracker.getTracker().trackEvent("Widget", "installing widget","onUpdate",0L);
 	    audioplayer = VLCMediaPlayer.get();
     // Get all ids

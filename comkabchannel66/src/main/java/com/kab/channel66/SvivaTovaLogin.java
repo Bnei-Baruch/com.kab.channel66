@@ -21,6 +21,7 @@ import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.kab.channel66.utils.CommonUtils;
 import com.kab.channel66.utils.SvivaTovaLoginApiHelper;
 
@@ -55,8 +56,7 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 	    super.onCreate(icicle);
 //		EasyTracker.getInstance().setContext(this);
 		MyApplication application = (MyApplication) getApplication();
-		mTracker = application.getDefaultTracker();
-		mTracker.send(new HitBuilders.ScreenViewBuilder().build());
+
 	    setContentView(R.layout.login);
 	    mUser = (EditText)findViewById(R.id.et_un);
 	    mPass = (EditText)findViewById(R.id.et_pw);
@@ -139,17 +139,32 @@ public class SvivaTovaLogin extends BaseActivity implements LanguageSeletedListe
 		SvivaTovaLoginApiHelper.status st;
 		mHelper = (SvivaTovaLoginApiHelper) new SvivaTovaLoginApiHelper().execute(details);
 		try {
-			if(( st = (SvivaTovaLoginApiHelper.status)mHelper.get())!= SvivaTovaLoginApiHelper.status.sucess)
-				if(st== SvivaTovaLoginApiHelper.status.not_allowed)
+			if(( st = (SvivaTovaLoginApiHelper.status)mHelper.get())!= SvivaTovaLoginApiHelper.status.sucess) {
+
+				Bundle bundle = new Bundle();
+				bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Login");
+				bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Failed");
+				bundle.putString(FirebaseAnalytics.Param.ITEM_CATEGORY, st.name());
+				FirebaseAnalytics.getInstance(this).logEvent(FirebaseAnalytics.Event.LOGIN, bundle);
+
+
+				if (st == SvivaTovaLoginApiHelper.status.not_allowed)
 					mError.setText("Login failed (code 2)");
 				else
 					mError.setText("Login failed (code 1)");
+			}
 			else
 			{
 				CommonUtils.setActivated(true, SvivaTovaLogin.this);
 				//run language selector
 				//with the language load the streams relevant like in weblogin and pass to stream list
 				CommonUtils.ShowLanguageSelection(SvivaTovaLogin.this,SvivaTovaLogin.this);
+
+				Bundle bundle = new Bundle();
+				bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Login");
+				bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Success");
+
+				FirebaseAnalytics.getInstance(this).logEvent(FirebaseAnalytics.Event.LOGIN, bundle);
 
 
 			}

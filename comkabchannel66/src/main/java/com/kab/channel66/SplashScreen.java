@@ -8,9 +8,6 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.MotionEvent;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
-
 //import com.parse.Parse;
 //import com.parse.ParseAnalytics;
 //import com.parse.ParseInstallation;
@@ -92,13 +89,9 @@ public class SplashScreen extends Activity {
 @Override
 public void onStart() {
   super.onStart();
-   // The rest of your onStart() code.
-  //EasyTracker.getInstance().setContext(this.getApplicationContext());
-  //EasyTracker.getInstance().activityStart(this);
+
 	MyApplication application = (MyApplication) getApplication();
-	Tracker mTracker = application.getDefaultTracker();
-	mTracker.enableAutoActivityTracking(true);
-	mTracker.send(new HitBuilders.ScreenViewBuilder().build());
+
   
  
 }

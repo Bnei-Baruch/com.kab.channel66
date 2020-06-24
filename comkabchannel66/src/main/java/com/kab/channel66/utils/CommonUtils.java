@@ -12,12 +12,12 @@ import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Patterns;
 import android.widget.EditText;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.kab.channel66.LanguageSeletedListener;
 import com.kab.channel66.MyApplication;
 import com.kab.channel66.R;
@@ -130,13 +130,15 @@ public class CommonUtils {
 //       	         Log.d( "Login", "Group member : " + value);
        	         //EasyTracker.getTracker().trackEvent("Group", "name", value,0L);
 				 MyApplication application = (MyApplication) MyApplication.getMyApp();
-				 Tracker mTracker = application.getDefaultTracker();
-				 mTracker.send(new HitBuilders.EventBuilder()
-						 .setLabel("Group")
-						 .setCategory("name")
-						 .setAction(value)
-						 .build());
-       	        
+
+
+
+				 Bundle bundle = new Bundle();
+				 bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Group");
+				 bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, value);
+				 bundle.putString(FirebaseAnalytics.Param.GROUP_ID, value);
+				 FirebaseAnalytics.getInstance(context).logEvent(FirebaseAnalytics.Event.SELECT_ITEM, bundle);
+
        	      Intent intent = new Intent(context,StreamListActivity.class);
 				 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
        	   context.startActivity(intent);
