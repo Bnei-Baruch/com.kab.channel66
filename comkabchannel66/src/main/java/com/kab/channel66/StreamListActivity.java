@@ -35,14 +35,15 @@ import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.RequestConfiguration;
 import com.google.android.gms.appinvite.AppInvite;
 import com.google.android.gms.appinvite.AppInviteInvitationResult;
 import com.google.android.gms.appinvite.AppInviteReferral;
@@ -59,8 +60,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 
 import androidx.annotation.NonNull;
@@ -113,6 +113,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	private FirebaseStorage storage;
 	private AdView mAdView;
 	private FirebaseAnalytics mFirebaseAnalytics;
+	private AdRequest adRequest;
 
 	public StreamListActivity() {
 
@@ -140,15 +141,16 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
-		MobileAds.initialize(this, "ca-app-pub-5716767383344062~4717491201");
+//		MobileAds.initialize(this, "ca-app-pub-5716767383344062~9051358001");
+		MobileAds.initialize(this, "ca-app-pub-4525606414173317~9308887615");
 
 		//MobileAds.openDebugMenu(this,"ca-app-pub-5716767383344062/6401822554");
 
 
-		List<String> testDeviceIds = Arrays.asList("D2BE1DC818CF2B7B8FED459FBCA250CD");
-		RequestConfiguration configuration =
-				new RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build();
-		MobileAds.setRequestConfiguration(configuration);
+//		List<String> testDeviceIds = Arrays.asList("D2BE1DC818CF2B7B8FED459FBCA250CD");
+//		RequestConfiguration configuration =
+//				new RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build();
+//		MobileAds.setRequestConfiguration(configuration);
 
 
 		// Obtain the FirebaseAnalytics instance.
@@ -164,14 +166,44 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		CommonUtils.RemoveOldPlugin(this);
 		setContentView(R.layout.listviewlayout);
 
-		mAdView = findViewById(R.id.adView);
-		
+		//mAdView = findViewById(R.id.adView);
+		//mAdView = new AdView();
+
+		LinearLayout adContainer = findViewById(R.id.main_layout);
+
+		mAdView = new AdView(this);
+		mAdView.setAdSize(AdSize.SMART_BANNER);
+
+		String language = Locale.getDefault().getLanguage();
+
+		if(language.contentEquals("ru"))
+		{
+			mAdView.setAdUnitId("ca-app-pub-4525606414173317/8397601947");
+		}
+		else if(language.contentEquals("iw"))
+		{
+			mAdView.setAdUnitId("ca-app-pub-4525606414173317/4583206361");
+		}
+		else if (language.contentEquals("es"))
+		{
+			mAdView.setAdUnitId("ca-app-pub-4525606414173317/4893471200");
+		}else {
+			mAdView.setAdUnitId("ca-app-pub-4525606414173317/6238396369");
+		}
+
+
 		//mAdView.setAdSize(AdSize.SMART_BANNER);
+		//ca-app-pub-5716767383344062/6401822554
 		//mAdView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
 		//ca-app-pub-3940256099942544/6300978111 - test
-		AdRequest adRequest = new AdRequest.Builder().build();
+
+		adRequest = new AdRequest.Builder().build();
 		Log.d("StreamListActivity", "IS TEST DEVICE: "+adRequest.isTestDevice(this));
+
 		mAdView.loadAd(adRequest);
+
+
+		adContainer.addView(mAdView,0);
 
 		/*
 		ca-app-pub-5716767383344062/5342277352 - ad unit english
