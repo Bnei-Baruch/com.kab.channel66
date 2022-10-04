@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-178:12
-INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-178:12
-INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-178:12
-INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-178:12
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-179:12
+INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-179:12
+INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-179:12
+INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-179:12
 MERGED from [org.videolan.android:libvlc-all:3.3.10] /Users/shidur/.gradle/caches/transforms-3/4dbaac0c12d47cff0f2f0d4be1ba7667/transformed/jetified-libvlc-all-3.3.10/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/shidur/.gradle/caches/transforms-3/f53303b14d106de3c617e8d7ecd904a9/transformed/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.android:facebook-android-sdk:4.42.0] /Users/shidur/.gradle/caches/transforms-3/76dd983392702ac95fb5244542873691/transformed/jetified-facebook-android-sdk-4.42.0/AndroidManifest.xml:21:1-31:12
@@ -87,22 +87,22 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/shidur/.gradle/
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/shidur/.gradle/caches/transforms-3/c38a639d4d95f2357e4694675642fc25/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/shidur/.gradle/caches/transforms-3/b5d8df7177daa1c6a1b739dd1f0f27d6/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-ads-base:19.2.0] /Users/shidur/.gradle/caches/transforms-3/943cb6ba137fe505a67294af8b6f3715/transformed/jetified-play-services-ads-base-19.2.0/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-178:12
-INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-178:12
-INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-178:12
+INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-179:12
+INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-179:12
+INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-179:12
 	package
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:4:5-32
 		INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 		INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-178:12
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-179:12
 		INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-178:12
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-179:12
 		INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:11-69
@@ -225,7 +225,7 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.1] /U
 	android:name
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:18:22-65
 application
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:20:5-176:19
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:20:5-177:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.42.0] /Users/shidur/.gradle/caches/transforms-3/76dd983392702ac95fb5244542873691/transformed/jetified-facebook-android-sdk-4.42.0/AndroidManifest.xml:28:5-29:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.42.0] /Users/shidur/.gradle/caches/transforms-3/76dd983392702ac95fb5244542873691/transformed/jetified-facebook-android-sdk-4.42.0/AndroidManifest.xml:28:5-29:19
 MERGED from [com.google.firebase:firebase-crashlytics:18.2.13] /Users/shidur/.gradle/caches/transforms-3/1eb49dfa425bd7691ba990bb086d20f9/transformed/jetified-firebase-crashlytics-18.2.13/AndroidManifest.xml:14:5-22:19
@@ -342,7 +342,7 @@ ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/ma
 service#com.kab.channel66.MyMediaBrowserService
 ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:41:9-47:19
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:43:13-37
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:43:13-36
 	android:name
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:42:13-50
 intent-filter#action:name:android.media.browse.MediaBrowserService
@@ -360,7 +360,7 @@ ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/ma
 receiver#com.kab.channel66.MyWidgetProvider
 ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:53:9-63:20
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:54:13-37
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:54:13-36
 	android:name
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:53:19-51
 intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
@@ -376,182 +376,184 @@ ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/ma
 	android:name
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:61:17-58
 receiver#com.kab.channel66.utils.NetworkChangeReceiver
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:64:9-73:20
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:64:9-74:20
 	android:label
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:68:13-50
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:65:13-37
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:65:13-36
 	android:name
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:67:13-56
 intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE+action:name:android.net.wifi.WIFI_STATE_CHANGED
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:69:13-72:29
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:69:13-73:29
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:70:17-79
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:70:17-71:50
+	tools:ignore
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:71:21-47
 	android:name
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:70:25-76
 action#android.net.wifi.WIFI_STATE_CHANGED
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:71:17-78
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:72:17-78
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:71:25-75
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:72:25-75
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:75:9-77:55
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:76:9-78:55
 	android:value
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:77:13-52
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:78:13-52
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:76:13-58
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:77:13-58
 activity#com.kab.channel66.VideoActivity
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:79:9-84:74
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:80:9-85:74
 	android:label
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:82:13-34
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:83:13-34
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:83:13-37
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:84:13-37
 	android:configChanges
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:81:13-59
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:82:13-59
 	android:theme
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:84:13-71
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:85:13-71
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:80:13-42
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:81:13-42
 activity#com.kab.channel66.LoginLayout
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:85:9-96:20
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:86:9-97:20
 	android:label
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:89:13-45
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:90:13-45
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:87:13-37
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:88:13-36
 	android:configChanges
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:88:13-83
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:89:13-83
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:86:13-40
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:87:13-40
 intent-filter#category:name:android.intent.category.LAUNCHER
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:90:13-95:29
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:91:13-96:29
 category#android.intent.category.LAUNCHER
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:94:17-77
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:95:17-77
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:94:27-74
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:95:27-74
 activity#com.kab.channel66.StreamListActivity
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:97:9-117:20
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:98:9-118:20
 	android:screenOrientation
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:103:13-49
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:104:13-49
 	android:label
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:101:13-45
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:102:13-45
 	android:launchMode
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:102:13-44
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:103:13-44
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:100:13-36
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:101:13-36
 	android:configChanges
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:99:13-74
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:100:13-74
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:98:13-47
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:99:13-47
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:channel66.com+data:host:channel66.com+data:scheme:http+data:scheme:https
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:104:13-116:29
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:105:13-117:29
 action#android.intent.action.VIEW
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:105:17-69
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:106:17-69
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:105:25-66
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:106:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:107:17-76
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:108:17-76
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:107:27-73
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:108:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:108:17-78
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:109:17-78
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:108:27-75
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:109:27-75
 data
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:110:17-112:45
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:111:17-113:45
 	android:host
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:111:21-49
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:112:21-49
 	android:scheme
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:112:21-42
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:113:21-42
 activity#com.kab.channel66.SvivaTovaLogin
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:118:9-123:52
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:119:9-124:52
 	android:screenOrientation
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:123:13-49
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:124:13-49
 	android:label
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:122:13-45
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:123:13-45
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:121:13-37
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:122:13-36
 	android:configChanges
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:120:13-74
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:121:13-74
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:119:13-43
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:120:13-43
 activity#com.kab.channel66.PushMessagesActivity
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:124:9-129:52
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:125:9-130:52
 	android:screenOrientation
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:129:13-49
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:130:13-49
 	android:label
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:128:13-45
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:129:13-45
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:127:13-37
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:128:13-37
 	android:configChanges
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:126:13-74
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:127:13-74
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:125:13-49
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:126:13-49
 activity#com.kab.channel66.SplashScreen
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:130:9-141:20
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:131:9-142:20
 	android:screenOrientation
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:135:13-49
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:136:13-49
 	android:label
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:132:13-45
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:133:13-45
 	android:launchMode
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:134:13-43
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:135:13-43
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:133:13-37
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:134:13-36
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:131:13-41
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:132:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:136:13-140:29
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:137:13-141:29
 action#android.intent.action.MAIN
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:137:17-69
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:138:17-69
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:137:25-66
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:138:25-66
 activity#com.facebook.FacebookActivity
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:142:9-148:45
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:143:9-149:45
 MERGED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/transforms-3/ef9efa8dd5f69d1ee4d262b9022c4c29/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:29:9-32:66
 MERGED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/transforms-3/ef9efa8dd5f69d1ee4d262b9022c4c29/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:145:13-45
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:146:13-45
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:146:13-37
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:147:13-37
 	android:configChanges
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:144:13-96
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:145:13-96
 	android:theme
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:147:13-72
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:148:13-72
 		REJECTED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/transforms-3/ef9efa8dd5f69d1ee4d262b9022c4c29/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:32:13-63
 	tools:replace
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:148:13-42
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:149:13-42
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:143:13-57
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:144:13-57
 service#com.kab.channel66.MyFirebaseMessagingService
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:150:9-157:19
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:151:9-158:19
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:151:13-36
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:152:13-36
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:150:18-60
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:151:18-60
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:153:13-156:29
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:154:13-157:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:155:17-78
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:156:17-78
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:155:25-75
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:156:25-75
 service#com.kab.channel66.PlayerService
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:158:9-166:19
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:159:9-167:19
 	android:label
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:161:13-45
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:162:13-45
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:159:13-37
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:160:13-36
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:160:13-42
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:161:13-42
 service#com.kab.channel66.StickyService
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:167:9-170:15
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:168:9-171:15
 	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:168:13-37
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:169:13-36
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:167:18-47
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:168:18-47
 meta-data#io.fabric.ApiKey
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:173:9-175:72
+ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:174:9-176:72
 	android:value
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:175:13-69
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:176:13-69
 	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:174:13-44
+		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:175:13-44
 uses-sdk
 INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
