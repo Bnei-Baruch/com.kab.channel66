@@ -17,30 +17,32 @@ import android.os.Build;
 import android.os.Bundle;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Toast;
+
+import androidx.annotation.RequiresApi;
+import androidx.core.app.NotificationCompat;
 
 import com.kab.channel66.utils.CallStateInterface;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.Constants;
 
-import org.videolan.libvlc.IVLCVout;
 import org.videolan.libvlc.LibVLC;
 import org.videolan.libvlc.Media;
 import org.videolan.libvlc.MediaPlayer;
+import org.videolan.libvlc.interfaces.IVLCVout;
 import org.videolan.libvlc.util.AndroidUtil;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-
-import androidx.annotation.RequiresApi;
-import androidx.core.app.NotificationCompat;
 
 public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVout.OnNewVideoLayoutListener,CallStateInterface {
     public final static String TAG = "LibVLCVideoActivity";
@@ -116,7 +118,14 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        setSize(mVideoWidth, mVideoHeight);
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+
+        ViewGroup.LayoutParams videoParams = mSurface.getLayoutParams();
+        videoParams.width = displayMetrics.widthPixels;
+        videoParams.height = displayMetrics.heightPixels;
+        final IVLCVout vout = mMediaPlayer.getVLCVout();
+        vout.setWindowSize(videoParams.width,videoParams.height);
     }
 
     @Override
@@ -295,6 +304,14 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
                 toast.show();
             }
 
+            DisplayMetrics displayMetrics = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+
+            ViewGroup.LayoutParams videoParams = mSurface.getLayoutParams();
+            videoParams.width = displayMetrics.widthPixels;
+            videoParams.height = displayMetrics.heightPixels;
+
+
             mFilePath = media;
             // Create LibVLC
             // TODO: make this more robust, and sync with audio demo
@@ -319,6 +336,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
             mMediaPlayer.setVideoScale(MediaPlayer.ScaleType.SURFACE_4_3);
             // Set up video output
             final IVLCVout vout = mMediaPlayer.getVLCVout();
+            vout.setWindowSize(videoParams.width,videoParams.height);
             vout.setVideoView(mSurface);
             vout.attachViews(this);
             //vout.setSubtitlesView(mSurfaceSubtitles);

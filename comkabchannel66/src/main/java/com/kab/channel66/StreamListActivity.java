@@ -51,7 +51,6 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.storage.FirebaseStorage;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
@@ -1026,13 +1025,13 @@ listview.setItemsCanFocus(true);
 		switch (item.getItemId()) {
 		case R.id.login: {
 
-			String token = FirebaseInstanceId.getInstance().getToken();
+			//String token = FirebaseInstanceId.getInstance().getToken();
 
 			if(BuildConfig.DEBUG) {
 				// Log and toast
-				String msg = getString(R.string.msg_token_fmt, token);
-				Log.d("token", msg);
-				Toast.makeText(StreamListActivity.this, msg, Toast.LENGTH_SHORT).show();
+			//String msg = getString(R.string.msg_token_fmt, token);
+			//	Log.d("token", msg);
+			//	Toast.makeText(StreamListActivity.this, msg, Toast.LENGTH_SHORT).show();
 			}
 
 			Intent intent = new Intent(getApplicationContext(), SvivaTovaLogin.class);

@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/com.kab.channel66.iml" filepath="$PROJECT_DIR$/com.kab.channel66.iml" />
-      <module fileurl="file://$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" filepath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comkabchannel66/com.kab.channel66.comkabchannel66.iml" filepath="$PROJECT_DIR$/.idea/modules/comkabchannel66/com.kab.channel66.comkabchannel66.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comkabchannel66/com.kab.channel66.comkabchannel66.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/comkabchannel66/com.kab.channel66.comkabchannel66.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comkabchannel66/com.kab.channel66.comkabchannel66.main.iml" filepath="$PROJECT_DIR$/.idea/modules/comkabchannel66/com.kab.channel66.comkabchannel66.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comkabchannel66/com.kab.channel66.comkabchannel66.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/comkabchannel66/com.kab.channel66.comkabchannel66.unitTest.iml" />
     </modules>
   </component>
 </project>
