@@ -32,7 +32,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8f0fd8f-7977-4fc8-afaa-6ee669b0f0fc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
@@ -44,7 +46,7 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[a43b4e1]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/shidur/.android/avd/Pixel_4_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -160,6 +162,7 @@
     <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/keystore" />
     <option name="KEY_ALIAS" value="svivatova" />
     <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -385,6 +388,7 @@
   <component name="PropertiesComponent">
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="4.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="80A354043046906543" />
+    <property name="ApkExportedModule" value="com.kab.channel66.comkabchannel66" />
     <property name="BundleExportedModule" value="com.kab.channel66.comkabchannel66" />
     <property name="DEBUGGABLE_DEVICE" value="Pixel_4_API_30 [emulator-5554]" />
     <property name="DEBUGGABLE_PROCESS" value="com.kab.channel66" />
@@ -424,7 +428,7 @@
     <property name="project.structure.last.edited" value="Variables" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.3.2" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>

@@ -339,18 +339,6 @@ ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/ma
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:33:13-67
 	android:name
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:32:13-69
-service#com.kab.channel66.MyMediaBrowserService
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:41:9-47:19
-	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:43:13-36
-	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:42:13-50
-intent-filter#action:name:android.media.browse.MediaBrowserService
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:44:13-46:29
-action#android.media.browse.MediaBrowserService
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:45:17-83
-	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:45:25-80
 uses-library#org.apache.http.legacy
 ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:49:9-51:40
 	android:required
