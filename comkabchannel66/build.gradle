@@ -22,8 +22,8 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        versionCode 72
-        versionName "2.9.2"
+        versionCode 74
+        versionName "2.9.4"
         applicationId "com.kab.channel66"
         minSdkVersion 21
         targetSdkVersion 32
@@ -102,7 +102,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     //compile 'com.backendless:backendless:3.+'
     //compile files('libs/feedback_v6.jar')
-    implementation 'androidx.media:media:1.1.0'
+    //implementation 'androidx.media:media:1.1.0'
     implementation 'info.guardianproject.netcipher:netcipher:2.1.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
    // implementation project(':flutter')
