@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.kab.channel66.utils.CallStateInterface;
 import com.kab.channel66.utils.CallStateListener;
+import com.kab.channel66.utils.CallStateListenerSType;
 import com.kab.channel66.utils.Constants;
 
 import java.util.Timer;
@@ -38,6 +39,7 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 
 	private VLCMediaPlayer mAudioplay;
 	private CallStateListener calllistener;
+	private CallStateListenerSType calllistenerTypeS;
 	private String mUrl;
 	private Notification notification;
 	TomahawkMediaPlayerCallback mTomhawkCallback;
@@ -82,9 +84,15 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 	public class LocalBinder extends Binder {
 		PlayerService getService() {
 			mAudioplay =  VLCMediaPlayer.get();
-			calllistener = new CallStateListener(PlayerService.this);
-			mAudioplay.setCalllistener(calllistener);
-
+			if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+				calllistener = new CallStateListener(PlayerService.this);
+				mAudioplay.setCalllistener(calllistener);
+			}
+			else
+			{
+				calllistenerTypeS = new CallStateListenerSType(PlayerService.this);
+				mAudioplay.setCalllistenerTypeS(calllistenerTypeS);
+			}
 
 			Log.i("svc", "Received Start Foreground Intent ");
 
@@ -157,17 +165,17 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 		notificationIntent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
 				);
 		PendingIntent pendingIntent = PendingIntent.getActivity(PlayerService.this, 0,
-				notificationIntent, 0);
+				notificationIntent, PendingIntent.FLAG_IMMUTABLE);
 
 		Intent pauseIntent = new Intent(PlayerService.this, PlayerService.class);
 		pauseIntent.setAction(Constants.ACTION.PAUSE_ACTION);
 		PendingIntent ppauseIntent = PendingIntent.getService(PlayerService.this, 0,
-				pauseIntent, 0);
+				pauseIntent, PendingIntent.FLAG_IMMUTABLE);
 
 		Intent playIntent = new Intent(PlayerService.this, PlayerService.class);
 		playIntent.setAction(Constants.ACTION.PLAY_ACTION);
 		PendingIntent pplayIntent = PendingIntent.getService(PlayerService.this, 0,
-				playIntent, 0);
+				playIntent, PendingIntent.FLAG_IMMUTABLE);
 		Bitmap icon = BitmapFactory.decodeResource(getResources(),
 				R.drawable.icon);
 

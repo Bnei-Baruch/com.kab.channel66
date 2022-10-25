@@ -17,19 +17,28 @@
  */
 package com.kab.channel66;
 
+import static android.content.Context.TELEPHONY_SERVICE;
+import static androidx.core.content.ContextCompat.getMainExecutor;
+import static androidx.core.content.ContextCompat.getSystemService;
+
+import android.Manifest;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.telephony.PhoneStateListener;
+import android.telephony.TelephonyCallback;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.kab.channel66.utils.CallStateListener;
+import com.kab.channel66.utils.CallStateListenerSType;
 
 import org.videolan.libvlc.LibVLC;
 import org.videolan.libvlc.Media;
@@ -42,6 +51,9 @@ import de.greenrobot.event.EventBus;
 
 import static com.kab.channel66.MyApplication.getMyApp;
 
+import androidx.annotation.RequiresApi;
+import androidx.core.content.ContextCompat;
+
 /**
  * This class wraps a libvlc mediaplayer instance.
  */
@@ -52,6 +64,7 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
     private static final String EQUALIZER_VALUES_PREFERENCE_KEY = "EQUALIZER_VALUES_PREFERENCE_KEY";
 
     private CallStateListener calllistener;
+    private CallStateListenerSType calllistenerTypeS;
     TelephonyManager telephony;
 
     private static class Holder {
@@ -131,7 +144,7 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         EventBus.getDefault().register(this);
 
 
-        telephony = (TelephonyManager) getMyApp().getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE); //TelephonyManager object
+        telephony = (TelephonyManager) getMyApp().getApplicationContext().getSystemService(TELEPHONY_SERVICE); //TelephonyManager object
     }
 
     public LibVLC getLibVlcInstance() {
@@ -147,6 +160,8 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
     }
 
     public void setCalllistener (CallStateListener listener){calllistener = listener;}
+    public void setCalllistenerTypeS (CallStateListenerSType listener){calllistenerTypeS = listener;}
+
 
     @SuppressWarnings("unused")
     public void onEventAsync(String event) {
@@ -165,7 +180,8 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         Log.d(TAG, "start()");
         if (!getMediaPlayerInstance().isPlaying()) {
             getMediaPlayerInstance().play();
-            telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE); //Register our listener with TelephonyManager
+            //telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE); //Register our listener with TelephonyManager
+            registerCallStateListener();
 
         }
     }
@@ -190,7 +206,8 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
 //            getMediaPlayerInstance().release();
 
         }
-        telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE); //Register our listener with TelephonyManager
+       // telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE); //Register our listener with TelephonyManager
+        unRegisterCallStateListener();
     }
 
     /**
@@ -253,7 +270,8 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         {
             Log.d("VLCMediaPlayer",e.getStackTrace().toString());
         }
-        telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE); //Register our listener with TelephonyManager
+        //telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE); //Register our listener with TelephonyManager
+        unRegisterCallStateListener();
     }
 
     /**
@@ -282,4 +300,61 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
     public boolean isPrepared(String query) {
         return mPreparedQuery != null && mPreparedQuery == query;
     }
+
+    private void registerCallStateListener() {
+        if (!callStateListenerRegistered) {
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                if (ContextCompat.checkSelfPermission(getMyApp().getApplicationContext(), Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED) {
+                    telephony.registerTelephonyCallback(getMainExecutor(getMyApp().getApplicationContext()), calllistenerTypeS);
+                    callStateListenerRegistered = true;
+                }
+            } else {
+                telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE);
+                callStateListenerRegistered = true;
+            }
+        }
+    }
+
+    private void unRegisterCallStateListener() {
+        if (!callStateListenerRegistered) {
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+
+                    telephony.unregisterTelephonyCallback( calllistenerTypeS);
+                    callStateListenerRegistered = false;
+
+            } else {
+                telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE);
+                callStateListenerRegistered = true;
+            }
+        }
+    }
+
+//    @RequiresApi(api = Build.VERSION_CODES.S)
+//    private static abstract class CallStateListener extends TelephonyCallback implements TelephonyCallback.CallStateListener {
+//        @Override
+//        abstract public void onCallStateChanged(int state);
+//    }
+
+    private boolean callStateListenerRegistered = false;
+
+//    private CallStateListener callStateListener = (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) ?
+//            new CallStateListener() {
+//                @Override
+//                public void onCallStateChanged(int state) {
+//                    // Handle call state change
+//                }
+//            }
+//            : null;
+
+//    private PhoneStateListener phoneStateListener = (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) ?
+//            new PhoneStateListener() {
+//                @Override
+//                public void onCallStateChanged(int state, String phoneNumber) {
+//                    // Handle call state change
+//                }
+//            }
+//            : null;
+
 }

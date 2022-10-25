@@ -1,6 +1,10 @@
 
 package com.kab.channel66;
 
+import static androidx.core.content.ContextCompat.getMainExecutor;
+import static com.kab.channel66.MyApplication.getMyApp;
+
+import android.Manifest;
 import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -8,6 +12,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -30,9 +35,11 @@ import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
+import androidx.core.content.ContextCompat;
 
 import com.kab.channel66.utils.CallStateInterface;
 import com.kab.channel66.utils.CallStateListener;
+import com.kab.channel66.utils.CallStateListenerSType;
 import com.kab.channel66.utils.Constants;
 
 import org.videolan.libvlc.LibVLC;
@@ -64,6 +71,8 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
     private final static int VideoSizeChanged = -1;
 
     private CallStateListener calllistener;
+    private CallStateListenerSType calllistenerTypeS;
+
     private TelephonyManager telephony;
     private Notification notification;
 
@@ -95,17 +104,49 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
         holder = mSurface.getHolder();
 
         calllistener = new CallStateListener(this);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            calllistenerTypeS = new CallStateListenerSType(this);
+        }
         telephony = (TelephonyManager)this.getSystemService(Context.TELEPHONY_SERVICE); //TelephonyManager object
-        telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE); //Register our listener with TelephonyManager
+      //  telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE); //Register our listener with TelephonyManager
 
         //holder.addCallback(this);
-
+        registerCallStateListener();
 
 
 
     }
+    private boolean callStateListenerRegistered = false;
 
+    private void registerCallStateListener() {
+        if (!callStateListenerRegistered) {
 
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                if (ContextCompat.checkSelfPermission(getMyApp().getApplicationContext(), Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED) {
+                    telephony.registerTelephonyCallback(getMainExecutor(), calllistenerTypeS);
+                    callStateListenerRegistered = true;
+                }
+            } else {
+                telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE);
+                callStateListenerRegistered = true;
+            }
+        }
+    }
+
+    private void unRegisterCallStateListener() {
+        if (!callStateListenerRegistered) {
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+
+                telephony.unregisterTelephonyCallback( calllistenerTypeS);
+                callStateListenerRegistered = false;
+
+            } else {
+                telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE);
+                callStateListenerRegistered = true;
+            }
+        }
+    }
 
     @Override
     public void onStart() {
@@ -201,7 +242,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
         notificationIntent.setAction(Constants.ACTION.MAIN_ACTION);
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(VideoActivity.this, 0,
-                notificationIntent, 0);
+                notificationIntent, PendingIntent.FLAG_IMMUTABLE);
 
 
         Bitmap icon = BitmapFactory.decodeResource(getResources(),
@@ -243,7 +284,8 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
         NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.cancel(0);
         holder = null;
-        telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE);
+    //    telephony.listen(calllistener, PhoneStateListener.LISTEN_NONE);
+        unRegisterCallStateListener();
     }
 
     /*************
