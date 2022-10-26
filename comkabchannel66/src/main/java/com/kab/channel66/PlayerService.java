@@ -39,6 +39,7 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 
 	private VLCMediaPlayer mAudioplay;
 	private CallStateListener calllistener;
+	@RequiresApi(api = Build.VERSION_CODES.S)
 	private CallStateListenerSType calllistenerTypeS;
 	private String mUrl;
 	private Notification notification;

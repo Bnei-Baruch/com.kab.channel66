@@ -1,18 +1,13 @@
 package com.kab.channel66.utils;
 
 //import io.vov.vitamio.utils.Log;
-import android.os.Build;
-import android.telephony.TelephonyCallback;
 import android.telephony.TelephonyManager;
 import android.util.Log;
-
-import androidx.annotation.RequiresApi;
 
 /**
  * Listener to detect incoming calls. 
  */
-@RequiresApi(api = Build.VERSION_CODES.S)
-public class CallStateListenerSType extends TelephonyCallback implements TelephonyCallback.CallStateListener{
+public class CallStateListenerSType  implements DummyTelephoneCallbackState {
 
 	CallStateInterface m_player;
 

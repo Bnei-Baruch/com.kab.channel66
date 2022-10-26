@@ -306,7 +306,8 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 if (ContextCompat.checkSelfPermission(getMyApp().getApplicationContext(), Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED) {
-                    telephony.registerTelephonyCallback(getMainExecutor(getMyApp().getApplicationContext()), calllistenerTypeS);
+
+                    telephony.registerTelephonyCallback(getMainExecutor(getMyApp().getApplicationContext()),callStateListener);
                     callStateListenerRegistered = true;
                 }
             } else {
@@ -321,7 +322,7 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
-                    telephony.unregisterTelephonyCallback( calllistenerTypeS);
+                    telephony.unregisterTelephonyCallback( callStateListener);
                     callStateListenerRegistered = false;
 
             } else {
@@ -331,22 +332,23 @@ public class VLCMediaPlayer implements TomahawkMediaPlayer {
         }
     }
 
-//    @RequiresApi(api = Build.VERSION_CODES.S)
-//    private static abstract class CallStateListener extends TelephonyCallback implements TelephonyCallback.CallStateListener {
-//        @Override
-//        abstract public void onCallStateChanged(int state);
-//    }
+    @RequiresApi(api = Build.VERSION_CODES.S)
+    private static abstract class CallStateListenerS extends TelephonyCallback implements TelephonyCallback.CallStateListener {
+        @Override
+        abstract public void onCallStateChanged(int state);
+    }
 
     private boolean callStateListenerRegistered = false;
 
-//    private CallStateListener callStateListener = (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) ?
-//            new CallStateListener() {
-//                @Override
-//                public void onCallStateChanged(int state) {
-//                    // Handle call state change
-//                }
-//            }
-//            : null;
+    private CallStateListenerS callStateListener = (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) ?
+            new CallStateListenerS() {
+                @Override
+                public void onCallStateChanged(int state) {
+                    // Handle call state change
+                    calllistenerTypeS.onCallStateChanged(state);
+                }
+            }
+            : null;
 
 //    private PhoneStateListener phoneStateListener = (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) ?
 //            new PhoneStateListener() {

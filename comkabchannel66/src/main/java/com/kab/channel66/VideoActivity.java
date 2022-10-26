@@ -21,6 +21,7 @@ import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
 import android.telephony.PhoneStateListener;
+import android.telephony.TelephonyCallback;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -71,6 +72,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
     private final static int VideoSizeChanged = -1;
 
     private CallStateListener calllistener;
+    @RequiresApi(api = Build.VERSION_CODES.S)
     private CallStateListenerSType calllistenerTypeS;
 
     private TelephonyManager telephony;
@@ -123,7 +125,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 if (ContextCompat.checkSelfPermission(getMyApp().getApplicationContext(), Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED) {
-                    telephony.registerTelephonyCallback(getMainExecutor(), calllistenerTypeS);
+                    telephony.registerTelephonyCallback(getMainExecutor(),callStateListener );
                     callStateListenerRegistered = true;
                 }
             } else {
@@ -138,7 +140,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 
-                telephony.unregisterTelephonyCallback( calllistenerTypeS);
+                telephony.unregisterTelephonyCallback( callStateListener);
                 callStateListenerRegistered = false;
 
             } else {
@@ -275,6 +277,23 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
         service.createNotificationChannel(chan);
         return channelId;
     }
+
+    @RequiresApi(api = Build.VERSION_CODES.S)
+    private static abstract class CallStateListenerS extends TelephonyCallback implements TelephonyCallback.CallStateListener {
+        @Override
+        abstract public void onCallStateChanged(int state);
+    }
+
+
+    private VideoActivity.CallStateListenerS callStateListener = (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) ?
+            new VideoActivity.CallStateListenerS() {
+                @Override
+                public void onCallStateChanged(int state) {
+                    // Handle call state change
+                    calllistenerTypeS.onCallStateChanged(state);
+                }
+            }
+            : null;
 
 
     @Override
@@ -529,7 +548,6 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
                     break;
             }
         }
-
 
 
     }

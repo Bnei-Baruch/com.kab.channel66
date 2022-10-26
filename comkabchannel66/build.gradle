@@ -67,7 +67,7 @@ dependencies {
     //                exclude module: 'support-v4'
     //            }
     //compile project(':OpenPlayer')
-    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
 //    implementation('com.crashlytics.sdk.android:crashlytics:2.5.6@aar') {
 //        transitive = true;
 //    }
@@ -99,7 +99,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.squareup.okhttp3:okhttp:3.8.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
     //compile 'com.backendless:backendless:3.+'
     //compile files('libs/feedback_v6.jar')
     //implementation 'androidx.media:media:1.1.0'
