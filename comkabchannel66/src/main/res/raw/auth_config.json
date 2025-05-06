@@ -1,0 +1,12 @@
+{
+  "client_id": "kabbalahtv",
+  "redirect_uri": "kabbalahtv.mobile://login-callback",
+  "end_session_redirect_uri": "kabbalahtv.mobile://login-callback",
+  "authorization_scope": "openid email profile",
+  "discovery_uri": "https://accounts.kab.info/auth/realms/main/.well-known/openid-configuration",
+  "authorization_endpoint_uri": "",
+  "token_endpoint_uri": "",
+  "registration_endpoint_uri": "",
+  "user_info_endpoint_uri": "https://accounts.kab.info/auth/realms/main/protocol/openid-connect/userinfo",
+  "https_required": true
+}

@@ -1,15 +1,18 @@
-package com.kab.channel66;
+/*
+ * Copyright 2015 The AppAuth for Android Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicReference;
-
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
+package com.kab.channel66.auth;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -25,7 +28,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -37,23 +40,17 @@ import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
-import com.facebook.login.LoginBehavior;
-import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
-import com.kab.channel66.auth.AuthStateManager;
-import com.kab.channel66.auth.Configuration;
-import com.kab.channel66.auth.LoginActivity;
+
+import com.kab.channel66.R;
 
 import net.openid.appauth.AppAuthConfiguration;
 import net.openid.appauth.AuthState;
 import net.openid.appauth.AuthorizationException;
 import net.openid.appauth.AuthorizationRequest;
+import net.openid.appauth.AuthorizationResponse;
 import net.openid.appauth.AuthorizationService;
 import net.openid.appauth.AuthorizationServiceConfiguration;
 import net.openid.appauth.ClientSecretBasic;
@@ -64,19 +61,31 @@ import net.openid.appauth.browser.AnyBrowserMatcher;
 import net.openid.appauth.browser.BrowserMatcher;
 import net.openid.appauth.browser.ExactBrowserMatcher;
 
-public class LoginLayout extends Activity {
-    EditText un,pw;
-	TextView error;
-    Button ok;
-    LoginButton loginButton;
-    CallbackManager callbackManager;
+import java.util.Collections;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicReference;
+
+/**
+ * Demonstrates the usage of the AppAuth to authorize a user with an OAuth2 / OpenID Connect
+ * provider. Based on the configuration provided in `res/raw/auth_config.json`, the code
+ * contained here will:
+ *
+ * - Retrieve an OpenID Connect discovery document for the provider, or use a local static
+ *   configuration.
+ * - Utilize dynamic client registration, if no static client id is specified.
+ * - Initiate the authorization request using the built-in heuristics or a user-selected browser.
+ *
+ * _NOTE_: From a clean checkout of this project, the authorization service is not configured.
+ * Edit `res/raw/auth_config.json` to provide the required configuration properties. See the
+ * README.md in the app/ directory for configuration instructions, and the adjacent IDP-specific
+ * instructions.
+ */
+public final class LoginActivity extends Activity {
 
     private static final String TAG = "LoginActivity";
-
-
-
-    ////keycloak
-
     private static final String EXTRA_FAILED = "failed";
     private static final int RC_AUTH = 100;
 
@@ -90,21 +99,13 @@ public class LoginLayout extends Activity {
     private CountDownLatch mAuthIntentLatch = new CountDownLatch(1);
     private ExecutorService mExecutor;
 
-    private boolean mUsePendingIntents;
 
     @NonNull
     private BrowserMatcher mBrowserMatcher = AnyBrowserMatcher.INSTANCE;
 
-
-    /** Called when the activity is first created. */
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
-        un=(EditText)findViewById(R.id.et_un);
-        pw=(EditText)findViewById(R.id.et_pw);
-        ok=(Button)findViewById(R.id.btn_login);
-        error=(TextView)findViewById(R.id.tv_error);
 
         mExecutor = Executors.newSingleThreadExecutor();
         mAuthStateManager = AuthStateManager.getInstance(this);
@@ -118,59 +119,57 @@ public class LoginLayout extends Activity {
             return;
         }
 
+        setContentView(R.layout.activity_login);
 
-        ok.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.retry).setOnClickListener((View view) ->
+                mExecutor.submit(this::initializeAppAuth));
+        findViewById(R.id.start_auth).setOnClickListener((View view) -> startAuth());
 
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-//
-//            	ArrayList<NameValuePair> postParameters = new ArrayList<NameValuePair>();
-//            	postParameters.add(new BasicNameValuePair("username", un.getText().toString()));
-//            	postParameters.add(new BasicNameValuePair("password", pw.getText().toString()));
-//
-//            	String response = null;
-//            	try {
-//            	    response = CustomHttpClient.executeHttpPost("<target page url>", postParameters);
-//            	    String res=response.toString();
-//            	    res= res.replaceAll("\\s+","");
-//            	    if(res.equals("1"))
-//            	    	error.setText("Correct Username or Password");
-//            	    else
-//            	    	error.setText("Sorry!! Incorrect Username or Password");
-//            	} catch (Exception e) {
-//            		un.setText(e.toString());
-//            	}
-                startAuth();
+//        ((EditText)findViewById(R.id.login_hint_value)).addTextChangedListener(
+//                new LoginHintChangeHandler());
 
-            }
-        });
+        if (!mConfiguration.isValid()) {
+            displayError(mConfiguration.getConfigurationError(), false);
+            return;
+        }
 
-        loginButton = (LoginButton) findViewById(R.id.login_button);
-        loginButton.setReadPermissions("email");
-        loginButton.setLoginBehavior(LoginBehavior.DEVICE_AUTH);
-        callbackManager =  CallbackManager.Factory.create();
+//        configureBrowserSelector();
+        if (mConfiguration.hasConfigurationChanged()) {
+            // discard any existing authorization state due to the change of configuration
+            Log.i(TAG, "Configuration change detected, discarding old state");
+            mAuthStateManager.replace(new AuthState());
+            mConfiguration.acceptConfiguration();
+        }
 
-        // Callback registration
-        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                // App code
-                Log.d("login","success");
-            }
+        if (getIntent().getBooleanExtra(EXTRA_FAILED, false)) {
+//            displayAuthCancelled();
+        }
 
-            @Override
-            public void onCancel() {
-                // App code
-                Log.d("login","cancel");
-            }
+        displayLoading("Initializing");
+        mExecutor.submit(this::initializeAppAuth);
+    }
 
-            @Override
-            public void onError(FacebookException exception) {
-                // App code
-                Log.d("login","error");
-            }
-        });
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (mExecutor.isShutdown()) {
+            mExecutor = Executors.newSingleThreadExecutor();
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mExecutor.shutdownNow();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        if (mAuthService != null) {
+            mAuthService.dispose();
+        }
     }
 
     @Override
@@ -184,14 +183,16 @@ public class LoginLayout extends Activity {
 //            intent.putExtras(data.getExtras());
 //            startActivity(intent);
 
+            AuthorizationResponse response = AuthorizationResponse.fromIntent(data);
+            AuthorizationException ex = AuthorizationException.fromIntent(data);
+
+            Log.d("LoginResult", response.authorizationCode != null ? response.authorizationCode :"no token");
         }
     }
 
     @MainThread
     void startAuth() {
         displayLoading("Making authorization request");
-
-       // mUsePendingIntents = ((CheckBox) findViewById(R.id.pending_intents_checkbox)).isChecked();
 
         // WrongThread inference is incorrect for lambdas
         // noinspection WrongThread
@@ -310,38 +311,6 @@ public class LoginLayout extends Activity {
         initializeAuthRequest();
     }
 
-    /**
-     * Enumerates the browsers installed on the device and populates a spinner, allowing the
-     * demo user to easily test the authorization flow against different browser and custom
-     * tab configurations.
-     */
-//    @MainThread
-//    private void configureBrowserSelector() {
-//        Spinner spinner = (Spinner) findViewById(R.id.browser_selector);
-//        final BrowserSelectionAdapter adapter = new BrowserSelectionAdapter(this);
-//        spinner.setAdapter(adapter);
-//        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                BrowserInfo info = adapter.getItem(position);
-//                if (info == null) {
-//                    mBrowserMatcher = AnyBrowserMatcher.INSTANCE;
-//                    return;
-//                } else {
-//                    mBrowserMatcher = new ExactBrowserMatcher(info.mDescriptor);
-//                }
-//
-//                recreateAuthorizationService();
-//                createAuthRequest(getLoginHint());
-//                warmUpBrowser();
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parent) {
-//                mBrowserMatcher = AnyBrowserMatcher.INSTANCE;
-//            }
-//        });
-//    }
 
     /**
      * Performs the authorization request, using the browser selected in the spinner,
@@ -355,28 +324,10 @@ public class LoginLayout extends Activity {
             Log.w(TAG, "Interrupted while waiting for auth intent");
         }
 
-//        if (mUsePendingIntents) {
-//            final Intent completionIntent = new Intent(this, TokenActivity.class);
-//            final Intent cancelIntent = new Intent(this, LoginActivity.class);
-//            cancelIntent.putExtra(EXTRA_FAILED, true);
-//            cancelIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//
-//            int flags = 0;
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-//                flags |= PendingIntent.FLAG_MUTABLE;
-//            }
-//
-//            mAuthService.performAuthorizationRequest(
-//                    mAuthRequest.get(),
-//                    PendingIntent.getActivity(this, 0, completionIntent, flags),
-//                    PendingIntent.getActivity(this, 0, cancelIntent, flags),
-//                    mAuthIntent.get());
-//        } else {
             Intent intent = mAuthService.getAuthorizationRequestIntent(
                     mAuthRequest.get(),
                     mAuthIntent.get());
             startActivityForResult(intent, RC_AUTH);
-//        }
     }
 
     private void recreateAuthorizationService() {
@@ -391,11 +342,8 @@ public class LoginLayout extends Activity {
 
     private AuthorizationService createAuthorizationService() {
         Log.i(TAG, "Creating authorization service");
-        AppAuthConfiguration.Builder builder = new AppAuthConfiguration.Builder();
-        builder.setBrowserMatcher(mBrowserMatcher);
-        builder.setConnectionBuilder(mConfiguration.getConnectionBuilder());
 
-        return new AuthorizationService(this, builder.build());
+        return new AuthorizationService(this);
     }
 
     @MainThread
@@ -428,7 +376,7 @@ public class LoginLayout extends Activity {
     private void initializeAuthRequest() {
         createAuthRequest(null);
         warmUpBrowser();
-        displayAuthOptions();
+      //  displayAuthOptions();
     }
 
     @MainThread
@@ -461,8 +409,8 @@ public class LoginLayout extends Activity {
 
     private void displayAuthCancelled() {
 //        Snackbar.make(findViewById(R.id.coordinator),
-//                        "Authorization canceled",
-//                        Snackbar.LENGTH_SHORT)
+//                "Authorization canceled",
+//                Snackbar.LENGTH_SHORT)
 //                .show();
     }
 
@@ -495,10 +443,10 @@ public class LoginLayout extends Activity {
     }
 
 //    private String getLoginHint() {
-//        return ((EditText)findViewById(R.id.login_hint_value))
-//                .getText()
-//                .toString()
-//                .trim();
+////        return ((EditText)findViewById(R.id.login_hint_value))
+////                .getText()
+////                .toString()
+////                .trim();
 //    }
 
     @TargetApi(Build.VERSION_CODES.M)
@@ -516,31 +464,31 @@ public class LoginLayout extends Activity {
      * for a request with the new login hint; this avoids constantly re-initializing the
      * browser while the user is typing.
      */
-//    private final class LoginHintChangeHandler implements TextWatcher {
-//
-//        private static final int DEBOUNCE_DELAY_MS = 500;
-//
-//        private Handler mHandler;
-//        private LoginActivity.RecreateAuthRequestTask mTask;
-//
-//        LoginHintChangeHandler() {
-//            mHandler = new Handler(Looper.getMainLooper());
-//            mTask = new LoginActivity.RecreateAuthRequestTask();
-//        }
-//
-//        @Override
-//        public void beforeTextChanged(CharSequence cs, int start, int count, int after) {}
-//
-//        @Override
-//        public void onTextChanged(CharSequence cs, int start, int before, int count) {
-//            mTask.cancel();
-//            mTask = new LoginActivity.RecreateAuthRequestTask();
-//            mHandler.postDelayed(mTask, DEBOUNCE_DELAY_MS);
-//        }
-//
-//        @Override
-//        public void afterTextChanged(Editable ed) {}
-//    }
+    private final class LoginHintChangeHandler implements TextWatcher {
+
+        private static final int DEBOUNCE_DELAY_MS = 500;
+
+        private Handler mHandler;
+        private RecreateAuthRequestTask mTask;
+
+        LoginHintChangeHandler() {
+            mHandler = new Handler(Looper.getMainLooper());
+            mTask = new RecreateAuthRequestTask();
+        }
+
+        @Override
+        public void beforeTextChanged(CharSequence cs, int start, int count, int after) {}
+
+        @Override
+        public void onTextChanged(CharSequence cs, int start, int before, int count) {
+            mTask.cancel();
+            mTask = new RecreateAuthRequestTask();
+            mHandler.postDelayed(mTask, DEBOUNCE_DELAY_MS);
+        }
+
+        @Override
+        public void afterTextChanged(Editable ed) {}
+    }
 
     private final class RecreateAuthRequestTask implements Runnable {
 
@@ -561,4 +509,3 @@ public class LoginLayout extends Activity {
         }
     }
 }
-

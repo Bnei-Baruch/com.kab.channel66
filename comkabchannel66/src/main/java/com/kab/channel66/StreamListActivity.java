@@ -4,6 +4,7 @@ package com.kab.channel66;
 //import io.vov.vitamio.VitamioInstaller.VitamioNotFoundException;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -15,6 +16,7 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.graphics.ColorMatrix;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.ConnectivityManager;
@@ -26,6 +28,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -52,18 +55,52 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.storage.FirebaseStorage;
+import com.kab.channel66.auth.AuthStateManager;
+import com.kab.channel66.auth.Configuration;
+import com.kab.channel66.auth.LoginActivity;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Locale;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicReference;
 
+import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.WorkerThread;
+import androidx.browser.customtabs.CustomTabsIntent;
+
+import net.openid.appauth.AuthState;
+import net.openid.appauth.AuthorizationException;
+import net.openid.appauth.AuthorizationRequest;
+import net.openid.appauth.AuthorizationResponse;
+import net.openid.appauth.AuthorizationService;
+import net.openid.appauth.AuthorizationServiceConfiguration;
+import net.openid.appauth.AuthorizationServiceDiscovery;
+import net.openid.appauth.ClientAuthentication;
+import net.openid.appauth.ClientSecretBasic;
+import net.openid.appauth.EndSessionRequest;
+import net.openid.appauth.RegistrationRequest;
+import net.openid.appauth.RegistrationResponse;
+import net.openid.appauth.ResponseTypeValues;
+import net.openid.appauth.TokenRequest;
+import net.openid.appauth.TokenResponse;
+
+import okio.Okio;
 
 //import com.apphance.android.Log;
 
@@ -86,6 +123,10 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 	};
 
+	private static final String EXTRA_FAILED = "failed";
+
+	private RecreateAuthRequestTask mTask;
+	static String TAG = StreamListActivity.class.getSimpleName();
 	PlayerService mService;
 	boolean mBound = false;
 
@@ -113,6 +154,22 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	private AdView mAdView;
 	private FirebaseAnalytics mFirebaseAnalytics;
 	private AdRequest adRequest;
+	private ExecutorService mExecutor;
+	private AuthStateManager mAuthStateManager;
+	private Configuration mConfiguration;
+
+	private AuthorizationService mAuthService;
+
+	private final AtomicReference<String> mClientId = new AtomicReference<>();
+	private final AtomicReference<AuthorizationRequest> mAuthRequest = new AtomicReference<>();
+	private final AtomicReference<CustomTabsIntent> mAuthIntent = new AtomicReference<>();
+	private CountDownLatch mAuthIntentLatch = new CountDownLatch(1);
+
+	private static final int RC_AUTH = 100;
+
+	private static final int END_SESSION_REQUEST_CODE = 911;
+	private final AtomicReference<JSONObject> mUserInfoJson = new AtomicReference<>();
+
 
 	public StreamListActivity() {
 
@@ -257,6 +314,12 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 		if(getIntent()!=null)
 			handleMessageClicked(getIntent());
+
+		mExecutor = Executors.newSingleThreadExecutor();
+		mAuthStateManager = AuthStateManager.getInstance(this);
+		mConfiguration = Configuration.getInstance(this);
+		mExecutor.submit(this::initializeAppAuth);
+
 	}
 	
 	@Override
@@ -936,7 +999,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		listview.setAdapter(mAdataper);
 		listview.setOnItemClickListener(this);
 		//listview.setChoiceMode(ListView.);
-listview.setItemsCanFocus(true);
+		listview.setItemsCanFocus(true);
 
 
 	}
@@ -1016,7 +1079,7 @@ listview.setItemsCanFocus(true);
 //			stopService(svc);
 
 		if(mService!=null)
-		mService.stopAudio();
+			mService.stopAudio();
 	}
 	@SuppressLint("ShowToast")
 	@Override
@@ -1034,16 +1097,27 @@ listview.setItemsCanFocus(true);
 			//	Toast.makeText(StreamListActivity.this, msg, Toast.LENGTH_SHORT).show();
 			}
 
-			Intent intent = new Intent(getApplicationContext(), SvivaTovaLogin.class);
-			startActivity(intent);
+//			Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+//			startActivity(intent);
 
 	//		FlutterFragment login = Flutter.createFragment("login");
-			
+
+
+			startKeyKloackLogin();
 
 
 
 			return true;
 		}
+			case R.id.Logout:
+			{
+
+				endSession();
+
+				return true;
+			}
+
+
 		case R.id.quality:
 			SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(StreamListActivity.this);
 			SharedPreferences.Editor edit = shared.edit();
@@ -1075,6 +1149,426 @@ listview.setItemsCanFocus(true);
 
 		default:
 			return super.onOptionsItemSelected(item);
+		}
+	}
+
+	private void startKeyKloackLogin()  {
+
+
+		if (mAuthStateManager.getCurrent().isAuthorized()
+				&& !mConfiguration.hasConfigurationChanged()) {
+			Log.i(TAG, "User is already authenticated, proceeding to token activity");
+//            startActivity(new Intent(this, TokenActivity.class));
+
+			//retrieve token info
+
+			return;
+		}
+		else {
+
+
+			//check if configuration is valid
+
+			if(!mConfiguration.isValid())
+			{
+				Log.e(TAG,"configuration error, can not login");
+				return;
+			}
+
+			if (mConfiguration.hasConfigurationChanged()) {
+				// discard any existing authorization state due to the change of configuration
+				Log.i(TAG, "Configuration change detected, discarding old state");
+				mAuthStateManager.replace(new AuthState());
+				mConfiguration.acceptConfiguration();
+			}
+
+			if (getIntent().getBooleanExtra(EXTRA_FAILED, false)) {
+//            displayAuthCancelled();
+			}
+
+
+
+
+
+				startAuth();
+
+
+		}
+
+
+	}
+
+	@MainThread
+	void startAuth() {
+		//displayLoading("Making authorization request");
+
+		// WrongThread inference is incorrect for lambdas
+		// noinspection WrongThread
+		mExecutor.submit(this::doAuth);
+	}
+
+
+	private void recreateAuthorizationService() {
+		if (mAuthService != null) {
+			Log.i(TAG, "Discarding existing AuthService instance");
+			mAuthService.dispose();
+		}
+		mAuthService = createAuthorizationService();
+		mAuthRequest.set(null);
+		mAuthIntent.set(null);
+	}
+
+
+	private AuthorizationService createAuthorizationService() {
+		Log.i(TAG, "Creating authorization service");
+
+		return new AuthorizationService(this);
+	}
+
+
+	@WorkerThread
+	private void initializeAppAuth() {
+		Log.i(TAG, "Initializing AppAuth");
+		recreateAuthorizationService();
+
+		if (mAuthStateManager.getCurrent().getAuthorizationServiceConfiguration() != null) {
+			// configuration is already created, skip to client initialization
+			Log.i(TAG, "auth config already established");
+			initializeClient();
+			return;
+		}
+
+		// if we are not using discovery, build the authorization service configuration directly
+		// from the static configuration values.
+		if (mConfiguration.getDiscoveryUri() == null) {
+			Log.i(TAG, "Creating auth config from res/raw/auth_config.json");
+			AuthorizationServiceConfiguration config = new AuthorizationServiceConfiguration(
+					mConfiguration.getAuthEndpointUri(),
+					mConfiguration.getTokenEndpointUri(),
+					mConfiguration.getRegistrationEndpointUri(),
+					mConfiguration.getEndSessionEndpoint());
+
+			mAuthStateManager.replace(new AuthState(config));
+			initializeClient();
+			return;
+		}
+
+		// WrongThread inference is incorrect for lambdas
+		// noinspection WrongThread
+		//runOnUiThread(() -> displayLoading("Retrieving discovery document"));
+		Log.i(TAG, "Retrieving OpenID discovery doc");
+		AuthorizationServiceConfiguration.fetchFromUrl(
+				mConfiguration.getDiscoveryUri(),
+				this::handleConfigurationRetrievalResult,
+				mConfiguration.getConnectionBuilder());
+	}
+
+	@MainThread
+	private void handleConfigurationRetrievalResult(
+			AuthorizationServiceConfiguration config,
+			AuthorizationException ex) {
+		if (config == null) {
+			Log.i(TAG, "Failed to retrieve discovery document", ex);
+		//	displayError("Failed to retrieve discovery document: " + ex.getMessage(), true);
+			return;
+		}
+
+		Log.i(TAG, "Discovery document retrieved");
+		mAuthStateManager.replace(new AuthState(config));
+		mExecutor.submit(this::initializeClient);
+	}
+
+
+	@WorkerThread
+	private void doAuth() {
+		try {
+			mAuthIntentLatch.await();
+		} catch (InterruptedException ex) {
+			Log.w(TAG, "Interrupted while waiting for auth intent");
+		}
+
+		Intent intent = mAuthService.getAuthorizationRequestIntent(
+				mAuthRequest.get(),
+				mAuthIntent.get());
+		startActivityForResult(intent, RC_AUTH);
+	}
+
+	@MainThread
+	private void initializeAuthRequest() {
+		createAuthRequest(null);
+		warmUpBrowser();
+		//  displayAuthOptions();
+	}
+
+	private void warmUpBrowser() {
+		mAuthIntentLatch = new CountDownLatch(1);
+		mExecutor.execute(() -> {
+			Log.i(TAG, "Warming up browser instance for auth request");
+			CustomTabsIntent.Builder intentBuilder =
+					mAuthService.createCustomTabsIntentBuilder(mAuthRequest.get().toUri());
+//            intentBuilder.setToolbarColor(getColorCompat(R.color.colorPrimary));
+			mAuthIntent.set(intentBuilder.build());
+			mAuthIntentLatch.countDown();
+		});
+	}
+
+	private void createAuthRequest(@Nullable String loginHint) {
+		Log.i(TAG, "Creating auth request for login hint: " + loginHint);
+		AuthorizationRequest.Builder authRequestBuilder = new AuthorizationRequest.Builder(
+				mAuthStateManager.getCurrent().getAuthorizationServiceConfiguration(),
+				mClientId.get(),
+				ResponseTypeValues.CODE,
+				mConfiguration.getRedirectUri())
+				.setScope(mConfiguration.getScope());
+
+		if (!TextUtils.isEmpty(loginHint)) {
+			authRequestBuilder.setLoginHint(loginHint);
+		}
+
+		mAuthRequest.set(authRequestBuilder.build());
+	}
+
+
+	@WorkerThread
+	private void initializeClient() {
+		if (mConfiguration.getClientId() != null) {
+			Log.i(TAG, "Using static client ID: " + mConfiguration.getClientId());
+			// use a statically configured client ID
+			mClientId.set(mConfiguration.getClientId());
+			runOnUiThread(this::initializeAuthRequest);
+			return;
+		}
+
+		RegistrationResponse lastResponse =
+				mAuthStateManager.getCurrent().getLastRegistrationResponse();
+		if (lastResponse != null) {
+			Log.i(TAG, "Using dynamic client ID: " + lastResponse.clientId);
+			// already dynamically registered a client ID
+			mClientId.set(lastResponse.clientId);
+			runOnUiThread(this::initializeAuthRequest);
+			return;
+		}
+
+		// WrongThread inference is incorrect for lambdas
+		// noinspection WrongThread
+		//runOnUiThread(() -> displayLoading("Dynamically registering client"));
+		Log.i(TAG, "Dynamically registering client");
+
+		RegistrationRequest registrationRequest = new RegistrationRequest.Builder(
+				mAuthStateManager.getCurrent().getAuthorizationServiceConfiguration(),
+				Collections.singletonList(mConfiguration.getRedirectUri()))
+				.setTokenEndpointAuthenticationMethod(ClientSecretBasic.NAME)
+				.build();
+
+		mAuthService.performRegistrationRequest(
+				registrationRequest,
+				this::handleRegistrationResponse);
+	}
+
+	@MainThread
+	private void handleRegistrationResponse(
+			RegistrationResponse response,
+			AuthorizationException ex) {
+		mAuthStateManager.updateAfterRegistration(response, ex);
+		if (response == null) {
+			Log.i(TAG, "Failed to dynamically register client", ex);
+			//displayErrorLater("Failed to register client: " + ex.getMessage(), true);
+			return;
+		}
+
+		Log.i(TAG, "Dynamically registered client: " + response.clientId);
+		mClientId.set(response.clientId);
+		initializeAuthRequest();
+	}
+
+	@MainThread
+	private void endSession() {
+		AuthState currentState = mAuthStateManager.getCurrent();
+		AuthorizationServiceConfiguration config =
+				currentState.getAuthorizationServiceConfiguration();
+		if (config.endSessionEndpoint != null) {
+			Intent endSessionIntent = mAuthService.getEndSessionRequestIntent(
+					new EndSessionRequest.Builder(config)
+							.setIdTokenHint(currentState.getIdToken())
+							.setPostLogoutRedirectUri(mConfiguration.getEndSessionRedirectUri())
+							.build());
+			startActivityForResult(endSessionIntent, END_SESSION_REQUEST_CODE);
+		} else {
+			signOut();
+		}
+	}
+	@MainThread
+	private void signOut() {
+		// discard the authorization and token state, but retain the configuration and
+		// dynamic client registration (if applicable), to save from retrieving them again.
+		AuthState currentState = mAuthStateManager.getCurrent();
+		AuthState clearedState =
+				new AuthState(currentState.getAuthorizationServiceConfiguration());
+		if (currentState.getLastRegistrationResponse() != null) {
+			clearedState.update(currentState.getLastRegistrationResponse());
+		}
+		mAuthStateManager.replace(clearedState);
+
+		
+
+	}
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		//displayAuthOptions();
+		if (requestCode == END_SESSION_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
+			CommonUtils.setActivated(false,this);
+			invalidateMenu();
+			prepareStreamData();
+			signOut();
+		}
+		else
+		if (resultCode == RESULT_CANCELED) {
+			//displayAuthCancelled();
+		} else {
+//            Intent intent = new Intent(this, TokenActivity.class);
+//            intent.putExtras(data.getExtras());
+//            startActivity(intent);
+
+			AuthorizationResponse response = AuthorizationResponse.fromIntent(data);
+			AuthorizationException ex = AuthorizationException.fromIntent(data);
+
+			//get all data from keykloack
+
+			if (response != null || ex != null) {
+				mAuthStateManager.updateAfterAuthorization(response, ex);
+			}
+
+			if (response != null && response.authorizationCode != null) {
+				// authorization code exchange is required
+				mAuthStateManager.updateAfterAuthorization(response, ex);
+				exchangeAuthorizationCode(response);
+			} else if (ex != null) {
+				Log.e(TAG,"Authorization flow failed: " + ex.getMessage());
+			} else {
+				Log.e(TAG,"No authorization state retained - reauthorization required");
+			}
+
+			//Log.d("LoginResult", response.authorizationCode != null ? response.authorizationCode :"no token");
+
+			CommonUtils.setActivated(true, this);
+
+			invalidateMenu();
+		}
+	}
+
+	@MainThread
+	private void exchangeAuthorizationCode(AuthorizationResponse authorizationResponse) {
+		Log.d(TAG,"Exchanging authorization code");
+		performTokenRequest(
+				authorizationResponse.createTokenExchangeRequest(),
+				this::handleCodeExchangeResponse);
+	}
+
+	@WorkerThread
+	private void handleCodeExchangeResponse(
+			@Nullable TokenResponse tokenResponse,
+			@Nullable AuthorizationException authException) {
+
+		mAuthStateManager.updateAfterTokenResponse(tokenResponse, authException);
+		if (!mAuthStateManager.getCurrent().isAuthorized()) {
+			final String message = "Authorization Code exchange failed"
+					+ ((authException != null) ? authException.error : "");
+
+			// WrongThread inference is incorrect for lambdas
+			//noinspection WrongThread
+			runOnUiThread(() -> Log.e(TAG,message));
+		} else {
+			runOnUiThread(this::fetchUserInfo);
+		}
+	}
+
+
+	@MainThread
+	private void performTokenRequest(
+			TokenRequest request,
+			AuthorizationService.TokenResponseCallback callback) {
+		ClientAuthentication clientAuthentication;
+		try {
+			clientAuthentication = mAuthStateManager.getCurrent().getClientAuthentication();
+		} catch (ClientAuthentication.UnsupportedAuthenticationMethod ex) {
+			Log.d(TAG, "Token request cannot be made, client authentication for the token "
+					+ "endpoint could not be constructed (%s)", ex);
+			Log.d(TAG,"Client authentication method is unsupported");
+			return;
+		}
+
+		mAuthService.performTokenRequest(
+				request,
+				clientAuthentication,
+				callback);
+	}
+
+	@MainThread
+	private void fetchUserInfo() {
+
+		mAuthStateManager.getCurrent().performActionWithFreshTokens(mAuthService, this::fetchUserInfo);
+	}
+
+	@MainThread
+	private void fetchUserInfo(String accessToken, String idToken, AuthorizationException ex) {
+		if (ex != null) {
+			Log.e(TAG, "Token refresh failed when fetching user info");
+			mUserInfoJson.set(null);
+//			runOnUiThread(this::displayAuthorized);
+			return;
+		}
+
+		AuthorizationServiceDiscovery discovery =
+				mAuthStateManager.getCurrent()
+						.getAuthorizationServiceConfiguration()
+						.discoveryDoc;
+
+		Uri userInfoEndpoint =
+				mConfiguration.getUserInfoEndpointUri() != null
+						? Uri.parse(mConfiguration.getUserInfoEndpointUri().toString())
+						: Uri.parse(discovery.getUserinfoEndpoint().toString());
+
+		mExecutor.submit(() -> {
+			try {
+				HttpURLConnection conn = mConfiguration.getConnectionBuilder().openConnection(
+						userInfoEndpoint);
+				conn.setRequestProperty("Authorization", "Bearer " + accessToken);
+				conn.setInstanceFollowRedirects(false);
+				String response = Okio.buffer(Okio.source(conn.getInputStream()))
+						.readString(Charset.forName("UTF-8"));
+				mUserInfoJson.set(new JSONObject(response));
+			} catch (IOException ioEx) {
+				Log.e(TAG, "Network error when querying userinfo endpoint", ioEx);
+//				showSnackbar("Fetching user info failed");
+			} catch (JSONException jsonEx) {
+				Log.e(TAG, "Failed to parse userinfo response");
+//				showSnackbar("Failed to parse user info");
+			}
+
+//			runOnUiThread(this::displayAuthorized);
+		});
+	}
+
+
+
+
+	private final class RecreateAuthRequestTask implements Runnable {
+
+		private final AtomicBoolean mCanceled = new AtomicBoolean();
+
+		@Override
+		public void run() {
+			if (mCanceled.get()) {
+				return;
+			}
+
+			createAuthRequest(null);
+			warmUpBrowser();
+		}
+
+		public void cancel() {
+			mCanceled.set(true);
 		}
 	}
 

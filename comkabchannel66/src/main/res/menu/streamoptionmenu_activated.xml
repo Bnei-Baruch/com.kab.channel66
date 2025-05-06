@@ -9,6 +9,9 @@
     <item android:id="@+id/PushMessages"
           android:title="@string/IncomingMessages" >
     </item>
+    <item android:id="@+id/Logout"
+        android:title="@string/Logout" >
+    </item>
     <!--<item android:id="@+id/playType"-->
         <!--android:title="@string/device" android:checkable="true">-->
     <!--</item>-->

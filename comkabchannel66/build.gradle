@@ -16,8 +16,7 @@ repositories {
 
 
 android {
-    compileSdkVersion 32
-    buildToolsVersion '32.0.0'
+    compileSdk 34
 
     useLibrary 'org.apache.http.legacy'
 
@@ -25,12 +24,15 @@ android {
         versionCode 79
         versionName "2.9.9"
         applicationId "com.kab.channel66"
-        minSdkVersion 21
-        targetSdkVersion 32
+        minSdkVersion 24
         multiDexEnabled true
         ndk {
             abiFilters "armeabi", "armeabi-v7a", "x86", "mips", "arm64-v8a", "x86_64"
         }
+
+        manifestPlaceholders = [
+                'appAuthRedirectScheme': 'kabbalahtv.mobile'
+        ]
 
     }
 
@@ -105,12 +107,13 @@ dependencies {
     //implementation 'androidx.media:media:1.1.0'
     implementation 'info.guardianproject.netcipher:netcipher:2.1.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-   // implementation project(':flutter')
+    implementation 'net.openid:appauth:0.11.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    // implementation project(':flutter')
 }
 
 
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 //2c527ff0156f4d9c0a3a6cb04c48b16314a7780b
 
