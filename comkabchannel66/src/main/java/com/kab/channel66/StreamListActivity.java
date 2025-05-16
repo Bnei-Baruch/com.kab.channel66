@@ -320,6 +320,8 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		mConfiguration = Configuration.getInstance(this);
 		mExecutor.submit(this::initializeAppAuth);
 
+
+
 	}
 	
 	@Override
@@ -1046,6 +1048,12 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		SharedPreferences userInfoPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		Boolean activated = userInfoPreferences.getBoolean("activated", false);
 		Boolean isNative =  userInfoPreferences.getBoolean("isNative", true);
+
+		if(activated)
+		{
+			startKeyKloackLogin();
+
+		}
 		if(!activated)
 		{
 			MenuInflater inflater = getMenuInflater();
@@ -1425,10 +1433,8 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		else
 		if (resultCode == RESULT_CANCELED) {
 			//displayAuthCancelled();
-		} else {
-//            Intent intent = new Intent(this, TokenActivity.class);
-//            intent.putExtras(data.getExtras());
-//            startActivity(intent);
+		} else { //RC_AUTH
+//
 
 			AuthorizationResponse response = AuthorizationResponse.fromIntent(data);
 			AuthorizationException ex = AuthorizationException.fromIntent(data);
@@ -1454,6 +1460,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			CommonUtils.setActivated(true, this);
 
 			invalidateMenu();
+			prepareStreamData();
 		}
 	}
 
