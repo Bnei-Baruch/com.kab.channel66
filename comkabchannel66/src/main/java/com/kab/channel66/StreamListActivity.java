@@ -1049,7 +1049,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		Boolean activated = userInfoPreferences.getBoolean("activated", false);
 		Boolean isNative =  userInfoPreferences.getBoolean("isNative", true);
 
-		if(activated)
+		if(activated && mAuthStateManager.getCurrent().hasClientSecretExpired())
 		{
 			startKeyKloackLogin();
 
