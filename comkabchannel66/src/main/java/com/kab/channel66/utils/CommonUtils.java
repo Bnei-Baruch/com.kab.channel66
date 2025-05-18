@@ -191,6 +191,20 @@ public class CommonUtils {
 	    	SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(context);
 			return shared.getBoolean("activated", false);
 	    }
+
+	public static boolean isKeycloakFirstRun(Context context)
+	{
+		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(context);
+		return shared.getBoolean("keycloakFirstRun", false);
+	}
+
+	public static void setKeycloakFirstRun(Context context)
+	{
+		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(context);
+		SharedPreferences.Editor edit = shared.edit();
+		edit.putBoolean("keycloakFirstRun", true);
+		edit.apply();
+	}
 		
 	 public static void setGroup(String val,Context context)
 	    {

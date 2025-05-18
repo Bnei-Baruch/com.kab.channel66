@@ -209,6 +209,14 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 //		MobileAds.setRequestConfiguration(configuration);
 
 
+		//first run of keycloack , logout everything
+		if(CommonUtils.getActivated(this) && !CommonUtils.isKeycloakFirstRun(this))
+		{
+			CommonUtils.setActivated(false,this);
+
+		}
+
+		CommonUtils.setKeycloakFirstRun(this);
 		// Obtain the FirebaseAnalytics instance.
 		mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
@@ -1166,11 +1174,11 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		if (mAuthStateManager.getCurrent().isAuthorized()
 				&& !mConfiguration.hasConfigurationChanged()) {
 			Log.i(TAG, "User is already authenticated, proceeding to token activity");
-//            startActivity(new Intent(this, TokenActivity.class));
 
-			//retrieve token info
+			CommonUtils.setActivated(true, this);
 
-			return;
+			invalidateMenu();
+			prepareStreamData();
 		}
 		else {
 
@@ -1392,6 +1400,13 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	@MainThread
 	private void endSession() {
 		AuthState currentState = mAuthStateManager.getCurrent();
+		if(!currentState.isAuthorized())
+		{
+			CommonUtils.setActivated(false,this);
+			invalidateMenu();
+			prepareStreamData();
+			return;
+		}
 		AuthorizationServiceConfiguration config =
 				currentState.getAuthorizationServiceConfiguration();
 		if (config.endSessionEndpoint != null) {

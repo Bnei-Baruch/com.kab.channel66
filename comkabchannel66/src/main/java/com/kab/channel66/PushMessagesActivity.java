@@ -111,7 +111,7 @@ public class PushMessagesActivity extends BaseListActivity implements ListView.O
 		super.onResume();
 		IntentFilter filter = new IntentFilter();
 		filter.addAction("newMessage");
-		registerReceiver(myReciever,filter);
+		registerReceiver(myReciever,filter,Context.RECEIVER_EXPORTED);
 	}
 
 //	@Override

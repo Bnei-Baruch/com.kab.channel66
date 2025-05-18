@@ -260,7 +260,7 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 	public int playAudio(String url)
 	{
 
-		registerReceiver(data_stat,new IntentFilter("network_status"));
+		registerReceiver(data_stat,new IntentFilter("network_status"),Context.RECEIVER_EXPORTED);
 		mAudioplay.prepare(MyApplication.getMyApp(), url, this);
 
 

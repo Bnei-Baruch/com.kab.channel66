@@ -10,13 +10,16 @@ buildscript {
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.firebase.crashlytics'
 
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+
 repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
 
 
 android {
-    compileSdk 34
+    compileSdk 35
 
     useLibrary 'org.apache.http.legacy'
 
@@ -55,6 +58,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    namespace 'com.kab.channel66'
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8 // Or your desired Java version
+        targetCompatibility = JavaVersion.VERSION_1_8 // Or your desired Java version
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8" // Match this with your Java version
+    }
+
 }
 
 dependencies {
@@ -113,7 +127,5 @@ dependencies {
 }
 
 
-apply plugin: 'com.google.gms.google-services'
-apply plugin: 'kotlin-android'
 //2c527ff0156f4d9c0a3a6cb04c48b16314a7780b
 
