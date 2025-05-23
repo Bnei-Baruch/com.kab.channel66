@@ -24,7 +24,7 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        versionCode 81
+        versionCode 83
         versionName "3.0.0"
         applicationId "com.kab.channel66"
         minSdkVersion 34

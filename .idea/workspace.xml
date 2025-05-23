@@ -60,22 +60,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8f0fd8f-7977-4fc8-afaa-6ee669b0f0fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/comkabchannel66.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PlayerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PushMessagesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/PushMessagesActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +193,6 @@
     <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/keystore" />
     <option name="KEY_ALIAS" value="svivatova" />
     <option name="REMEMBER_PASSWORDS" value="true" />
-    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -441,7 +429,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Android App.comkabchannel66.executor": "Run",
+    "Android App.comkabchannel66.executor": "Debug",
     "ApkExportedModule": "com.kab.channel66.comkabchannel66",
     "BundleExportedModule": "com.kab.channel66.comkabchannel66",
     "DEBUGGABLE_DEVICE": "samsung-sm_a055f-R92X20H6LPE",
@@ -1482,47 +1470,47 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>1203</line>
+          <line>1206</line>
           <option name="timeStamp" value="329" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>1208</line>
+          <line>1211</line>
           <option name="timeStamp" value="330" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>1377</line>
+          <line>1380</line>
           <option name="timeStamp" value="333" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>1461</line>
+          <line>1471</line>
           <option name="timeStamp" value="336" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>1267</line>
+          <line>1270</line>
           <option name="timeStamp" value="337" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>1525</line>
+          <line>1535</line>
           <option name="timeStamp" value="341" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>1400</line>
+          <line>1410</line>
           <option name="timeStamp" value="345" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>1403</line>
+          <line>1413</line>
           <option name="timeStamp" value="347" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>1492</line>
+          <line>1502</line>
           <option name="timeStamp" value="352" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1537,18 +1525,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>1055</line>
-          <option name="timeStamp" value="355" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
-          <line>1061</line>
-          <option name="timeStamp" value="356" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
           <line>212</line>
           <option name="timeStamp" value="358" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
+          <line>1402</line>
+          <option name="timeStamp" value="360" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comkabchannel66/src/main/java/com/kab/channel66/StreamListActivity.java</url>
+          <line>1404</line>
+          <option name="timeStamp" value="361" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/flutter_ui/lib/LoginChannel.dart</url>
@@ -1923,12 +1911,12 @@
       <map>
         <entry key="com.kab.channel66">
           <value>
-            <CheckInfo lastCheckTimestamp="1747526360801" />
+            <CheckInfo lastCheckTimestamp="1747982073998" />
           </value>
         </entry>
         <entry key="com.kab.channel66.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1747526360801" />
+            <CheckInfo lastCheckTimestamp="1747982074001" />
           </value>
         </entry>
       </map>
