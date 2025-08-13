@@ -34,6 +34,7 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
@@ -51,8 +52,9 @@ import org.videolan.libvlc.util.AndroidUtil;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
+import java.util.Objects;
 
-public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVout.OnNewVideoLayoutListener,CallStateInterface {
+public class VideoActivity extends Activity implements IVLCVout.Callback, IVLCVout.OnNewVideoLayoutListener, CallStateInterface, SurfaceHolder.Callback {
     public final static String TAG = "LibVLCVideoActivity";
 
     public final static String LOCATION = "com.compdigitec.libvlcandroidsample.VideoActivity.location";
@@ -77,6 +79,10 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
 
     private TelephonyManager telephony;
     private Notification notification;
+    private boolean destroyed = false;
+
+    private int trueVideoWidth;  // From onNewVideoLayout
+    private int trueVideoHeight; // From onNewVideoLayout
 
 
     /*************
@@ -112,7 +118,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
         telephony = (TelephonyManager)this.getSystemService(Context.TELEPHONY_SERVICE); //TelephonyManager object
       //  telephony.listen(calllistener, PhoneStateListener.LISTEN_CALL_STATE); //Register our listener with TelephonyManager
 
-        //holder.addCallback(this);
+        holder.addCallback(this);
         registerCallStateListener();
 
 
@@ -161,39 +167,50 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
+
+        // Get new screen/window dimensions
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        int newScreenWidth = displayMetrics.widthPixels;
+        int newScreenHeight = displayMetrics.heightPixels;
 
-        ViewGroup.LayoutParams videoParams = mSurface.getLayoutParams();
-        videoParams.width = displayMetrics.widthPixels;
-        videoParams.height = displayMetrics.heightPixels;
-        final IVLCVout vout = mMediaPlayer.getVLCVout();
-        vout.setWindowSize(videoParams.width,videoParams.height);
+        if (mMediaPlayer != null) {
+            // It's important to tell VLC the new overall window size it's part of
+            // This might be the same as surfaceChanged width/height if SurfaceView fills screen
+            mMediaPlayer.getVLCVout().setWindowSize(newScreenWidth, newScreenHeight);
+        }
+
+        // The surfaceChanged callback should still fire and handle detailed adjustments
+        // but you might want to trigger your adjustment logic here too as a safeguard
+        // or if SurfaceView itself isn't resizing immediately.
+        if (this.trueVideoWidth > 0 && this.trueVideoHeight > 0) {
+            adjustAspectRatio(newScreenWidth, newScreenHeight); // Or use SurfaceView's current parent dimensions
+        }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        if(mFilePath!=null) {
-            if(mMediaPlayer!=null) {
-                final IVLCVout vout = mMediaPlayer.getVLCVout();
-                if(!vout.areViewsAttached())
-                {
-                    vout.setVideoView(mSurface);
-                    vout.attachViews(this);
-                }
+        Log.d(TAG, "onResume");
 
-                vout.addCallback(this);
+        if (mFilePath != null && mMediaPlayer != null) {
+//            final IVLCVout vout = mMediaPlayer.getVLCVout();
+//
+//            // Reattach the views if needed
+//            if (!vout.areViewsAttached()) {
+//                vout.setVideoView(mSurface);
+//                vout.attachViews(this);
+//                setSize(mVideoWidth, mVideoHeight);
+//            }
 
-            }
-            else
-                createPlayer(mFilePath);
+
         }
+
+        // Clear background notification
         NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.cancel(0);
-
-
     }
+
 
 
     @Override
@@ -276,6 +293,95 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
         NotificationManager service = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
         service.createNotificationChannel(chan);
         return channelId;
+    }
+
+    @Override
+    public void surfaceCreated(@NonNull SurfaceHolder holder) {
+        this.holder = holder;
+        Log.d(TAG, "surfaceCreated");
+
+        if (mMediaPlayer == null && mFilePath != null) {
+            createPlayer(mFilePath);  // ✅ Now safe to create player
+        } else if (mFilePath != null) {
+
+            createPlayer(mFilePath);
+
+        }
+    }
+
+
+
+    @Override
+    public void surfaceChanged(@NonNull SurfaceHolder holder, int format, int width, int height) {
+        Log.d(TAG, "surfaceChanged - New SurfaceView Dimensions: " + width + "x" + height);
+        if (mMediaPlayer != null) {
+            mMediaPlayer.getVLCVout().setWindowSize(width, height); // Tell VLC the size of its output window
+        }
+        // Now, adjust the SurfaceView's layout to respect the video's aspect ratio within these new bounds
+        if (this.trueVideoWidth > 0 && this.trueVideoHeight > 0) { // Ensure we have video dimensions
+            adjustAspectRatio(width, height);
+        }
+//        if(destroyed)
+//        {
+//            mSurface.setBackgroundColor(Color.BLUE);
+//        }
+
+        //
+    }
+    private void adjustAspectRatio(int surfaceViewContainerWidth, int surfaceViewContainerHeight) {
+        if (trueVideoWidth == 0 || trueVideoHeight == 0 || mSurface == null) {
+            return;
+        }
+
+        Log.d(TAG, "adjustAspectRatio - Container: " + surfaceViewContainerWidth + "x" + surfaceViewContainerHeight +
+                ", Video: " + trueVideoWidth + "x" + trueVideoHeight);
+
+        float videoAspectRatio = (float) trueVideoWidth / (float) trueVideoHeight;
+
+        int finalWidth;
+        int finalHeight;
+
+        // Calculate the best fit dimensions for the SurfaceView
+        // based on the container and the video's aspect ratio.
+        if (surfaceViewContainerWidth / (float)surfaceViewContainerHeight > videoAspectRatio) {
+            // Container is wider than video (or same aspect ratio but limited by height)
+            // So, height will be the container height, calculate width based on video AR
+            finalHeight = surfaceViewContainerHeight;
+            finalWidth = (int) (finalHeight * videoAspectRatio);
+        } else {
+            // Container is taller than video (or same aspect ratio but limited by width)
+            // So, width will be the container width, calculate height based on video AR
+            finalWidth = surfaceViewContainerWidth;
+            finalHeight = (int) (finalWidth / videoAspectRatio);
+        }
+
+        Log.d(TAG, "adjustAspectRatio - Calculated final SurfaceView Layout: " + finalWidth + "x" + finalHeight);
+
+
+        LayoutParams lp = mSurface.getLayoutParams();
+        lp.width = finalWidth;
+        lp.height = finalHeight;
+        mSurface.setLayoutParams(lp);
+
+        // Regarding holder.setFixedSize():
+        // For simplicity with LibVLC, you can often set the holder's fixed size
+        // to match the final calculated display size (finalWidth, finalHeight).
+        // LibVLC's vout.setWindowSize() should then handle scaling the video
+        // content into this buffer.
+        if (mSurface.getHolder() != null && (mSurface.getHolder().getSurfaceFrame().width() != finalWidth || mSurface.getHolder().getSurfaceFrame().height() != finalHeight)) {
+            Log.d(TAG, "adjustAspectRatio - Setting holder fixed size to: " + finalWidth + "x" + finalHeight);
+            mSurface.getHolder().setFixedSize(finalWidth, finalHeight);
+        }
+    }
+
+    @Override
+    public void surfaceDestroyed(@NonNull SurfaceHolder holder) {
+        Log.d(TAG, "surfaceDestroyed");
+        mMediaPlayer.detachViews();
+
+        holder = null;
+        destroyed = true;
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.S)
@@ -385,6 +491,7 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
             options.add("--network-caching=2000");
             libvlc = new LibVLC(getBaseContext());
 
+
             //libvlc.setOnNativeCrashListener(this);
 
 
@@ -449,10 +556,21 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
     @Override
     public void onSurfacesCreated(IVLCVout vout) {
         Log.d(TAG,"onSurfacesCreated");
+        if(!mMediaPlayer.getVLCVout().areViewsAttached())
+        {
+            mMediaPlayer.getVLCVout().setVideoView(mSurface);
+            mMediaPlayer.getVLCVout().attachViews(this);
+            setSize(mVideoWidth, mVideoHeight);
+
+        }
+        else {
+            Log.d(TAG, "surfaceCreated already attached");
+        }
     }
 
     @Override
     public void onSurfacesDestroyed(IVLCVout vout) {
+        vout.detachViews();
 
     }
 
@@ -492,31 +610,34 @@ public class VideoActivity extends Activity implements IVLCVout.Callback,IVLCVou
 
     @Override
     public void onNewVideoLayout(IVLCVout vlcVout, int width, int height, int visibleWidth, int visibleHeight, int sarNum, int sarDen) {
-//        if (width * height == 0)
-//            return;
+        Log.d(TAG, "onNewVideoLayout - Video Stream Dimensions: " + width + "x" + height);
+        if (width * height == 0) return;
 
-        Display display = getWindowManager(). getDefaultDisplay();
-        Point size = new Point();
-        display.getSize(size);
+        this.trueVideoWidth = width;
+        this.trueVideoHeight = height;
 
+        // The surface might already exist and have its own dimensions.
+        // We need to adjust the SurfaceView's layout to match the video's AR
+        // within the current SurfaceView's bounds.
+        // And also tell VLC the size of the window it's drawing into.
 
-        // store video size
-        if(display.getRotation() == Surface.ROTATION_0 ||display.getRotation() == Surface.ROTATION_180 ) {
-            mVideoHeight = size.x;
-            mVideoWidth = size.y;
+        // Get current SurfaceView dimensions (or screen if SurfaceView fills it)
+        int surfaceViewWidth = mSurface.getWidth();
+        int surfaceViewHeight = mSurface.getHeight();
+
+        if (surfaceViewWidth == 0 || surfaceViewHeight == 0) {
+            // If surface dimensions aren't available yet, use screen dimensions as a fallback.
+            // This might happen if onNewVideoLayout comes before the first surfaceChanged.
+            DisplayMetrics displayMetrics = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+            surfaceViewWidth = displayMetrics.widthPixels;
+            surfaceViewHeight = displayMetrics.heightPixels;
         }
-        else
-        {
-            mVideoWidth = size.x;
-            mVideoHeight = size.y;
+
+        Log.d(TAG, "onNewVideoLayout - Current SurfaceView: " + surfaceViewWidth + "x" + surfaceViewHeight);
 
 
-        }
-
-        Log. e("Width", "" + width);
-        Log. e("height", "" + height);
-        vlcVout.setWindowSize(mVideoWidth,mVideoHeight);
-        setSize(mVideoWidth, mVideoHeight);
+        adjustAspectRatio(surfaceViewWidth, surfaceViewHeight);
     }
 
 //    @Override

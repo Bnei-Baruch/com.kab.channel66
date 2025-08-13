@@ -11,9 +11,8 @@ ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/ma
 INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-197:12
 INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-197:12
 INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:2:1-197:12
-MERGED from [org.videolan.android:libvlc-all:3.3.10] /Users/shidur/.gradle/caches/8.11.1/transforms/a84d9a92626f5376e4591cf173928cf0/transformed/jetified-libvlc-all-3.3.10/AndroidManifest.xml:2:1-11:12
+MERGED from [org.videolan.android:libvlc-all:4.0.0-eap20] /Users/shidur/.gradle/caches/8.11.1/transforms/ae2a6f48a070387bb1cafdc6c27d0475/transformed/jetified-libvlc-all-4.0.0-eap20/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.multidex:multidex:2.0.1] /Users/shidur/.gradle/caches/8.11.1/transforms/b3327fcbfc0e57fddf614755b794dfde/transformed/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.android:facebook-android-sdk:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/20f4f2dee4f57975a69a3e4d37f01f4e/transformed/jetified-facebook-android-sdk-4.42.0/AndroidManifest.xml:21:1-31:12
 MERGED from [com.google.firebase:firebase-crashlytics:18.2.13] /Users/shidur/.gradle/caches/8.11.1/transforms/b8c12506b2d9c3bcd4e03704ee81545e/transformed/jetified-firebase-crashlytics-18.2.13/AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-invites:17.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/284a4bf3c9428e7f0e8a2987faad954a/transformed/jetified-firebase-invites-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-core:21.1.1] /Users/shidur/.gradle/caches/8.11.1/transforms/b81ca5fe6c7b37357513b04acc93caf0/transformed/jetified-firebase-core-21.1.1/AndroidManifest.xml:2:1-9:12
@@ -23,9 +22,6 @@ MERGED from [com.google.android.gms:play-services-ads:19.2.0] /Users/shidur/.gra
 MERGED from [com.google.android.gms:play-services-analytics:17.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/2c71656fa68cee6efdda2a55bd5e4fbd/transformed/jetified-play-services-analytics-17.0.0/AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-messaging:23.0.8] /Users/shidur/.gradle/caches/8.11.1/transforms/f55cc6fbb686c453cca888e76e9a6938/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:17:1-62:12
 MERGED from [com.google.firebase:firebase-storage:20.0.2] /Users/shidur/.gradle/caches/8.11.1/transforms/2d86f68cbca00932fd29408f35a55bca/transformed/jetified-firebase-storage-20.0.2/AndroidManifest.xml:15:1-39:12
-MERGED from [com.facebook.android:facebook-login:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/b1e11f091e3276678b76dfb20ddc4d6b/transformed/jetified-facebook-login-4.42.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/e7626a92ccb05a3751c3a6c4041733bb/transformed/jetified-facebook-share-4.42.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:21:1-37:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/31d38ae96345062152722ead1bf39aff/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [net.openid:appauth:0.11.1] /Users/shidur/.gradle/caches/8.11.1/transforms/16986c2df99c4a7c1981a4f9875e7bce/transformed/jetified-appauth-0.11.1/AndroidManifest.xml:15:1-55:12
 MERGED from [com.google.android.material:material:1.12.0] /Users/shidur/.gradle/caches/8.11.1/transforms/c7bf3b2c5ac98285fb636637caea9eba/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
@@ -61,10 +57,6 @@ MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/shidur
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/shidur/.gradle/caches/8.11.1/transforms/dfd9e1f1d425689ac3c68499cfff54ad/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.8.0] /Users/shidur/.gradle/caches/8.11.1/transforms/fc0962859610ac83ea299d3344180fb9/transformed/jetified-activity-1.8.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/088f2f4882bc94d7c9b11f3630eb465b/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.android:facebook-places:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/823237913c44135c0cf1fedc53551d80/transformed/jetified-facebook-places-4.42.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-applinks:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/7e388c62755838355e7dd4e2bb8b2ff8/transformed/jetified-facebook-applinks-4.42.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-messenger:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/8a7c5e560dfffbfb77179e1353b5eb87/transformed/jetified-facebook-messenger-4.42.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:21:1-53:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/c929300e8b7da6ddaedab18ceed32be0/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.5.0] /Users/shidur/.gradle/caches/8.11.1/transforms/85b6399b82b4ab1eae70a71d4126a49e/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/0ed44343e83e9d0c1b074204237a0492/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -247,8 +239,6 @@ ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/ma
 application
 ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:20:5-195:19
 INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:20:5-195:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/20f4f2dee4f57975a69a3e4d37f01f4e/transformed/jetified-facebook-android-sdk-4.42.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/20f4f2dee4f57975a69a3e4d37f01f4e/transformed/jetified-facebook-android-sdk-4.42.0/AndroidManifest.xml:28:5-29:19
 MERGED from [com.google.firebase:firebase-crashlytics:18.2.13] /Users/shidur/.gradle/caches/8.11.1/transforms/b8c12506b2d9c3bcd4e03704ee81545e/transformed/jetified-firebase-crashlytics-18.2.13/AndroidManifest.xml:14:5-22:19
 MERGED from [com.google.firebase:firebase-crashlytics:18.2.13] /Users/shidur/.gradle/caches/8.11.1/transforms/b8c12506b2d9c3bcd4e03704ee81545e/transformed/jetified-firebase-crashlytics-18.2.13/AndroidManifest.xml:14:5-22:19
 MERGED from [com.google.firebase:firebase-invites:17.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/284a4bf3c9428e7f0e8a2987faad954a/transformed/jetified-firebase-invites-17.0.0/AndroidManifest.xml:7:5-20
@@ -265,12 +255,6 @@ MERGED from [com.google.firebase:firebase-messaging:23.0.8] /Users/shidur/.gradl
 MERGED from [com.google.firebase:firebase-messaging:23.0.8] /Users/shidur/.gradle/caches/8.11.1/transforms/f55cc6fbb686c453cca888e76e9a6938/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:31:5-60:19
 MERGED from [com.google.firebase:firebase-storage:20.0.2] /Users/shidur/.gradle/caches/8.11.1/transforms/2d86f68cbca00932fd29408f35a55bca/transformed/jetified-firebase-storage-20.0.2/AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.firebase:firebase-storage:20.0.2] /Users/shidur/.gradle/caches/8.11.1/transforms/2d86f68cbca00932fd29408f35a55bca/transformed/jetified-firebase-storage-20.0.2/AndroidManifest.xml:29:5-37:19
-MERGED from [com.facebook.android:facebook-login:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/b1e11f091e3276678b76dfb20ddc4d6b/transformed/jetified-facebook-login-4.42.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/b1e11f091e3276678b76dfb20ddc4d6b/transformed/jetified-facebook-login-4.42.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/e7626a92ccb05a3751c3a6c4041733bb/transformed/jetified-facebook-share-4.42.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/e7626a92ccb05a3751c3a6c4041733bb/transformed/jetified-facebook-share-4.42.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:28:5-35:19
-MERGED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:28:5-35:19
 MERGED from [net.openid:appauth:0.11.1] /Users/shidur/.gradle/caches/8.11.1/transforms/16986c2df99c4a7c1981a4f9875e7bce/transformed/jetified-appauth-0.11.1/AndroidManifest.xml:34:5-53:19
 MERGED from [net.openid:appauth:0.11.1] /Users/shidur/.gradle/caches/8.11.1/transforms/16986c2df99c4a7c1981a4f9875e7bce/transformed/jetified-appauth-0.11.1/AndroidManifest.xml:34:5-53:19
 MERGED from [com.google.android.material:material:1.12.0] /Users/shidur/.gradle/caches/8.11.1/transforms/c7bf3b2c5ac98285fb636637caea9eba/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
@@ -321,14 +305,6 @@ MERGED from [com.google.android.gms:play-services-measurement-base:21.1.1] /User
 MERGED from [com.google.android.gms:play-services-measurement-base:21.1.1] /Users/shidur/.gradle/caches/8.11.1/transforms/853932ad822334d9f029d7f9f8ba392b/transformed/jetified-play-services-measurement-base-21.1.1/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/shidur/.gradle/caches/8.11.1/transforms/9b0562363716d7f065e4f9dc5261f271/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/shidur/.gradle/caches/8.11.1/transforms/9b0562363716d7f065e4f9dc5261f271/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.facebook.android:facebook-places:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/823237913c44135c0cf1fedc53551d80/transformed/jetified-facebook-places-4.42.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-places:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/823237913c44135c0cf1fedc53551d80/transformed/jetified-facebook-places-4.42.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/7e388c62755838355e7dd4e2bb8b2ff8/transformed/jetified-facebook-applinks-4.42.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/7e388c62755838355e7dd4e2bb8b2ff8/transformed/jetified-facebook-applinks-4.42.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/8a7c5e560dfffbfb77179e1353b5eb87/transformed/jetified-facebook-messenger-4.42.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/8a7c5e560dfffbfb77179e1353b5eb87/transformed/jetified-facebook-messenger-4.42.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:28:5-51:19
-MERGED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:28:5-51:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/shidur/.gradle/caches/8.11.1/transforms/34393a628d7531e208876b6332c24194/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/shidur/.gradle/caches/8.11.1/transforms/34393a628d7531e208876b6332c24194/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.13.0] /Users/shidur/.gradle/caches/8.11.1/transforms/dfb136807b5937a158a2d4031fce286f/transformed/core-1.13.0/AndroidManifest.xml:28:5-89
@@ -351,8 +327,6 @@ MERGED from [com.google.android.gms:play-services-ads-base:19.2.0] /Users/shidur
 		INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] /Users/shidur/.gradle/caches/8.11.1/transforms/dfb136807b5937a158a2d4031fce286f/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
-	android:supportsRtl
-		ADDED from [com.facebook.android:facebook-android-sdk:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/20f4f2dee4f57975a69a3e4d37f01f4e/transformed/jetified-facebook-android-sdk-4.42.0/AndroidManifest.xml:28:18-44
 	android:label
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:24:9-41
 	android:icon
@@ -411,12 +385,6 @@ action#android.net.wifi.WIFI_STATE_CHANGED
 ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:71:17-78
 	android:name
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:71:25-75
-meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:75:9-77:55
-	android:value
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:77:13-52
-	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:76:13-58
 activity#com.kab.channel66.VideoActivity
 ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:79:9-84:74
 	android:label
@@ -521,23 +489,6 @@ action#android.intent.action.MAIN
 ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:143:17-69
 	android:name
 		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:143:25-66
-activity#com.facebook.FacebookActivity
-ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:148:9-154:45
-MERGED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:29:9-32:66
-MERGED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:29:9-32:66
-	android:label
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:151:13-45
-	android:exported
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:152:13-37
-	android:configChanges
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:150:13-96
-	android:theme
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:153:13-72
-		REJECTED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:32:13-63
-	tools:replace
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:154:13-42
-	android:name
-		ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:149:13-57
 service#com.kab.channel66.MyFirebaseMessagingService
 ADDED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml:156:9-163:19
 	android:exported
@@ -588,12 +539,10 @@ uses-sdk
 INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
 INJECTED from /Users/shidur/StudioProjects/com.kab.channel66/comkabchannel66/src/main/AndroidManifest.xml
-MERGED from [org.videolan.android:libvlc-all:3.3.10] /Users/shidur/.gradle/caches/8.11.1/transforms/a84d9a92626f5376e4591cf173928cf0/transformed/jetified-libvlc-all-3.3.10/AndroidManifest.xml:7:5-9:41
-MERGED from [org.videolan.android:libvlc-all:3.3.10] /Users/shidur/.gradle/caches/8.11.1/transforms/a84d9a92626f5376e4591cf173928cf0/transformed/jetified-libvlc-all-3.3.10/AndroidManifest.xml:7:5-9:41
+MERGED from [org.videolan.android:libvlc-all:4.0.0-eap20] /Users/shidur/.gradle/caches/8.11.1/transforms/ae2a6f48a070387bb1cafdc6c27d0475/transformed/jetified-libvlc-all-4.0.0-eap20/AndroidManifest.xml:7:5-9:41
+MERGED from [org.videolan.android:libvlc-all:4.0.0-eap20] /Users/shidur/.gradle/caches/8.11.1/transforms/ae2a6f48a070387bb1cafdc6c27d0475/transformed/jetified-libvlc-all-4.0.0-eap20/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.multidex:multidex:2.0.1] /Users/shidur/.gradle/caches/8.11.1/transforms/b3327fcbfc0e57fddf614755b794dfde/transformed/multidex-2.0.1/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.1] /Users/shidur/.gradle/caches/8.11.1/transforms/b3327fcbfc0e57fddf614755b794dfde/transformed/multidex-2.0.1/AndroidManifest.xml:20:5-43
-MERGED from [com.facebook.android:facebook-android-sdk:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/20f4f2dee4f57975a69a3e4d37f01f4e/transformed/jetified-facebook-android-sdk-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/20f4f2dee4f57975a69a3e4d37f01f4e/transformed/jetified-facebook-android-sdk-4.42.0/AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.firebase:firebase-crashlytics:18.2.13] /Users/shidur/.gradle/caches/8.11.1/transforms/b8c12506b2d9c3bcd4e03704ee81545e/transformed/jetified-firebase-crashlytics-18.2.13/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-crashlytics:18.2.13] /Users/shidur/.gradle/caches/8.11.1/transforms/b8c12506b2d9c3bcd4e03704ee81545e/transformed/jetified-firebase-crashlytics-18.2.13/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-invites:17.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/284a4bf3c9428e7f0e8a2987faad954a/transformed/jetified-firebase-invites-17.0.0/AndroidManifest.xml:5:5-44
@@ -612,12 +561,6 @@ MERGED from [com.google.firebase:firebase-messaging:23.0.8] /Users/shidur/.gradl
 MERGED from [com.google.firebase:firebase-messaging:23.0.8] /Users/shidur/.gradle/caches/8.11.1/transforms/f55cc6fbb686c453cca888e76e9a6938/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:21:5-23:41
 MERGED from [com.google.firebase:firebase-storage:20.0.2] /Users/shidur/.gradle/caches/8.11.1/transforms/2d86f68cbca00932fd29408f35a55bca/transformed/jetified-firebase-storage-20.0.2/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:20.0.2] /Users/shidur/.gradle/caches/8.11.1/transforms/2d86f68cbca00932fd29408f35a55bca/transformed/jetified-firebase-storage-20.0.2/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.android:facebook-login:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/b1e11f091e3276678b76dfb20ddc4d6b/transformed/jetified-facebook-login-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/b1e11f091e3276678b76dfb20ddc4d6b/transformed/jetified-facebook-login-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/e7626a92ccb05a3751c3a6c4041733bb/transformed/jetified-facebook-share-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/e7626a92ccb05a3751c3a6c4041733bb/transformed/jetified-facebook-share-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:24:5-26:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/31d38ae96345062152722ead1bf39aff/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/31d38ae96345062152722ead1bf39aff/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [net.openid:appauth:0.11.1] /Users/shidur/.gradle/caches/8.11.1/transforms/16986c2df99c4a7c1981a4f9875e7bce/transformed/jetified-appauth-0.11.1/AndroidManifest.xml:18:5-20:41
@@ -688,14 +631,6 @@ MERGED from [androidx.activity:activity:1.8.0] /Users/shidur/.gradle/caches/8.11
 MERGED from [androidx.activity:activity:1.8.0] /Users/shidur/.gradle/caches/8.11.1/transforms/fc0962859610ac83ea299d3344180fb9/transformed/jetified-activity-1.8.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/088f2f4882bc94d7c9b11f3630eb465b/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/088f2f4882bc94d7c9b11f3630eb465b/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-places:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/823237913c44135c0cf1fedc53551d80/transformed/jetified-facebook-places-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-places:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/823237913c44135c0cf1fedc53551d80/transformed/jetified-facebook-places-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/7e388c62755838355e7dd4e2bb8b2ff8/transformed/jetified-facebook-applinks-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/7e388c62755838355e7dd4e2bb8b2ff8/transformed/jetified-facebook-applinks-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/8a7c5e560dfffbfb77179e1353b5eb87/transformed/jetified-facebook-messenger-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/8a7c5e560dfffbfb77179e1353b5eb87/transformed/jetified-facebook-messenger-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:24:5-26:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/c929300e8b7da6ddaedab18ceed32be0/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/shidur/.gradle/caches/8.11.1/transforms/c929300e8b7da6ddaedab18ceed32be0/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.5.0] /Users/shidur/.gradle/caches/8.11.1/transforms/85b6399b82b4ab1eae70a71d4126a49e/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
@@ -906,14 +841,6 @@ ADDED from [com.google.firebase:firebase-storage:20.0.2] /Users/shidur/.gradle/c
 		ADDED from [com.google.firebase:firebase-storage:20.0.2] /Users/shidur/.gradle/caches/8.11.1/transforms/2d86f68cbca00932fd29408f35a55bca/transformed/jetified-firebase-storage-20.0.2/AndroidManifest.xml:35:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-storage:20.0.2] /Users/shidur/.gradle/caches/8.11.1/transforms/2d86f68cbca00932fd29408f35a55bca/transformed/jetified-firebase-storage-20.0.2/AndroidManifest.xml:34:17-107
-activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:33:9-71
-	android:name
-		ADDED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:33:19-68
-activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:34:9-67
-	android:name
-		ADDED from [com.facebook.android:facebook-common:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a89fb37f963f57dea99c8971eb43184a/transformed/jetified-facebook-common-4.42.0/AndroidManifest.xml:34:19-64
 queries
 ADDED from [net.openid:appauth:0.11.1] /Users/shidur/.gradle/caches/8.11.1/transforms/16986c2df99c4a7c1981a4f9875e7bce/transformed/jetified-appauth-0.11.1/AndroidManifest.xml:24:5-32:15
 intent#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+data:scheme:https
@@ -1042,26 +969,6 @@ ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/shidur/
 		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/shidur/.gradle/caches/8.11.1/transforms/9b0562363716d7f065e4f9dc5261f271/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/shidur/.gradle/caches/8.11.1/transforms/9b0562363716d7f065e4f9dc5261f271/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:39:9-42:40
-	android:authorities
-		ADDED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:41:13-72
-	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:42:13-37
-	android:name
-		ADDED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:40:13-70
-receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:44:9-50:20
-	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:46:13-37
-	android:name
-		ADDED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:45:13-86
-intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:47:13-49:29
-action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:48:17-95
-	android:name
-		ADDED from [com.facebook.android:facebook-core:4.42.0] /Users/shidur/.gradle/caches/8.11.1/transforms/a0909900bf561b99f492a49157e1861e/transformed/jetified-facebook-core-4.42.0/AndroidManifest.xml:48:25-92
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/shidur/.gradle/caches/8.11.1/transforms/34393a628d7531e208876b6332c24194/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/shidur/.gradle/caches/8.11.1/transforms/31e237c8a653ae18d4a87a274bee63af/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20

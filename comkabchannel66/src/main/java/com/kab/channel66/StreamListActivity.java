@@ -139,7 +139,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	PowerManager.WakeLock wl = null;
 	JSONObject serverJSON = null;
 
-
+	private ProfileChecker profileChecker;
 	ArrayList<String> pushMessages;
 	BroadcastReceiver myReciever;
 	//final VLCMediaPlayer audioplay;
@@ -174,7 +174,8 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	public StreamListActivity() {
 
 
-	}
+		profileChecker = new ProfileChecker(this);
+    }
 
 
 	public void onToggleClicked(View view)
@@ -210,7 +211,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 
 		//first run of keycloack , logout everything
-		if(CommonUtils.getActivated(this) && !CommonUtils.isKeycloakFirstRun(this))
+		if(CommonUtils.getActivated(this) && !CommonUtils.isKeycloakFirstRun(this) &&  mAuthStateManager.getCurrent().hasClientSecretExpired())
 		{
 			CommonUtils.setActivated(false,this);
 
@@ -1471,7 +1472,15 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			}
 
 			//Log.d("LoginResult", response.authorizationCode != null ? response.authorizationCode :"no token");
+			//check if user is subscribed
+			//call api call to '/profile/$userId/short'
+			//with base 'https://api.kli.one/profile/v1/'
+			//response.data['active'].toString() != "false";
 
+
+
+			//profileChecker.checkUserProfileAndShowPopupIfInactive(currentUserId, currentAuth
+			Log.d(TAG,mUserInfoJson.toString());
 			CommonUtils.setActivated(true, this);
 
 			invalidateMenu();
@@ -1560,6 +1569,13 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 				String response = Okio.buffer(Okio.source(conn.getInputStream()))
 						.readString(Charset.forName("UTF-8"));
 				mUserInfoJson.set(new JSONObject(response));
+				profileChecker.checkUserProfileAndShowPopupIfInactive(mUserInfoJson.get().getString("sub"),mAuthStateManager.getCurrent().getAccessToken(), new ProfileChecker.userSub() {
+					@Override
+					public void requestLogout() {
+						endSession();
+					}
+				});
+
 			} catch (IOException ioEx) {
 				Log.e(TAG, "Network error when querying userinfo endpoint", ioEx);
 //				showSnackbar("Fetching user info failed");

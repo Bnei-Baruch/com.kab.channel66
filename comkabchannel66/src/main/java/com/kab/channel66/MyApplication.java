@@ -3,8 +3,8 @@ package com.kab.channel66;
 import android.app.Application;
 import android.content.Context;
 
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
+//import com.facebook.FacebookSdk;
+//import com.facebook.appevents.AppEventsLogger;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.messaging.FirebaseMessaging;
 
@@ -58,8 +58,8 @@ public class MyApplication extends Application {
 
         FirebaseAnalytics.getInstance(this).setAnalyticsCollectionEnabled(true);
         //Facebook
-        FacebookSdk.sdkInitialize(getApplicationContext());
-        AppEventsLogger.activateApp(this);
+//        FacebookSdk.sdkInitialize(getApplicationContext());
+//        AppEventsLogger.activateApp(this);
     }
 
 

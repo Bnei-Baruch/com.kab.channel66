@@ -39,13 +39,13 @@ import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
-import com.facebook.login.LoginBehavior;
-import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
+//import com.facebook.CallbackManager;
+//import com.facebook.FacebookCallback;
+//import com.facebook.FacebookException;
+//import com.facebook.FacebookSdk;
+//import com.facebook.login.LoginBehavior;
+//import com.facebook.login.LoginResult;
+//import com.facebook.login.widget.LoginButton;
 import com.kab.channel66.auth.AuthStateManager;
 import com.kab.channel66.auth.Configuration;
 import com.kab.channel66.auth.LoginActivity;
@@ -68,8 +68,8 @@ public class LoginLayout extends Activity {
     EditText un,pw;
 	TextView error;
     Button ok;
-    LoginButton loginButton;
-    CallbackManager callbackManager;
+//    LoginButton loginButton;
+//    CallbackManager callbackManager;
 
     private static final String TAG = "LoginActivity";
 
@@ -146,31 +146,31 @@ public class LoginLayout extends Activity {
             }
         });
 
-        loginButton = (LoginButton) findViewById(R.id.login_button);
-        loginButton.setReadPermissions("email");
-        loginButton.setLoginBehavior(LoginBehavior.DEVICE_AUTH);
-        callbackManager =  CallbackManager.Factory.create();
+//        loginButton = (LoginButton) findViewById(R.id.login_button);
+//        loginButton.setReadPermissions("email");
+//        loginButton.setLoginBehavior(LoginBehavior.DEVICE_AUTH);
+//        callbackManager =  CallbackManager.Factory.create();
 
         // Callback registration
-        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                // App code
-                Log.d("login","success");
-            }
-
-            @Override
-            public void onCancel() {
-                // App code
-                Log.d("login","cancel");
-            }
-
-            @Override
-            public void onError(FacebookException exception) {
-                // App code
-                Log.d("login","error");
-            }
-        });
+//        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+//            @Override
+//            public void onSuccess(LoginResult loginResult) {
+//                // App code
+//                Log.d("login","success");
+//            }
+//
+//            @Override
+//            public void onCancel() {
+//                // App code
+//                Log.d("login","cancel");
+//            }
+//
+//            @Override
+//            public void onError(FacebookException exception) {
+//                // App code
+//                Log.d("login","error");
+//            }
+//        });
     }
 
     @Override
