@@ -16,7 +16,6 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.graphics.ColorMatrix;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.ConnectivityManager;
@@ -57,7 +56,6 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.storage.FirebaseStorage;
 import com.kab.channel66.auth.AuthStateManager;
 import com.kab.channel66.auth.Configuration;
-import com.kab.channel66.auth.LoginActivity;
 import com.kab.channel66.utils.CallStateListener;
 import com.kab.channel66.utils.CommonUtils;
 
@@ -74,7 +72,6 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -104,7 +101,7 @@ import okio.Okio;
 
 //import com.apphance.android.Log;
 
-public class StreamListActivity extends BaseListActivity implements GoogleApiClient.OnConnectionFailedListener , GoogleApiClient.ConnectionCallbacks,LanguageSeletedListener , ListView.OnItemClickListener {
+public class StreamListActivity extends BaseListActivity implements GoogleApiClient.OnConnectionFailedListener , GoogleApiClient.ConnectionCallbacks,LanguageSeletedListener , ListView.OnItemClickListener, AdapterView.OnItemLongClickListener {
 
 	private ServiceConnection mConnection = new ServiceConnection() {
 		@Override
@@ -201,6 +198,8 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 //		MobileAds.initialize(this, "ca-app-pub-5716767383344062~9051358001");
 		MobileAds.initialize(this, "ca-app-pub-4525606414173317~9308887615");
 
+		mAuthStateManager = AuthStateManager.getInstance(this);
+		mConfiguration = Configuration.getInstance(this);
 		//MobileAds.openDebugMenu(this,"ca-app-pub-5716767383344062/6401822554");
 
 
@@ -211,13 +210,14 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 
 		//first run of keycloack , logout everything
-		if(CommonUtils.getActivated(this) && !CommonUtils.isKeycloakFirstRun(this) &&  mAuthStateManager.getCurrent().hasClientSecretExpired())
-		{
-			CommonUtils.setActivated(false,this);
+		if((CommonUtils.getActivated(this) && !CommonUtils.isKeycloakFirstRun(this)) ||  mAuthStateManager.getCurrent().hasClientSecretExpired()) {
+			CommonUtils.setActivated(false, this);
+			signOut();
 
 		}
-
-		CommonUtils.setKeycloakFirstRun(this);
+		else {
+			CommonUtils.setKeycloakFirstRun(this);
+		}
 		// Obtain the FirebaseAnalytics instance.
 		mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
@@ -325,8 +325,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			handleMessageClicked(getIntent());
 
 		mExecutor = Executors.newSingleThreadExecutor();
-		mAuthStateManager = AuthStateManager.getInstance(this);
-		mConfiguration = Configuration.getInstance(this);
+
 		mExecutor.submit(this::initializeAppAuth);
 
 
@@ -817,8 +816,14 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 
 	}
-	
-	
+
+	@Override
+	public boolean onItemLongClick(AdapterView<?> adapterView, View v, int position, long id) {
+
+		Log.d("onItemLongClick", "onItemLongClick");
+		//CommonUtils.removeKeycloakFirstRun(this);
+		return false;
+	}
 	
 	private void StopAudioIfNeeded() {
 		// TODO Auto-generated method stub
@@ -1009,6 +1014,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 		listview.setAdapter(mAdataper);
 		listview.setOnItemClickListener(this);
+		//listview.setOnItemLongClickListener(this);
 		//listview.setChoiceMode(ListView.);
 		listview.setItemsCanFocus(true);
 

@@ -205,8 +205,17 @@ public class CommonUtils {
 		edit.putBoolean("keycloakFirstRun", true);
 		edit.apply();
 	}
-		
-	 public static void setGroup(String val,Context context)
+
+	//for debug purposes
+	public static void removeKeycloakFirstRun(Context context)
+	{
+		SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(context);
+		SharedPreferences.Editor edit = shared.edit();
+		edit.putBoolean("keycloakFirstRun", false);
+		edit.apply();
+	}
+
+	public static void setGroup(String val,Context context)
 	    {
 	    	SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(context);
 			SharedPreferences.Editor edit = shared.edit();
