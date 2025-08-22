@@ -24,8 +24,8 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        versionCode 88
-        versionName "3.0.4"
+        versionCode 89
+        versionName "3.0.5"
         applicationId "com.kab.channel66"
         minSdkVersion 26
         targetSdkVersion 35
@@ -104,7 +104,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-crashlytics'
     implementation 'com.google.firebase:firebase-analytics'
 
-    implementation 'com.google.android.gms:play-services-ads:19.2.0'
+    implementation 'com.google.android.gms:play-services-ads:21.0.0'
 
     implementation 'com.google.android.gms:play-services-analytics:17.0.0'
     implementation 'com.google.firebase:firebase-core:17.4.3'
