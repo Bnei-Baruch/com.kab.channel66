@@ -45,6 +45,7 @@ class ProfileChecker(private val context: Context) {
     }
 
 
+
     private fun isUserActiveSynchronous(userId: String, authToken: String?): Boolean {
         val client = OkHttpClient()
         val gson = Gson()
@@ -129,4 +130,48 @@ class ProfileChecker(private val context: Context) {
             .setCancelable(false) // Optional: Prevent dismissing by tapping outside
             .show()
     }
+
+    public fun deleteAccount(
+        authToken: String,
+        endSession: userSub
+    ):Boolean {
+        //add option to call delete account to this endpoint : https://acc.kab.sh/api/self_remove
+        val client = OkHttpClient()
+        val gson = Gson()
+        val url = "https://acc.kab.sh/api/self_remove"
+        val requestBuilder = Request.Builder().url(url)
+        requestBuilder.addHeader("Authorization", "Bearer " + authToken)
+        val request = requestBuilder.build()
+
+        Thread {
+            try {
+                val response: Response = client.newCall(request).execute() // Synchronous call
+
+                if (!response.isSuccessful) {
+                    println("API Error: ${response.code} - ${response.message}")
+                    // Consider more specific error handling based on response code
+                    endSession.requestLogout()
+                    return@Thread  // Or throw an exception
+                }
+
+                val responseBody = response.body?.string()
+                if (responseBody.isNullOrEmpty()) {
+                    println("API Error: Empty response body")
+                    endSession.requestLogout()
+                    return@Thread
+                }
+
+                println("API Response: $responseBody") // For debugging
+                endSession.requestLogout()
+                return@Thread
+            } catch (e: IOException) {
+                println("Network Error (Delete Account): ${e.message}")
+                // Handle network errors (e.g., no internet, timeout)
+                // You might want to inform the user or log this more formally
+                return@Thread // Or throw a custom exception
+            }
+        }.start()
+        return true
+    }
+
 }

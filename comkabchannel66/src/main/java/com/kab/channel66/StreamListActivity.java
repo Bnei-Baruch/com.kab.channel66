@@ -29,6 +29,7 @@ import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -39,6 +40,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
@@ -70,6 +72,7 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Locale;
+import java.util.Objects;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -168,6 +171,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 	private static final int END_SESSION_REQUEST_CODE = 911;
 	private final AtomicReference<JSONObject> mUserInfoJson = new AtomicReference<>();
+	private AlertDialog dialog;
 
 
 	public StreamListActivity() {
@@ -1146,6 +1150,67 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 
 				return true;
 			}
+
+			case R.id.info:
+				LayoutInflater inflater = getLayoutInflater();
+				View dialogView = inflater.inflate(R.layout.dialog_user_info, null);
+
+				TextView valueGiven = dialogView.findViewById(R.id.valueGiven);
+				TextView valueFamily = dialogView.findViewById(R.id.valueFamily);
+				TextView valueEmail = dialogView.findViewById(R.id.valueEmail);
+				TextView tvDelete = dialogView.findViewById(R.id.tvDelete);
+
+// Set values
+                try {
+                    valueGiven.setText(mUserInfoJson.get().getString("given_name"));
+					valueFamily.setText(mUserInfoJson.get().getString("family_name"));
+					valueEmail.setText(mUserInfoJson.get().getString("email"));
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
+                }
+
+
+				// Handle delete click
+				tvDelete.setOnClickListener(v -> {
+					new AlertDialog.Builder(this)
+							.setTitle("Confirm Deletion")
+							.setMessage("Are you sure you want to delete your account?")
+							.setPositiveButton("Yes", (dialog1, which) -> {
+								Toast.makeText(this, "Account deleted", Toast.LENGTH_SHORT).show();
+								//call delete account
+								//https://acc.kab.sh/api/self_remove
+								dialog1.dismiss();
+								//call delete on the keycloak server
+								ProfileChecker checker = new ProfileChecker(StreamListActivity.this);
+								checker.deleteAccount(Objects.requireNonNull(mAuthStateManager.getCurrent().getAccessToken()), new ProfileChecker.userSub() {
+									@Override
+									public void requestLogout() {
+										dialog.dismiss();
+										endSession();
+
+									}
+
+								});
+							})
+
+							//								Log.d(TAG, "Account deleted");
+							//
+							//								dialog1.dismiss();
+							//							  });
+							.setNegativeButton("No", (dialog1, which) -> {
+								dialog1.dismiss(); // just close the confirmation
+							})
+							.show();
+				});
+
+				 dialog = new AlertDialog.Builder(this)
+						.setTitle("User Info")
+						.setView(dialogView)
+						.setPositiveButton("OK", null)
+						.create();
+
+				dialog.show();
+				return true;
 
 
 		case R.id.quality:

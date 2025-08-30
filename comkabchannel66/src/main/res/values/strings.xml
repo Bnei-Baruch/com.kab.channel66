@@ -31,6 +31,7 @@
     <string name="openid_logo_content_description">Kabbalah TV</string>
     <string name="intro_header">Login</string>
     <string name="Logout">Logout</string>>
+    <string name="Info">Info</string>
 
     <string name="ClearMessages">Clear messages</string>
     <string name="report">App crashed, sending email report to developer</string>
@@ -65,4 +66,6 @@
     <string name="access_token_expired">Access token has expired</string>
     <string name="auth_settings">Authorization settings in use:</string>
     <string name="use_pending_intents">Use PendingIntent\'s for completion</string>
+    <string name="delete_account"><u>Delete account</u></string>
+
 </resources>

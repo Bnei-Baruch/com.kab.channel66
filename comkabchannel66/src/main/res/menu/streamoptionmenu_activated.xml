@@ -12,6 +12,10 @@
     <item android:id="@+id/Logout"
         android:title="@string/Logout" >
     </item>
+    <item android:id="@+id/info"
+        android:title="@string/Info" >
+    </item>
+
     <!--<item android:id="@+id/playType"-->
         <!--android:title="@string/device" android:checkable="true">-->
     <!--</item>-->
