@@ -3,6 +3,7 @@ package com.kab.channel66;
 //import io.vov.vitamio.VitamioInstaller.VitamioNotCompatibleException;
 //import io.vov.vitamio.VitamioInstaller.VitamioNotFoundException;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -15,6 +16,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -80,11 +82,14 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
 import androidx.browser.customtabs.CustomTabsIntent;
+import androidx.core.content.ContextCompat;
 
 import net.openid.appauth.AuthState;
 import net.openid.appauth.AuthorizationException;
@@ -173,6 +178,7 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 	private final AtomicReference<JSONObject> mUserInfoJson = new AtomicReference<>();
 	private AlertDialog dialog;
 
+	private ActivityResultLauncher<String> requestPermissionLauncher;
 
 	public StreamListActivity() {
 
@@ -199,6 +205,57 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 		    edit.commit();
 		}
 
+	// Method to ask for notification permission
+	private void askNotificationPermission() {
+		// This function should be called before you attempt to show a notification
+		// that requires this permission (e.g., before starting a foreground service
+		// that posts a notification on Android 13+).
+
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) { // TIRAMISU is API 33
+			if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) ==
+					PackageManager.PERMISSION_GRANTED) {
+				// Permission already granted
+				Log.d(TAG, "POST_NOTIFICATIONS permission already granted.");
+
+			} else if (shouldShowRequestPermissionRationale(Manifest.permission.POST_NOTIFICATIONS)) {
+				// Show an educational UI to the user explaining why your app needs this
+				// permission. After the user sees the explanation, try again to request the permission.
+				Log.i(TAG, "Showing rationale for POST_NOTIFICATIONS permission.");
+				// Example using MaterialAlertDialogBuilder (add dependency if not present)
+                /*
+                new MaterialAlertDialogBuilder(this)
+                        .setTitle("Permission needed")
+                        .setMessage("This app needs the Post Notifications permission to show playback controls and status while playing media.")
+                        .setPositiveButton("OK", (dialog, which) -> {
+                            // Request the permission
+                            requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS);
+                        })
+                        .setNegativeButton("Cancel", (dialog, which) -> {
+                            // User cancelled the dialog.
+                             Toast.makeText(this, "Notification permission denied. Player notifications will not be shown.", Toast.LENGTH_LONG).show();
+                        })
+                        .show();
+                */
+				// For a simpler Toast explanation and then request:
+				Toast.makeText(this, "Please grant notification permission to see playback status.", Toast.LENGTH_LONG).show();
+				requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS);
+
+			} else {
+				// Directly request for permission (first time or if user chose "Don't ask again" before)
+				Log.i(TAG, "Requesting POST_NOTIFICATIONS permission.");
+				requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS);
+			}
+		} else {
+			// No runtime permission needed for Android versions before 13 (TIRAMISU)
+			Log.d(TAG, "No runtime POST_NOTIFICATIONS permission needed for this Android version.");
+
+		}
+	}
+
+	// --- You would call askNotificationPermission() at the appropriate time ---
+	// For example, if starting the player service on a list item click:
+
+
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 //		MobileAds.initialize(this, "ca-app-pub-5716767383344062~9051358001");
@@ -209,10 +266,28 @@ public class StreamListActivity extends BaseListActivity implements GoogleApiCli
 			}
 		});
 
+
 		mAuthStateManager = AuthStateManager.getInstance(this);
 		mConfiguration = Configuration.getInstance(this);
 		//MobileAds.openDebugMenu(this,"ca-app-pub-5716767383344062/6401822554");
+		requestPermissionLauncher =
+				registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {
+					if (isGranted) {
+						// Permission is granted. You can now show notifications.
+						Log.d(TAG, "POST_NOTIFICATIONS permission granted by user.");
 
+
+					} else {
+						// Explain to the user that the feature is unavailable because
+						// the feature requires a permission that the user has denied.
+						Log.w(TAG, "POST_NOTIFICATIONS permission denied by user.");
+						Toast.makeText(this, "Notification permission denied. Player notifications will not be shown.", Toast.LENGTH_LONG).show();
+						// You might want to call startPlayerService WITHOUT notifications if playback is still allowed.
+						// Or disable the feature that requires notifications.
+					}
+				});
+
+		askNotificationPermission();
 
 //		List<String> testDeviceIds = Arrays.asList("D2BE1DC818CF2B7B8FED459FBCA250CD");
 //		RequestConfiguration configuration =

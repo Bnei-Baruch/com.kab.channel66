@@ -197,7 +197,7 @@ public class PlayerService extends Service implements CallStateInterface,Tomahaw
 	@RequiresApi(Build.VERSION_CODES.O)
 	private String createNotificationChannel(String channelId , String channelName){
 		NotificationChannel chan = new NotificationChannel(channelId,
-				channelName, NotificationManager.IMPORTANCE_NONE);
+				channelName, NotificationManager.IMPORTANCE_DEFAULT);
 		chan.setLightColor(Color.BLUE);
 		chan.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
 		chan.setShowBadge(true);
